@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Sesame)(type Legacy)(uri ${KIPRJMOD}/Sesame.lib)(options "")(descr ""))
+  (lib (name sesame-fonctionnel-rescue)(type Legacy)(uri ${KIPRJMOD}/sesame-fonctionnel-rescue.lib)(options "")(descr ""))
+)

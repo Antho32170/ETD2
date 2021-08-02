@@ -1,0 +1,527 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 15
+Title "SESAME"
+Date "2021-07-26"
+Rev "0.6"
+Comp "AFPA"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3350 5350 1500 1000
+U 60F16FAE
+F0 "RAMP GENERATOR" 50
+F1 "gen_ramp.sch" 50
+F2 "Ramp" O R 4850 5550 50 
+$EndSheet
+$Sheet
+S 7550 1950 950  1000
+U 60F19D5B
+F0 "U/I SENSOR RIGHT" 50
+F1 "voltage_current_sens.sch" 50
+F2 "VProt" B R 8500 2750 100
+F3 "VD_Mos" B L 7550 2200 100
+F4 "Current_Sens" O L 7550 2450 50 
+F5 "Voltage_Sens" O L 7550 2550 50 
+$EndSheet
+$Sheet
+S 5100 5350 1500 1000
+U 60F1AF26
+F0 "PWM GEN" 50
+F1 "PWM_Gen.sch" 50
+F2 "Ramp" I L 5100 5550 50 
+F3 "PWM" O R 6600 5550 50 
+F4 "~PWM" O R 6600 5700 50 
+F5 "Feedback" I L 5100 6150 50 
+$EndSheet
+Wire Wire Line
+	7450 2550 7550 2550
+Wire Wire Line
+	7350 2450 7550 2450
+Wire Wire Line
+	6700 5050 6700 5550
+Wire Wire Line
+	6800 4950 6800 5700
+Wire Wire Line
+	7550 5450 7450 5450
+$Comp
+L Connector:Screw_Terminal_01x04 J2
+U 1 1 60FA7963
+P 10550 2250
+F 0 "J2" H 10630 2242 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" V 10750 1850 50  0000 L CNN
+F 2 "" H 10550 2250 50  0001 C CNN
+F 3 "~" H 10550 2250 50  0001 C CNN
+	1    10550 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2150 10250 2150
+Wire Wire Line
+	10350 2250 10250 2250
+Wire Wire Line
+	10250 2250 10250 2150
+Connection ~ 10250 2150
+$Comp
+L power:GND #PWR0101
+U 1 1 60FA796E
+P 10250 2500
+F 0 "#PWR0101" H 10250 2250 50  0001 C CNN
+F 1 "GND" H 10255 2327 50  0000 C CNN
+F 2 "" H 10250 2500 50  0001 C CNN
+F 3 "" H 10250 2500 50  0001 C CNN
+	1    10250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2500 10250 2450
+Wire Wire Line
+	10250 2450 10350 2450
+Wire Wire Line
+	10350 2350 10250 2350
+Wire Wire Line
+	10250 2350 10250 2450
+Connection ~ 10250 2450
+Wire Wire Line
+	6600 5550 6700 5550
+Wire Wire Line
+	6600 5700 6800 5700
+Wire Wire Line
+	4850 5550 5100 5550
+Wire Wire Line
+	5100 6150 5000 6150
+Wire Wire Line
+	5000 6150 5000 6800
+Wire Wire Line
+	5000 6800 4850 6800
+Wire Wire Line
+	3350 7400 3250 7400
+Wire Wire Line
+	3250 7400 3250 7750
+Wire Wire Line
+	7550 5550 7350 5550
+Wire Wire Line
+	7550 5750 7200 5750
+$Comp
+L power:VCC #PWR0102
+U 1 1 61169F8F
+P 6700 750
+F 0 "#PWR0102" H 6700 600 50  0001 C CNN
+F 1 "VCC" H 6715 923 50  0000 C CNN
+F 2 "" H 6700 750 50  0001 C CNN
+F 3 "" H 6700 750 50  0001 C CNN
+	1    6700 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 750  6700 800 
+Wire Wire Line
+	6700 800  6600 800 
+$Comp
+L power:+2V5 #PWR0103
+U 1 1 6117E6E2
+P 6900 750
+F 0 "#PWR0103" H 6900 600 50  0001 C CNN
+F 1 "+2V5" H 6915 923 50  0000 C CNN
+F 2 "" H 6900 750 50  0001 C CNN
+F 3 "" H 6900 750 50  0001 C CNN
+	1    6900 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 750  6900 950 
+Wire Wire Line
+	6900 950  6600 950 
+Wire Wire Line
+	7100 5850 7550 5850
+Wire Wire Line
+	5650 6500 5650 7750
+Wire Wire Line
+	3250 7750 5650 7750
+$Sheet
+S 8800 1950 1300 1000
+U 614794AE
+F0 "RIGHT PROTECTION" 50
+F1 "PROTECT.sch" 50
+F2 "IN_OUT_PWR" B R 10100 2150 100
+F3 "VProt" B L 8800 2750 100
+$EndSheet
+Wire Wire Line
+	8500 2750 8650 2750
+Text Notes 5350 5950 0    50   ~ 0
+Dead time reglable\ndedans via une resistance
+Wire Wire Line
+	4150 1750 4150 2450
+Wire Wire Line
+	2750 2800 2900 2800
+$Sheet
+S 1450 1950 1300 1000
+U 61456C6A
+F0 "LEFT PROTECTION" 50
+F1 "PROTECT.sch" 50
+F2 "IN_OUT_PWR" B L 1450 2150 100
+F3 "VProt" B R 2750 2800 100
+$EndSheet
+Wire Wire Line
+	4250 1850 4250 2550
+Connection ~ 1300 2450
+Wire Wire Line
+	1300 2350 1300 2450
+Wire Wire Line
+	1200 2350 1300 2350
+Wire Wire Line
+	1300 2450 1200 2450
+Wire Wire Line
+	1300 2500 1300 2450
+$Comp
+L power:GND #PWR0104
+U 1 1 60FAC5D8
+P 1300 2500
+F 0 "#PWR0104" H 1300 2250 50  0001 C CNN
+F 1 "GND" H 1305 2327 50  0000 C CNN
+F 2 "" H 1300 2500 50  0001 C CNN
+F 3 "" H 1300 2500 50  0001 C CNN
+	1    1300 2500
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1300 2150
+Wire Wire Line
+	1300 2250 1300 2150
+Wire Wire Line
+	1200 2250 1300 2250
+Wire Wire Line
+	1200 2150 1300 2150
+$Comp
+L Connector:Screw_Terminal_01x04 J1
+U 1 1 60FAC5CD
+P 1000 2250
+F 0 "J1" H 1080 2242 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" V 1200 1850 50  0000 L CNN
+F 2 "" H 1000 2250 50  0001 C CNN
+F 3 "~" H 1000 2250 50  0001 C CNN
+	1    1000 2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4950 6800 4950
+Wire Wire Line
+	4600 3950 5100 3950
+Wire Wire Line
+	5100 4100 4600 4100
+Wire Wire Line
+	4600 4200 5100 4200
+Wire Wire Line
+	4150 2450 4050 2450
+Wire Wire Line
+	4250 2550 4050 2550
+Wire Wire Line
+	8650 1550 8650 2750
+Wire Wire Line
+	10100 2150 10250 2150
+Wire Wire Line
+	2900 2800 2900 1550
+Connection ~ 2900 2800
+Wire Wire Line
+	2900 2800 3050 2800
+Wire Wire Line
+	1300 2150 1450 2150
+Text Label 3500 1550 0    50   ~ 0
+VProt_Left
+Text Label 7450 1550 0    50   ~ 0
+VProt_Right
+$Sheet
+S 4950 1950 1800 950 
+U 60F18239
+F0 "DC/DC CONVERTER" 50
+F1 "DC_DC_Converter.sch" 50
+F2 "VD_LS" B L 4950 2200 100
+F3 "VD_RS" B R 6750 2200 100
+F4 "VG_LS" I L 4950 2700 50 
+F5 "VG_LP" I L 4950 2800 50 
+F6 "VG_RS" I R 6750 2700 50 
+F7 "VG_RP" I R 6750 2800 50 
+$EndSheet
+Text Notes 5650 2700 0    50   ~ 0
+L = Left\nR = Right\nS = Serial\nP = Parallel \nG = Gate\nD = Drain
+Wire Wire Line
+	6950 2700 6950 3700
+Wire Wire Line
+	6600 3700 6950 3700
+Wire Wire Line
+	6750 2800 6850 2800
+Wire Wire Line
+	6850 2800 6850 3600
+Wire Wire Line
+	6600 3600 6850 3600
+Wire Wire Line
+	4750 3700 4750 2700
+Wire Wire Line
+	4750 3700 5100 3700
+Wire Wire Line
+	4950 2800 4850 2800
+Wire Wire Line
+	4850 2800 4850 3600
+Wire Wire Line
+	4850 3600 5100 3600
+Wire Wire Line
+	4950 2700 4750 2700
+Wire Wire Line
+	6950 2700 6750 2700
+$Sheet
+S 5100 3450 1500 1000
+U 60F19D6C
+F0 "MOS DRIVERS" 50
+F1 "Mos_Drivers.sch" 50
+F2 "Driver_LS" I L 5100 3850 50 
+F3 "VG_LP" O L 5100 3600 50 
+F4 "Driver_LP" I L 5100 3950 50 
+F5 "VG_LS" O L 5100 3700 50 
+F6 "VG_RS" O R 6600 3700 50 
+F7 "VG_RP" O R 6600 3600 50 
+F8 "Driver_RP" I L 5100 4200 50 
+F9 "Driver_RS" I L 5100 4100 50 
+F10 "Enable" I L 5100 4350 50 
+$EndSheet
+$Sheet
+S 850  5000 1000 1900
+U 618748E2
+F0 "INT EXT CONFIG" 50
+F1 "Int_Ext_Config.sch" 50
+F2 "Voltage_Sens_R" I R 1850 5650 50 
+F3 "Voltage_Sens_L" I R 1850 5900 50 
+F4 "Current_Sens_R" I R 1850 5750 50 
+F5 "Current_Sens_R" I R 1850 6000 50 
+F6 "Ex_Consign" O R 1850 6800 50 
+F7 "Dir" O R 1850 6150 50 
+F8 "Mode" O R 1850 6300 50 
+F9 "PWM_INT" I R 1850 5500 50 
+F10 "~PWM_INT" I R 1850 5400 50 
+F11 "PWM_SEL" O R 1850 5250 50 
+F12 "~PWM_SEL" O R 1850 5150 50 
+F13 "CC_CV_Mode" O R 1850 6450 50 
+$EndSheet
+Wire Wire Line
+	4050 2200 4950 2200
+Wire Wire Line
+	2900 1550 5100 1550
+Text Label 7450 3350 1    50   ~ 0
+Voltage_Sens_R
+Text Label 7350 3350 1    50   ~ 0
+Current_Sens_R
+Text Label 7200 3350 1    50   ~ 0
+Current_Sens_L
+Text Label 7100 3350 1    50   ~ 0
+Voltage_Sens_L
+Text Label 7850 4750 0    50   ~ 0
+Over_UI_Protection
+$Sheet
+S 3350 6600 1500 1000
+U 60F1B237
+F0 "PID" 50
+F1 "PID.sch" 50
+F2 "Feedback" O R 4850 6800 50 
+F3 "Selected_Measure" I L 3350 7400 50 
+F4 "Ext_Consign" I L 3350 6800 50 
+$EndSheet
+Text Notes 800  4100 0    50   ~ 0
+SHIELD BLOCKS\n——————————————————\nMeasure UI L + R\nDriver MOS\nRamp Generator + PID + PWM GEN\n
+$Sheet
+S 9600 5350 1450 1000
+U 60F2F8DD
+F0 "PROGRAMMABLE BREAKER" 50
+F1 "programmable_breaker.sch" 50
+F2 "Current_Sens_Output" I L 9600 6150 50 
+F3 "Voltage_Sens_Output" I L 9600 6050 50 
+F4 "Over_UI_Protection" O R 11050 5900 50 
+F5 "Rearm" I L 9600 5450 50 
+F6 "Current_Thres" I L 9600 5700 50 
+F7 "Voltage_Thres" I L 9600 5600 50 
+$EndSheet
+Wire Wire Line
+	7350 2450 7350 5550
+Wire Wire Line
+	7450 2550 7450 5450
+Wire Wire Line
+	7100 1850 7100 5850
+Wire Wire Line
+	8900 6250 9000 6250
+Wire Wire Line
+	9000 6250 9000 6500
+Wire Wire Line
+	11050 5900 11150 5900
+Text Label 2450 5650 2    50   ~ 0
+Voltage_Sens_R
+Text Label 2450 5750 2    50   ~ 0
+Current_Sens_R
+Text Label 2450 5900 2    50   ~ 0
+Voltage_Sens_L
+Text Label 2450 6000 2    50   ~ 0
+Current_Sens_L
+Wire Wire Line
+	4150 1750 7200 1750
+Wire Wire Line
+	4250 1850 7100 1850
+Wire Wire Line
+	5650 6500 9000 6500
+Wire Wire Line
+	6600 1550 8650 1550
+Wire Wire Line
+	8650 2750 8800 2750
+Connection ~ 8650 2750
+Wire Wire Line
+	11150 4750 11150 5900
+Wire Wire Line
+	6750 2200 7550 2200
+Wire Wire Line
+	1850 6800 3350 6800
+Text Label 2300 6800 2    50   ~ 0
+Ex_Consign
+$Sheet
+S 3050 1950 1000 1000
+U 60F171CE
+F0 "U/I SENSOR LEFT" 50
+F1 "voltage_current_sens.sch" 50
+F2 "VProt" B L 3050 2800 100
+F3 "VD_Mos" B R 4050 2200 100
+F4 "Current_Sens" O R 4050 2450 50 
+F5 "Voltage_Sens" O R 4050 2550 50 
+$EndSheet
+Wire Wire Line
+	7200 1750 7200 5750
+Text Label 7050 6150 0    50   ~ 0
+Dir
+Text Label 2750 3550 0    50   ~ 0
+Dir
+Wire Wire Line
+	2450 6000 1850 6000
+Wire Wire Line
+	1850 5900 2450 5900
+Wire Wire Line
+	2450 5750 1850 5750
+Wire Wire Line
+	1850 5650 2450 5650
+Text Label 2750 3700 0    50   ~ 0
+Mode
+Wire Wire Line
+	2750 3700 3100 3700
+Wire Wire Line
+	2750 3550 3100 3550
+Text Label 2650 5100 1    50   ~ 0
+~PWM_SEL
+Text Label 2450 6150 2    50   ~ 0
+Dir
+Text Label 2450 6300 2    50   ~ 0
+Mode
+Wire Wire Line
+	2450 6150 1850 6150
+Wire Wire Line
+	1850 6300 2450 6300
+Text Label 7050 6250 0    50   ~ 0
+CC_CV_Mode
+Text Label 9000 5450 0    50   ~ 0
+Rearm
+Text Label 9000 5600 0    50   ~ 0
+Voltage_Thres
+Text Label 9000 5700 0    50   ~ 0
+Current_Thres
+Wire Wire Line
+	9000 5700 9600 5700
+Wire Wire Line
+	9000 5600 9600 5600
+Wire Wire Line
+	9000 5450 9600 5450
+Wire Wire Line
+	8900 6150 9600 6150
+Wire Wire Line
+	8900 6050 9600 6050
+$Sheet
+S 7550 5350 1350 1000
+U 60F421D1
+F0 "MEASURE SELECTOR" 50
+F1 "Measure_Selector.sch" 50
+F2 "Voltage_Sens_R" I L 7550 5450 50 
+F3 "Voltage_Sens_L" I L 7550 5850 50 
+F4 "Current_Sens_R" I L 7550 5550 50 
+F5 "Current_Sens_L" I L 7550 5750 50 
+F6 "Dir" I L 7550 6150 50 
+F7 "Selected_Measure" O R 8900 6250 50 
+F8 "CC_CV_Mode" I L 7550 6250 50 
+F9 "Current_Sens_Output" O R 8900 6150 50 
+F10 "Voltage_Sens_Output" O R 8900 6050 50 
+$EndSheet
+Wire Wire Line
+	4850 4750 11150 4750
+Wire Wire Line
+	5100 4350 4850 4350
+Wire Wire Line
+	4850 4350 4850 4750
+Wire Wire Line
+	4600 3850 5100 3850
+$Sheet
+S 3100 3450 1500 1000
+U 60F4EAD9
+F0 "DRIVER COMMAND" 50
+F1 "Drivers_Command.sch" 50
+F2 "Driver_LS" O R 4600 3850 50 
+F3 "Driver_LP" O R 4600 3950 50 
+F4 "Driver_RS" O R 4600 4100 50 
+F5 "Driver_RP" O R 4600 4200 50 
+F6 "PWM" I L 3100 4350 50 
+F7 "~PWM" I L 3100 4250 50 
+F8 "Dir" I L 3100 3550 50 
+F9 "Mode" I L 3100 3700 50 
+$EndSheet
+Wire Wire Line
+	3000 5050 6700 5050
+Text Label 3400 5050 0    50   ~ 0
+PWM_INT
+Text Label 3400 4950 0    50   ~ 0
+~PWM_INT
+Wire Wire Line
+	2750 4350 3100 4350
+Wire Wire Line
+	2650 4250 3100 4250
+Text Label 2750 5100 1    50   ~ 0
+PWM_SEL
+Wire Wire Line
+	7050 6150 7550 6150
+Wire Wire Line
+	7050 6250 7550 6250
+Text Label 2450 6450 2    50   ~ 0
+CC_CV_Mode
+Wire Wire Line
+	2450 6450 1850 6450
+Wire Wire Line
+	1850 5150 2650 5150
+Wire Wire Line
+	2650 4250 2650 5150
+Wire Wire Line
+	1850 5250 2750 5250
+Wire Wire Line
+	2750 5250 2750 4350
+Wire Wire Line
+	1850 5400 2900 5400
+Wire Wire Line
+	2900 5400 2900 4950
+Wire Wire Line
+	1850 5500 3000 5500
+Wire Wire Line
+	3000 5500 3000 5050
+$Sheet
+S 5100 650  1500 1000
+U 60F1AA92
+F0 "INTERNAL SUPPLIES" 50
+F1 "alims.sch" 50
+F2 "5V" O R 6600 800 50 
+F3 "Vref" O R 6600 950 50 
+F4 "VMOS" O R 6600 1100 50 
+F5 "Left_Supply" I L 5100 1550 50 
+F6 "Right_Supply" I R 6600 1550 50 
+$EndSheet
+$EndSCHEMATC
