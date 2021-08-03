@@ -274,21 +274,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 2700 6750 2700
 $Sheet
-S 5100 3450 1500 1000
-U 60F19D6C
-F0 "MOS DRIVERS" 50
-F1 "Mos_Drivers.sch" 50
-F2 "Driver_LS" I L 5100 3850 50 
-F3 "VG_LP" O L 5100 3600 50 
-F4 "Driver_LP" I L 5100 3950 50 
-F5 "VG_LS" O L 5100 3700 50 
-F6 "VG_RS" O R 6600 3700 50 
-F7 "VG_RP" O R 6600 3600 50 
-F8 "Driver_RP" I L 5100 4200 50 
-F9 "Driver_RS" I L 5100 4100 50 
-F10 "Enable" I L 5100 4350 50 
-$EndSheet
-$Sheet
 S 850  5000 1000 1900
 U 618748E2
 F0 "INT EXT CONFIG" 50
@@ -326,7 +311,7 @@ U 60F1B237
 F0 "PID" 50
 F1 "PID.sch" 50
 F2 "Feedback" O R 4850 6800 50 
-F3 "Selected_Measure" I L 3350 7400 50 
+F3 "Measure_Selected" I L 3350 7400 50 
 F4 "Ext_Consign" I L 3350 6800 50 
 $EndSheet
 Text Notes 800  4100 0    50   ~ 0
@@ -336,8 +321,8 @@ S 9600 5350 1450 1000
 U 60F2F8DD
 F0 "PROGRAMMABLE BREAKER" 50
 F1 "programmable_breaker.sch" 50
-F2 "Current_Sens_Output" I L 9600 6150 50 
-F3 "Voltage_Sens_Output" I L 9600 6050 50 
+F2 "Current_Sens" I L 9600 6150 50 
+F3 "Voltage_Sens" I L 9600 6050 50 
 F4 "Over_UI_Protection" O R 11050 5900 50 
 F5 "Rearm" I L 9600 5450 50 
 F6 "Current_Thres" I L 9600 5700 50 
@@ -450,10 +435,10 @@ F3 "Voltage_Sens_L" I L 7550 5850 50
 F4 "Current_Sens_R" I L 7550 5550 50 
 F5 "Current_Sens_L" I L 7550 5750 50 
 F6 "Dir" I L 7550 6150 50 
-F7 "Selected_Measure" O R 8900 6250 50 
+F7 "Measure_Selected" O R 8900 6250 50 
 F8 "CC_CV_Mode" I L 7550 6250 50 
-F9 "Current_Sens_Output" O R 8900 6150 50 
-F10 "Voltage_Sens_Output" O R 8900 6050 50 
+F9 "Current_Sens_Selected" O R 8900 6150 50 
+F10 "Voltage_Sens_Selected" O R 8900 6050 50 
 $EndSheet
 Wire Wire Line
 	4850 4750 11150 4750
@@ -523,5 +508,20 @@ F3 "Vref" O R 6600 950 50
 F4 "VMOS" O R 6600 1100 50 
 F5 "Left_Supply" I L 5100 1550 50 
 F6 "Right_Supply" I R 6600 1550 50 
+$EndSheet
+$Sheet
+S 5100 3450 1500 1000
+U 60F19D6C
+F0 "MOS DRIVERS" 50
+F1 "Mos_Drivers.sch" 50
+F2 "Driver_LS" I L 5100 3850 50 
+F3 "VG_LP" O L 5100 3600 50 
+F4 "Driver_LP" I L 5100 3950 50 
+F5 "VG_LS" O L 5100 3700 50 
+F6 "VG_RS" O R 6600 3700 50 
+F7 "VG_RP" O R 6600 3600 50 
+F8 "Driver_RP" I L 5100 4200 50 
+F9 "Driver_RS" I L 5100 4100 50 
+F10 "Enable" I L 5100 4350 50 
 $EndSheet
 $EndSCHEMATC
