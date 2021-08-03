@@ -53,13 +53,13 @@ Wire Notes Line
 	3500 2400 4250 2400
 $Comp
 L Analog_Switch:CD4053B U?
-U 1 1 61096CA3
-P 5500 2875
-F 0 "U?" H 5500 3756 50  0000 C CNN
-F 1 "CD4053B" H 5500 3665 50  0000 C CNN
-F 2 "" H 5650 2125 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 5480 3075 50  0001 C CNN
-	1    5500 2875
+U 1 1 610A09BD
+P 5700 2850
+F 0 "U?" H 5700 3731 50  0000 C CNN
+F 1 "CD4053B" H 5700 3640 50  0000 C CNN
+F 2 "" H 5850 2100 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 5680 3050 50  0001 C CNN
+	1    5700 2850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
