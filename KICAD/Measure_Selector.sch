@@ -13,42 +13,53 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5650 4050 0    50   Input ~ 0
+Text HLabel 4200 2500 0    50   Input ~ 0
 Voltage_Sens_R
-Text HLabel 5650 4150 0    50   Input ~ 0
+Text HLabel 4200 2600 0    50   Input ~ 0
 Current_Sens_R
-Text HLabel 5650 4350 0    50   Input ~ 0
+Text HLabel 4200 2800 0    50   Input ~ 0
 Voltage_Sens_L
-Text HLabel 5650 4450 0    50   Input ~ 0
+Text HLabel 4200 2900 0    50   Input ~ 0
 Current_Sens_L
-Text HLabel 6550 4050 2    50   Output ~ 0
+Text HLabel 6875 2675 2    50   Output ~ 0
 Voltage_Sens_Selected
-Text HLabel 6550 4150 2    50   Output ~ 0
+Text HLabel 6875 2775 2    50   Output ~ 0
 Current_Sens_Selected
-Text HLabel 5650 4650 0    50   Input ~ 0
+Text HLabel 4200 3100 0    50   Input ~ 0
 CC_CV_Mode
-Text HLabel 5650 4750 0    50   Input ~ 0
+Text HLabel 4200 3200 0    50   Input ~ 0
 Dir
-Text HLabel 6550 4350 2    50   Output ~ 0
+Text HLabel 6875 2975 2    50   Output ~ 0
 Measure_Selected
-Text Notes 6550 4550 0    50   ~ 0
+Text Notes 6875 3175 0    50   ~ 0
 Sorties
-Text Notes 5000 4900 0    50   ~ 0
+Text Notes 3550 3350 0    50   ~ 0
 Entrées
 Wire Notes Line
-	6500 3950 6500 4600
+	6825 2575 6825 3225
 Wire Notes Line
-	6500 4600 7500 4600
+	6825 3225 7825 3225
 Wire Notes Line
-	7500 4600 7500 3950
+	7825 3225 7825 2575
 Wire Notes Line
-	7500 3950 6500 3950
+	7825 2575 6825 2575
 Wire Notes Line
-	5700 3950 5700 4950
+	4250 2400 4250 3400
 Wire Notes Line
-	5700 4950 4950 4950
+	4250 3400 3500 3400
 Wire Notes Line
-	4950 4950 4950 3950
+	3500 3400 3500 2400
 Wire Notes Line
-	4950 3950 5700 3950
+	3500 2400 4250 2400
+$Comp
+L Analog_Switch:CD4053B U?
+U 1 1 61096CA3
+P 5500 2875
+F 0 "U?" H 5500 3756 50  0000 C CNN
+F 1 "CD4053B" H 5500 3665 50  0000 C CNN
+F 2 "" H 5650 2125 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 5480 3075 50  0001 C CNN
+	1    5500 2875
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
