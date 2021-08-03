@@ -51,6 +51,6 @@ Wire Notes Line
 	5350 3100 5350 2450
 Wire Notes Line
 	5350 2450 5700 2450
-Text Notes 4800 3300 0    50   ~ 0
+Text Notes 4450 3525 0    50   ~ 0
 Astuce: utilisez le ~~ devant un label pour créer des signaux ~barre
 $EndSCHEMATC
