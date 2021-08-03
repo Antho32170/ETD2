@@ -7,7 +7,7 @@ Sheet 1 15
 Title "SESAME"
 Date "2021-07-26"
 Rev "0.6"
-Comp "AFPA"
+Comp "ALEEA"
 Comment1 ""
 Comment2 ""
 Comment3 ""
