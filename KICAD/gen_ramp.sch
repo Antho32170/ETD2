@@ -7,7 +7,7 @@ Sheet 2 15
 Title "SESAME"
 Date ""
 Rev ""
-Comp "AFPA"
+Comp "ALEEA"
 Comment1 ""
 Comment2 ""
 Comment3 ""

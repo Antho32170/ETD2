@@ -7,7 +7,7 @@ Sheet 12 15
 Title "SESAME"
 Date "2021-08-03"
 Rev ""
-Comp "AFPA"
+Comp "ALEEA"
 Comment1 "Dessin : Clément GRIMARD"
 Comment2 ""
 Comment3 ""
