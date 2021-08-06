@@ -3,28 +3,245 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 15
+Sheet 5 15
 Title ""
 Date ""
 Rev ""
 Comp "ALEEA"
-Comment1 ""
+Comment1 "Dessin : Guillaume Arthaud"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2700 3050 0    100  BiDi ~ 0
+Text HLabel 4150 2850 0    100  BiDi ~ 0
 IN_OUT_PWR
-Text HLabel 2700 3250 0    100  BiDi ~ 0
+Text HLabel 8300 2850 2    100  BiDi ~ 0
 VProt
-Text Notes 2300 3500 0    100  ~ 0
-Bidir
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 610FCCAA
+P 4650 2950
+F 0 "Q?" V 4992 2950 50  0000 C CNN
+F 1 "SQM120" V 4901 2950 50  0000 C CNN
+F 2 "" H 4850 3050 50  0001 C CNN
+F 3 "~" H 4650 2950 50  0001 C CNN
+	1    4650 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q?
+U 1 1 610FED91
+P 7800 2950
+F 0 "Q?" V 8142 2950 50  0000 C CNN
+F 1 "SQM120" V 8051 2950 50  0000 C CNN
+F 2 "" H 8000 3050 50  0001 C CNN
+F 3 "~" H 7800 2950 50  0001 C CNN
+	1    7800 2950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 61100A0F
+P 5050 3100
+F 0 "D?" V 5004 3180 50  0000 L CNN
+F 1 "D_Zener" V 5095 3180 50  0000 L CNN
+F 2 "" H 5050 3100 50  0001 C CNN
+F 3 "~" H 5050 3100 50  0001 C CNN
+	1    5050 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2850 5050 2850
+$Comp
+L Device:R R?
+U 1 1 61102FC8
+P 4650 3600
+F 0 "R?" H 4720 3646 50  0000 L CNN
+F 1 "R" H 4720 3555 50  0000 L CNN
+F 2 "" V 4580 3600 50  0001 C CNN
+F 3 "~" H 4650 3600 50  0001 C CNN
+	1    4650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2950 5050 2850
+Wire Wire Line
+	5050 3250 5050 3350
+Wire Wire Line
+	5050 3350 4650 3350
+Wire Wire Line
+	4650 3350 4650 3150
+Wire Wire Line
+	4650 3450 4650 3350
+Connection ~ 4650 3350
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61104B6E
+P 4650 3850
+F 0 "#PWR?" H 4650 3650 50  0001 C CNN
+F 1 "GNDPWR" H 4654 3696 50  0000 C CNN
+F 2 "" H 4650 3800 50  0001 C CNN
+F 3 "" H 4650 3800 50  0001 C CNN
+	1    4650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3850 4650 3750
+Wire Wire Line
+	4150 2850 4450 2850
 Wire Notes Line
-	2800 2950 2800 3600
+	4300 2500 5500 2500
+Connection ~ 5050 2850
+$Comp
+L Transistor_BJT:BC857 Q?
+U 1 1 6110710F
+P 6600 3300
+F 0 "Q?" H 6791 3346 50  0000 L CNN
+F 1 "BC857" H 6791 3255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6800 3225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 6600 3300 50  0001 L CNN
+	1    6600 3300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 61107C25
+P 5900 3500
+F 0 "D?" V 5854 3580 50  0000 L CNN
+F 1 "D_Zener" V 5945 3580 50  0000 L CNN
+F 2 "" H 5900 3500 50  0001 C CNN
+F 3 "~" H 5900 3500 50  0001 C CNN
+	1    5900 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 61107DEE
+P 7250 3200
+F 0 "D?" V 7204 3280 50  0000 L CNN
+F 1 "D_Zener" V 7295 3280 50  0000 L CNN
+F 2 "" H 7250 3200 50  0001 C CNN
+F 3 "~" H 7250 3200 50  0001 C CNN
+	1    7250 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 611083FB
+P 5900 3100
+F 0 "R?" H 5970 3146 50  0000 L CNN
+F 1 "R" H 5970 3055 50  0000 L CNN
+F 2 "" V 5830 3100 50  0001 C CNN
+F 3 "~" H 5900 3100 50  0001 C CNN
+	1    5900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3250 5900 3300
+Wire Wire Line
+	5900 2950 5900 2850
+Wire Wire Line
+	5050 2850 5900 2850
+$Comp
+L Device:R R?
+U 1 1 6110B925
+P 6250 3300
+F 0 "R?" V 6043 3300 50  0000 C CNN
+F 1 "R" V 6134 3300 50  0000 C CNN
+F 2 "" V 6180 3300 50  0001 C CNN
+F 3 "~" H 6250 3300 50  0001 C CNN
+	1    6250 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 3300 5900 3300
+Connection ~ 5900 3300
+Wire Wire Line
+	5900 3300 5900 3350
+Wire Wire Line
+	5900 2850 6700 2850
+Wire Wire Line
+	6700 2850 6700 3100
+Connection ~ 5900 2850
+Wire Wire Line
+	7250 2850 6700 2850
+Connection ~ 6700 2850
+Wire Wire Line
+	6700 3600 6700 3500
+Wire Wire Line
+	7600 2850 7250 2850
+Connection ~ 7250 2850
+$Comp
+L Device:R R?
+U 1 1 61115761
+P 7800 3850
+F 0 "R?" H 7870 3896 50  0000 L CNN
+F 1 "R" H 7870 3805 50  0000 L CNN
+F 2 "" V 7730 3850 50  0001 C CNN
+F 3 "~" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 6111576B
+P 7800 4100
+F 0 "#PWR?" H 7800 3900 50  0001 C CNN
+F 1 "GNDPWR" H 7804 3946 50  0000 C CNN
+F 2 "" H 7800 4050 50  0001 C CNN
+F 3 "" H 7800 4050 50  0001 C CNN
+	1    7800 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4100 7800 4000
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 611168C4
+P 5900 3850
+F 0 "#PWR?" H 5900 3650 50  0001 C CNN
+F 1 "GNDPWR" H 5904 3696 50  0000 C CNN
+F 2 "" H 5900 3800 50  0001 C CNN
+F 3 "" H 5900 3800 50  0001 C CNN
+	1    5900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3650 5900 3850
+Wire Wire Line
+	7800 3700 7800 3600
+Wire Wire Line
+	7800 3150 7800 3600
+Connection ~ 7800 3600
+Wire Wire Line
+	6700 3600 7250 3600
+Wire Wire Line
+	7250 3350 7250 3600
+Connection ~ 7250 3600
+Wire Wire Line
+	7250 3600 7800 3600
+Wire Wire Line
+	7250 2850 7250 3050
 Wire Notes Line
-	2800 3600 1600 3600
+	5600 2500 8150 2500
 Wire Notes Line
-	1600 3600 1600 2950
+	8150 4450 5600 4450
 Wire Notes Line
-	1600 2950 2800 2950
+	8150 2500 8150 4450
+Wire Notes Line
+	5600 2500 5600 4450
+Text Notes 5650 4400 0    50   ~ 0
+Protection sur tension
+Text Notes 4350 4400 0    50   ~ 0
+Protection Inversion polarité
+Wire Notes Line
+	5500 4450 4300 4450
+Wire Notes Line
+	5500 2500 5500 4450
+Wire Notes Line
+	4300 2500 4300 4450
+Wire Wire Line
+	8300 2850 8000 2850
+Text Notes 6050 2300 0    50   ~ 0
+TBD PMOS\nZeners\n
 $EndSCHEMATC
