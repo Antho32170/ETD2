@@ -13,16 +13,309 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5600 3750 2    50   Output ~ 0
+Text HLabel 8900 3650 2    50   Output ~ 0
 Ramp
-Text Notes 5650 3950 0    50   ~ 0
-Sortie
+$Comp
+L Amplifier_Operational:LM7332 U?
+U 1 1 610B0C6D
+P 5050 3550
+F 0 "U?" H 5050 3917 50  0000 C CNN
+F 1 "LM7332" H 5050 3826 50  0000 C CNN
+F 2 "" H 5050 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 5050 3550 50  0001 C CNN
+	1    5050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM7332 U?
+U 2 1 610B1F20
+P 7350 3650
+F 0 "U?" H 7350 3283 50  0000 C CNN
+F 1 "LM7332" H 7350 3374 50  0000 C CNN
+F 2 "" H 7350 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 7350 3650 50  0001 C CNN
+	2    7350 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610B3256
+P 3150 4000
+F 0 "#PWR?" H 3150 3750 50  0001 C CNN
+F 1 "GND" H 3155 3827 50  0000 C CNN
+F 2 "" H 3150 4000 50  0001 C CNN
+F 3 "" H 3150 4000 50  0001 C CNN
+	1    3150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 610F0F44
+P 4150 3450
+F 0 "R?" V 3943 3450 50  0000 C CNN
+F 1 "R" V 4034 3450 50  0000 C CNN
+F 2 "" V 4080 3450 50  0001 C CNN
+F 3 "~" H 4150 3450 50  0001 C CNN
+	1    4150 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 610FA18D
+P 5050 3050
+F 0 "R?" V 4843 3050 50  0000 C CNN
+F 1 "R" V 4934 3050 50  0000 C CNN
+F 2 "" V 4980 3050 50  0001 C CNN
+F 3 "~" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 611047CD
+P 6100 3550
+F 0 "R?" V 5893 3550 50  0000 C CNN
+F 1 "R" V 5984 3550 50  0000 C CNN
+F 2 "" V 6030 3550 50  0001 C CNN
+F 3 "~" H 6100 3550 50  0001 C CNN
+	1    6100 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61108B79
+P 3150 3850
+F 0 "R?" H 3080 3804 50  0000 R CNN
+F 1 "R" H 3080 3895 50  0000 R CNN
+F 2 "" V 3080 3850 50  0001 C CNN
+F 3 "~" H 3150 3850 50  0001 C CNN
+	1    3150 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6110CE49
+P 5800 4700
+F 0 "R?" H 5730 4654 50  0000 R CNN
+F 1 "R" H 5730 4745 50  0000 R CNN
+F 2 "" V 5730 4700 50  0001 C CNN
+F 3 "~" H 5800 4700 50  0001 C CNN
+	1    5800 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 3750 7050 3750
+$Comp
+L power:GND #PWR?
+U 1 1 611134C1
+P 5800 4850
+F 0 "#PWR?" H 5800 4600 50  0001 C CNN
+F 1 "GND" H 5805 4677 50  0000 C CNN
+F 2 "" H 5800 4850 50  0001 C CNN
+F 3 "" H 5800 4850 50  0001 C CNN
+	1    5800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 611171B1
+P 7350 3050
+F 0 "C?" V 7098 3050 50  0000 C CNN
+F 1 "C" V 7189 3050 50  0000 C CNN
+F 2 "" H 7388 2900 50  0001 C CNN
+F 3 "~" H 7350 3050 50  0001 C CNN
+	1    7350 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3050 6950 3050
+Wire Wire Line
+	7500 3050 7750 3050
+Wire Wire Line
+	7650 3650 7750 3650
+Wire Wire Line
+	4000 3450 3750 3450
+Wire Wire Line
+	3750 3450 3750 2500
+Wire Wire Line
+	3750 2500 8500 2500
+Wire Wire Line
+	8500 2500 8500 3650
+Connection ~ 8500 3650
+Wire Wire Line
+	8500 3650 8900 3650
+$Comp
+L Amplifier_Operational:LM7332 U?
+U 3 1 610F3585
+P 1250 6950
+AR Path="/60F2F8DD/610F3585" Ref="U?"  Part="3" 
+AR Path="/60F16FAE/610F3585" Ref="U?"  Part="3" 
+F 0 "U?" H 1062 6904 50  0000 R CNN
+F 1 "LM7332" H 1062 6995 50  0000 R CNN
+F 2 "" H 1250 6950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 1250 6950 50  0001 C CNN
+	3    1250 6950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 610F358B
+P 1550 6950
+AR Path="/60F2F8DD/610F358B" Ref="C?"  Part="1" 
+AR Path="/60F16FAE/610F358B" Ref="C?"  Part="1" 
+F 0 "C?" H 1665 6996 50  0000 L CNN
+F 1 "100n" H 1665 6905 50  0000 L CNN
+F 2 "" H 1588 6800 50  0001 C CNN
+F 3 "~" H 1550 6950 50  0001 C CNN
+	1    1550 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6650 1150 6600
+Wire Wire Line
+	1550 6600 1550 6800
+Wire Wire Line
+	1150 7250 1150 7300
+Wire Wire Line
+	1150 7300 1350 7300
+Wire Wire Line
+	1550 7300 1550 7100
+$Comp
+L power:GND #PWR?
+U 1 1 610F3596
+P 1350 7400
+AR Path="/60F2F8DD/610F3596" Ref="#PWR?"  Part="1" 
+AR Path="/60F16FAE/610F3596" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1350 7150 50  0001 C CNN
+F 1 "GND" H 1355 7227 50  0000 C CNN
+F 2 "" H 1350 7400 50  0001 C CNN
+F 3 "" H 1350 7400 50  0001 C CNN
+	1    1350 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7400 1350 7300
+Connection ~ 1350 7300
+Wire Wire Line
+	1350 7300 1550 7300
 Wire Notes Line
-	5500 3650 6000 3650
+	550  6200 550  7700
 Wire Notes Line
-	6000 3650 6000 4050
+	550  7700 2150 7700
 Wire Notes Line
-	6000 4050 5500 4050
+	2150 7700 2150 6200
 Wire Notes Line
-	5500 4050 5500 3650
+	2150 6200 550  6200
+Text Notes 2000 7650 2    49   ~ 0
+Alim. AOP
+Wire Wire Line
+	1150 6600 1350 6600
+$Comp
+L power:VCC #PWR?
+U 1 1 610F35A5
+P 1350 6550
+AR Path="/60F2F8DD/610F35A5" Ref="#PWR?"  Part="1" 
+AR Path="/60F16FAE/610F35A5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1350 6400 50  0001 C CNN
+F 1 "VCC" H 1365 6723 50  0000 C CNN
+F 2 "" H 1350 6550 50  0001 C CNN
+F 3 "" H 1350 6550 50  0001 C CNN
+	1    1350 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6550 1350 6600
+Connection ~ 1350 6600
+Wire Wire Line
+	1350 6600 1550 6600
+Wire Wire Line
+	3150 3600 3150 3650
+Wire Wire Line
+	3150 3650 4750 3650
+Connection ~ 3150 3650
+Wire Wire Line
+	3150 3650 3150 3700
+Wire Wire Line
+	4300 3450 4650 3450
+Wire Wire Line
+	5350 3550 5450 3550
+Wire Wire Line
+	5200 3050 5450 3050
+Wire Wire Line
+	5450 3050 5450 3550
+Connection ~ 5450 3550
+Wire Wire Line
+	5450 3550 5950 3550
+Wire Wire Line
+	4900 3050 4650 3050
+Wire Wire Line
+	4650 3050 4650 3450
+Connection ~ 4650 3450
+Wire Wire Line
+	4650 3450 4750 3450
+Wire Wire Line
+	6950 3550 6950 3050
+Connection ~ 6950 3550
+Wire Wire Line
+	6950 3550 7050 3550
+Wire Wire Line
+	6250 3550 6950 3550
+Wire Wire Line
+	7750 3650 7750 3050
+Connection ~ 7750 3650
+Wire Wire Line
+	7750 3650 8500 3650
+Wire Wire Line
+	5800 4550 5800 4500
+Wire Wire Line
+	5800 4500 6750 4500
+Wire Wire Line
+	6750 3750 6750 4500
+Connection ~ 5800 4500
+Wire Wire Line
+	5800 4500 5800 4450
+$Comp
+L Device:R R?
+U 1 1 6111937D
+P 3150 3450
+F 0 "R?" H 3080 3404 50  0000 R CNN
+F 1 "R" H 3080 3495 50  0000 R CNN
+F 2 "" V 3080 3450 50  0001 C CNN
+F 3 "~" H 3150 3450 50  0001 C CNN
+	1    3150 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6111A906
+P 5800 4300
+F 0 "R?" H 5730 4254 50  0000 R CNN
+F 1 "R" H 5730 4345 50  0000 R CNN
+F 2 "" V 5730 4300 50  0001 C CNN
+F 3 "~" H 5800 4300 50  0001 C CNN
+	1    5800 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6111C574
+P 5800 4150
+F 0 "#PWR?" H 5800 4000 50  0001 C CNN
+F 1 "VCC" H 5815 4323 50  0000 C CNN
+F 2 "" H 5800 4150 50  0001 C CNN
+F 3 "" H 5800 4150 50  0001 C CNN
+	1    5800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6111DAC5
+P 3150 3300
+F 0 "#PWR?" H 3150 3150 50  0001 C CNN
+F 1 "VCC" H 3165 3473 50  0000 C CNN
+F 2 "" H 3150 3300 50  0001 C CNN
+F 3 "" H 3150 3300 50  0001 C CNN
+	1    3150 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

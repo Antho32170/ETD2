@@ -45,17 +45,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 5730 4200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 610C24DF
-P 5800 4850
-F 0 "#PWR?" H 5800 4600 50  0001 C CNN
-F 1 "GND" H 5805 4677 50  0000 C CNN
-F 2 "" H 5800 4850 50  0001 C CNN
-F 3 "" H 5800 4850 50  0001 C CNN
-	1    5800 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 610C511E
 P 5650 3150
@@ -133,4 +122,48 @@ Wire Wire Line
 	5250 4100 4900 4100
 Wire Wire Line
 	4900 4200 5250 4200
+$Comp
+L power:VCC #PWR?
+U 1 1 611208AC
+P 750 7150
+F 0 "#PWR?" H 750 7000 50  0001 C CNN
+F 1 "VCC" H 767 7323 50  0000 C CNN
+F 2 "" H 750 7150 50  0001 C CNN
+F 3 "" H 750 7150 50  0001 C CNN
+	1    750  7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 610C24DF
+P 5800 4850
+F 0 "#PWR?" H 5800 4600 50  0001 C CNN
+F 1 "GND" H 5805 4677 50  0000 C CNN
+F 2 "" H 5800 4850 50  0001 C CNN
+F 3 "" H 5800 4850 50  0001 C CNN
+	1    5800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61122566
+P 750 7450
+F 0 "#PWR?" H 750 7200 50  0001 C CNN
+F 1 "GND" H 755 7277 50  0000 C CNN
+F 2 "" H 750 7450 50  0001 C CNN
+F 3 "" H 750 7450 50  0001 C CNN
+	1    750  7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6112299E
+P 750 7300
+F 0 "C?" H 865 7346 50  0000 L CNN
+F 1 "100n" H 865 7255 50  0000 L CNN
+F 2 "" H 788 7150 50  0001 C CNN
+F 3 "~" H 750 7300 50  0001 C CNN
+	1    750  7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
