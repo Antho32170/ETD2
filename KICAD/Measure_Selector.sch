@@ -44,14 +44,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 5730 4200 50  0001 C CNN
 	1    5750 4000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4900 3800 5225 3800
-Wire Wire Line
-	4900 3900 5225 3900
-Wire Wire Line
-	4900 4100 5225 4100
-Wire Wire Line
-	4900 4200 5225 4200
 $Comp
 L power:GND #PWR?
 U 1 1 610C24DF
@@ -133,4 +125,12 @@ Wire Wire Line
 	5250 4400 4850 4400
 Wire Wire Line
 	5250 4500 4850 4500
+Wire Wire Line
+	5250 3800 4900 3800
+Wire Wire Line
+	4900 3900 5250 3900
+Wire Wire Line
+	5250 4100 4900 4100
+Wire Wire Line
+	4900 4200 5250 4200
 $EndSCHEMATC

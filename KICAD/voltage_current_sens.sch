@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 15
+Sheet 3 15
 Title "SESAME"
 Date ""
 Rev ""
@@ -97,6 +97,8 @@ $Comp
 L Device:R R?
 U 1 1 610DBB97
 P 7000 3150
+AR Path="/60F171CE/610DBB97" Ref="R?"  Part="1" 
+AR Path="/60F19D5B/610DBB97" Ref="R?"  Part="1" 
 F 0 "R?" H 7070 3196 50  0000 L CNN
 F 1 "90k" H 7070 3105 50  0000 L CNN
 F 2 "" V 6930 3150 50  0001 C CNN
@@ -108,6 +110,8 @@ $Comp
 L Device:R R?
 U 1 1 610DC636
 P 7000 3550
+AR Path="/60F171CE/610DC636" Ref="R?"  Part="1" 
+AR Path="/60F19D5B/610DC636" Ref="R?"  Part="1" 
 F 0 "R?" H 7070 3596 50  0000 L CNN
 F 1 "10k" H 7070 3505 50  0000 L CNN
 F 2 "" V 6930 3550 50  0001 C CNN
@@ -133,6 +137,8 @@ $Comp
 L power:GND #PWR?
 U 1 1 610DEA27
 P 7000 3750
+AR Path="/60F171CE/610DEA27" Ref="#PWR?"  Part="1" 
+AR Path="/60F19D5B/610DEA27" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7000 3500 50  0001 C CNN
 F 1 "GND" H 7005 3577 50  0000 C CNN
 F 2 "" H 7000 3750 50  0001 C CNN
@@ -146,4 +152,94 @@ Text Notes 7300 3850 0    50   ~ 0
 50V -> 5V\nRatio 10:1
 Text Notes 7300 3650 0    50   ~ 0
 10kΩ @ 50v -> 5mA\n100kΩ @ 50v -> 0.5mA
+$Comp
+L Amplifier_Operational:MCP602 U?
+U 1 1 611928B4
+P 4800 4900
+AR Path="/60F19D5B/611928B4" Ref="U?"  Part="1" 
+AR Path="/60F171CE/611928B4" Ref="U?"  Part="1" 
+F 0 "U?" H 4800 5267 50  0000 C CNN
+F 1 "MCP602" H 4800 5176 50  0000 C CNN
+F 2 "" H 4800 4900 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 4800 4900 50  0001 C CNN
+	1    4800 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61192E87
+P 4800 4550
+F 0 "R?" V 5007 4550 50  0000 C CNN
+F 1 "10k" V 4916 4550 50  0000 C CNN
+F 2 "" V 4730 4550 50  0001 C CNN
+F 3 "~" H 4800 4550 50  0001 C CNN
+	1    4800 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6119509F
+P 4100 4800
+F 0 "R?" V 4307 4800 50  0000 C CNN
+F 1 "10k" V 4216 4800 50  0000 C CNN
+F 2 "" V 4030 4800 50  0001 C CNN
+F 3 "~" H 4100 4800 50  0001 C CNN
+	1    4100 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61196067
+P 4100 5000
+F 0 "R?" V 4307 5000 50  0000 C CNN
+F 1 "10k" V 4216 5000 50  0000 C CNN
+F 2 "" V 4030 5000 50  0001 C CNN
+F 3 "~" H 4100 5000 50  0001 C CNN
+	1    4100 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 5000 4450 5000
+Wire Wire Line
+	4500 4800 4450 4800
+Wire Wire Line
+	4650 4550 4450 4550
+Wire Wire Line
+	4450 4550 4450 4800
+Connection ~ 4450 4800
+Wire Wire Line
+	4450 4800 4250 4800
+Wire Wire Line
+	4950 4550 5200 4550
+Wire Wire Line
+	5200 4550 5200 4900
+Wire Wire Line
+	5200 4900 5100 4900
+$Comp
+L Device:R R?
+U 1 1 6119C613
+P 4450 5350
+F 0 "R?" H 4520 5396 50  0000 L CNN
+F 1 "R" H 4520 5305 50  0000 L CNN
+F 2 "" V 4380 5350 50  0001 C CNN
+F 3 "~" H 4450 5350 50  0001 C CNN
+	1    4450 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 5200 4450 5000
+Connection ~ 4450 5000
+Wire Wire Line
+	4450 5000 4500 5000
+$Comp
+L power:GND #PWR?
+U 1 1 611A135F
+P 4450 5500
+F 0 "#PWR?" H 4450 5250 50  0001 C CNN
+F 1 "GND" H 4455 5327 50  0000 C CNN
+F 2 "" H 4450 5500 50  0001 C CNN
+F 3 "" H 4450 5500 50  0001 C CNN
+	1    4450 5500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
