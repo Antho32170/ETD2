@@ -483,21 +483,17 @@ Text Label 9050 2800 2    50   ~ 0
 Dir
 Wire Wire Line
 	9050 2800 8700 2800
-Text Notes 5550 1150 0    100  ~ 20
+Text Notes 5450 900  0    100  ~ 20
 TODO
-Text Notes 3100 4000 0    100  ~ 20
+Text Notes 3250 3650 0    100  ~ 20
 Rework needed
 Text Notes 3500 5900 0    100  ~ 20
 Rework needed
-Text Notes 3800 7150 0    100  ~ 20
-TODO
-Text Notes 6150 5550 0    100  ~ 20
-TODO
 Text Notes 10650 5550 0    100  ~ 20
 Ok
 Text Notes 8500 5550 0    100  ~ 20
 Ok
-Text Notes 6300 2150 0    100  ~ 20
+Text Notes 5550 2150 0    100  ~ 20
 Ok
 Text Notes 8450 2150 0    100  ~ 20
 Ok
@@ -507,11 +503,9 @@ Text Notes 3050 2100 0    100  ~ 20
 A finir choix aop
 Text Notes 2500 2150 0    100  ~ 20
 Ok
-Text Notes 6000 4400 0    100  ~ 20
-TODO
 Text Notes 900  5200 0    100  ~ 20
 TODO
-Text Notes 5500 1250 0    50   ~ 10
+Text Notes 5400 1000 0    50   ~ 10
 Rails d’alim 7V
 Wire Wire Line
 	4950 3550 4750 3550
@@ -547,4 +541,10 @@ Wire Wire Line
 	6450 3650 6700 3650
 Wire Wire Line
 	6700 3650 6700 2700
+Text Notes 5300 5750 0    100  ~ 20
+Rework needed
+Text Notes 3500 7200 0    100  ~ 20
+Rework needed
+Text Notes 5150 4250 0    100  ~ 20
+Rework needed
 $EndSCHEMATC

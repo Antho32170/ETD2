@@ -13,9 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5300 3550 0    50   Input ~ 0
+Text HLabel 4700 3300 0    50   Input ~ 0
 Measure_Selected
-Text HLabel 5300 3400 0    50   Input ~ 0
+Text HLabel 2950 4000 0    50   Input ~ 0
 Ext_Consign
 $Comp
 L Sesame:SESAME_SHIELD SLD1
@@ -78,26 +78,284 @@ Wire Wire Line
 NoConn ~ 1200 1250
 Wire Wire Line
 	1200 1250 1100 1250
-Text HLabel 5850 3450 2    50   Output ~ 0
+Text HLabel 7500 3400 2    50   Output ~ 0
 Feedback
-Text Notes 4850 3750 0    50   ~ 0
-Entrées
-Text Notes 5950 3650 0    50   ~ 0
-Sortie
+$Comp
+L Amplifier_Operational:MCP602 U?
+U 1 1 613FF079
+P 5600 3400
+F 0 "U?" H 5600 3033 50  0000 C CNN
+F 1 "MCP602" H 5600 3124 50  0000 C CNN
+F 2 "" H 5600 3400 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61401A0F
+P 5050 3300
+F 0 "R?" V 4843 3300 50  0000 C CNN
+F 1 "R" V 4934 3300 50  0000 C CNN
+F 2 "" V 4980 3300 50  0001 C CNN
+F 3 "~" H 5050 3300 50  0001 C CNN
+	1    5050 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 6141B2C0
+P 1500 4150
+F 0 "#PWR?" H 1500 4000 50  0001 C CNN
+F 1 "+7V" H 1515 4323 50  0000 C CNN
+F 2 "" H 1500 4150 50  0001 C CNN
+F 3 "" H 1500 4150 50  0001 C CNN
+	1    1500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 6141B2C6
+P 1500 3350
+F 0 "#PWR?" H 1500 3200 50  0001 C CNN
+F 1 "+7V" H 1515 3523 50  0000 C CNN
+F 2 "" H 1500 3350 50  0001 C CNN
+F 3 "" H 1500 3350 50  0001 C CNN
+	1    1500 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3500 3300 3500
+Wire Wire Line
+	1500 4500 1500 4450
+Connection ~ 1500 4500
+Wire Wire Line
+	2050 3750 3300 3750
+Wire Wire Line
+	2050 4500 1500 4500
+Wire Wire Line
+	2050 3750 2050 4500
+Wire Wire Line
+	1500 4550 1500 4500
+$Comp
+L Device:R R?
+U 1 1 6141B2D3
+P 1500 4700
+F 0 "R?" H 1570 4746 50  0000 L CNN
+F 1 "R" H 1570 4655 50  0000 L CNN
+F 2 "" V 1430 4700 50  0001 C CNN
+F 3 "~" H 1500 4700 50  0001 C CNN
+	1    1500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6141B2D9
+P 1500 4300
+F 0 "R?" H 1570 4346 50  0000 L CNN
+F 1 "R" H 1570 4255 50  0000 L CNN
+F 2 "" V 1430 4300 50  0001 C CNN
+F 3 "~" H 1500 4300 50  0001 C CNN
+	1    1500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3750 3900 4000
+Connection ~ 3900 3750
+Wire Wire Line
+	3900 3500 3900 3750
+$Comp
+L Device:Jumper JP?
+U 1 1 6141B2EB
+P 3600 4000
+F 0 "JP?" H 3600 4173 50  0000 C CNN
+F 1 "Jumper" H 3600 4173 50  0001 C CNN
+F 2 "" H 3600 4000 50  0001 C CNN
+F 3 "~" H 3600 4000 50  0001 C CNN
+	1    3600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 6141B2F1
+P 3600 3750
+F 0 "JP?" H 3600 3923 50  0000 C CNN
+F 1 "Jumper" H 3600 3923 50  0001 C CNN
+F 2 "" H 3600 3750 50  0001 C CNN
+F 3 "~" H 3600 3750 50  0001 C CNN
+	1    3600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 6141B2F7
+P 3600 3500
+F 0 "JP?" H 3600 3673 50  0000 C CNN
+F 1 "Jumper" H 3600 3673 50  0001 C CNN
+F 2 "" H 3600 3500 50  0001 C CNN
+F 3 "~" H 3600 3500 50  0001 C CNN
+	1    3600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6141B2FD
+P 1500 3650
+F 0 "#PWR?" H 1500 3400 50  0001 C CNN
+F 1 "GND" H 1505 3477 50  0000 C CNN
+F 2 "" H 1500 3650 50  0001 C CNN
+F 3 "" H 1500 3650 50  0001 C CNN
+	1    1500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 6141B303
+P 1500 3500
+F 0 "RV?" H 1431 3546 50  0000 R CNN
+F 1 "R_POT" H 1431 3455 50  0000 R CNN
+F 2 "" H 1500 3500 50  0001 C CNN
+F 3 "~" H 1500 3500 50  0001 C CNN
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6141B309
+P 1500 4850
+F 0 "#PWR?" H 1500 4600 50  0001 C CNN
+F 1 "GND" H 1505 4677 50  0000 C CNN
+F 2 "" H 1500 4850 50  0001 C CNN
+F 3 "" H 1500 4850 50  0001 C CNN
+	1    1500 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4000 3300 4000
+Wire Wire Line
+	5300 3300 5250 3300
+$Comp
+L Device:R R?
+U 1 1 614317CF
+P 5450 2850
+F 0 "R?" V 5243 2850 50  0000 C CNN
+F 1 "R" V 5334 2850 50  0000 C CNN
+F 2 "" V 5380 2850 50  0001 C CNN
+F 3 "~" H 5450 2850 50  0001 C CNN
+	1    5450 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 2850 5250 3300
+Connection ~ 5250 3300
+Wire Wire Line
+	5250 3300 5200 3300
+Wire Wire Line
+	3900 3500 5300 3500
+Connection ~ 3900 3500
+$Comp
+L Device:C C?
+U 1 1 6143D584
+P 5600 2500
+F 0 "C?" V 5348 2500 50  0000 C CNN
+F 1 "C" V 5439 2500 50  0000 C CNN
+F 2 "" H 5638 2350 50  0001 C CNN
+F 3 "~" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6143E2B5
+P 5750 2850
+F 0 "C?" V 5498 2850 50  0000 C CNN
+F 1 "C" V 5589 2850 50  0000 C CNN
+F 2 "" H 5788 2700 50  0001 C CNN
+F 3 "~" H 5750 2850 50  0001 C CNN
+	1    5750 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2850 5250 2850
+Wire Wire Line
+	5250 2850 5250 2500
+Wire Wire Line
+	5250 2500 5450 2500
+Connection ~ 5250 2850
+Wire Wire Line
+	5750 2500 6000 2500
+Wire Wire Line
+	6000 2500 6000 2850
+Wire Wire Line
+	5900 3400 6000 3400
+Wire Wire Line
+	5900 2850 6000 2850
+Connection ~ 6000 2850
+Wire Wire Line
+	6000 2850 6000 3400
+$Comp
+L Device:D_Zener D?
+U 1 1 61442454
+P 6900 3650
+F 0 "D?" V 6854 3730 50  0000 L CNN
+F 1 "D_Zener" V 6945 3730 50  0000 L CNN
+F 2 "" H 6900 3650 50  0001 C CNN
+F 3 "~" H 6900 3650 50  0001 C CNN
+	1    6900 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61442D7B
+P 6650 3400
+F 0 "R?" V 6443 3400 50  0000 C CNN
+F 1 "R" V 6534 3400 50  0000 C CNN
+F 2 "" V 6580 3400 50  0001 C CNN
+F 3 "~" H 6650 3400 50  0001 C CNN
+	1    6650 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 3400 6000 3400
+Connection ~ 6000 3400
+Wire Wire Line
+	6900 3500 6900 3400
+Wire Wire Line
+	6800 3400 6900 3400
+Connection ~ 6900 3400
+$Comp
+L power:GND #PWR?
+U 1 1 614457E8
+P 6900 3800
+F 0 "#PWR?" H 6900 3550 50  0001 C CNN
+F 1 "GND" H 6905 3627 50  0000 C CNN
+F 2 "" H 6900 3800 50  0001 C CNN
+F 3 "" H 6900 3800 50  0001 C CNN
+	1    6900 3800
+	1    0    0    -1  
+$EndComp
+Text Notes 5350 3750 0    50   ~ 0
+contre-réaction PD
 Wire Notes Line
-	6300 3350 6300 3700
+	4800 2150 6150 2150
 Wire Notes Line
-	6300 3700 5800 3700
+	6150 2150 6150 3800
 Wire Notes Line
-	5800 3700 5800 3350
+	6150 3800 4800 3800
 Wire Notes Line
-	5800 3350 6300 3350
+	4800 2150 4800 3800
+Wire Wire Line
+	4700 3300 4900 3300
+Text Notes 6800 4150 0    50   ~ 0
+Ecretage 5.1v
 Wire Notes Line
-	5400 3300 4500 3300
+	7350 3100 7350 4200
+Wire Wire Line
+	6900 3400 7500 3400
 Wire Notes Line
-	4500 3300 4500 3800
+	6350 4200 6350 3100
 Wire Notes Line
-	4500 3800 5400 3800
+	6350 3100 7350 3100
 Wire Notes Line
-	5400 3800 5400 3300
+	6350 4200 7350 4200
 $EndSCHEMATC

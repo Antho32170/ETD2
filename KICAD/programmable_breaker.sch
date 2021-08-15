@@ -45,17 +45,6 @@ Text HLabel 10350 1900 2    50   Output ~ 0
 Over_UI_Protection
 $Comp
 L Device:R R?
-U 1 1 610BE151
-P 2800 3950
-F 0 "R?" V 3000 3950 50  0000 C CNN
-F 1 "R" V 2900 3950 50  0000 C CNN
-F 2 "" V 2730 3950 50  0001 C CNN
-F 3 "~" H 2800 3950 50  0001 C CNN
-	1    2800 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 610C0A69
 P 4350 3850
 F 0 "R?" V 4557 3850 50  0000 C CNN
@@ -232,21 +221,8 @@ F 3 "" H 4850 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4550 3850 4500 3850
-$Comp
-L Amplifier_Operational:LM7332 U?
-U 2 1 610E61D7
-P 3800 3850
-F 0 "U?" H 3800 3483 50  0000 C CNN
-F 1 "LM7332" H 3800 3574 50  0000 C CNN
-F 2 "" H 3800 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 3800 3850 50  0001 C CNN
-	2    3800 3850
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4200 3850 4100 3850
-Wire Wire Line
-	3500 3950 3350 3950
 $Comp
 L Device:C C?
 U 1 1 610FF241
@@ -256,17 +232,6 @@ F 1 "10n" H 8415 2555 50  0000 L CNN
 F 2 "" H 8338 2450 50  0001 C CNN
 F 3 "~" H 8300 2600 50  0001 C CNN
 	1    8300 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 610FFE4C
-P 3350 4250
-F 0 "C?" H 3465 4296 50  0000 L CNN
-F 1 "C" H 3465 4205 50  0000 L CNN
-F 2 "" H 3388 4100 50  0001 C CNN
-F 3 "~" H 3350 4250 50  0001 C CNN
-	1    3350 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -280,24 +245,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 1350 6800 50  0001 C CNN
 	3    1350 6800
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	3350 3950 3350 4100
-Connection ~ 3350 3950
-Wire Wire Line
-	3350 3950 2950 3950
-$Comp
-L power:GND #PWR05
-U 1 1 61108B4B
-P 3350 4500
-F 0 "#PWR05" H 3350 4250 50  0001 C CNN
-F 1 "GND" H 3355 4327 50  0000 C CNN
-F 2 "" H 3350 4500 50  0001 C CNN
-F 3 "" H 3350 4500 50  0001 C CNN
-	1    3350 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 4400 3350 4500
 $Comp
 L power:GND #PWR012
 U 1 1 6110DB40
@@ -401,80 +348,6 @@ Wire Wire Line
 	5800 3200 6600 3200
 Wire Wire Line
 	6600 2550 6600 3200
-$Comp
-L power:GND #PWR04
-U 1 1 6125803A
-P 950 4600
-F 0 "#PWR04" H 950 4350 50  0001 C CNN
-F 1 "GND" H 955 4427 50  0000 C CNN
-F 2 "" H 950 4600 50  0001 C CNN
-F 3 "" H 950 4600 50  0001 C CNN
-	1    950  4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV?
-U 1 1 6125804C
-P 950 3250
-F 0 "RV?" H 881 3296 50  0000 R CNN
-F 1 "R_POT" H 881 3205 50  0000 R CNN
-F 2 "" H 950 3250 50  0001 C CNN
-F 3 "~" H 950 3250 50  0001 C CNN
-	1    950  3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 61258054
-P 950 3400
-F 0 "#PWR02" H 950 3150 50  0001 C CNN
-F 1 "GND" H 955 3227 50  0000 C CNN
-F 2 "" H 950 3400 50  0001 C CNN
-F 3 "" H 950 3400 50  0001 C CNN
-	1    950  3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP?
-U 1 1 6125805A
-P 3050 3250
-F 0 "JP?" H 3050 3423 50  0000 C CNN
-F 1 "Jumper" H 3050 3423 50  0001 C CNN
-F 2 "" H 3050 3250 50  0001 C CNN
-F 3 "~" H 3050 3250 50  0001 C CNN
-	1    3050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP?
-U 1 1 61258060
-P 3050 3500
-F 0 "JP?" H 3050 3673 50  0000 C CNN
-F 1 "Jumper" H 3050 3673 50  0001 C CNN
-F 2 "" H 3050 3500 50  0001 C CNN
-F 3 "~" H 3050 3500 50  0001 C CNN
-	1    3050 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper JP?
-U 1 1 61258066
-P 3050 3750
-F 0 "JP?" H 3050 3923 50  0000 C CNN
-F 1 "Jumper" H 3050 3923 50  0001 C CNN
-F 2 "" H 3050 3750 50  0001 C CNN
-F 3 "~" H 3050 3750 50  0001 C CNN
-	1    3050 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 3750 3500 3750
-Wire Wire Line
-	3350 3250 3350 3500
-Connection ~ 3350 3750
-Connection ~ 3350 3500
-Wire Wire Line
-	3350 3500 3350 3750
 Wire Wire Line
 	4850 3550 4850 3650
 Text Notes 5200 4700 2    49   ~ 0
@@ -537,56 +410,7 @@ Wire Notes Line
 Wire Notes Line
 	5900 950  5900 3400
 Wire Notes Line
-	2500 2950 5250 2950
-Wire Notes Line
 	5250 2950 5250 4750
-Wire Notes Line
-	5250 4750 2500 4750
-Wire Notes Line
-	2500 4750 2500 2950
-Wire Wire Line
-	2400 3750 2750 3750
-Wire Wire Line
-	2400 3950 2650 3950
-Text HLabel 2400 3950 0    50   Input ~ 0
-Current_Sens
-Text HLabel 2400 3750 0    50   Input ~ 0
-Current_Thres
-$Comp
-L Device:R R?
-U 1 1 611A5536
-P 950 4050
-F 0 "R?" H 1020 4096 50  0000 L CNN
-F 1 "R" H 1020 4005 50  0000 L CNN
-F 2 "" V 880 4050 50  0001 C CNN
-F 3 "~" H 950 4050 50  0001 C CNN
-	1    950  4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 611A6101
-P 950 4450
-F 0 "R?" H 1020 4496 50  0000 L CNN
-F 1 "R" H 1020 4405 50  0000 L CNN
-F 2 "" V 880 4450 50  0001 C CNN
-F 3 "~" H 950 4450 50  0001 C CNN
-	1    950  4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  4300 950  4250
-Wire Wire Line
-	1500 3500 1500 4250
-Wire Wire Line
-	1500 4250 950  4250
-Wire Wire Line
-	1500 3500 2750 3500
-Connection ~ 950  4250
-Wire Wire Line
-	950  4250 950  4200
-Wire Wire Line
-	1100 3250 2750 3250
 $Comp
 L Device:R R?
 U 1 1 611CE01D
@@ -905,6 +729,17 @@ F 3 "" H 950 1800 50  0001 C CNN
 $EndComp
 $Comp
 L Sesame:+7V #PWR?
+U 1 1 6129D19F
+P 950 3900
+F 0 "#PWR?" H 950 3750 50  0001 C CNN
+F 1 "+7V" H 965 4073 50  0000 C CNN
+F 2 "" H 950 3900 50  0001 C CNN
+F 3 "" H 950 3900 50  0001 C CNN
+	1    950  3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
 U 1 1 6129C6FF
 P 950 3100
 F 0 "#PWR?" H 950 2950 50  0001 C CNN
@@ -914,15 +749,180 @@ F 3 "" H 950 3100 50  0001 C CNN
 	1    950  3100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1100 3250 2750 3250
+Wire Wire Line
+	950  4250 950  4200
+Connection ~ 950  4250
+Wire Wire Line
+	1500 3500 2750 3500
+Wire Wire Line
+	1500 4250 950  4250
+Wire Wire Line
+	1500 3500 1500 4250
+Wire Wire Line
+	950  4300 950  4250
 $Comp
-L Sesame:+7V #PWR?
-U 1 1 6129D19F
-P 950 3900
-F 0 "#PWR?" H 950 3750 50  0001 C CNN
-F 1 "+7V" H 965 4073 50  0000 C CNN
-F 2 "" H 950 3900 50  0001 C CNN
-F 3 "" H 950 3900 50  0001 C CNN
-	1    950  3900
+L Device:R R?
+U 1 1 611A6101
+P 950 4450
+F 0 "R?" H 1020 4496 50  0000 L CNN
+F 1 "R" H 1020 4405 50  0000 L CNN
+F 2 "" V 880 4450 50  0001 C CNN
+F 3 "~" H 950 4450 50  0001 C CNN
+	1    950  4450
 	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 611A5536
+P 950 4050
+F 0 "R?" H 1020 4096 50  0000 L CNN
+F 1 "R" H 1020 4005 50  0000 L CNN
+F 2 "" V 880 4050 50  0001 C CNN
+F 3 "~" H 950 4050 50  0001 C CNN
+	1    950  4050
+	1    0    0    -1  
+$EndComp
+Text HLabel 2400 3750 0    50   Input ~ 0
+Current_Thres
+Text HLabel 2400 3950 0    50   Input ~ 0
+Current_Sens
+Wire Wire Line
+	2400 3950 2650 3950
+Wire Wire Line
+	2400 3750 2750 3750
+Wire Notes Line
+	2500 4750 2500 2950
+Wire Notes Line
+	5250 4750 2500 4750
+Wire Notes Line
+	2500 2950 5250 2950
+Wire Wire Line
+	3350 3500 3350 3750
+Connection ~ 3350 3500
+Connection ~ 3350 3750
+Wire Wire Line
+	3350 3250 3350 3500
+Wire Wire Line
+	3350 3750 3500 3750
+$Comp
+L Device:Jumper JP?
+U 1 1 61258066
+P 3050 3750
+F 0 "JP?" H 3050 3923 50  0000 C CNN
+F 1 "Jumper" H 3050 3923 50  0001 C CNN
+F 2 "" H 3050 3750 50  0001 C CNN
+F 3 "~" H 3050 3750 50  0001 C CNN
+	1    3050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 61258060
+P 3050 3500
+F 0 "JP?" H 3050 3673 50  0000 C CNN
+F 1 "Jumper" H 3050 3673 50  0001 C CNN
+F 2 "" H 3050 3500 50  0001 C CNN
+F 3 "~" H 3050 3500 50  0001 C CNN
+	1    3050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 6125805A
+P 3050 3250
+F 0 "JP?" H 3050 3423 50  0000 C CNN
+F 1 "Jumper" H 3050 3423 50  0001 C CNN
+F 2 "" H 3050 3250 50  0001 C CNN
+F 3 "~" H 3050 3250 50  0001 C CNN
+	1    3050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61258054
+P 950 3400
+F 0 "#PWR02" H 950 3150 50  0001 C CNN
+F 1 "GND" H 955 3227 50  0000 C CNN
+F 2 "" H 950 3400 50  0001 C CNN
+F 3 "" H 950 3400 50  0001 C CNN
+	1    950  3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 6125804C
+P 950 3250
+F 0 "RV?" H 881 3296 50  0000 R CNN
+F 1 "R_POT" H 881 3205 50  0000 R CNN
+F 2 "" H 950 3250 50  0001 C CNN
+F 3 "~" H 950 3250 50  0001 C CNN
+	1    950  3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6125803A
+P 950 4600
+F 0 "#PWR04" H 950 4350 50  0001 C CNN
+F 1 "GND" H 955 4427 50  0000 C CNN
+F 2 "" H 950 4600 50  0001 C CNN
+F 3 "" H 950 4600 50  0001 C CNN
+	1    950  4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4400 3350 4500
+$Comp
+L power:GND #PWR05
+U 1 1 61108B4B
+P 3350 4500
+F 0 "#PWR05" H 3350 4250 50  0001 C CNN
+F 1 "GND" H 3355 4327 50  0000 C CNN
+F 2 "" H 3350 4500 50  0001 C CNN
+F 3 "" H 3350 4500 50  0001 C CNN
+	1    3350 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3950 2950 3950
+Connection ~ 3350 3950
+Wire Wire Line
+	3350 3950 3350 4100
+$Comp
+L Device:C C?
+U 1 1 610FFE4C
+P 3350 4250
+F 0 "C?" H 3465 4296 50  0000 L CNN
+F 1 "C" H 3465 4205 50  0000 L CNN
+F 2 "" H 3388 4100 50  0001 C CNN
+F 3 "~" H 3350 4250 50  0001 C CNN
+	1    3350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3950 3350 3950
+$Comp
+L Amplifier_Operational:LM7332 U?
+U 2 1 610E61D7
+P 3800 3850
+F 0 "U?" H 3800 3483 50  0000 C CNN
+F 1 "LM7332" H 3800 3574 50  0000 C CNN
+F 2 "" H 3800 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 3800 3850 50  0001 C CNN
+	2    3800 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 610BE151
+P 2800 3950
+F 0 "R?" V 3000 3950 50  0000 C CNN
+F 1 "R" V 2900 3950 50  0000 C CNN
+F 2 "" V 2730 3950 50  0001 C CNN
+F 3 "~" H 2800 3950 50  0001 C CNN
+	1    2800 3950
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

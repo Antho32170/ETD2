@@ -336,4 +336,14 @@ F 3 "" H 3150 3300 50  0001 C CNN
 	1    3150 3300
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	2850 2950 3700 2950
+Wire Notes Line
+	3700 2950 3700 5800
+Wire Notes Line
+	3700 5800 2850 5800
+Wire Notes Line
+	2850 5800 2850 2950
+Text Notes 2950 5750 0    50   ~ 10
+double offset ?
 $EndSCHEMATC

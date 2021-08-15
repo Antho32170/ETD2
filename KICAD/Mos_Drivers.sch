@@ -13,34 +13,24 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7400 2850 2    50   Output ~ 0
+Text HLabel 7550 2750 2    50   Output ~ 0
 VG_LP
-Text HLabel 9200 3800 2    50   Output ~ 0
+Text HLabel 7300 4050 2    50   Output ~ 0
 VG_RP
-Text HLabel 9300 3600 2    50   Output ~ 0
+Text HLabel 7300 3850 2    50   Output ~ 0
 VG_RS
-Text HLabel 3950 2250 0    50   Input ~ 0
+Text HLabel 3700 2250 0    50   Input ~ 0
 Driver_LS
-Text HLabel 3950 2350 0    50   Input ~ 0
+Text HLabel 3700 2350 0    50   Input ~ 0
 Driver_LP
-Text HLabel 3100 4750 0    50   Input ~ 0
+Text HLabel 4300 3800 0    50   Input ~ 0
 Driver_RP
-Text HLabel 3100 4850 0    50   Input ~ 0
+Text HLabel 4300 3900 0    50   Input ~ 0
 Driver_RS
-Text HLabel 3950 2450 0    50   Input ~ 0
+Text HLabel 3700 2450 0    50   Input ~ 0
 Enable
-Text Notes 9200 4050 0    50   ~ 0
-Sorties
-Wire Notes Line
-	9150 3500 9550 3500
-Wire Notes Line
-	9550 3500 9550 4100
-Wire Notes Line
-	9550 4100 9150 4100
-Wire Notes Line
-	9150 4100 9150 3500
-Text Notes 4300 6000 0    50   ~ 10
-https://www.microchip.com/en-us/parametric-search.html/385 MCP14628
+Text Notes 3350 4900 0    100  ~ 20
+Candidats potentiels:\nMCP14628\nhttps://www.microchip.com/en-us/parametric-search.html/385\nUCC27284
 $Comp
 L Driver_FET:UCC27714D U?
 U 1 1 612B940B
@@ -66,34 +56,34 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 612BC387
-P 800 7200
-F 0 "C?" H 915 7246 50  0000 L CNN
-F 1 "100n" H 915 7155 50  0000 L CNN
-F 2 "" H 838 7050 50  0001 C CNN
-F 3 "~" H 800 7200 50  0001 C CNN
-	1    800  7200
+P 850 7100
+F 0 "C?" H 965 7146 50  0000 L CNN
+F 1 "100n" H 965 7055 50  0000 L CNN
+F 2 "" H 888 6950 50  0001 C CNN
+F 3 "~" H 850 7100 50  0001 C CNN
+	1    850  7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Sesame:+7V #PWR?
 U 1 1 612BCBD1
-P 800 7050
-F 0 "#PWR?" H 800 6900 50  0001 C CNN
-F 1 "+7V" H 815 7223 50  0000 C CNN
-F 2 "" H 800 7050 50  0001 C CNN
-F 3 "" H 800 7050 50  0001 C CNN
-	1    800  7050
+P 850 6950
+F 0 "#PWR?" H 850 6800 50  0001 C CNN
+F 1 "+7V" H 865 7123 50  0000 C CNN
+F 2 "" H 850 6950 50  0001 C CNN
+F 3 "" H 850 6950 50  0001 C CNN
+	1    850  6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 612BD1C9
-P 800 7350
-F 0 "#PWR?" H 800 7100 50  0001 C CNN
-F 1 "GND" H 805 7177 50  0000 C CNN
-F 2 "" H 800 7350 50  0001 C CNN
-F 3 "" H 800 7350 50  0001 C CNN
-	1    800  7350
+P 850 7250
+F 0 "#PWR?" H 850 7000 50  0001 C CNN
+F 1 "GND" H 855 7077 50  0000 C CNN
+F 2 "" H 850 7250 50  0001 C CNN
+F 3 "" H 850 7250 50  0001 C CNN
+	1    850  7250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -108,11 +98,11 @@ F 3 "" H 4450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 2350 4050 2350
+	3700 2350 4050 2350
 Wire Wire Line
-	4050 2250 3950 2250
+	4050 2250 3700 2250
 Wire Wire Line
-	3950 2450 4050 2450
+	3700 2450 4050 2450
 $Comp
 L Device:D_Schottky D?
 U 1 1 612C1457
@@ -164,12 +154,12 @@ Wire Wire Line
 	4850 2450 5500 2450
 Connection ~ 5700 2750
 Connection ~ 5700 2150
-Text HLabel 7400 2050 2    50   Output ~ 0
+Text HLabel 7550 2150 2    50   Output ~ 0
 VG_LS
-Text HLabel 7400 2450 2    50   UnSpc ~ 0
+Text HLabel 7550 2450 2    50   UnSpc ~ 0
 VS_L
 Connection ~ 5700 2550
-Text HLabel 9400 4300 2    50   UnSpc ~ 0
+Text HLabel 7300 3950 2    50   UnSpc ~ 0
 VS_R
 $Comp
 L Device:C C?
@@ -231,8 +221,6 @@ $EndComp
 Wire Wire Line
 	7100 2150 7300 2150
 Wire Wire Line
-	7300 2150 7300 2050
-Wire Wire Line
 	7300 1950 7250 1950
 Wire Wire Line
 	6650 1950 6600 1950
@@ -276,8 +264,6 @@ $EndComp
 Wire Wire Line
 	7100 2950 7300 2950
 Wire Wire Line
-	7300 2950 7300 2850
-Wire Wire Line
 	7300 2750 7250 2750
 Wire Wire Line
 	6650 2750 6600 2750
@@ -286,15 +272,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 2950 6800 2950
 Wire Wire Line
-	7400 2050 7300 2050
-Connection ~ 7300 2050
-Wire Wire Line
-	7300 2050 7300 1950
-Wire Wire Line
-	7400 2850 7300 2850
-Connection ~ 7300 2850
-Wire Wire Line
-	7300 2850 7300 2750
+	7550 2750 7300 2750
 Wire Wire Line
 	5700 2750 6600 2750
 Connection ~ 6600 2750
@@ -306,5 +284,68 @@ Wire Wire Line
 Wire Wire Line
 	6200 2450 6200 2550
 Wire Wire Line
-	6200 2450 7400 2450
+	6200 2450 7550 2450
+Text HLabel 4300 4000 0    50   Input ~ 0
+Enable
+Wire Notes Line
+	3800 1600 3800 3450
+Wire Notes Line
+	3800 3450 7450 3450
+Wire Notes Line
+	7450 3450 7450 1600
+Wire Notes Line
+	7450 1600 3800 1600
+Wire Wire Line
+	7300 1950 7300 2150
+Connection ~ 7300 2750
+Wire Wire Line
+	7300 2750 7300 2950
+Wire Wire Line
+	7550 2150 7300 2150
+Connection ~ 7300 2150
+Text Notes 6500 3400 0    50   ~ 0
+Driver demi-Pont en H
+$Comp
+L Device:C C?
+U 1 1 613B24FD
+P 1450 7100
+F 0 "C?" H 1565 7146 50  0000 L CNN
+F 1 "100n" H 1565 7055 50  0000 L CNN
+F 2 "" H 1488 6950 50  0001 C CNN
+F 3 "~" H 1450 7100 50  0001 C CNN
+	1    1450 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 613B2503
+P 1450 6950
+F 0 "#PWR?" H 1450 6800 50  0001 C CNN
+F 1 "+7V" H 1465 7123 50  0000 C CNN
+F 2 "" H 1450 6950 50  0001 C CNN
+F 3 "" H 1450 6950 50  0001 C CNN
+	1    1450 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613B2509
+P 1450 7250
+F 0 "#PWR?" H 1450 7000 50  0001 C CNN
+F 1 "GND" H 1455 7077 50  0000 C CNN
+F 2 "" H 1450 7250 50  0001 C CNN
+F 3 "" H 1450 7250 50  0001 C CNN
+	1    1450 7250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1850 6650 600  6650
+Text Notes 1350 7600 0    50   ~ 0
+Découplage
+Wire Notes Line
+	1850 7650 600  7650
+Wire Notes Line
+	1850 6650 1850 7650
+Wire Notes Line
+	600  6650 600  7650
 $EndSCHEMATC
