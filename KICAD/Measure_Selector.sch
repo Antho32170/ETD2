@@ -44,17 +44,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 5730 4200 50  0001 C CNN
 	1    5750 4000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 610C511E
-P 5650 3150
-F 0 "#PWR?" H 5650 3000 50  0001 C CNN
-F 1 "VCC" H 5667 3323 50  0000 C CNN
-F 2 "" H 5650 3150 50  0001 C CNN
-F 3 "" H 5650 3150 50  0001 C CNN
-	1    5650 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 3500 6450 3500
 Wire Wire Line
@@ -123,17 +112,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 4200 5250 4200
 $Comp
-L power:VCC #PWR?
-U 1 1 611208AC
-P 750 7150
-F 0 "#PWR?" H 750 7000 50  0001 C CNN
-F 1 "VCC" H 767 7323 50  0000 C CNN
-F 2 "" H 750 7150 50  0001 C CNN
-F 3 "" H 750 7150 50  0001 C CNN
-	1    750  7150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 610C24DF
 P 5800 4850
@@ -164,6 +142,28 @@ F 1 "100n" H 865 7255 50  0000 L CNN
 F 2 "" H 788 7150 50  0001 C CNN
 F 3 "~" H 750 7300 50  0001 C CNN
 	1    750  7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 6128DF71
+P 5650 3150
+F 0 "#PWR?" H 5650 3000 50  0001 C CNN
+F 1 "+7V" H 5665 3323 50  0000 C CNN
+F 2 "" H 5650 3150 50  0001 C CNN
+F 3 "" H 5650 3150 50  0001 C CNN
+	1    5650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 6128F549
+P 750 7150
+F 0 "#PWR?" H 750 7000 50  0001 C CNN
+F 1 "+7V" H 765 7323 50  0000 C CNN
+F 2 "" H 750 7150 50  0001 C CNN
+F 3 "" H 750 7150 50  0001 C CNN
+	1    750  7150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

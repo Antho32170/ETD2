@@ -13,13 +13,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6300 3200 2    50   Output ~ 0
+Text HLabel 5300 3850 2    50   Output ~ 0
 VG_LP
-Text HLabel 6300 3300 2    50   Output ~ 0
+Text HLabel 5300 3950 2    50   Output ~ 0
 VG_LS
-Text HLabel 6300 3400 2    50   Output ~ 0
+Text HLabel 5300 4050 2    50   Output ~ 0
 VG_RP
-Text HLabel 6300 3500 2    50   Output ~ 0
+Text HLabel 5300 4150 2    50   Output ~ 0
 VG_RS
 Text HLabel 5650 3200 0    50   Input ~ 0
 Driver_LS
@@ -33,16 +33,16 @@ Text HLabel 5650 3500 0    50   Input ~ 0
 Enable
 Text Notes 5300 3650 0    50   ~ 0
 Entrées
-Text Notes 6300 3650 0    50   ~ 0
+Text Notes 5300 4300 0    50   ~ 0
 Sorties
 Wire Notes Line
-	6250 3100 6650 3100
+	5250 3750 5650 3750
 Wire Notes Line
-	6650 3100 6650 3700
+	5650 3750 5650 4350
 Wire Notes Line
-	6650 3700 6250 3700
+	5650 4350 5250 4350
 Wire Notes Line
-	6250 3700 6250 3100
+	5250 4350 5250 3750
 Wire Notes Line
 	5700 3000 5200 3000
 Wire Notes Line
