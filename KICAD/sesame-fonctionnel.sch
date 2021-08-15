@@ -27,8 +27,8 @@ F0 "U/I SENSOR RIGHT" 50
 F1 "voltage_current_sens.sch" 50
 F2 "VProt" B R 8700 2200 100
 F3 "VD_Mos" B L 7400 2200 100
-F4 "Current_Sens" O L 7400 2450 50 
-F5 "Voltage_Sens" O L 7400 2550 50 
+F4 "Current_Sens" O L 7400 2400 50 
+F5 "Voltage_Sens" O L 7400 2500 50 
 F6 "Dir" I R 8700 2800 50 
 $EndSheet
 $Sheet
@@ -41,10 +41,6 @@ F3 "PWM" O R 6600 5550 50
 F4 "~PWM" O R 6600 5700 50 
 F5 "Feedback" I L 5100 6150 50 
 $EndSheet
-Wire Wire Line
-	7300 2550 7400 2550
-Wire Wire Line
-	7200 2450 7400 2450
 Wire Wire Line
 	6700 5050 6700 5550
 Wire Wire Line
@@ -108,39 +104,9 @@ Wire Wire Line
 Wire Wire Line
 	7400 5550 7200 5550
 Wire Wire Line
-	7400 5750 7050 5750
-$Comp
-L power:VCC #PWR0102
-U 1 1 61169F8F
-P 6550 750
-F 0 "#PWR0102" H 6550 600 50  0001 C CNN
-F 1 "VCC" H 6565 923 50  0000 C CNN
-F 2 "" H 6550 750 50  0001 C CNN
-F 3 "" H 6550 750 50  0001 C CNN
-	1    6550 750 
-	1    0    0    -1  
-$EndComp
+	7400 5750 7100 5750
 Wire Wire Line
-	6550 750  6550 800 
-Wire Wire Line
-	6550 800  6450 800 
-$Comp
-L power:+2V5 #PWR0103
-U 1 1 6117E6E2
-P 6750 750
-F 0 "#PWR0103" H 6750 600 50  0001 C CNN
-F 1 "+2V5" H 6765 923 50  0000 C CNN
-F 2 "" H 6750 750 50  0001 C CNN
-F 3 "" H 6750 750 50  0001 C CNN
-	1    6750 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 750  6750 950 
-Wire Wire Line
-	6750 950  6450 950 
-Wire Wire Line
-	6950 5850 7400 5850
+	7000 5850 7400 5850
 Wire Wire Line
 	5650 6500 5650 7750
 Wire Wire Line
@@ -156,7 +122,7 @@ $EndSheet
 Text Notes 5350 5950 0    50   ~ 0
 Dead time reglable\ndedans via une resistance
 Wire Wire Line
-	4450 1750 4450 2450
+	4450 1750 4450 2400
 $Sheet
 S 1050 1950 1700 550 
 U 61456C6A
@@ -166,7 +132,7 @@ F2 "IN_OUT_PWR" B L 1050 2200 100
 F3 "VProt" B R 2750 2200 100
 $EndSheet
 Wire Wire Line
-	4550 1850 4550 2550
+	4550 1850 4550 2500
 Connection ~ 900  2500
 Wire Wire Line
 	900  2400 900  2500
@@ -208,15 +174,11 @@ $EndComp
 Wire Wire Line
 	2900 4950 6800 4950
 Wire Wire Line
-	4450 3950 4950 3950
+	4450 4000 4950 4000
 Wire Wire Line
 	4950 4100 4450 4100
 Wire Wire Line
 	4450 4200 4950 4200
-Wire Wire Line
-	4450 2450 4350 2450
-Wire Wire Line
-	4550 2550 4350 2550
 Wire Wire Line
 	10650 2200 10800 2200
 Wire Wire Line
@@ -232,37 +194,25 @@ F0 "DC/DC CONVERTER" 50
 F1 "DC_DC_Converter.sch" 50
 F2 "VD_LS" B L 4800 2200 100
 F3 "VD_RS" B R 6600 2200 100
-F4 "VG_LS" I L 4800 2700 50 
+F4 "VG_LS" I L 4800 2600 50 
 F5 "VG_LP" I L 4800 2800 50 
-F6 "VG_RS" I R 6600 2700 50 
+F6 "VG_RS" I R 6600 2600 50 
 F7 "VG_RP" I R 6600 2800 50 
+F8 "VS_L" U L 4800 2700 50 
+F9 "VS_R" U R 6600 2700 50 
 $EndSheet
 Text Notes 5500 2700 0    50   ~ 0
 L = Left\nR = Right\nS = Serial\nP = Parallel \nG = Gate\nD = Drain
 Wire Wire Line
-	6800 2700 6800 3700
+	6600 2800 6650 2800
 Wire Wire Line
-	6450 3700 6800 3700
+	4650 3750 4950 3750
 Wire Wire Line
-	6600 2800 6700 2800
+	4800 2800 4750 2800
 Wire Wire Line
-	6700 2800 6700 3600
+	4750 2800 4750 3550
 Wire Wire Line
-	6450 3600 6700 3600
-Wire Wire Line
-	4600 3700 4600 2700
-Wire Wire Line
-	4600 3700 4950 3700
-Wire Wire Line
-	4800 2800 4700 2800
-Wire Wire Line
-	4700 2800 4700 3600
-Wire Wire Line
-	4700 3600 4950 3600
-Wire Wire Line
-	4800 2700 4600 2700
-Wire Wire Line
-	6800 2700 6600 2700
+	6700 2700 6600 2700
 $Sheet
 S 850  5000 1000 1900
 U 618748E2
@@ -289,9 +239,9 @@ Text Label 7300 3350 1    50   ~ 0
 Voltage_Sens_R
 Text Label 7200 3350 1    50   ~ 0
 Current_Sens_R
-Text Label 7050 3350 1    50   ~ 0
+Text Label 7100 3350 1    50   ~ 0
 Current_Sens_L
-Text Label 6950 3350 1    50   ~ 0
+Text Label 7000 3350 1    50   ~ 0
 Voltage_Sens_L
 Text Label 7700 4750 0    50   ~ 0
 Over_UI_Protection
@@ -319,11 +269,11 @@ F6 "Current_Thres" I L 9450 5700 50
 F7 "Voltage_Thres" I L 9450 5600 50 
 $EndSheet
 Wire Wire Line
-	7200 2450 7200 5550
+	7200 2400 7200 5550
 Wire Wire Line
-	7300 2550 7300 5450
+	7300 2500 7300 5450
 Wire Wire Line
-	6950 1850 6950 5850
+	7000 1850 7000 5850
 Wire Wire Line
 	8750 6250 8850 6250
 Wire Wire Line
@@ -339,9 +289,9 @@ Voltage_Sens_L
 Text Label 2450 6000 2    50   ~ 0
 Current_Sens_L
 Wire Wire Line
-	4450 1750 7050 1750
+	4450 1750 7100 1750
 Wire Wire Line
-	4550 1850 6950 1850
+	4550 1850 7000 1850
 Wire Wire Line
 	5650 6500 8850 6500
 Wire Wire Line
@@ -359,12 +309,12 @@ F0 "U/I SENSOR LEFT" 50
 F1 "voltage_current_sens.sch" 50
 F2 "VProt" B L 3050 2200 100
 F3 "VD_Mos" B R 4350 2200 100
-F4 "Current_Sens" O R 4350 2450 50 
-F5 "Voltage_Sens" O R 4350 2550 50 
+F4 "Current_Sens" O R 4350 2400 50 
+F5 "Voltage_Sens" O R 4350 2500 50 
 F6 "Dir" I L 3050 2800 50 
 $EndSheet
 Wire Wire Line
-	7050 1750 7050 5750
+	7100 1750 7100 5750
 Text Label 6900 6150 0    50   ~ 0
 Dir
 Text Label 2600 3550 0    50   ~ 0
@@ -433,14 +383,14 @@ Wire Wire Line
 Wire Wire Line
 	4700 4350 4700 4750
 Wire Wire Line
-	4450 3850 4950 3850
+	4450 3900 4950 3900
 $Sheet
 S 2950 3450 1500 1000
 U 60F4EAD9
 F0 "DRIVER COMMAND" 50
 F1 "Drivers_Command.sch" 50
-F2 "Driver_LS" O R 4450 3850 50 
-F3 "Driver_LP" O R 4450 3950 50 
+F2 "Driver_LS" O R 4450 3900 50 
+F3 "Driver_LP" O R 4450 4000 50 
 F4 "Driver_RS" O R 4450 4100 50 
 F5 "Driver_RP" O R 4450 4200 50 
 F6 "PWM" I L 2950 4350 50 
@@ -489,26 +439,25 @@ S 4950 650  1500 1000
 U 60F1AA92
 F0 "INTERNAL SUPPLIES" 50
 F1 "alims.sch" 50
-F2 "5V" O R 6450 800 50 
-F3 "Vref" O R 6450 950 50 
-F4 "VMOS" O R 6450 1100 50 
-F5 "Left_Supply" I L 4950 1550 50 
-F6 "Right_Supply" I R 6450 1550 50 
+F2 "Left_Supply" I L 4950 1550 50 
+F3 "Right_Supply" I R 6450 1550 50 
 $EndSheet
 $Sheet
 S 4950 3450 1500 1000
 U 60F19D6C
 F0 "MOS DRIVERS" 50
 F1 "Mos_Drivers.sch" 50
-F2 "Driver_LS" I L 4950 3850 50 
-F3 "VG_LP" O L 4950 3600 50 
-F4 "Driver_LP" I L 4950 3950 50 
-F5 "VG_LS" O L 4950 3700 50 
-F6 "VG_RS" O R 6450 3700 50 
-F7 "VG_RP" O R 6450 3600 50 
+F2 "Driver_LS" I L 4950 3900 50 
+F3 "VG_LP" O L 4950 3550 50 
+F4 "Driver_LP" I L 4950 4000 50 
+F5 "VG_LS" O L 4950 3750 50 
+F6 "VG_RS" O R 6450 3750 50 
+F7 "VG_RP" O R 6450 3550 50 
 F8 "Driver_RP" I L 4950 4200 50 
 F9 "Driver_RS" I L 4950 4100 50 
 F10 "Enable" I L 4950 4350 50 
+F12 "VS_L" U L 4950 3650 50 
+F13 "VS_R" U R 6450 3650 50 
 $EndSheet
 Wire Wire Line
 	2900 1550 2900 2200
@@ -558,10 +507,44 @@ Text Notes 3050 2100 0    100  ~ 20
 A finir choix aop
 Text Notes 2500 2150 0    100  ~ 20
 Ok
-Text Notes 6000 3650 0    100  ~ 20
+Text Notes 6000 4400 0    100  ~ 20
 TODO
 Text Notes 900  5200 0    100  ~ 20
 TODO
 Text Notes 5500 1250 0    50   ~ 10
 Rails d’alim 7V
+Wire Wire Line
+	4950 3550 4750 3550
+Wire Wire Line
+	4800 2600 4650 2600
+Wire Wire Line
+	4650 2600 4650 3750
+Wire Wire Line
+	4700 2700 4800 2700
+Wire Wire Line
+	4700 2700 4700 3650
+Wire Wire Line
+	4950 3650 4700 3650
+Wire Wire Line
+	6650 2800 6650 3550
+Wire Wire Line
+	6450 3550 6650 3550
+Wire Wire Line
+	4350 2400 4450 2400
+Wire Wire Line
+	4350 2500 4550 2500
+Wire Wire Line
+	7200 2400 7400 2400
+Wire Wire Line
+	7300 2500 7400 2500
+Wire Wire Line
+	6600 2600 6750 2600
+Wire Wire Line
+	6750 2600 6750 3750
+Wire Wire Line
+	6450 3750 6750 3750
+Wire Wire Line
+	6450 3650 6700 3650
+Wire Wire Line
+	6700 3650 6700 2700
 $EndSCHEMATC

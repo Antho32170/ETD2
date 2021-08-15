@@ -13,18 +13,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2200 800  0    50   Input ~ 0
-Dir
 Text HLabel 2250 1400 0    50   Input ~ 0
 LEFT
 Text HLabel 2250 1750 0    50   Input ~ 0
 RIGHT
-Text HLabel 4150 1100 2    50   Output ~ 0
-5V
 Text HLabel 6050 1950 2    50   Output ~ 0
 VREF
-Text HLabel 6050 1100 2    50   Output ~ 0
-VMOS
 Text Notes 3000 3050 0    50   ~ 0
 Gen 5v and Vref\n
 Text Notes 3000 3150 0    50   ~ 0
@@ -36,17 +30,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 1950 5950 1950
 Connection ~ 5950 1950
-$Comp
-L power:VCC #PWR0105
-U 1 1 612FE019
-P 4650 1600
-F 0 "#PWR0105" H 4650 1450 50  0001 C CNN
-F 1 "VCC" H 4665 1773 50  0000 C CNN
-F 2 "" H 4650 1600 50  0001 C CNN
-F 3 "" H 4650 1600 50  0001 C CNN
-	1    4650 1600
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 612FEB08
@@ -73,41 +56,6 @@ Wire Wire Line
 	2400 1400 2250 1400
 Wire Wire Line
 	2850 1750 2850 1400
-$Comp
-L power:VCC #PWR0107
-U 1 1 614DE65E
-P 6000 1050
-F 0 "#PWR0107" H 6000 900 50  0001 C CNN
-F 1 "VCC" H 6015 1223 50  0000 C CNN
-F 2 "" H 6000 1050 50  0001 C CNN
-F 3 "" H 6000 1050 50  0001 C CNN
-	1    6000 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 1050 6000 1100
-Wire Wire Line
-	6000 1100 6050 1100
-Wire Notes Line
-	6550 750  5850 750 
-Wire Notes Line
-	5850 750  5850 1300
-Wire Notes Line
-	5850 1300 6550 1300
-Wire Notes Line
-	6550 750  6550 1300
-Text Notes 6050 1300 0    50   ~ 0
-A definir
-Wire Notes Line
-	2000 700  2350 700 
-Wire Notes Line
-	2350 700  2350 1000
-Wire Notes Line
-	2350 1000 2000 1000
-Wire Notes Line
-	2000 1000 2000 700 
-Text Notes 2050 950  0    50   ~ 0
-A definir\n\n
 $Comp
 L Device:D_Shockley D?
 U 1 1 610854D4
@@ -177,4 +125,15 @@ Wire Wire Line
 	5150 1500 5150 1850
 Wire Wire Line
 	5950 1500 5950 1950
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 612A93DA
+P 4650 1600
+F 0 "#PWR?" H 4650 1450 50  0001 C CNN
+F 1 "+7V" H 4665 1773 50  0000 C CNN
+F 2 "" H 4650 1600 50  0001 C CNN
+F 3 "" H 4650 1600 50  0001 C CNN
+	1    4650 1600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
