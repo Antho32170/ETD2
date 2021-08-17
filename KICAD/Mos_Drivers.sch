@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 15
+Sheet 15 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -27,10 +27,10 @@ Text HLabel 4300 3800 0    50   Input ~ 0
 Driver_RP
 Text HLabel 4300 3900 0    50   Input ~ 0
 Driver_RS
-Text HLabel 3700 2450 0    50   Input ~ 0
+Text HLabel 1600 2450 0    50   Input ~ 0
 Enable
-Text Notes 3350 4900 0    100  ~ 20
-Candidats potentiels:\nMCP14628\nhttps://www.microchip.com/en-us/parametric-search.html/385\nUCC27284
+Text Notes 3050 6550 0    100  ~ 20
+Candidats potentiels:\nMCP14628\nhttps://www.microchip.com/en-us/parametric-search.html/385\n-> UCC27284 (pas sourcable)\nBesoin: \nHalfBridge driver\nPWM & ~PWM~\nRapidité < 100ns\nAlim 7v\n(Pas cher)\nChez RS\nCourant de grille vers 2.5 - 3 A\nEnable\nMode DC !!
 $Comp
 L Driver_FET:UCC27714D U?
 U 1 1 612B940B
@@ -40,17 +40,6 @@ F 1 "UCC27714D" H 4100 3100 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4450 2550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ucc27714.pdf" H 4450 2450 50  0001 C CNN
 	1    4450 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sesame:+7V #PWR?
-U 1 1 612BB26E
-P 4450 2050
-F 0 "#PWR?" H 4450 1900 50  0001 C CNN
-F 1 "+7V" H 4465 2223 50  0000 C CNN
-F 2 "" H 4450 2050 50  0001 C CNN
-F 3 "" H 4450 2050 50  0001 C CNN
-	1    4450 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -65,21 +54,10 @@ F 3 "~" H 850 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sesame:+7V #PWR?
-U 1 1 612BCBD1
-P 850 6950
-F 0 "#PWR?" H 850 6800 50  0001 C CNN
-F 1 "+7V" H 865 7123 50  0000 C CNN
-F 2 "" H 850 6950 50  0001 C CNN
-F 3 "" H 850 6950 50  0001 C CNN
-	1    850  6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR0179
 U 1 1 612BD1C9
 P 850 7250
-F 0 "#PWR?" H 850 7000 50  0001 C CNN
+F 0 "#PWR0179" H 850 7000 50  0001 C CNN
 F 1 "GND" H 855 7077 50  0000 C CNN
 F 2 "" H 850 7250 50  0001 C CNN
 F 3 "" H 850 7250 50  0001 C CNN
@@ -87,10 +65,10 @@ F 3 "" H 850 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0180
 U 1 1 612BD72C
 P 4450 3050
-F 0 "#PWR?" H 4450 2800 50  0001 C CNN
+F 0 "#PWR0180" H 4450 2800 50  0001 C CNN
 F 1 "GND" H 4455 2877 50  0000 C CNN
 F 2 "" H 4450 3050 50  0001 C CNN
 F 3 "" H 4450 3050 50  0001 C CNN
@@ -101,8 +79,6 @@ Wire Wire Line
 	3700 2350 4050 2350
 Wire Wire Line
 	4050 2250 3700 2250
-Wire Wire Line
-	3700 2450 4050 2450
 $Comp
 L Device:D_Schottky D?
 U 1 1 612C1457
@@ -119,10 +95,10 @@ Wire Wire Line
 Wire Wire Line
 	5700 2750 5700 2850
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0181
 U 1 1 612C2683
 P 5700 3150
-F 0 "#PWR?" H 5700 2900 50  0001 C CNN
+F 0 "#PWR0181" H 5700 2900 50  0001 C CNN
 F 1 "GND" H 5705 2977 50  0000 C CNN
 F 2 "" H 5700 3150 50  0001 C CNN
 F 3 "" H 5700 3150 50  0001 C CNN
@@ -285,8 +261,6 @@ Wire Wire Line
 	6200 2450 6200 2550
 Wire Wire Line
 	6200 2450 7550 2450
-Text HLabel 4300 4000 0    50   Input ~ 0
-Enable
 Wire Notes Line
 	3800 1600 3800 3450
 Wire Notes Line
@@ -317,21 +291,10 @@ F 3 "~" H 1450 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sesame:+7V #PWR?
-U 1 1 613B2503
-P 1450 6950
-F 0 "#PWR?" H 1450 6800 50  0001 C CNN
-F 1 "+7V" H 1465 7123 50  0000 C CNN
-F 2 "" H 1450 6950 50  0001 C CNN
-F 3 "" H 1450 6950 50  0001 C CNN
-	1    1450 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
+L power:GND #PWR0182
 U 1 1 613B2509
 P 1450 7250
-F 0 "#PWR?" H 1450 7000 50  0001 C CNN
+F 0 "#PWR0182" H 1450 7000 50  0001 C CNN
 F 1 "GND" H 1455 7077 50  0000 C CNN
 F 2 "" H 1450 7250 50  0001 C CNN
 F 3 "" H 1450 7250 50  0001 C CNN
@@ -348,4 +311,91 @@ Wire Notes Line
 	1850 6650 1850 7650
 Wire Notes Line
 	600  6650 600  7650
+Text Notes 4800 1900 0    50   ~ 0
+choisir capacité + empreinte
+Wire Wire Line
+	2050 2950 2050 3250
+$Comp
+L power:GND #PWR?
+U 1 1 61371978
+P 2050 3250
+AR Path="/60F2F8DD/61371978" Ref="#PWR?"  Part="1" 
+AR Path="/60F19D6C/61371978" Ref="#PWR0183"  Part="1" 
+F 0 "#PWR0183" H 2050 3000 50  0001 C CNN
+F 1 "GND" H 2055 3077 50  0000 C CNN
+F 2 "" H 2050 3250 50  0001 C CNN
+F 3 "" H 2050 3250 50  0001 C CNN
+	1    2050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2450 2050 2650
+Wire Wire Line
+	1900 2450 2050 2450
+$Comp
+L Device:C C?
+U 1 1 61371980
+P 2050 2800
+AR Path="/60F2F8DD/61371980" Ref="C?"  Part="1" 
+AR Path="/60F19D6C/61371980" Ref="C?"  Part="1" 
+F 0 "C?" H 2165 2846 50  0000 L CNN
+F 1 "100n" H 2165 2755 50  0000 L CNN
+F 2 "" H 2088 2650 50  0001 C CNN
+F 3 "~" H 2050 2800 50  0001 C CNN
+	1    2050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61371986
+P 1750 2450
+AR Path="/60F2F8DD/61371986" Ref="R?"  Part="1" 
+AR Path="/60F19D6C/61371986" Ref="R?"  Part="1" 
+F 0 "R?" V 1543 2450 50  0000 C CNN
+F 1 "1k" V 1634 2450 50  0000 C CNN
+F 2 "" V 1680 2450 50  0001 C CNN
+F 3 "~" H 1750 2450 50  0001 C CNN
+	1    1750 2450
+	0    1    1    0   
+$EndComp
+Connection ~ 2050 2450
+Text Label 2700 2450 2    50   ~ 0
+Enable_Softstart
+Text Notes 2150 3050 0    50   ~ 0
+au plus vite (juste apres le triangle)\nenv 0.1ms
+$Comp
+L power:VCC #PWR0184
+U 1 1 6157B763
+P 4450 2050
+F 0 "#PWR0184" H 4450 1900 50  0001 C CNN
+F 1 "VCC" H 4465 2223 50  0000 C CNN
+F 2 "" H 4450 2050 50  0001 C CNN
+F 3 "" H 4450 2050 50  0001 C CNN
+	1    4450 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2450 4050 2450
+$Comp
+L power:VCC #PWR0185
+U 1 1 6157FC90
+P 850 6950
+F 0 "#PWR0185" H 850 6800 50  0001 C CNN
+F 1 "VCC" H 865 7123 50  0000 C CNN
+F 2 "" H 850 6950 50  0001 C CNN
+F 3 "" H 850 6950 50  0001 C CNN
+	1    850  6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0186
+U 1 1 61580987
+P 1450 6950
+F 0 "#PWR0186" H 1450 6800 50  0001 C CNN
+F 1 "VCC" H 1465 7123 50  0000 C CNN
+F 2 "" H 1450 6950 50  0001 C CNN
+F 3 "" H 1450 6950 50  0001 C CNN
+	1    1450 6950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 15
+Sheet 1 16
 Title "SESAME"
-Date "2021-07-26"
-Rev "0.7"
+Date "2021-08-17"
+Rev "0.8"
 Comp "ALEEA"
 Comment1 "Dessin : Guillaume Arthaud"
 Comment2 ""
@@ -108,9 +108,9 @@ Wire Wire Line
 Wire Wire Line
 	7000 5850 7400 5850
 Wire Wire Line
-	5650 6500 5650 7750
+	5950 6500 5950 7750
 Wire Wire Line
-	3250 7750 5650 7750
+	3250 7750 5950 7750
 $Sheet
 S 9000 1950 1650 500 
 U 614794AE
@@ -254,8 +254,6 @@ F2 "Feedback" O R 4850 6800 50
 F3 "Measure_Selected" I L 3350 7400 50 
 F4 "Ext_Consign" I L 3350 6800 50 
 $EndSheet
-Text Notes 650  4100 0    50   ~ 0
-SHIELD BLOCKS\n——————————————————\nMeasure UI L + R\nDriver MOS\nRamp Generator + PID + PWM GEN\n
 $Sheet
 S 9450 5350 1450 1000
 U 60F2F8DD
@@ -293,7 +291,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 1850 7000 1850
 Wire Wire Line
-	5650 6500 8850 6500
+	5950 6500 8850 6500
 Wire Wire Line
 	11000 4750 11000 5900
 Wire Wire Line
@@ -456,8 +454,8 @@ F7 "VG_RP" O R 6450 3550 50
 F8 "Driver_RP" I L 4950 4200 50 
 F9 "Driver_RS" I L 4950 4100 50 
 F10 "Enable" I L 4950 4350 50 
-F12 "VS_L" U L 4950 3650 50 
-F13 "VS_R" U R 6450 3650 50 
+F11 "VS_L" U L 4950 3650 50 
+F12 "VS_R" U R 6450 3650 50 
 $EndSheet
 Wire Wire Line
 	2900 1550 2900 2200
@@ -487,22 +485,16 @@ Text Notes 5450 900  0    100  ~ 20
 TODO
 Text Notes 3250 3650 0    100  ~ 20
 Rework needed
-Text Notes 3500 5900 0    100  ~ 20
-Rework needed
-Text Notes 10650 5550 0    100  ~ 20
-Ok
+Text Notes 3600 5900 0    100  ~ 20
+Presque ok
+Text Notes 9950 5550 0    100  ~ 20
+Presque ok
 Text Notes 8500 5550 0    100  ~ 20
 Ok
 Text Notes 5550 2150 0    100  ~ 20
 Ok
-Text Notes 8450 2150 0    100  ~ 20
-Ok
-Text Notes 10400 2150 0    100  ~ 20
-Ok
 Text Notes 3050 2100 0    100  ~ 20
 A finir choix aop
-Text Notes 2500 2150 0    100  ~ 20
-Ok
 Text Notes 900  5200 0    100  ~ 20
 TODO
 Text Notes 5400 1000 0    50   ~ 10
@@ -545,6 +537,14 @@ Text Notes 5300 5750 0    100  ~ 20
 Rework needed
 Text Notes 3500 7200 0    100  ~ 20
 Rework needed
-Text Notes 5150 4250 0    100  ~ 20
-Rework needed
+Text Notes 5250 4400 0    100  ~ 20
+Trouver Driver
+Text Notes 7400 2100 0    100  ~ 20
+A finir choix aop
+$Sheet
+S 650  700  500  150 
+U 6142ECA0
+F0 "INFOS" 100
+F1 "infos.sch" 100
+$EndSheet
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 15
+Sheet 7 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -110,18 +110,18 @@ Wire Wire Line
 	6650 2500 6650 2350
 Wire Wire Line
 	6950 2350 6650 2350
-Text Notes 5550 2650 0    50   ~ 0
-Bobine tbd
+Text Notes 5300 3300 0    100  ~ 20
+Bobine TBD !
 Wire Wire Line
 	5750 3850 5750 3750
 Connection ~ 5750 3750
 Wire Wire Line
 	5750 3750 6650 3750
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR0127
 U 1 1 610FB372
 P 5750 3850
-F 0 "#PWR?" H 5750 3650 50  0001 C CNN
+F 0 "#PWR0127" H 5750 3650 50  0001 C CNN
 F 1 "GNDPWR" H 5754 3696 50  0000 C CNN
 F 2 "" H 5750 3800 50  0001 C CNN
 F 3 "" H 5750 3800 50  0001 C CNN
@@ -144,4 +144,6 @@ Text HLabel 7000 3100 2    50   UnSpc ~ 0
 VS_R
 Wire Wire Line
 	7000 3100 6650 3100
+Text Notes 6750 2550 0    50   ~ 0
+D2PAK
 $EndSCHEMATC
