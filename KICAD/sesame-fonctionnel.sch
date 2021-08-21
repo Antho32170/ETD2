@@ -14,13 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3350 5350 1500 1000
-U 60F16FAE
-F0 "RAMP GENERATOR" 50
-F1 "gen_ramp.sch" 50
-F2 "Ramp" O R 4850 5550 50 
-$EndSheet
-$Sheet
 S 7400 1950 1300 1000
 U 60F19D5B
 F0 "U/I SENSOR RIGHT" 50
@@ -90,17 +83,17 @@ Wire Wire Line
 Wire Wire Line
 	6600 5700 6800 5700
 Wire Wire Line
-	4850 5550 5100 5550
+	4800 5550 5100 5550
 Wire Wire Line
-	5100 6150 5000 6150
+	5100 6150 4950 6150
 Wire Wire Line
-	5000 6150 5000 6800
+	4950 6150 4950 6800
 Wire Wire Line
-	5000 6800 4850 6800
+	4950 6800 4800 6800
 Wire Wire Line
-	3350 7400 3250 7400
+	3300 7400 3150 7400
 Wire Wire Line
-	3250 7400 3250 7750
+	3150 7400 3150 7750
 Wire Wire Line
 	7400 5550 7200 5550
 Wire Wire Line
@@ -110,7 +103,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 6500 5950 7750
 Wire Wire Line
-	3250 7750 5950 7750
+	3150 7750 5950 7750
 $Sheet
 S 9000 1950 1650 500 
 U 614794AE
@@ -119,8 +112,6 @@ F1 "PROTECT.sch" 50
 F2 "IN_OUT_PWR" B R 10650 2200 100
 F3 "VProt" B L 9000 2200 100
 $EndSheet
-Text Notes 5350 5950 0    50   ~ 0
-Dead time reglable\ndedans via une resistance
 Wire Wire Line
 	4450 1750 4450 2400
 $Sheet
@@ -246,13 +237,13 @@ Voltage_Sens_L
 Text Label 7700 4750 0    50   ~ 0
 Over_UI_Protection
 $Sheet
-S 3350 6600 1500 1000
+S 3300 6600 1500 1000
 U 60F1B237
 F0 "PID" 50
 F1 "PID.sch" 50
-F2 "Feedback" O R 4850 6800 50 
-F3 "Measure_Selected" I L 3350 7400 50 
-F4 "Ext_Consign" I L 3350 6800 50 
+F2 "Feedback" O R 4800 6800 50 
+F3 "Measure_Selected" I L 3300 7400 50 
+F4 "Ext_SetPoint" I L 3300 6800 50 
 $EndSheet
 $Sheet
 S 9450 5350 1450 1000
@@ -297,9 +288,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 2200 7400 2200
 Wire Wire Line
-	1850 6800 3350 6800
-Text Label 2300 6800 2    50   ~ 0
-Ex_Consign
+	1850 6800 3300 6800
+Text Label 2450 6800 2    50   ~ 0
+Ext_Setpoint
 $Sheet
 S 3050 1950 1300 1000
 U 60F171CE
@@ -485,8 +476,6 @@ Text Notes 5450 900  0    100  ~ 20
 TODO
 Text Notes 3250 3650 0    100  ~ 20
 Rework needed
-Text Notes 3600 5900 0    100  ~ 20
-Presque ok
 Text Notes 9950 5550 0    100  ~ 20
 Presque ok
 Text Notes 8500 5550 0    100  ~ 20
@@ -533,10 +522,6 @@ Wire Wire Line
 	6450 3650 6700 3650
 Wire Wire Line
 	6700 3650 6700 2700
-Text Notes 5300 5750 0    100  ~ 20
-Rework needed
-Text Notes 3500 7200 0    100  ~ 20
-Rework needed
 Text Notes 5250 4400 0    100  ~ 20
 Trouver Driver
 Text Notes 7400 2100 0    100  ~ 20
@@ -547,4 +532,13 @@ U 6142ECA0
 F0 "INFOS" 100
 F1 "infos.sch" 100
 $EndSheet
+$Sheet
+S 3300 5350 1500 1000
+U 60F16FAE
+F0 "RAMP GENERATOR" 50
+F1 "gen_ramp.sch" 50
+F2 "Ramp" O R 4800 5550 50 
+$EndSheet
+Text Notes 3600 7100 0    50   ~ 0
+Res BIAS Clamping DIODE
 $EndSCHEMATC

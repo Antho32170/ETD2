@@ -5,6 +5,12 @@ D Power symbol creates a global label with name "+8V"
 K power-flag
 $ENDCMP
 #
+$CMP AD8030
+D Low Power, High Speed Rail-to-Rail Input/Output Amplifier
+K Rail-to-Rail
+F ~
+$ENDCMP
+#
 $CMP VREF
 D Power symbol creates a global label with name "+8V"
 K power-flag

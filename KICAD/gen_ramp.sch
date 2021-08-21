@@ -3,58 +3,25 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 16
+Sheet 16 16
 Title "SESAME"
 Date ""
 Rev ""
 Comp "ALEEA"
-Comment1 "Dessin : Kevin & Guillaume Arthaud"
+Comment1 "Dessin : Kevin & Sarah & Guillaume Arthaud"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8000 3650 2    50   Output ~ 0
+Text HLabel 7850 3650 2    50   Output ~ 0
 Ramp
-$Comp
-L Amplifier_Operational:LM7332 U?
-U 1 1 610B0C6D
-P 5050 3550
-F 0 "U?" H 5050 3917 50  0000 C CNN
-F 1 "LM7332" H 5050 3826 50  0000 C CNN
-F 2 "" H 5050 3550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 5050 3550 50  0001 C CNN
-	1    5050 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LM7332 U?
-U 2 1 610B1F20
-P 7000 3650
-F 0 "U?" H 7000 3283 50  0000 C CNN
-F 1 "LM7332" H 7000 3374 50  0000 C CNN
-F 2 "" H 7000 3650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 7000 3650 50  0001 C CNN
-	2    7000 3650
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 610B3256
-P 3150 4000
-F 0 "#PWR0102" H 3150 3750 50  0001 C CNN
-F 1 "GND" H 3155 3827 50  0000 C CNN
-F 2 "" H 3150 4000 50  0001 C CNN
-F 3 "" H 3150 4000 50  0001 C CNN
-	1    3150 4000
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 610F0F44
 P 4300 3450
 F 0 "R?" V 4093 3450 50  0000 C CNN
-F 1 "R" V 4184 3450 50  0000 C CNN
-F 2 "" V 4230 3450 50  0001 C CNN
+F 1 "6.8k" V 4184 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 3450 50  0001 C CNN
 F 3 "~" H 4300 3450 50  0001 C CNN
 	1    4300 3450
 	0    1    1    0   
@@ -64,8 +31,8 @@ L Device:R R?
 U 1 1 610FA18D
 P 5050 3050
 F 0 "R?" V 4843 3050 50  0000 C CNN
-F 1 "R" V 4934 3050 50  0000 C CNN
-F 2 "" V 4980 3050 50  0001 C CNN
+F 1 "10k" V 4934 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 3050 50  0001 C CNN
 F 3 "~" H 5050 3050 50  0001 C CNN
 	1    5050 3050
 	0    1    1    0   
@@ -73,150 +40,61 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 611047CD
-P 6300 3550
-F 0 "R?" V 6093 3550 50  0000 C CNN
-F 1 "R" V 6184 3550 50  0000 C CNN
-F 2 "" V 6230 3550 50  0001 C CNN
-F 3 "~" H 6300 3550 50  0001 C CNN
-	1    6300 3550
+P 6150 3550
+F 0 "R?" V 5943 3550 50  0000 C CNN
+F 1 "680" V 6034 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 3550 50  0001 C CNN
+F 3 "~" H 6150 3550 50  0001 C CNN
+	1    6150 3550
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 61108B79
-P 3150 3850
-F 0 "R?" H 3080 3804 50  0000 R CNN
-F 1 "R" H 3080 3895 50  0000 R CNN
-F 2 "" V 3080 3850 50  0001 C CNN
-F 3 "~" H 3150 3850 50  0001 C CNN
-	1    3150 3850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 6110CE49
-P 5900 5100
-F 0 "R?" H 5830 5054 50  0000 R CNN
-F 1 "R" H 5830 5145 50  0000 R CNN
-F 2 "" V 5830 5100 50  0001 C CNN
-F 3 "~" H 5900 5100 50  0001 C CNN
-	1    5900 5100
+P 5200 5050
+F 0 "R?" H 5130 5004 50  0000 R CNN
+F 1 "18k" H 5130 5095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 5050 50  0001 C CNN
+F 3 "~" H 5200 5050 50  0001 C CNN
+	1    5200 5050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6600 3750 6700 3750
+	5900 3750 6550 3750
 $Comp
 L power:GND #PWR0103
 U 1 1 611134C1
-P 5900 5250
-F 0 "#PWR0103" H 5900 5000 50  0001 C CNN
-F 1 "GND" H 5905 5077 50  0000 C CNN
-F 2 "" H 5900 5250 50  0001 C CNN
-F 3 "" H 5900 5250 50  0001 C CNN
-	1    5900 5250
+P 5200 5200
+F 0 "#PWR0103" H 5200 4950 50  0001 C CNN
+F 1 "GND" H 5205 5027 50  0000 C CNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 611171B1
-P 7000 3050
-F 0 "C?" V 6748 3050 50  0000 C CNN
-F 1 "C" V 6839 3050 50  0000 C CNN
-F 2 "" H 7038 2900 50  0001 C CNN
-F 3 "~" H 7000 3050 50  0001 C CNN
-	1    7000 3050
+P 6850 3050
+F 0 "C?" V 6598 3050 50  0000 C CNN
+F 1 "2.2n" V 6689 3050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6888 2900 50  0001 C CNN
+F 3 "~" H 6850 3050 50  0001 C CNN
+	1    6850 3050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6850 3050 6600 3050
+	6700 3050 6450 3050
 Wire Wire Line
-	7150 3050 7400 3050
+	7000 3050 7250 3050
 Wire Wire Line
-	7300 3650 7400 3650
+	7150 3650 7250 3650
 Wire Wire Line
 	4150 3450 3750 3450
 Wire Wire Line
 	3750 3450 3750 2500
 Wire Wire Line
-	3750 2500 7800 2500
-$Comp
-L Amplifier_Operational:LM7332 U?
-U 3 1 610F3585
-P 1250 6950
-AR Path="/60F2F8DD/610F3585" Ref="U?"  Part="3" 
-AR Path="/60F16FAE/610F3585" Ref="U?"  Part="3" 
-F 0 "U?" H 1062 6904 50  0000 R CNN
-F 1 "LM7332" H 1062 6995 50  0000 R CNN
-F 2 "" H 1250 6950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm7332.pdf" H 1250 6950 50  0001 C CNN
-	3    1250 6950
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 610F358B
-P 1550 6950
-AR Path="/60F2F8DD/610F358B" Ref="C?"  Part="1" 
-AR Path="/60F16FAE/610F358B" Ref="C?"  Part="1" 
-F 0 "C?" H 1665 6996 50  0000 L CNN
-F 1 "100n" H 1665 6905 50  0000 L CNN
-F 2 "" H 1588 6800 50  0001 C CNN
-F 3 "~" H 1550 6950 50  0001 C CNN
-	1    1550 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 6650 1150 6600
-Wire Wire Line
-	1550 6600 1550 6800
-Wire Wire Line
-	1150 7250 1150 7300
-Wire Wire Line
-	1150 7300 1350 7300
-Wire Wire Line
-	1550 7300 1550 7100
-$Comp
-L power:GND #PWR?
-U 1 1 610F3596
-P 1350 7400
-AR Path="/60F2F8DD/610F3596" Ref="#PWR?"  Part="1" 
-AR Path="/60F16FAE/610F3596" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 1350 7150 50  0001 C CNN
-F 1 "GND" H 1355 7227 50  0000 C CNN
-F 2 "" H 1350 7400 50  0001 C CNN
-F 3 "" H 1350 7400 50  0001 C CNN
-	1    1350 7400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 7400 1350 7300
-Connection ~ 1350 7300
-Wire Wire Line
-	1350 7300 1550 7300
-Wire Notes Line
-	550  6200 550  7700
-Wire Notes Line
-	550  7700 2150 7700
-Wire Notes Line
-	2150 7700 2150 6200
-Wire Notes Line
-	2150 6200 550  6200
-Text Notes 2000 7650 2    49   ~ 0
-Alim. AOP
-Wire Wire Line
-	1150 6600 1350 6600
-Wire Wire Line
-	1350 6550 1350 6600
-Connection ~ 1350 6600
-Wire Wire Line
-	1350 6600 1550 6600
-Wire Wire Line
-	3150 3600 3150 3650
-Wire Wire Line
-	3150 3650 4750 3650
-Connection ~ 3150 3650
-Wire Wire Line
-	3150 3650 3150 3700
+	3750 2500 7650 2500
 Wire Wire Line
 	4450 3450 4650 3450
 Wire Wire Line
@@ -227,7 +105,7 @@ Wire Wire Line
 	5450 3050 5450 3550
 Connection ~ 5450 3550
 Wire Wire Line
-	5450 3550 6150 3550
+	5450 3550 6000 3550
 Wire Wire Line
 	4900 3050 4650 3050
 Wire Wire Line
@@ -236,45 +114,34 @@ Connection ~ 4650 3450
 Wire Wire Line
 	4650 3450 4750 3450
 Wire Wire Line
-	6600 3550 6600 3050
-Connection ~ 6600 3550
+	6450 3550 6450 3050
+Connection ~ 6450 3550
 Wire Wire Line
-	6600 3550 6700 3550
+	6450 3550 6550 3550
 Wire Wire Line
-	6450 3550 6600 3550
+	6300 3550 6450 3550
 Wire Wire Line
-	7400 3650 7400 3050
-Connection ~ 7400 3650
+	7250 3650 7250 3050
+Connection ~ 7250 3650
 Wire Wire Line
-	7400 3650 7800 3650
+	7250 3650 7650 3650
 Wire Wire Line
-	6600 3750 6600 4900
-$Comp
-L Device:R R?
-U 1 1 6111937D
-P 3150 3450
-F 0 "R?" H 3080 3404 50  0000 R CNN
-F 1 "R" H 3080 3495 50  0000 R CNN
-F 2 "" V 3080 3450 50  0001 C CNN
-F 3 "~" H 3150 3450 50  0001 C CNN
-	1    3150 3450
-	-1   0    0    1   
-$EndComp
+	5900 3750 5900 4850
 $Comp
 L Device:R R?
 U 1 1 6111A906
-P 5900 4700
-F 0 "R?" H 5830 4654 50  0000 R CNN
-F 1 "R" H 5830 4745 50  0000 R CNN
-F 2 "" V 5830 4700 50  0001 C CNN
-F 3 "~" H 5900 4700 50  0001 C CNN
-	1    5900 4700
+P 5200 4650
+F 0 "R?" H 5130 4604 50  0000 R CNN
+F 1 "13k" H 5130 4695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 4650 50  0001 C CNN
+F 3 "~" H 5200 4650 50  0001 C CNN
+	1    5200 4650
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
 	5650 2700 5650 4150
 Wire Notes Line
-	7600 2700 7600 4150
+	7450 2700 7450 4150
 Wire Notes Line
 	3950 4150 3950 2700
 Wire Notes Line
@@ -282,88 +149,221 @@ Wire Notes Line
 Wire Notes Line
 	3950 2700 5650 2700
 Wire Notes Line
-	5950 4150 5950 2700
+	5800 4150 5800 2700
 Wire Notes Line
-	5950 4150 7600 4150
+	5800 4150 7450 4150
 Wire Notes Line
-	5950 2700 7600 2700
+	5800 2700 7450 2700
 Wire Wire Line
-	7800 2500 7800 3650
-Connection ~ 7800 3650
+	7650 2500 7650 3650
+Connection ~ 7650 3650
 Wire Wire Line
-	7800 3650 8000 3650
-Text Notes 7150 4100 0    50   ~ 0
+	7650 3650 7850 3650
+Text Notes 7000 4100 0    50   ~ 0
 Integrateur
 Text Notes 5050 4100 0    50   ~ 0
 Schmitt trigger
 Wire Notes Line
-	5600 4300 6450 4300
+	5650 5700 4900 5700
 Wire Notes Line
-	6450 4300 6450 5750
-Wire Notes Line
-	6450 5750 5600 5750
-Wire Notes Line
-	5600 5750 5600 4300
-Text Notes 5700 5700 0    50   ~ 0
-Offset Integrateur
-Text Label 6100 4900 0    50   ~ 0
-3.5V
-Text Label 3350 3650 0    50   ~ 0
-2.9V
-Text Notes 3300 3750 0    50   ~ 10
-A verifier !
+	4900 5700 4900 4250
+Text Notes 5000 5650 0    50   ~ 0
+Triangle offset\n(3.5V)
 Wire Wire Line
-	5900 4850 5900 4900
+	5200 4800 5200 4850
 Wire Wire Line
-	6600 4900 5900 4900
-Connection ~ 5900 4900
+	5900 4850 5200 4850
+Connection ~ 5200 4850
 Wire Wire Line
-	5900 4900 5900 4950
-Text Notes 4700 2400 0    100  ~ 20
-Choisir AOP Rail To Rail\nDefinir Resistances & Condos
-Text Notes 4100 3900 0    50   ~ 0
-Slew rate > ?\nAlim au moins a 7v
-Wire Notes Line
-	2950 3050 3550 3050
-Wire Notes Line
-	3550 3050 3550 4350
-Wire Notes Line
-	3550 4350 2950 4350
-Wire Notes Line
-	2950 4350 2950 3050
-Text Notes 3000 4300 0    50   ~ 0
-Offset Trigger
-$Comp
-L Sesame:VREF #PWR0107
-U 1 1 6155084A
-P 3150 3300
-F 0 "#PWR0107" H 3150 3150 50  0001 C CNN
-F 1 "VREF" H 3165 3473 50  0000 C CNN
-F 2 "" H 3150 3300 50  0001 C CNN
-F 3 "" H 3150 3300 50  0001 C CNN
-	1    3150 3300
-	1    0    0    -1  
-$EndComp
+	5200 4850 5200 4900
 $Comp
 L Sesame:VREF #PWR0110
 U 1 1 615517F7
-P 5900 4550
-F 0 "#PWR0110" H 5900 4400 50  0001 C CNN
-F 1 "VREF" H 5915 4723 50  0000 C CNN
-F 2 "" H 5900 4550 50  0001 C CNN
-F 3 "" H 5900 4550 50  0001 C CNN
-	1    5900 4550
+P 5200 4500
+F 0 "#PWR0110" H 5200 4350 50  0001 C CNN
+F 1 "VREF" H 5215 4673 50  0000 C CNN
+F 2 "" H 5200 4500 50  0001 C CNN
+F 3 "" H 5200 4500 50  0001 C CNN
+	1    5200 4500
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	600  6200 600  7700
+Wire Notes Line
+	600  7700 1900 7700
+Wire Notes Line
+	1900 7700 1900 6200
+Wire Notes Line
+	1900 6200 600  6200
+Text Notes 1850 7650 2    49   ~ 0
+OP Amp supply
+$Comp
+L Device:C C?
+U 1 1 61324C62
+P 1400 6900
+AR Path="/60F1AF26/61324C62" Ref="C?"  Part="1" 
+AR Path="/60F1B237/61324C62" Ref="C?"  Part="1" 
+AR Path="/60F16FAE/61324C62" Ref="C?"  Part="1" 
+F 0 "C?" H 1515 6946 50  0000 L CNN
+F 1 "100n" H 1515 6855 50  0000 L CNN
+F 2 "" H 1438 6750 50  0001 C CNN
+F 3 "~" H 1400 6900 50  0001 C CNN
+	1    1400 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6500 1250 6550
+Wire Wire Line
+	1250 6550 1100 6550
+Wire Wire Line
+	1100 6550 1100 6600
+Connection ~ 1250 6550
+Wire Wire Line
+	1100 7250 1100 7200
+$Comp
+L power:GND #PWR?
+U 1 1 61324C6D
+P 1250 7300
+AR Path="/60F1AF26/61324C6D" Ref="#PWR?"  Part="1" 
+AR Path="/60F1B237/61324C6D" Ref="#PWR?"  Part="1" 
+AR Path="/60F16FAE/61324C6D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1250 7050 50  0001 C CNN
+F 1 "GND" H 1255 7127 50  0000 C CNN
+F 2 "" H 1250 7300 50  0001 C CNN
+F 3 "" H 1250 7300 50  0001 C CNN
+	1    1250 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 7300 1250 7250
+Connection ~ 1250 7250
+Wire Wire Line
+	1250 7250 1100 7250
+Wire Wire Line
+	1400 6550 1400 6750
+Wire Wire Line
+	1250 6550 1400 6550
+Wire Wire Line
+	1400 7050 1400 7250
+Wire Wire Line
+	1250 7250 1400 7250
+$Comp
+L power:VCC #PWR?
+U 1 1 61324C7A
+P 1250 6500
+AR Path="/60F1AF26/61324C7A" Ref="#PWR?"  Part="1" 
+AR Path="/60F1B237/61324C7A" Ref="#PWR?"  Part="1" 
+AR Path="/60F16FAE/61324C7A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1250 6350 50  0001 C CNN
+F 1 "VCC" H 1265 6673 50  0000 C CNN
+F 2 "" H 1250 6500 50  0001 C CNN
+F 3 "" H 1250 6500 50  0001 C CNN
+	1    1250 6500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0111
-U 1 1 6155377F
-P 1350 6550
-F 0 "#PWR0111" H 1350 6400 50  0001 C CNN
-F 1 "VCC" H 1365 6723 50  0000 C CNN
-F 2 "" H 1350 6550 50  0001 C CNN
-F 3 "" H 1350 6550 50  0001 C CNN
-	1    1350 6550
+L Sesame:AD8030 U?
+U 3 1 61324C80
+P 1200 6900
+AR Path="/60F1AF26/61324C80" Ref="U?"  Part="3" 
+AR Path="/60F1B237/61324C80" Ref="U?"  Part="3" 
+AR Path="/60F16FAE/61324C80" Ref="U?"  Part="3" 
+F 0 "U?" H 1013 6854 50  0000 R CNN
+F 1 "AD8030" H 1013 6945 50  0000 R CNN
+F 2 "" H 1200 6900 50  0001 C CNN
+F 3 "~" H 1200 6900 50  0001 C CNN
+	3    1200 6900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Sesame:AD8030 U?
+U 2 1 6132B377
+P 6850 3650
+F 0 "U?" H 6850 3283 50  0000 C CNN
+F 1 "AD8030" H 6850 3374 50  0000 C CNN
+F 2 "" H 6850 3650 50  0001 C CNN
+F 3 "~" H 6850 3650 50  0001 C CNN
+	2    6850 3650
+	1    0    0    1   
+$EndComp
+$Comp
+L Sesame:AD8030 U?
+U 1 1 6132F06A
+P 5050 3550
+F 0 "U?" H 5050 3917 50  0000 C CNN
+F 1 "AD8030" H 5050 3826 50  0000 C CNN
+F 2 "" H 5050 3550 50  0001 C CNN
+F 3 "~" H 5050 3550 50  0001 C CNN
+	1    5050 3550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5650 4250 5650 5700
+Wire Notes Line
+	4900 4250 5650 4250
+$Comp
+L Device:R R?
+U 1 1 61346C9A
+P 3100 3850
+F 0 "R?" H 3030 3804 50  0000 R CNN
+F 1 "11k" H 3030 3895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 3850 50  0001 C CNN
+F 3 "~" H 3100 3850 50  0001 C CNN
+	1    3100 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61346CA0
+P 3100 4000
+F 0 "#PWR?" H 3100 3750 50  0001 C CNN
+F 1 "GND" H 3105 3827 50  0000 C CNN
+F 2 "" H 3100 4000 50  0001 C CNN
+F 3 "" H 3100 4000 50  0001 C CNN
+	1    3100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61346CA6
+P 3100 3450
+F 0 "R?" H 3030 3404 50  0000 R CNN
+F 1 "10k" H 3030 3495 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3030 3450 50  0001 C CNN
+F 3 "~" H 3100 3450 50  0001 C CNN
+	1    3100 3450
+	-1   0    0    1   
+$EndComp
+Text Label 4100 3650 0    50   ~ 0
+Schmitt_offset
+Wire Wire Line
+	3100 3600 3100 3650
+Connection ~ 3100 3650
+Wire Wire Line
+	3100 3650 3100 3700
+$Comp
+L Sesame:VREF #PWR?
+U 1 1 61346CB4
+P 3100 3300
+F 0 "#PWR?" H 3100 3150 50  0001 C CNN
+F 1 "VREF" H 3115 3473 50  0000 C CNN
+F 2 "" H 3100 3300 50  0001 C CNN
+F 3 "" H 3100 3300 50  0001 C CNN
+	1    3100 3300
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2800 3050 3550 3050
+Wire Wire Line
+	3100 3650 4750 3650
+Text Label 5950 3750 0    50   ~ 0
+Triangle_offset
+Wire Notes Line
+	3550 3050 3550 4500
+Wire Notes Line
+	2800 4500 2800 3050
+Wire Notes Line
+	3550 4500 2800 4500
+Text Notes 2900 4450 0    50   ~ 0
+Schmitt tigger \nOffset (3.14V)
 $EndSCHEMATC
