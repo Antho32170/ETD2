@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 16
+Sheet 6 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -13,11 +13,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 550  1000 0    50   ~ 0
-Entrées:\nSignaux de commande provenant du block driver permetant de controller les gates\nLes differents modes sont generer dans MOS Logic\n\nBidir:\nTension de 0 a 50v ou 5 48v TBD\n
-Text HLabel 4550 2350 0    100  BiDi ~ 0
+Text HLabel 3800 2350 0    100  BiDi ~ 0
 VD_LS
-Text HLabel 6950 2350 2    100  BiDi ~ 0
+Text HLabel 7900 2350 2    100  BiDi ~ 0
 VD_RS
 Text HLabel 4500 2700 0    50   Input ~ 0
 VG_LS
@@ -28,10 +26,10 @@ VG_RS
 Text HLabel 7000 3450 2    50   Input ~ 0
 VG_RP
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS QLS
 U 1 1 610E334F
 P 4750 2700
-F 0 "Q?" H 4955 2746 50  0000 L CNN
+F 0 "QLS" H 4955 2746 50  0000 L CNN
 F 1 "TK65G10N1" H 4955 2655 50  0000 L CNN
 F 2 "" H 4950 2800 50  0001 C CNN
 F 3 "~" H 4750 2700 50  0001 C CNN
@@ -39,10 +37,10 @@ F 3 "~" H 4750 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS QLP
 U 1 1 610EEE2E
 P 4750 3450
-F 0 "Q?" H 4955 3496 50  0000 L CNN
+F 0 "QLP" H 4955 3496 50  0000 L CNN
 F 1 "TK65G10N1" H 4955 3405 50  0000 L CNN
 F 2 "" H 4950 3550 50  0001 C CNN
 F 3 "~" H 4750 3450 50  0001 C CNN
@@ -50,10 +48,10 @@ F 3 "~" H 4750 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS QRS
 U 1 1 610F207F
 P 6750 2700
-F 0 "Q?" H 6955 2746 50  0000 L CNN
+F 0 "QRS" H 6955 2746 50  0000 L CNN
 F 1 "TK65G10N1" H 6955 2655 50  0000 L CNN
 F 2 "" H 6950 2800 50  0001 C CNN
 F 3 "~" H 6750 2700 50  0001 C CNN
@@ -61,10 +59,10 @@ F 3 "~" H 6750 2700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS QRP
 U 1 1 610F2085
 P 6750 3450
-F 0 "Q?" H 6955 3496 50  0000 L CNN
+F 0 "QRP" H 6955 3496 50  0000 L CNN
 F 1 "TK65G10N1" H 6955 3405 50  0000 L CNN
 F 2 "" H 6950 3550 50  0001 C CNN
 F 3 "~" H 6750 3450 50  0001 C CNN
@@ -80,10 +78,10 @@ Wire Wire Line
 Wire Wire Line
 	6650 3750 6650 3650
 $Comp
-L pspice:INDUCTOR L?
+L pspice:INDUCTOR L1
 U 1 1 610F3EF5
 P 5750 3100
-F 0 "L?" H 5750 3315 50  0000 C CNN
+F 0 "L1" H 5750 3315 50  0000 C CNN
 F 1 "INDUCTOR" H 5750 3224 50  0000 C CNN
 F 2 "" H 5750 3100 50  0001 C CNN
 F 3 "~" H 5750 3100 50  0001 C CNN
@@ -105,11 +103,11 @@ Wire Wire Line
 Wire Wire Line
 	4850 2500 4850 2350
 Wire Wire Line
-	4550 2350 4850 2350
+	3800 2350 4850 2350
 Wire Wire Line
 	6650 2500 6650 2350
 Wire Wire Line
-	6950 2350 6650 2350
+	7900 2350 6650 2350
 Text Notes 5300 3300 0    100  ~ 20
 Bobine TBD !
 Wire Wire Line
@@ -146,4 +144,26 @@ Wire Wire Line
 	7000 3100 6650 3100
 Text Notes 6750 2550 0    50   ~ 0
 D2PAK
+$Comp
+L Device:C C?
+U 1 1 6149AEB6
+P 8450 2950
+F 0 "C?" H 8565 2996 50  0000 L CNN
+F 1 "C" H 8565 2905 50  0000 L CNN
+F 2 "" H 8488 2800 50  0001 C CNN
+F 3 "~" H 8450 2950 50  0001 C CNN
+	1    8450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 6149B9CD
+P 8950 2950
+F 0 "C?" H 9068 2996 50  0000 L CNN
+F 1 "CP" H 9068 2905 50  0000 L CNN
+F 2 "" H 8988 2800 50  0001 C CNN
+F 3 "~" H 8950 2950 50  0001 C CNN
+	1    8950 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

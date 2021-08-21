@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 16
+Sheet 12 16
 Title "SESAME"
 Date "2021-08-04"
 Rev "A"
@@ -13,49 +13,14 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 650  1450 0    50   ~ 0
-————————————————————————————————————————————————\nENTREE(S):\nPWM | Entree Numérique | Signal provenant du block PWM\n~PWM~ | Entree Numérique | Signal provenant du block PWM\nDir | Entrée Numérique | Sens du courant et par extension choix de la meusure Droite / Gauche | 0:Gauche -> Droite - 1:Droite -> Gaucge\nMode | Entrée Numérique  | Selecteur Boost ou buck | 0 Buck - 1 Boost\nShutdown | entree Numérique | Signal de coupure des MOS | 0: Fonctionnement Normal - 1: Disjoncté\n————————————————————————————————————————————————\nSORTIE(S):\nNmos_xx | Sortie Numérique | Signal de grille du mos xx\n\n
-Text HLabel 5700 3750 0    50   Input ~ 0
+Text HLabel 2850 3950 0    50   Input ~ 0
 ~PWM
-Text HLabel 2250 3250 0    50   Input ~ 0
+Text HLabel 1150 1450 0    50   Input ~ 0
 Mode
-Text HLabel 2250 3050 0    50   Input ~ 0
+Text HLabel 1150 1250 0    50   Input ~ 0
 Dir
-$Comp
-L 4xxx:4011 U?
-U 2 1 61194533
-P 3750 2900
-F 0 "U?" H 3750 3225 50  0000 C CNN
-F 1 "4011" H 3750 3134 50  0000 C CNN
-F 2 "" H 3750 2900 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3750 2900 50  0001 C CNN
-	2    3750 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx:4011 U?
-U 1 1 61192492
-P 2950 3150
-F 0 "U?" H 2950 2925 50  0000 C CNN
-F 1 "4011" H 2950 2850 50  0000 C CNN
-F 2 "" H 2950 3150 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 2950 3150 50  0001 C CNN
-	1    2950 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 4xxx:4011 U?
-U 4 1 6119F84F
-P 4550 3150
-F 0 "U?" H 4550 3475 50  0000 C CNN
-F 1 "4011" H 4550 3384 50  0000 C CNN
-F 2 "" H 4550 3150 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 4550 3150 50  0001 C CNN
-	4    4550 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2650 3050 2600 3050
+	1550 1250 1500 1250
 Wire Wire Line
 	1300 6500 850  6500
 Wire Wire Line
@@ -93,7 +58,7 @@ U 1 1 610C6593
 P 850 7000
 F 0 "C?" H 600 7050 50  0000 L CNN
 F 1 "100n" H 550 6950 50  0000 L CNN
-F 2 "" H 888 6850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 888 6850 50  0001 C CNN
 F 3 "~" H 850 7000 50  0001 C CNN
 	1    850  7000
 	1    0    0    -1  
@@ -109,28 +74,6 @@ F 1 "GND" H 8905 4477 50  0000 C CNN
 F 2 "" H 8900 4650 50  0001 C CNN
 F 3 "" H 8900 4650 50  0001 C CNN
 	1    8900 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 61146E6D
-P 8250 4450
-F 0 "R?" H 8320 4496 50  0000 L CNN
-F 1 "R" H 8320 4405 50  0000 L CNN
-F 2 "" V 8180 4450 50  0001 C CNN
-F 3 "~" H 8250 4450 50  0001 C CNN
-	1    8250 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 611408F1
-P 8900 4450
-F 0 "R?" H 8970 4496 50  0000 L CNN
-F 1 "R" H 8970 4405 50  0000 L CNN
-F 2 "" V 8830 4450 50  0001 C CNN
-F 3 "~" H 8900 4450 50  0001 C CNN
-	1    8900 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -172,60 +115,14 @@ Text HLabel 9000 3350 2    50   Output ~ 0
 Driver_RS
 Text HLabel 8975 3950 2    50   Output ~ 0
 Driver_LP
-Text HLabel 5700 3600 0    50   Input ~ 0
+Text HLabel 2850 3800 0    50   Input ~ 0
 PWM
-$Comp
-L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
-U 1 1 610F7E61
-P 6850 3650
-F 0 "U?" H 6350 4500 50  0000 C CNN
-F 1 "CD4053B-Analog_Switch" H 6350 4400 50  0000 C CNN
-F 2 "" H 7000 2900 50  0001 L CNN
-F 3 "" H 6830 3850 50  0001 C CNN
-	1    6850 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 4150 6350 4150
-$Comp
-L power:GND #PWR0170
-U 1 1 61122542
-P 6250 4450
-F 0 "#PWR0170" H 6250 4200 50  0001 C CNN
-F 1 "GND" H 6255 4277 50  0000 C CNN
-F 2 "" H 6250 4450 50  0001 C CNN
-F 3 "" H 6250 4450 50  0001 C CNN
-	1    6250 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6250 4450 6250 4150
 Wire Wire Line
 	6350 3250 6300 3250
 Wire Wire Line
 	6300 3150 6350 3150
-$Comp
-L Device:R R?
-U 1 1 6114968D
-P 8250 2850
-F 0 "R?" H 8320 2896 50  0000 L CNN
-F 1 "R" H 8320 2805 50  0000 L CNN
-F 2 "" V 8180 2850 50  0001 C CNN
-F 3 "~" H 8250 2850 50  0001 C CNN
-	1    8250 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6114A712
-P 8900 2850
-F 0 "R?" H 8970 2896 50  0000 L CNN
-F 1 "R" H 8970 2805 50  0000 L CNN
-F 2 "" V 8830 2850 50  0001 C CNN
-F 3 "~" H 8900 2850 50  0001 C CNN
-	1    8900 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8250 3000 8250 3250
 Connection ~ 8250 3250
@@ -240,51 +137,40 @@ Wire Wire Line
 Wire Wire Line
 	8250 2650 8250 2700
 Wire Wire Line
-	2600 3250 2600 3500
-Connection ~ 2600 3250
+	1500 1450 1500 1700
+Connection ~ 1500 1450
 Wire Wire Line
-	2600 3250 2650 3250
+	1500 1450 1550 1450
 Wire Wire Line
-	2600 3050 2600 2800
-Connection ~ 2600 3050
+	1500 1250 1500 1000
+Connection ~ 1500 1250
 Wire Wire Line
-	3250 3150 3350 3150
+	2150 1350 2250 1350
 Wire Wire Line
-	3350 3150 3350 3000
+	2250 1350 2250 1200
 Wire Wire Line
-	3350 3150 3350 3300
-Connection ~ 3350 3150
-$Comp
-L 4xxx:4011 U?
-U 3 1 6119334A
-P 3750 3400
-F 0 "U?" H 3750 3150 50  0000 C CNN
-F 1 "4011" H 3750 3050 50  0000 C CNN
-F 2 "" H 3750 3400 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3750 3400 50  0001 C CNN
-	3    3750 3400
-	1    0    0    -1  
-$EndComp
+	2250 1350 2250 1500
+Connection ~ 2250 1350
 Wire Wire Line
-	2600 3500 3450 3500
+	1500 1700 2350 1700
 Wire Wire Line
-	3350 3300 3450 3300
+	2250 1500 2350 1500
 Wire Wire Line
-	2600 2800 3450 2800
+	1500 1000 2350 1000
 Wire Wire Line
-	3350 3000 3450 3000
+	2250 1200 2350 1200
 Wire Wire Line
-	4150 2900 4150 3050
+	3050 1100 3050 1250
 Wire Wire Line
-	4050 2900 4150 2900
+	2950 1100 3050 1100
 Wire Wire Line
-	4150 3250 4150 3400
+	3050 1450 3050 1600
 Wire Wire Line
-	4150 3400 4050 3400
+	3050 1600 2950 1600
 Wire Wire Line
-	4150 3050 4250 3050
+	3050 1250 3150 1250
 Wire Wire Line
-	4150 3250 4250 3250
+	3050 1450 3150 1450
 Wire Wire Line
 	8250 4600 8250 4650
 Wire Wire Line
@@ -303,10 +189,6 @@ NoConn ~ 7350 4050
 NoConn ~ 7350 4150
 Wire Wire Line
 	6950 2900 6950 2950
-Wire Wire Line
-	5700 3600 6300 3600
-Wire Wire Line
-	5700 3750 6350 3750
 Wire Notes Line
 	5800 2550 7650 2550
 Wire Notes Line
@@ -314,19 +196,17 @@ Wire Notes Line
 Wire Notes Line
 	5800 2550 5800 5000
 Wire Notes Line
-	4950 2500 4950 3850
+	3850 700  3850 2050
 Wire Notes Line
-	4950 3850 2350 3850
+	3850 2050 1250 2050
 Wire Notes Line
-	2350 3850 2350 2500
+	1250 2050 1250 700 
 Wire Notes Line
-	2350 2500 4950 2500
+	1250 700  3850 700 
 Wire Wire Line
-	2250 3050 2600 3050
+	1150 1250 1500 1250
 Wire Wire Line
-	2250 3250 2600 3250
-Wire Wire Line
-	4850 3150 6300 3150
+	1150 1450 1500 1450
 Text HLabel 8975 3950 2    50   Output ~ 0
 Driver_LP
 Wire Wire Line
@@ -360,12 +240,10 @@ Wire Notes Line
 	9500 3550 8050 3550
 Wire Notes Line
 	8050 3750 9500 3750
-Text Notes 8650 2350 0    50   ~ 0
+Text Notes 8350 2350 0    50   ~ 0
 Pull-ups MOS séries
 Wire Notes Line
 	9500 2200 8050 2200
-Wire Notes Line
-	8050 2200 8050 3550
 Wire Notes Line
 	9500 2200 9500 3550
 Wire Notes Line
@@ -376,7 +254,6 @@ Wire Notes Line
 	8050 3750 8050 5100
 Text Notes 8400 5050 0    50   ~ 0
 Pull-downs MOS parallèles
-Connection ~ 6300 3150
 Wire Wire Line
 	6300 3150 6300 3250
 $Comp
@@ -393,14 +270,9 @@ $EndComp
 Wire Wire Line
 	6350 3450 6300 3450
 Wire Wire Line
-	6300 3450 6300 3600
+	6300 3450 6300 3650
 Wire Wire Line
 	6350 3350 6100 3350
-Wire Wire Line
-	6350 4050 6250 4050
-Wire Wire Line
-	6250 4050 6250 4150
-Connection ~ 6250 4150
 $Comp
 L Sesame:+7V #PWR0172
 U 1 1 61274E3B
@@ -410,28 +282,6 @@ F 1 "+7V" H 6965 3073 50  0000 C CNN
 F 2 "" H 6950 2900 50  0001 C CNN
 F 3 "" H 6950 2900 50  0001 C CNN
 	1    6950 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sesame:+7V #PWR0173
-U 1 1 61278908
-P 8250 2650
-F 0 "#PWR0173" H 8250 2500 50  0001 C CNN
-F 1 "+7V" H 8265 2823 50  0000 C CNN
-F 2 "" H 8250 2650 50  0001 C CNN
-F 3 "" H 8250 2650 50  0001 C CNN
-	1    8250 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sesame:+7V #PWR0174
-U 1 1 6127D6D0
-P 8900 2650
-F 0 "#PWR0174" H 8900 2500 50  0001 C CNN
-F 1 "+7V" H 8915 2823 50  0000 C CNN
-F 2 "" H 8900 2650 50  0001 C CNN
-F 3 "" H 8900 2650 50  0001 C CNN
-	1    8900 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -449,46 +299,44 @@ Connection ~ 1300 6500
 $Comp
 L power:GND #PWR?
 U 1 1 61587C63
-P 2200 7050
+P 2100 7150
 AR Path="/60F421D1/61587C63" Ref="#PWR?"  Part="1" 
 AR Path="/60F4EAD9/61587C63" Ref="#PWR0176"  Part="1" 
-F 0 "#PWR0176" H 2200 6800 50  0001 C CNN
-F 1 "GND" H 2205 6877 50  0000 C CNN
-F 2 "" H 2200 7050 50  0001 C CNN
-F 3 "" H 2200 7050 50  0001 C CNN
-	1    2200 7050
+F 0 "#PWR0176" H 2100 6900 50  0001 C CNN
+F 1 "GND" H 2105 6977 50  0000 C CNN
+F 2 "" H 2100 7150 50  0001 C CNN
+F 3 "" H 2100 7150 50  0001 C CNN
+	1    2100 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 61587C69
-P 2200 6900
+P 2100 7000
 AR Path="/60F421D1/61587C69" Ref="C?"  Part="1" 
 AR Path="/60F4EAD9/61587C69" Ref="C?"  Part="1" 
-F 0 "C?" H 2315 6946 50  0000 L CNN
-F 1 "100n" H 2315 6855 50  0000 L CNN
-F 2 "" H 2238 6750 50  0001 C CNN
-F 3 "~" H 2200 6900 50  0001 C CNN
-	1    2200 6900
+F 0 "C?" H 2215 7046 50  0000 L CNN
+F 1 "100n" H 2215 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2138 6850 50  0001 C CNN
+F 3 "~" H 2100 7000 50  0001 C CNN
+	1    2100 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 61587C6F
-P 2200 6750
+P 2100 6850
 AR Path="/60F421D1/61587C6F" Ref="#PWR?"  Part="1" 
 AR Path="/60F4EAD9/61587C6F" Ref="#PWR0177"  Part="1" 
-F 0 "#PWR0177" H 2200 6600 50  0001 C CNN
-F 1 "VCC" H 2215 6923 50  0000 C CNN
-F 2 "" H 2200 6750 50  0001 C CNN
-F 3 "" H 2200 6750 50  0001 C CNN
-	1    2200 6750
+F 0 "#PWR0177" H 2100 6700 50  0001 C CNN
+F 1 "VCC" H 2115 7023 50  0000 C CNN
+F 2 "" H 2100 6850 50  0001 C CNN
+F 3 "" H 2100 6850 50  0001 C CNN
+	1    2100 6850
 	1    0    0    -1  
 $EndComp
-Text Notes 3100 4400 0    100  ~ 0
-SWITCH POWER MOS ICI
 $Bitmap
-Pos 3450 5600
+Pos 5100 7100
 Scale 2.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 A1 00 00 00 77 08 02 00 00 00 25 DA 68 
@@ -900,4 +748,301 @@ DA BA AF A4 D1 68 DD 3D 5E 7C E4 E5 E5 91 C9 64 06 83 21 78 18 1C 0E A7 A6 A6 A6
 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Wire Line
+	6300 3150 5600 3150
+Connection ~ 6300 3150
+Wire Wire Line
+	3950 4600 4000 4600
+Connection ~ 3950 4600
+Wire Wire Line
+	3950 4650 3950 4600
+$Comp
+L power:GND #PWR?
+U 1 1 613BCF4A
+P 3950 4650
+F 0 "#PWR?" H 3950 4400 50  0001 C CNN
+F 1 "GND" H 3955 4477 50  0000 C CNN
+F 2 "" H 3950 4650 50  0001 C CNN
+F 3 "" H 3950 4650 50  0001 C CNN
+	1    3950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4600 4000 4550
+Wire Wire Line
+	3900 4600 3950 4600
+Wire Wire Line
+	3900 4550 3900 4600
+Wire Wire Line
+	3400 4350 3500 4350
+$Comp
+L power:GND #PWR?
+U 1 1 613BCF5A
+P 3400 4650
+F 0 "#PWR?" H 3400 4400 50  0001 C CNN
+F 1 "GND" H 3405 4477 50  0000 C CNN
+F 2 "" H 3400 4650 50  0001 C CNN
+F 3 "" H 3400 4650 50  0001 C CNN
+	1    3400 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4650 3400 4350
+Wire Wire Line
+	3500 3450 3450 3450
+Wire Wire Line
+	3450 3350 3500 3350
+NoConn ~ 4500 4250
+NoConn ~ 4500 4350
+Wire Wire Line
+	4100 3100 4100 3150
+Wire Wire Line
+	2850 3800 3450 3800
+Wire Wire Line
+	2850 3950 3500 3950
+Wire Wire Line
+	4500 3950 4800 3950
+Wire Wire Line
+	4500 4050 4900 4050
+Wire Wire Line
+	4500 3650 4900 3650
+Wire Wire Line
+	4500 3750 4800 3750
+Wire Wire Line
+	3450 3350 3450 3450
+Wire Wire Line
+	3500 3650 3450 3650
+Wire Wire Line
+	3450 3650 3450 3800
+Wire Wire Line
+	3500 4250 3400 4250
+Wire Wire Line
+	3400 4250 3400 4350
+Connection ~ 3400 4350
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 613BCF79
+P 4100 3100
+F 0 "#PWR?" H 4100 2950 50  0001 C CNN
+F 1 "+7V" H 4115 3273 50  0000 C CNN
+F 2 "" H 4100 3100 50  0001 C CNN
+F 3 "" H 4100 3100 50  0001 C CNN
+	1    4100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3350 2850 3350
+Connection ~ 3450 3350
+Wire Wire Line
+	4900 3650 4900 4050
+Wire Wire Line
+	4800 3750 4800 3950
+Wire Wire Line
+	4900 3650 6300 3650
+Connection ~ 4900 3650
+Wire Wire Line
+	4800 3750 6350 3750
+Connection ~ 4800 3750
+Wire Wire Line
+	3750 1350 5600 1350
+Wire Wire Line
+	5600 1350 5600 3150
+Text HLabel 2850 3550 0    50   Input ~ 0
+~Enable
+$Comp
+L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
+U 1 1 610F7E61
+P 6850 3650
+F 0 "U?" H 6350 4500 50  0000 C CNN
+F 1 "CD4053BM96" H 6350 4400 50  0000 C CNN
+F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 7000 2900 50  0001 L CNN
+F 3 "" H 6830 3850 50  0001 C CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
+U 1 1 613BCF53
+P 4000 3850
+F 0 "U?" H 3500 4700 50  0000 C CNN
+F 1 "CD4053BM96" H 3500 4600 50  0000 C CNN
+F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 4150 3100 50  0001 L CNN
+F 3 "" H 3980 4050 50  0001 C CNN
+	1    4000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4011 U?
+U 3 1 6119334A
+P 2650 1600
+F 0 "U?" H 2650 1350 50  0000 C CNN
+F 1 "4011" H 2650 1250 50  0000 C CNN
+F 2 "" H 2650 1600 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 2650 1600 50  0001 C CNN
+	3    2650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4011 U?
+U 4 1 6119F84F
+P 3450 1350
+F 0 "U?" H 3450 1675 50  0000 C CNN
+F 1 "4011" H 3450 1584 50  0000 C CNN
+F 2 "" H 3450 1350 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3450 1350 50  0001 C CNN
+	4    3450 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4011 U?
+U 1 1 61192492
+P 1850 1350
+F 0 "U?" H 1850 1125 50  0000 C CNN
+F 1 "4011" H 1850 1050 50  0000 C CNN
+F 2 "" H 1850 1350 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 1850 1350 50  0001 C CNN
+	1    1850 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4011 U?
+U 2 1 61194533
+P 2650 1100
+F 0 "U?" H 2650 1425 50  0000 C CNN
+F 1 "4011" H 2650 1334 50  0000 C CNN
+F 2 "" H 2650 1100 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 2650 1100 50  0001 C CNN
+	2    2650 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6143955C
+P 2700 7150
+AR Path="/60F421D1/6143955C" Ref="#PWR?"  Part="1" 
+AR Path="/60F4EAD9/6143955C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2700 6900 50  0001 C CNN
+F 1 "GND" H 2705 6977 50  0000 C CNN
+F 2 "" H 2700 7150 50  0001 C CNN
+F 3 "" H 2700 7150 50  0001 C CNN
+	1    2700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61439562
+P 2700 7000
+AR Path="/60F421D1/61439562" Ref="C?"  Part="1" 
+AR Path="/60F4EAD9/61439562" Ref="C?"  Part="1" 
+F 0 "C?" H 2815 7046 50  0000 L CNN
+F 1 "100n" H 2815 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2738 6850 50  0001 C CNN
+F 3 "~" H 2700 7000 50  0001 C CNN
+	1    2700 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61439568
+P 2700 6850
+AR Path="/60F421D1/61439568" Ref="#PWR?"  Part="1" 
+AR Path="/60F4EAD9/61439568" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2700 6700 50  0001 C CNN
+F 1 "VCC" H 2715 7023 50  0000 C CNN
+F 2 "" H 2700 6850 50  0001 C CNN
+F 3 "" H 2700 6850 50  0001 C CNN
+	1    2700 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 61441A17
+P 8250 2650
+F 0 "#PWR?" H 8250 2500 50  0001 C CNN
+F 1 "+7V" H 8265 2823 50  0000 C CNN
+F 2 "" H 8250 2650 50  0001 C CNN
+F 3 "" H 8250 2650 50  0001 C CNN
+	1    8250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:+7V #PWR?
+U 1 1 614442E1
+P 8900 2650
+F 0 "#PWR?" H 8900 2500 50  0001 C CNN
+F 1 "+7V" H 8915 2823 50  0000 C CNN
+F 2 "" H 8900 2650 50  0001 C CNN
+F 3 "" H 8900 2650 50  0001 C CNN
+	1    8900 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 2000 0    50   ~ 0
+XOR Gate
+Text HLabel 2850 3350 0    50   Input ~ 0
+Mode
+$Comp
+L power:GND #PWR?
+U 1 1 61454AC0
+P 6100 3850
+F 0 "#PWR?" H 6100 3600 50  0001 C CNN
+F 1 "GND" H 6105 3677 50  0000 C CNN
+F 2 "" H 6100 3850 50  0001 C CNN
+F 3 "" H 6100 3850 50  0001 C CNN
+	1    6100 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3850 6300 3850
+Wire Wire Line
+	6300 3850 6300 4050
+Wire Wire Line
+	6300 4050 6350 4050
+Wire Wire Line
+	3500 3550 2850 3550
+Wire Notes Line
+	8050 2200 8050 3550
+$Comp
+L Device:R R?
+U 1 1 6114A712
+P 8900 2850
+F 0 "R?" H 8970 2896 50  0000 L CNN
+F 1 "10k" H 8970 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8830 2850 50  0001 C CNN
+F 3 "~" H 8900 2850 50  0001 C CNN
+	1    8900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6149251A
+P 8250 2850
+F 0 "R?" H 8320 2896 50  0000 L CNN
+F 1 "10k" H 8320 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8180 2850 50  0001 C CNN
+F 3 "~" H 8250 2850 50  0001 C CNN
+	1    8250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61492A34
+P 8250 4450
+F 0 "R?" H 8320 4496 50  0000 L CNN
+F 1 "10k" H 8320 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8180 4450 50  0001 C CNN
+F 3 "~" H 8250 4450 50  0001 C CNN
+	1    8250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6149304C
+P 8900 4450
+F 0 "R?" H 8970 4496 50  0000 L CNN
+F 1 "10k" H 8970 4405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8830 4450 50  0001 C CNN
+F 3 "~" H 8900 4450 50  0001 C CNN
+	1    8900 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
