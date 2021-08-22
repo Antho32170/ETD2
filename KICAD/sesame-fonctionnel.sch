@@ -22,7 +22,6 @@ F2 "VProt" B R 8700 2200 100
 F3 "VD_Mos" B L 7400 2200 100
 F4 "Current_Sens" O L 7400 2400 50 
 F5 "Voltage_Sens" O L 7400 2500 50 
-F6 "Dir" I R 8700 2800 50 
 $EndSheet
 $Sheet
 S 5100 5350 1500 1000
@@ -124,42 +123,15 @@ F3 "VProt" B R 2750 2200 100
 $EndSheet
 Wire Wire Line
 	4550 1850 4550 2500
-Connection ~ 900  2500
-Wire Wire Line
-	900  2400 900  2500
-Wire Wire Line
-	800  2400 900  2400
-Wire Wire Line
-	900  2500 800  2500
-Wire Wire Line
-	900  2550 900  2500
 $Comp
 L power:GND #PWR0104
 U 1 1 60FAC5D8
-P 900 2550
-F 0 "#PWR0104" H 900 2300 50  0001 C CNN
-F 1 "GND" H 905 2377 50  0000 C CNN
-F 2 "" H 900 2550 50  0001 C CNN
-F 3 "" H 900 2550 50  0001 C CNN
-	1    900  2550
-	-1   0    0    -1  
-$EndComp
-Connection ~ 900  2200
-Wire Wire Line
-	900  2300 900  2200
-Wire Wire Line
-	800  2300 900  2300
-Wire Wire Line
-	800  2200 900  2200
-$Comp
-L Connector:Screw_Terminal_01x04 J1
-U 1 1 60FAC5CD
-P 600 2300
-F 0 "J1" H 550 1950 50  0000 L CNN
-F 1 "Screw_Terminal_01x04" V 600 2550 50  0000 L CNN
-F 2 "" H 600 2300 50  0001 C CNN
-F 3 "~" H 600 2300 50  0001 C CNN
-	1    600  2300
+P 1150 2950
+F 0 "#PWR0104" H 1150 2700 50  0001 C CNN
+F 1 "GND" H 1150 2800 50  0000 C CNN
+F 2 "" H 1150 2950 50  0001 C CNN
+F 3 "" H 1150 2950 50  0001 C CNN
+	1    1150 2950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -172,8 +144,6 @@ Wire Wire Line
 	4450 4200 4950 4200
 Wire Wire Line
 	10650 2200 10800 2200
-Wire Wire Line
-	900  2200 1050 2200
 Text Label 3350 1550 0    50   ~ 0
 VProt_Left
 Text Label 7300 1550 0    50   ~ 0
@@ -300,7 +270,6 @@ F2 "VProt" B L 3050 2200 100
 F3 "VD_Mos" B R 4350 2200 100
 F4 "Current_Sens" O R 4350 2400 50 
 F5 "Voltage_Sens" O R 4350 2500 50 
-F6 "Dir" I L 3050 2800 50 
 $EndSheet
 Wire Wire Line
 	7100 1750 7100 5750
@@ -455,10 +424,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 1550 4950 1550
 Connection ~ 2900 2200
-Text Label 2700 2800 0    50   ~ 0
-Dir
-Wire Wire Line
-	2700 2800 3050 2800
 Wire Wire Line
 	9000 2200 8850 2200
 Wire Wire Line
@@ -468,26 +433,10 @@ Wire Wire Line
 Wire Wire Line
 	8850 2200 8700 2200
 Connection ~ 8850 2200
-Text Label 9050 2800 2    50   ~ 0
-Dir
-Wire Wire Line
-	9050 2800 8700 2800
-Text Notes 5450 900  0    100  ~ 20
-TODO
-Text Notes 3250 3650 0    100  ~ 20
-Rework needed
-Text Notes 9950 5550 0    100  ~ 20
-Presque ok
-Text Notes 8500 5550 0    100  ~ 20
-Ok
-Text Notes 5550 2150 0    100  ~ 20
-Ok
-Text Notes 3050 2100 0    100  ~ 20
-A finir choix aop
+Text Notes 5150 900  0    100  ~ 20
+Calculs SEPIC
 Text Notes 900  5200 0    100  ~ 20
 TODO
-Text Notes 5400 1000 0    50   ~ 10
-Rails d’alim 7V
 Wire Wire Line
 	4950 3550 4750 3550
 Wire Wire Line
@@ -524,8 +473,6 @@ Wire Wire Line
 	6700 3650 6700 2700
 Text Notes 5250 4400 0    100  ~ 20
 Trouver Driver
-Text Notes 7400 2100 0    100  ~ 20
-A finir choix aop
 $Sheet
 S 650  700  500  150 
 U 6142ECA0
@@ -541,4 +488,86 @@ F2 "Ramp" O R 4800 5550 50
 $EndSheet
 Text Notes 3600 7100 0    50   ~ 0
 Res BIAS Clamping DIODE
+Text Notes 550  3550 0    50   ~ 0
+Johnson / Cinch Connectivity Solutions 108-0740-102\nor Keystone 6095\n+ CXS70-14-C
+Wire Wire Line
+	800  2200 850  2200
+Wire Wire Line
+	750  2350 850  2350
+Wire Wire Line
+	850  2350 850  2200
+Connection ~ 850  2200
+Wire Wire Line
+	850  2200 1050 2200
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 6140956C
+P 850 2950
+F 0 "#PWR?" H 850 2750 50  0001 C CNN
+F 1 "GNDPWR" H 850 2800 50  0000 C CNN
+F 2 "" H 850 2900 50  0001 C CNN
+F 3 "" H 850 2900 50  0001 C CNN
+	1    850  2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 61427119
+P 600 2200
+F 0 "J?" H 1300 2100 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 1250 2200 50  0000 C CNN
+F 2 "" H 600 2200 50  0001 C CNN
+F 3 "~" H 600 2200 50  0001 C CNN
+	1    600  2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 6142711F
+P 650 2350
+F 0 "H?" V 700 3100 50  0000 C CNN
+F 1 "MountingHole_Pad" V 600 3050 50  0000 C CNN
+F 2 "" H 650 2350 50  0001 C CNN
+F 3 "~" H 650 2350 50  0001 C CNN
+	1    650  2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 6142C002
+P 600 2800
+F 0 "J?" H 1300 2800 50  0000 C CNN
+F 1 "Screw_Terminal_01x01" H 1250 2850 50  0000 C CNN
+F 2 "" H 600 2800 50  0001 C CNN
+F 3 "~" H 600 2800 50  0001 C CNN
+	1    600  2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 6142C008
+P 650 2650
+F 0 "H?" V 700 3400 50  0000 C CNN
+F 1 "MountingHole_Pad" V 600 3350 50  0000 C CNN
+F 2 "" H 650 2650 50  0001 C CNN
+F 3 "~" H 650 2650 50  0001 C CNN
+	1    650  2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	750  2650 850  2650
+Wire Wire Line
+	850  2650 850  2800
+Wire Wire Line
+	850  2800 800  2800
+Wire Wire Line
+	850  2800 850  2900
+Connection ~ 850  2800
+Wire Wire Line
+	1150 2950 1150 2900
+Wire Wire Line
+	1150 2900 850  2900
+Connection ~ 850  2900
+Wire Wire Line
+	850  2900 850  2950
 $EndSCHEMATC

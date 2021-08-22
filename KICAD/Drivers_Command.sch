@@ -118,8 +118,6 @@ Driver_LP
 Text HLabel 2850 3800 0    50   Input ~ 0
 PWM
 Wire Wire Line
-	6250 4150 6350 4150
-Wire Wire Line
 	6350 3250 6300 3250
 Wire Wire Line
 	6300 3150 6350 3150
@@ -240,8 +238,8 @@ Wire Notes Line
 	9500 3550 8050 3550
 Wire Notes Line
 	8050 3750 9500 3750
-Text Notes 8350 2350 0    50   ~ 0
-Pull-ups MOS séries
+Text Notes 8250 2350 0    50   ~ 0
+Pull-up/down MOS in series
 Wire Notes Line
 	9500 2200 8050 2200
 Wire Notes Line
@@ -252,8 +250,8 @@ Wire Notes Line
 	9500 3750 9500 5100
 Wire Notes Line
 	8050 3750 8050 5100
-Text Notes 8400 5050 0    50   ~ 0
-Pull-downs MOS parallèles
+Text Notes 8300 5050 0    50   ~ 0
+Pull-down MOS in parallel
 Wire Wire Line
 	6300 3150 6300 3250
 $Comp
@@ -778,22 +776,20 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 613BCF5A
-P 3400 4650
-F 0 "#PWR?" H 3400 4400 50  0001 C CNN
-F 1 "GND" H 3405 4477 50  0000 C CNN
-F 2 "" H 3400 4650 50  0001 C CNN
-F 3 "" H 3400 4650 50  0001 C CNN
-	1    3400 4650
+P 3400 4450
+F 0 "#PWR?" H 3400 4200 50  0001 C CNN
+F 1 "GND" H 3405 4277 50  0000 C CNN
+F 2 "" H 3400 4450 50  0001 C CNN
+F 3 "" H 3400 4450 50  0001 C CNN
+	1    3400 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 4650 3400 4350
+	3400 4450 3400 4350
 Wire Wire Line
 	3500 3450 3450 3450
 Wire Wire Line
 	3450 3350 3500 3350
-NoConn ~ 4500 4250
-NoConn ~ 4500 4350
 Wire Wire Line
 	4100 3100 4100 3150
 Wire Wire Line
@@ -801,24 +797,15 @@ Wire Wire Line
 Wire Wire Line
 	2850 3950 3500 3950
 Wire Wire Line
-	4500 3950 4800 3950
+	4500 3950 4550 3950
 Wire Wire Line
-	4500 4050 4900 4050
-Wire Wire Line
-	4500 3650 4900 3650
-Wire Wire Line
-	4500 3750 4800 3750
+	4500 4050 4650 4050
 Wire Wire Line
 	3450 3350 3450 3450
 Wire Wire Line
 	3500 3650 3450 3650
 Wire Wire Line
 	3450 3650 3450 3800
-Wire Wire Line
-	3500 4250 3400 4250
-Wire Wire Line
-	3400 4250 3400 4350
-Connection ~ 3400 4350
 $Comp
 L Sesame:+7V #PWR?
 U 1 1 613BCF79
@@ -833,16 +820,6 @@ $EndComp
 Wire Wire Line
 	3450 3350 2850 3350
 Connection ~ 3450 3350
-Wire Wire Line
-	4900 3650 4900 4050
-Wire Wire Line
-	4800 3750 4800 3950
-Wire Wire Line
-	4900 3650 6300 3650
-Connection ~ 4900 3650
-Wire Wire Line
-	4800 3750 6350 3750
-Connection ~ 4800 3750
 Wire Wire Line
 	3750 1350 5600 1350
 Wire Wire Line
@@ -954,28 +931,6 @@ F 3 "" H 2700 6850 50  0001 C CNN
 	1    2700 6850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Sesame:+7V #PWR?
-U 1 1 61441A17
-P 8250 2650
-F 0 "#PWR?" H 8250 2500 50  0001 C CNN
-F 1 "+7V" H 8265 2823 50  0000 C CNN
-F 2 "" H 8250 2650 50  0001 C CNN
-F 3 "" H 8250 2650 50  0001 C CNN
-	1    8250 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sesame:+7V #PWR?
-U 1 1 614442E1
-P 8900 2650
-F 0 "#PWR?" H 8900 2500 50  0001 C CNN
-F 1 "+7V" H 8915 2823 50  0000 C CNN
-F 2 "" H 8900 2650 50  0001 C CNN
-F 3 "" H 8900 2650 50  0001 C CNN
-	1    8900 2650
-	1    0    0    -1  
-$EndComp
 Text Notes 3450 2000 0    50   ~ 0
 XOR Gate
 Text HLabel 2850 3350 0    50   Input ~ 0
@@ -983,18 +938,18 @@ Mode
 $Comp
 L power:GND #PWR?
 U 1 1 61454AC0
-P 6100 3850
-F 0 "#PWR?" H 6100 3600 50  0001 C CNN
-F 1 "GND" H 6105 3677 50  0000 C CNN
-F 2 "" H 6100 3850 50  0001 C CNN
-F 3 "" H 6100 3850 50  0001 C CNN
-	1    6100 3850
+P 6100 3800
+F 0 "#PWR?" H 6100 3550 50  0001 C CNN
+F 1 "GND" H 6105 3627 50  0000 C CNN
+F 2 "" H 6100 3800 50  0001 C CNN
+F 3 "" H 6100 3800 50  0001 C CNN
+	1    6100 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 3850 6300 3850
+	6100 3800 6300 3800
 Wire Wire Line
-	6300 3850 6300 4050
+	6300 3800 6300 4050
 Wire Wire Line
 	6300 4050 6350 4050
 Wire Wire Line
@@ -1045,4 +1000,64 @@ F 3 "~" H 8900 4450 50  0001 C CNN
 	1    8900 4450
 	1    0    0    -1  
 $EndComp
+Text Label 2950 3550 0    50   ~ 0
+~Enable
+Wire Wire Line
+	6000 4150 6350 4150
+Text Label 6000 4150 0    50   ~ 0
+~Enable
+Text Label 2900 4250 0    50   ~ 0
+Resistor_pull
+Wire Wire Line
+	3500 4250 2900 4250
+$Comp
+L power:GND #PWR?
+U 1 1 6130709D
+P 4800 4400
+F 0 "#PWR?" H 4800 4150 50  0001 C CNN
+F 1 "GND" H 4805 4227 50  0000 C CNN
+F 2 "" H 4800 4400 50  0001 C CNN
+F 3 "" H 4800 4400 50  0001 C CNN
+	1    4800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4400 4800 4350
+Wire Wire Line
+	8250 2650 8900 2650
+Text Label 8350 2650 0    50   ~ 0
+Resistor_pull
+Wire Wire Line
+	4800 4350 4500 4350
+$Comp
+L power:VCC #PWR?
+U 1 1 61311635
+P 4800 4200
+F 0 "#PWR?" H 4800 4050 50  0001 C CNN
+F 1 "VCC" H 4815 4373 50  0000 C CNN
+F 2 "" H 4800 4200 50  0001 C CNN
+F 3 "" H 4800 4200 50  0001 C CNN
+	1    4800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4250 4800 4250
+Wire Wire Line
+	4800 4250 4800 4200
+Wire Wire Line
+	4500 3750 4550 3750
+Wire Wire Line
+	4500 3650 4650 3650
+Wire Wire Line
+	4550 3950 4550 3750
+Connection ~ 4550 3750
+Wire Wire Line
+	4550 3750 6350 3750
+Wire Wire Line
+	4650 4050 4650 3650
+Connection ~ 4650 3650
+Wire Wire Line
+	4650 3650 6300 3650
+Text Notes 2800 5050 0    100  ~ 0
+inverser A et C pour le pinout ?
 $EndSCHEMATC
