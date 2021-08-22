@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 16
+Sheet 15 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -76,17 +76,6 @@ F 2 "" H 8150 3200 50  0001 C CNN
 F 3 "~" H 8150 3200 50  0001 C CNN
 	1    8150 3200
 	0    1    1    0   
-$EndComp
-$Comp
-L Amplifier_Operational:MCP602 U?
-U 1 1 6108AD98
-P 9050 2900
-F 0 "U?" H 9050 2533 50  0000 C CNN
-F 1 "MCP602" H 9050 2624 50  0000 C CNN
-F 2 "" H 9050 2900 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 9050 2900 50  0001 C CNN
-	1    9050 2900
-	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8650 2450 9450 2450
@@ -235,7 +224,7 @@ L Sesame:L_Core_Ferrite_Coupled_2_Parts L2
 U 2 1 6123D71D
 P 6050 2900
 F 0 "L2" H 6050 3050 50  0000 C CNN
-F 1 "L_Core_Ferrite_Coupled_2_Parts" V 6900 2900 50  0000 C CNN
+F 1 "L_Core_Ferrite_Coupled_2_Parts" V 6750 3000 50  0001 C CNN
 F 2 "" H 6050 3000 50  0001 C CNN
 F 3 "~" H 6050 3000 50  0001 C CNN
 	2    6050 2900
@@ -466,7 +455,7 @@ F 3 "~" H 3400 2850 50  0001 C CNN
 	1    3400 2850
 	-1   0    0    1   
 $EndComp
-Text Notes 2650 4700 0    50   ~ 0
+Text Notes 2600 4600 0    50   ~ 0
 RT = 432k  -> 100 kHz\nRT = 143k  -> 300 kHz\nRT = 84.5k -> 500 kHz
 $Comp
 L power:VCC #PWR?
@@ -498,4 +487,53 @@ Wire Wire Line
 Wire Wire Line
 	9800 2900 9450 2900
 Connection ~ 9450 2900
+Text Notes 5050 1600 0    100  ~ 0
+VCC = 7V\nVREF = 6V
+$Comp
+L Sesame:AD8030 U?
+U 1 1 615918A8
+P 9050 2900
+F 0 "U?" H 9050 3267 50  0000 C CNN
+F 1 "AD8030" H 9050 3176 50  0000 C CNN
+F 2 "" H 9050 2900 50  0001 C CNN
+F 3 "~" H 9050 2900 50  0001 C CNN
+	1    9050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:AD8030 U?
+U 2 1 61592FA9
+P 10200 4550
+F 0 "U?" H 10200 4917 50  0000 C CNN
+F 1 "AD8030" H 10200 4826 50  0000 C CNN
+F 2 "" H 10200 4550 50  0001 C CNN
+F 3 "~" H 10200 4550 50  0001 C CNN
+	2    10200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:VREF #PWR?
+U 1 1 61598955
+P 9800 4400
+F 0 "#PWR?" H 9800 4250 50  0001 C CNN
+F 1 "VREF" H 9815 4573 50  0000 C CNN
+F 2 "" H 9800 4400 50  0001 C CNN
+F 3 "" H 9800 4400 50  0001 C CNN
+	1    9800 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 4400 9800 4450
+Wire Wire Line
+	9800 4450 9900 4450
+Wire Wire Line
+	10500 4550 10600 4550
+Wire Wire Line
+	10600 4550 10600 4900
+Wire Wire Line
+	10600 4900 9800 4900
+Wire Wire Line
+	9800 4900 9800 4650
+Wire Wire Line
+	9800 4650 9900 4650
 $EndSCHEMATC
