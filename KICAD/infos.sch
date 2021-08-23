@@ -31,4 +31,6 @@ Text Notes 3100 1500 0    100  ~ 0
 voir differentes masse avec manu\n
 Text Notes 750  3500 0    100  ~ 0
 L = Left\nR = Right\nS = Serial\nP = Parallel \nG = Gate\nD = Drain
+Text Notes 3050 2200 0    50   ~ 0
+Johnson / Cinch Connectivity Solutions 108-0740-102\nor Keystone 6095\n+ CXS70-14-C
 $EndSCHEMATC

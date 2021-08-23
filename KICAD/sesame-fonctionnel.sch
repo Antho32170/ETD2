@@ -42,16 +42,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0104
 U 1 1 60FAC5D8
-P 1300 3350
-F 0 "#PWR0104" H 1300 3100 50  0001 C CNN
-F 1 "GND" H 1300 3200 50  0000 C CNN
-F 2 "" H 1300 3350 50  0001 C CNN
-F 3 "" H 1300 3350 50  0001 C CNN
-	1    1300 3350
+P 1300 3400
+F 0 "#PWR0104" H 1300 3150 50  0001 C CNN
+F 1 "GND" H 1300 3250 50  0000 C CNN
+F 2 "" H 1300 3400 50  0001 C CNN
+F 3 "" H 1300 3400 50  0001 C CNN
+	1    1300 3400
 	-1   0    0    -1  
 $EndComp
 Text Label 7550 4650 0    50   ~ 0
-Over_UI_Protection
+~Over_UI_Protection
 $Sheet
 S 3000 6350 1500 1000
 U 60F1B237
@@ -68,7 +68,7 @@ F0 "PROGRAMMABLE BREAKER" 50
 F1 "programmable_breaker.sch" 50
 F2 "Current_Sens" I L 9300 6150 50 
 F3 "Voltage_Sens" I L 9300 6050 50 
-F4 "Over_UI_Protection" O R 10750 5900 50 
+F4 "~Over_UI_Protection" O R 10750 5900 50 
 F5 "Rearm" I L 9300 5450 50 
 F6 "Current_Thres" I L 9300 5700 50 
 F7 "Voltage_Thres" I L 9300 5600 50 
@@ -139,7 +139,7 @@ F9 "Current_Sens_Selected" O R 8600 6150 50
 F10 "Voltage_Sens_Selected" O R 8600 6050 50 
 $EndSheet
 Wire Wire Line
-	4700 4350 4700 4650
+	2800 4350 2800 4650
 $Sheet
 S 2950 3450 1500 1000
 U 60F4EAD9
@@ -149,10 +149,11 @@ F2 "Driver_LS" O R 4450 3900 50
 F3 "Driver_LP" O R 4450 4000 50 
 F4 "Driver_RS" O R 4450 4100 50 
 F5 "Driver_RP" O R 4450 4200 50 
-F6 "PWM" I L 2950 4350 50 
-F7 "~PWM" I L 2950 4250 50 
+F6 "PWM" I L 2950 4100 50 
+F7 "~PWM" I L 2950 4000 50 
 F8 "Dir" I L 2950 3550 50 
 F9 "Mode" I L 2950 3700 50 
+F10 "~Enable" I L 2950 4350 50 
 $EndSheet
 Text Label 2200 4900 2    50   ~ 0
 INT_PWM
@@ -177,55 +178,49 @@ F0 "RAMP GENERATOR" 50
 F1 "gen_ramp.sch" 50
 F2 "Ramp" O R 4500 5300 50 
 $EndSheet
-Text Notes 950  2900 0    50   ~ 0
-Johnson / Cinch Connectivity Solutions 108-0740-102\nor Keystone 6095\n+ CXS70-14-C
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 6140956C
-P 1000 3350
-F 0 "#PWR?" H 1000 3150 50  0001 C CNN
-F 1 "GNDPWR" H 1000 3200 50  0000 C CNN
-F 2 "" H 1000 3300 50  0001 C CNN
-F 3 "" H 1000 3300 50  0001 C CNN
-	1    1000 3350
+P 1000 3400
+F 0 "#PWR?" H 1000 3200 50  0001 C CNN
+F 1 "GNDPWR" H 1000 3250 50  0000 C CNN
+F 2 "" H 1000 3350 50  0001 C CNN
+F 3 "" H 1000 3350 50  0001 C CNN
+	1    1000 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 3200 1000 3300
-Connection ~ 1000 3200
+	1000 3250 1000 3350
+Connection ~ 1000 3250
 Wire Wire Line
-	1300 3350 1300 3300
+	1300 3400 1300 3350
 Wire Wire Line
-	1300 3300 1000 3300
-Connection ~ 1000 3300
+	1300 3350 1000 3350
+Connection ~ 1000 3350
 Wire Wire Line
-	1000 3300 1000 3350
+	1000 3350 1000 3400
 Wire Wire Line
-	1000 3200 950  3200
-Wire Wire Line
-	1000 3050 1000 3200
-Wire Wire Line
-	900  3050 1000 3050
+	1000 3250 950  3250
 $Comp
 L Mechanical:MountingHole_Pad J?
 U 1 1 6142C008
-P 800 3050
-F 0 "J?" V 1050 3100 50  0000 C CNN
-F 1 "6095" V 950 3100 50  0000 C CNN
-F 2 "" H 800 3050 50  0001 C CNN
-F 3 "~" H 800 3050 50  0001 C CNN
-	1    800  3050
+P 800 3100
+F 0 "J?" V 1050 3150 50  0000 C CNN
+F 1 "6095" V 950 3150 50  0000 C CNN
+F 2 "" H 800 3100 50  0001 C CNN
+F 3 "~" H 800 3100 50  0001 C CNN
+	1    800  3100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x01 J?
 U 1 1 6142C002
-P 750 3200
-F 0 "J?" H 200 3100 50  0000 C CNN
-F 1 "CXS70-14-C" H 200 3200 50  0000 C CNN
-F 2 "" H 750 3200 50  0001 C CNN
-F 3 "~" H 750 3200 50  0001 C CNN
-	1    750  3200
+P 750 3250
+F 0 "J?" H 200 3150 50  0000 C CNN
+F 1 "CXS70-14-C" H 200 3250 50  0000 C CNN
+F 2 "Sesame_footprint:CXS70-14-C" H 750 3250 50  0001 C CNN
+F 3 "~" H 750 3250 50  0001 C CNN
+	1    750  3250
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -238,17 +233,6 @@ F 2 "" H 800 2350 50  0001 C CNN
 F 3 "~" H 800 2350 50  0001 C CNN
 	1    800  2350
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x01 J?
-U 1 1 61427119
-P 750 2200
-F 0 "J?" H 600 1950 50  0000 C CNN
-F 1 "CXS70-14-C" H 600 2050 50  0000 C CNN
-F 2 "Sesame_footprint:CXS70-14-C" H 750 2200 50  0001 C CNN
-F 3 "~" H 750 2200 50  0001 C CNN
-	1    750  2200
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1000 2200 1200 2200
@@ -385,8 +369,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 3900 5050 3900
 Wire Wire Line
-	5050 4350 4700 4350
-Wire Wire Line
 	6650 2700 6550 2700
 Wire Wire Line
 	5000 2800 5000 3550
@@ -451,7 +433,7 @@ U 1 1 6156FAE4
 P 10950 3200
 F 0 "J?" H 10400 3100 50  0000 C CNN
 F 1 "CXS70-14-C" H 10400 3200 50  0000 C CNN
-F 2 "" H 10950 3200 50  0001 C CNN
+F 2 "Sesame_footprint:CXS70-14-C" H 10950 3200 50  0001 C CNN
 F 3 "~" H 10950 3200 50  0001 C CNN
 	1    10950 3200
 	1    0    0    1   
@@ -473,7 +455,6 @@ F6 "VG_RS" O R 6550 3750 50
 F7 "VG_RP" O R 6550 3550 50 
 F8 "Driver_RP" I L 5050 4200 50 
 F9 "Driver_RS" I L 5050 4100 50 
-F10 "Enable" I L 5050 4350 50 
 F11 "VS_L" U L 5050 3650 50 
 F12 "VS_R" U R 6550 3650 50 
 $EndSheet
@@ -489,14 +470,12 @@ Wire Wire Line
 	6550 3650 6650 3650
 Wire Wire Line
 	6650 3650 6650 2700
-Text Notes 5350 4400 0    100  ~ 20
-Trouver Driver
 Wire Wire Line
 	6850 1700 6850 5850
 Text Label 7150 3350 1    50   ~ 0
 Voltage_Sens_R
 Wire Wire Line
-	4700 4650 10950 4650
+	2800 4650 10950 4650
 Wire Wire Line
 	7050 2400 7050 5550
 Text Label 6950 3350 1    50   ~ 0
@@ -538,9 +517,9 @@ Wire Wire Line
 Wire Wire Line
 	2200 5500 1600 5500
 Wire Wire Line
-	1600 4250 2950 4250
+	1600 4000 2950 4000
 Wire Wire Line
-	1600 4350 2950 4350
+	1600 4100 2950 4100
 Wire Wire Line
 	1600 5400 2200 5400
 Wire Wire Line
@@ -558,7 +537,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 4800 6500 5450
 $Sheet
-S 600  4100 1000 3150
+S 600  3850 1000 3400
 U 618748E2
 F0 "INT EXT CONFIG" 50
 F1 "Int_Ext_Config.sch" 50
@@ -570,8 +549,8 @@ F6 "Dir" O R 1600 5300 50
 F7 "Mode" O R 1600 5400 50 
 F8 "INT_PWM" I R 1600 4900 50 
 F9 "~INT_PWM" I R 1600 4800 50 
-F10 "PWM" O R 1600 4350 50 
-F11 "~PWM" O R 1600 4250 50 
+F10 "PWM" O R 1600 4100 50 
+F11 "~PWM" O R 1600 4000 50 
 F12 "CC_CV_Mode" O R 1600 5500 50 
 F13 "Ext_Setpoint" O R 1600 6550 50 
 F14 "Ext_Current_Tresh" O R 1600 7100 50 
@@ -582,9 +561,9 @@ Wire Wire Line
 	6400 4900 1600 4900
 Wire Wire Line
 	6500 4800 1600 4800
-Text Label 2200 4250 2    50   ~ 0
+Text Label 2200 4000 2    50   ~ 0
 ~PWM
-Text Label 2200 4350 2    50   ~ 0
+Text Label 2200 4100 2    50   ~ 0
 PWM
 Text Notes 5200 250  0    100  ~ 20
 Calculs SEPIC
@@ -596,4 +575,38 @@ F1 "alims.sch" 50
 F2 "Left_Supply" I L 5050 1050 50 
 F3 "Right_Supply" I R 6550 1050 50 
 $EndSheet
+$Comp
+L Connector:Screw_Terminal_01x01 J?
+U 1 1 61427119
+P 750 2200
+F 0 "J?" H 600 1950 50  0000 C CNN
+F 1 "CXS70-14-C" H 600 2050 50  0000 C CNN
+F 2 "Sesame_footprint:CXS70-14-C" H 750 2200 50  0001 C CNN
+F 3 "~" H 750 2200 50  0001 C CNN
+	1    750  2200
+	-1   0    0    1   
+$EndComp
+Connection ~ 1000 3100
+Wire Wire Line
+	900  3100 1000 3100
+Wire Wire Line
+	1000 3100 1000 3250
+$Comp
+L Connector:TestPoint TP?
+U 1 1 614ECCE3
+P 1000 3050
+AR Path="/614794AE/614ECCE3" Ref="TP?"  Part="1" 
+AR Path="/61456C6A/614ECCE3" Ref="TP?"  Part="1" 
+AR Path="/614ECCE3" Ref="TP?"  Part="1" 
+F 0 "TP?" H 950 3400 50  0000 L CNN
+F 1 "TP_POP" H 1000 3300 50  0000 C CNN
+F 2 "" H 1200 3050 50  0001 C CNN
+F 3 "~" H 1200 3050 50  0001 C CNN
+	1    1000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3050 1000 3100
+Wire Wire Line
+	2950 4350 2800 4350
 $EndSCHEMATC

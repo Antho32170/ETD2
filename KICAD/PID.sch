@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 16
+Sheet 2 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -66,7 +66,7 @@ L Device:R R?
 U 1 1 61442D7B
 P 9350 3200
 F 0 "R?" V 9143 3200 50  0000 C CNN
-F 1 "R" V 9234 3200 50  0000 C CNN
+F 1 "1.4k" V 9234 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9280 3200 50  0001 C CNN
 F 3 "~" H 9350 3200 50  0001 C CNN
 	1    9350 3200
@@ -492,19 +492,6 @@ F 3 "~" H 7250 3200 50  0001 C CNN
 	1    7250 3200
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:R_POT RV?
-U 1 1 615595FE
-P 1650 3300
-AR Path="/60F2F8DD/615595FE" Ref="RV?"  Part="1" 
-AR Path="/60F1B237/615595FE" Ref="RV?"  Part="1" 
-F 0 "RV?" H 1581 3346 50  0000 R CNN
-F 1 "10k" H 1581 3255 50  0000 R CNN
-F 2 "" H 1650 3300 50  0001 C CNN
-F 3 "~" H 1650 3300 50  0001 C CNN
-	1    1650 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 3300 3150 3300
 $Comp
@@ -577,4 +564,18 @@ Text Label 7750 3200 0    50   ~ 0
 Feedback_raw
 Text Label 9800 3200 0    50   ~ 0
 Feedback
+$Comp
+L Device:R_POT RV?
+U 1 1 615B0664
+P 1650 3300
+AR Path="/60F2F8DD/615B0664" Ref="RV?"  Part="1" 
+AR Path="/60F1B237/615B0664" Ref="RV?"  Part="1" 
+F 0 "RV?" H 1581 3346 50  0000 R CNN
+F 1 "10K" H 1581 3255 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical" H 1650 3300 50  0001 C CNN
+F 3 "https://docs.rs-online.com/0467/0900766b80025f51.pdf" H 1650 3300 50  0001 C CNN
+F 4 "3214W" H 1650 3300 50  0001 C CNN "Manifacturer_Ref"
+	1    1650 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

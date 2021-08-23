@@ -13,23 +13,23 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5250 3450 0    50   Input ~ 0
+Text HLabel 5200 3450 0    50   Input ~ 0
 Voltage_Sens_R
-Text HLabel 5250 3750 0    50   Input ~ 0
+Text HLabel 5200 3750 0    50   Input ~ 0
 Current_Sens_R
-Text HLabel 5250 3350 0    50   Input ~ 0
+Text HLabel 5200 3350 0    50   Input ~ 0
 Voltage_Sens_L
-Text HLabel 5250 3650 0    50   Input ~ 0
+Text HLabel 5200 3650 0    50   Input ~ 0
 Current_Sens_L
-Text HLabel 7150 3350 2    50   Output ~ 0
+Text HLabel 7200 3350 2    50   Output ~ 0
 Voltage_Sens_Selected
-Text HLabel 7150 3650 2    50   Output ~ 0
+Text HLabel 7200 3650 2    50   Output ~ 0
 Current_Sens_Selected
-Text HLabel 7150 3250 2    50   Input ~ 0
+Text HLabel 7200 3250 2    50   Input ~ 0
 CC_CV_Mode
-Text HLabel 7150 3100 2    50   Input ~ 0
+Text HLabel 7200 3100 2    50   Input ~ 0
 Dir
-Text HLabel 7150 3950 2    50   Output ~ 0
+Text HLabel 7200 3950 2    50   Output ~ 0
 Measure_Selected
 $Comp
 L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
@@ -80,15 +80,15 @@ Connection ~ 6150 4300
 Wire Wire Line
 	6150 4300 6100 4300
 Wire Wire Line
-	6600 3950 7150 3950
+	6600 3950 7200 3950
 Wire Wire Line
 	6600 3650 6850 3650
 Wire Wire Line
 	6600 3350 7000 3350
 Wire Wire Line
-	6600 3250 7150 3250
+	6600 3250 7200 3250
 Wire Wire Line
-	6800 3100 7150 3100
+	6800 3100 7200 3100
 Wire Wire Line
 	6000 2700 6000 2850
 Wire Wire Line
@@ -96,13 +96,13 @@ Wire Wire Line
 Wire Wire Line
 	5600 4050 5500 4050
 Wire Wire Line
-	5600 3350 5250 3350
+	5600 3350 5200 3350
 Wire Wire Line
-	5250 3450 5600 3450
+	5200 3450 5600 3450
 Wire Wire Line
-	5600 3650 5250 3650
+	5600 3650 5200 3650
 Wire Wire Line
-	5250 3750 5600 3750
+	5200 3750 5600 3750
 $Comp
 L power:GND #PWR0162
 U 1 1 610C24DF
@@ -166,7 +166,7 @@ Wire Wire Line
 	5500 4700 5500 4050
 Connection ~ 6850 3650
 Wire Wire Line
-	6850 3650 7150 3650
+	6850 3650 7200 3650
 Wire Wire Line
 	5400 3950 5400 4800
 Wire Wire Line
@@ -175,5 +175,15 @@ Wire Wire Line
 	7000 3350 7000 4800
 Connection ~ 7000 3350
 Wire Wire Line
-	7000 3350 7150 3350
+	7000 3350 7200 3350
+Wire Notes Line
+	7100 5100 5300 5100
+Wire Notes Line
+	5300 5100 5300 2350
+Wire Notes Line
+	5300 2350 7100 2350
+Wire Notes Line
+	7100 2350 7100 5100
+Text Notes 5350 5050 0    50   ~ 0
+Measure Selector Switch
 $EndSCHEMATC
