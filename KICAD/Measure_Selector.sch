@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 16
+Sheet 6 16
 Title "SESAME"
 Date "2021-08-03"
 Rev ""
@@ -36,8 +36,8 @@ L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
 U 1 1 610A09BD
 P 6100 3550
 AR Path="/610A09BD" Ref="U?"  Part="1" 
-AR Path="/60F421D1/610A09BD" Ref="U?"  Part="1" 
-F 0 "U?" H 5800 4400 50  0000 C CNN
+AR Path="/60F421D1/610A09BD" Ref="U3"  Part="1" 
+F 0 "U3" H 5800 4400 50  0000 C CNN
 F 1 "CD4053BM96" H 5800 4300 50  0000 C CNN
 F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 6250 2800 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 6080 3750 50  0001 C CNN

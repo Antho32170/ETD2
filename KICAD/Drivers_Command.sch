@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 16
+Sheet 7 16
 Title "SESAME"
 Date "2021-08-04"
 Rev "A"
@@ -26,10 +26,10 @@ Wire Wire Line
 Wire Wire Line
 	850  6500 850  6850
 $Comp
-L 4xxx:4011 U?
+L 4xxx:4011 U6
 U 5 1 610DDCAD
 P 1300 7000
-F 0 "U?" H 1530 7046 50  0000 L CNN
+F 0 "U6" H 1530 7046 50  0000 L CNN
 F 1 "4011" H 1530 6955 50  0000 L CNN
 F 2 "" H 1300 7000 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 1300 7000 50  0001 C CNN
@@ -827,10 +827,10 @@ Wire Wire Line
 Text HLabel 2850 3550 0    50   Input ~ 0
 ~Enable
 $Comp
-L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
+L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U5
 U 1 1 610F7E61
 P 6850 3650
-F 0 "U?" H 6350 4500 50  0000 C CNN
+F 0 "U5" H 6350 4500 50  0000 C CNN
 F 1 "CD4053BM96" H 6350 4400 50  0000 C CNN
 F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 7000 2900 50  0001 L CNN
 F 3 "" H 6830 3850 50  0001 C CNN
@@ -838,10 +838,10 @@ F 3 "" H 6830 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
+L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U4
 U 1 1 613BCF53
 P 4000 3850
-F 0 "U?" H 3500 4700 50  0000 C CNN
+F 0 "U4" H 3500 4700 50  0000 C CNN
 F 1 "CD4053BM96" H 3500 4600 50  0000 C CNN
 F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 4150 3100 50  0001 L CNN
 F 3 "" H 3980 4050 50  0001 C CNN
@@ -849,10 +849,10 @@ F 3 "" H 3980 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U?
+L 4xxx:4011 U6
 U 3 1 6119334A
 P 2650 1600
-F 0 "U?" H 2650 1350 50  0000 C CNN
+F 0 "U6" H 2650 1350 50  0000 C CNN
 F 1 "4011" H 2650 1250 50  0000 C CNN
 F 2 "" H 2650 1600 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 2650 1600 50  0001 C CNN
@@ -860,10 +860,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U?
+L 4xxx:4011 U6
 U 4 1 6119F84F
 P 3450 1350
-F 0 "U?" H 3450 1675 50  0000 C CNN
+F 0 "U6" H 3450 1675 50  0000 C CNN
 F 1 "4011" H 3450 1584 50  0000 C CNN
 F 2 "" H 3450 1350 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3450 1350 50  0001 C CNN
@@ -871,10 +871,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U?
+L 4xxx:4011 U6
 U 1 1 61192492
 P 1850 1350
-F 0 "U?" H 1850 1125 50  0000 C CNN
+F 0 "U6" H 1850 1125 50  0000 C CNN
 F 1 "4011" H 1850 1050 50  0000 C CNN
 F 2 "" H 1850 1350 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 1850 1350 50  0001 C CNN
@@ -882,10 +882,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4011 U?
+L 4xxx:4011 U6
 U 2 1 61194533
 P 2650 1100
-F 0 "U?" H 2650 1425 50  0000 C CNN
+F 0 "U6" H 2650 1425 50  0000 C CNN
 F 1 "4011" H 2650 1334 50  0000 C CNN
 F 2 "" H 2650 1100 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 2650 1100 50  0001 C CNN
