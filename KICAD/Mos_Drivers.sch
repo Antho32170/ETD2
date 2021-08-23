@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 16
+Sheet 13 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -32,10 +32,10 @@ Enable
 Text Notes 3050 6550 0    100  ~ 20
 Candidats potentiels:\nMCP14628\nhttps://www.microchip.com/en-us/parametric-search.html/385\n-> UCC27284 (pas sourcable)\nBesoin: \nHalfBridge driver\nPWM & ~PWM~\nRapidité < 100ns\nAlim 7v\n(Pas cher)\nChez RS\nCourant de grille vers 2.5 - 3 A\nEnable\nMode DC !!
 $Comp
-L Driver_FET:UCC27714D U?
+L Driver_FET:UCC27714D U8
 U 1 1 612B940B
 P 4450 2550
-F 0 "U?" H 4100 3200 50  0000 C CNN
+F 0 "U8" H 4100 3200 50  0000 C CNN
 F 1 "UCC27714D" H 4100 3100 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4450 2550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ucc27714.pdf" H 4450 2450 50  0001 C CNN
@@ -400,4 +400,6 @@ F 3 "" H 1450 6950 50  0001 C CNN
 $EndComp
 Text Notes 4150 1400 0    50   ~ 0
 ucc27284-q1\n
+Text Notes 4700 3850 0    50   ~ 0
+u9\n
 $EndSCHEMATC

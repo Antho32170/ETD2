@@ -30,15 +30,15 @@ Wire Wire Line
 Wire Wire Line
 	3000 7150 2850 7150
 Wire Wire Line
-	2850 7150 2850 7500
+	2850 7150 2850 7550
 Wire Wire Line
 	7250 5550 7050 5550
 Wire Wire Line
 	7250 5750 6950 5750
 Wire Wire Line
-	5650 6500 5650 7500
+	5650 6500 5650 7550
 Wire Wire Line
-	2850 7500 5650 7500
+	2850 7550 5650 7550
 $Comp
 L power:GND #PWR0104
 U 1 1 60FAC5D8
@@ -50,24 +50,6 @@ F 3 "" H 1300 3350 50  0001 C CNN
 	1    1300 3350
 	-1   0    0    -1  
 $EndComp
-$Sheet
-S 550  4750 1000 1900
-U 618748E2
-F0 "INT EXT CONFIG" 50
-F1 "Int_Ext_Config.sch" 50
-F2 "Voltage_Sens_R" I R 1550 5400 50 
-F3 "Voltage_Sens_L" I R 1550 5650 50 
-F4 "Current_Sens_R" I R 1550 5500 50 
-F5 "Current_Sens_R" I R 1550 5750 50 
-F6 "Ex_Consign" O R 1550 6550 50 
-F7 "Dir" O R 1550 5900 50 
-F8 "Mode" O R 1550 6050 50 
-F9 "PWM_INT" I R 1550 5250 50 
-F10 "~PWM_INT" I R 1550 5150 50 
-F11 "PWM_SEL" O R 1550 5000 50 
-F12 "~PWM_SEL" O R 1550 4900 50 
-F13 "CC_CV_Mode" O R 1550 6200 50 
-$EndSheet
 Text Label 7550 4650 0    50   ~ 0
 Over_UI_Protection
 $Sheet
@@ -96,51 +78,33 @@ Wire Wire Line
 Wire Wire Line
 	8700 6250 8700 6500
 Wire Wire Line
-	10750 5900 10850 5900
-Text Label 2150 5400 2    50   ~ 0
+	10750 5900 10950 5900
+Text Label 2200 6150 2    50   ~ 0
 Voltage_Sens_R
-Text Label 2150 5500 2    50   ~ 0
+Text Label 2200 6250 2    50   ~ 0
 Current_Sens_R
-Text Label 2150 5650 2    50   ~ 0
+Text Label 2200 5900 2    50   ~ 0
 Voltage_Sens_L
-Text Label 2150 5750 2    50   ~ 0
+Text Label 2200 6000 2    50   ~ 0
 Current_Sens_L
 Wire Wire Line
 	5650 6500 8700 6500
 Wire Wire Line
-	10850 4650 10850 5900
-Wire Wire Line
-	1550 6550 3000 6550
-Text Label 2150 6550 2    50   ~ 0
+	10950 4650 10950 5900
+Text Label 2250 6550 2    50   ~ 0
 Ext_Setpoint
 Text Label 6650 6150 0    50   ~ 0
 Dir
 Text Label 2600 3550 0    50   ~ 0
 Dir
-Wire Wire Line
-	2150 5750 1550 5750
-Wire Wire Line
-	1550 5650 2150 5650
-Wire Wire Line
-	2150 5500 1550 5500
-Wire Wire Line
-	1550 5400 2150 5400
 Text Label 2600 3700 0    50   ~ 0
 Mode
 Wire Wire Line
 	2600 3700 2950 3700
 Wire Wire Line
 	2600 3550 2950 3550
-Text Label 2350 4850 1    50   ~ 0
-~PWM_SEL
-Text Label 2150 5900 2    50   ~ 0
-Dir
-Text Label 2150 6050 2    50   ~ 0
+Text Label 2200 5400 2    50   ~ 0
 Mode
-Wire Wire Line
-	2150 5900 1550 5900
-Wire Wire Line
-	1550 6050 2150 6050
 Text Label 6650 6250 0    50   ~ 0
 CC_CV_Mode
 Text Label 8700 5450 0    50   ~ 0
@@ -190,42 +154,16 @@ F7 "~PWM" I L 2950 4250 50
 F8 "Dir" I L 2950 3550 50 
 F9 "Mode" I L 2950 3700 50 
 $EndSheet
-Text Label 3400 4850 0    50   ~ 0
-PWM_INT
-Text Label 3400 4750 0    50   ~ 0
-~PWM_INT
-Wire Wire Line
-	2450 4350 2950 4350
-Wire Wire Line
-	2350 4250 2950 4250
-Text Label 2450 4850 1    50   ~ 0
-PWM_SEL
+Text Label 2200 4900 2    50   ~ 0
+INT_PWM
+Text Label 2200 4800 2    50   ~ 0
+~INT_PWM
 Wire Wire Line
 	6650 6150 7250 6150
 Wire Wire Line
 	6650 6250 7250 6250
-Text Label 2150 6200 2    50   ~ 0
+Text Label 2200 5500 2    50   ~ 0
 CC_CV_Mode
-Wire Wire Line
-	2150 6200 1550 6200
-Wire Wire Line
-	1550 4900 2350 4900
-Wire Wire Line
-	2350 4250 2350 4900
-Wire Wire Line
-	1550 5000 2450 5000
-Wire Wire Line
-	2450 5000 2450 4350
-Wire Wire Line
-	1550 5150 2600 5150
-Wire Wire Line
-	2600 5150 2600 4750
-Wire Wire Line
-	1550 5250 2700 5250
-Wire Wire Line
-	2700 5250 2700 4850
-Text Notes 600  4950 0    100  ~ 20
-TODO
 $Sheet
 S 650  700  500  150 
 U 6142ECA0
@@ -239,9 +177,7 @@ F0 "RAMP GENERATOR" 50
 F1 "gen_ramp.sch" 50
 F2 "Ramp" O R 4500 5300 50 
 $EndSheet
-Text Notes 3300 6850 0    50   ~ 0
-Res BIAS Clamping DIODE
-Text Notes 600  4150 0    50   ~ 0
+Text Notes 950  2900 0    50   ~ 0
 Johnson / Cinch Connectivity Solutions 108-0740-102\nor Keystone 6095\n+ CXS70-14-C
 $Comp
 L power:GNDPWR #PWR?
@@ -324,14 +260,14 @@ Wire Wire Line
 Wire Wire Line
 	950  2200 1000 2200
 Wire Wire Line
-	4500 2500 4700 2500
+	4500 2500 4800 2500
 Wire Wire Line
-	4500 2400 4600 2400
+	4500 2400 4700 2400
 Connection ~ 3050 2200
 Wire Wire Line
 	3050 2200 3200 2200
 Wire Wire Line
-	3050 1550 3050 2200
+	3050 1050 3050 2200
 $Sheet
 S 3200 1950 1300 1000
 U 60F171CE
@@ -344,7 +280,7 @@ F5 "Voltage_Sens" O R 4500 2500 50
 $EndSheet
 Wire Wire Line
 	2900 2200 3050 2200
-Text Label 3500 1550 0    50   ~ 0
+Text Label 3500 1050 0    50   ~ 0
 VProt_Left
 $Sheet
 S 1200 1950 1700 550 
@@ -393,12 +329,12 @@ Connection ~ 8700 2200
 Wire Wire Line
 	8700 2200 8550 2200
 Wire Wire Line
-	8700 2200 8700 1550
+	8700 2200 8700 1050
 Wire Wire Line
 	8850 2200 8700 2200
 Wire Wire Line
 	7150 2500 7150 5450
-Text Label 7150 1550 0    50   ~ 0
+Text Label 7150 1050 0    50   ~ 0
 VProt_Right
 $Sheet
 S 8850 1950 1650 500 
@@ -421,17 +357,17 @@ $EndSheet
 Wire Wire Line
 	6850 5850 7250 5850
 Wire Wire Line
-	4600 1750 4600 2400
+	4700 1600 4700 2400
 Wire Wire Line
-	4700 1850 4700 2500
+	4800 1700 4800 2500
 Wire Wire Line
-	4600 1750 6950 1750
+	4700 1600 6950 1600
 Wire Wire Line
-	6550 1550 8700 1550
+	6550 1050 8700 1050
 Wire Wire Line
 	4500 2200 5050 2200
 Wire Wire Line
-	5050 1550 3050 1550
+	5050 1050 3050 1050
 Wire Wire Line
 	6550 2600 6700 2600
 Wire Wire Line
@@ -446,16 +382,6 @@ Wire Wire Line
 	5050 2600 4900 2600
 Wire Wire Line
 	5050 3550 5000 3550
-Text Notes 5250 900  0    100  ~ 20
-Calculs SEPIC
-$Sheet
-S 5050 650  1500 1000
-U 60F1AA92
-F0 "INTERNAL SUPPLIES" 50
-F1 "alims.sch" 50
-F2 "Left_Supply" I L 5050 1550 50 
-F3 "Right_Supply" I R 6550 1550 50 
-$EndSheet
 Wire Wire Line
 	4450 3900 5050 3900
 Wire Wire Line
@@ -470,8 +396,6 @@ Wire Wire Line
 	4900 3750 5050 3750
 Wire Wire Line
 	6550 2800 6600 2800
-Text Notes 6800 1250 0    50   ~ 0
-L = Left\nR = Right\nS = Serial\nP = Parallel \nG = Gate\nD = Drain
 $Sheet
 S 5050 1950 1500 950 
 U 60F18239
@@ -568,25 +492,17 @@ Wire Wire Line
 Text Notes 5350 4400 0    100  ~ 20
 Trouver Driver
 Wire Wire Line
-	6850 1850 6850 5850
+	6850 1700 6850 5850
 Text Label 7150 3350 1    50   ~ 0
 Voltage_Sens_R
 Wire Wire Line
-	2700 4850 6400 4850
-Wire Wire Line
-	4700 4650 10850 4650
+	4700 4650 10950 4650
 Wire Wire Line
 	7050 2400 7050 5550
 Text Label 6950 3350 1    50   ~ 0
 Current_Sens_L
 Text Label 7050 3350 1    50   ~ 0
 Current_Sens_R
-Wire Wire Line
-	2600 4750 6500 4750
-Wire Wire Line
-	6500 4750 6500 5450
-Wire Wire Line
-	6400 4850 6400 5300
 $Sheet
 S 4800 5100 1500 1000
 U 60F1AF26
@@ -598,9 +514,86 @@ F4 "~PWM" O R 6300 5450 50
 F5 "Feedback" I L 4800 5900 50 
 $EndSheet
 Wire Wire Line
-	6950 1750 6950 5750
+	6950 1600 6950 5750
 Wire Wire Line
 	6550 2200 7250 2200
 Wire Wire Line
-	4700 1850 6850 1850
+	4800 1700 6850 1700
+Text Label 2200 6850 2    50   ~ 0
+Rearm
+Text Label 2200 7000 2    50   ~ 0
+Voltage_Thres
+Text Label 2200 7100 2    50   ~ 0
+Current_Thres
+Text Label 2200 5300 2    50   ~ 0
+Dir
+Wire Wire Line
+	1600 6850 2200 6850
+Wire Wire Line
+	1600 7000 2200 7000
+Wire Wire Line
+	1600 7100 2200 7100
+Wire Wire Line
+	1600 6550 3000 6550
+Wire Wire Line
+	2200 5500 1600 5500
+Wire Wire Line
+	1600 4250 2950 4250
+Wire Wire Line
+	1600 4350 2950 4350
+Wire Wire Line
+	1600 5400 2200 5400
+Wire Wire Line
+	2200 5300 1600 5300
+Wire Wire Line
+	2200 6000 1600 6000
+Wire Wire Line
+	2200 6250 1600 6250
+Wire Wire Line
+	1600 5900 2200 5900
+Wire Wire Line
+	1600 6150 2200 6150
+Wire Wire Line
+	6400 4900 6400 5300
+Wire Wire Line
+	6500 4800 6500 5450
+$Sheet
+S 600  4100 1000 3150
+U 618748E2
+F0 "INT EXT CONFIG" 50
+F1 "Int_Ext_Config.sch" 50
+F2 "Voltage_Sens_R" I R 1600 6150 50 
+F3 "Voltage_Sens_L" I R 1600 5900 50 
+F4 "Current_Sens_R" I R 1600 6250 50 
+F5 "Current_Sens_L" I R 1600 6000 50 
+F6 "Dir" O R 1600 5300 50 
+F7 "Mode" O R 1600 5400 50 
+F8 "INT_PWM" I R 1600 4900 50 
+F9 "~INT_PWM" I R 1600 4800 50 
+F10 "PWM" O R 1600 4350 50 
+F11 "~PWM" O R 1600 4250 50 
+F12 "CC_CV_Mode" O R 1600 5500 50 
+F13 "Ext_Setpoint" O R 1600 6550 50 
+F14 "Ext_Current_Tresh" O R 1600 7100 50 
+F15 "Ext_Voltage_Tresh" O R 1600 7000 50 
+F16 "Ext_Rearm" O R 1600 6850 50 
+$EndSheet
+Wire Wire Line
+	6400 4900 1600 4900
+Wire Wire Line
+	6500 4800 1600 4800
+Text Label 2200 4250 2    50   ~ 0
+~PWM
+Text Label 2200 4350 2    50   ~ 0
+PWM
+Text Notes 5200 250  0    100  ~ 20
+Calculs SEPIC
+$Sheet
+S 5050 700  1500 700 
+U 60F1AA92
+F0 "INTERNAL SUPPLIES" 50
+F1 "alims.sch" 50
+F2 "Left_Supply" I L 5050 1050 50 
+F3 "Right_Supply" I R 6550 1050 50 
+$EndSheet
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 16
+Sheet 6 16
 Title ""
 Date ""
 Rev ""
@@ -29,4 +29,6 @@ Text Notes 9650 6250 0    50   ~ 0
 SHIELD BLOCKS\n——————————————————\nMeasure UI L + R\nDriver MOS\nRamp Generator + PID + PWM GEN\n
 Text Notes 3100 1500 0    100  ~ 0
 voir differentes masse avec manu\n
+Text Notes 750  3500 0    100  ~ 0
+L = Left\nR = Right\nS = Serial\nP = Parallel \nG = Gate\nD = Drain
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 16
+Sheet 3 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -606,7 +606,7 @@ F 3 "" H 3000 6450 50  0001 C CNN
 $EndComp
 Text HLabel 2100 4450 0    50   Input ~ 0
 Current_Thres
-Text HLabel 2100 5200 0    50   Input ~ 0
+Text HLabel 2150 4850 0    50   Input ~ 0
 Current_Sens
 Wire Notes Line
 	550  700  1400 700 
@@ -629,12 +629,12 @@ comparateur courant\n(Sur-courant)
 $Comp
 L Device:R R?
 U 1 1 615178DC
-P 3000 5200
-F 0 "R?" V 3200 5200 50  0000 C CNN
-F 1 "100k" V 3100 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2930 5200 50  0001 C CNN
-F 3 "~" H 3000 5200 50  0001 C CNN
-	1    3000 5200
+P 3000 4850
+F 0 "R?" V 3200 4850 50  0000 C CNN
+F 1 "100k" V 3100 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2930 4850 50  0001 C CNN
+F 3 "~" H 3000 4850 50  0001 C CNN
+	1    3000 4850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -642,25 +642,25 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 615178FE
-P 3450 5450
-F 0 "C?" H 3565 5496 50  0000 L CNN
-F 1 "10n" H 3565 5405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 5300 50  0001 C CNN
-F 3 "~" H 3450 5450 50  0001 C CNN
-	1    3450 5450
+P 3450 5100
+F 0 "C?" H 3565 5146 50  0000 L CNN
+F 1 "10n" H 3565 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 4950 50  0001 C CNN
+F 3 "~" H 3450 5100 50  0001 C CNN
+	1    3450 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 4650 3450 5200
+	3450 4650 3450 4850
 $Comp
 L power:GND #PWR0151
 U 1 1 61517905
-P 3450 5600
-F 0 "#PWR0151" H 3450 5350 50  0001 C CNN
-F 1 "GND" H 3455 5427 50  0000 C CNN
-F 2 "" H 3450 5600 50  0001 C CNN
-F 3 "" H 3450 5600 50  0001 C CNN
-	1    3450 5600
+P 3450 5250
+F 0 "#PWR0151" H 3450 5000 50  0001 C CNN
+F 1 "GND" H 3455 5077 50  0000 C CNN
+F 2 "" H 3450 5250 50  0001 C CNN
+F 3 "" H 3450 5250 50  0001 C CNN
+	1    3450 5250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -780,14 +780,14 @@ F 3 "~" H 2450 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3450 5200 3150 5200
-Connection ~ 3450 5200
+	3450 4850 3150 4850
+Connection ~ 3450 4850
 Wire Wire Line
-	3450 5200 3450 5300
+	3450 4850 3450 4950
 Wire Wire Line
 	2100 4450 2300 4450
 Wire Wire Line
-	2100 5200 2850 5200
+	2150 4850 2850 4850
 Wire Notes Line
 	2200 3300 4950 3300
 Wire Notes Line
@@ -896,10 +896,10 @@ Wire Notes Line
 Wire Notes Line
 	1400 4700 1400 6200
 $Comp
-L Comparator:LM2903 U?
+L Comparator:LM2903 U7
 U 1 1 611D87A4
 P 4400 1750
-F 0 "U?" H 4400 2117 50  0000 C CNN
+F 0 "U7" H 4400 2117 50  0000 C CNN
 F 1 "LM2903" H 4400 2026 50  0000 C CNN
 F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4400 1750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 4400 1750 50  0001 C CNN
@@ -909,10 +909,10 @@ $EndComp
 Wire Wire Line
 	4700 1750 5450 1750
 $Comp
-L Comparator:LM2903 U?
+L Comparator:LM2903 U7
 U 2 1 611EA33A
 P 4400 4550
-F 0 "U?" H 4400 4917 50  0000 C CNN
+F 0 "U7" H 4400 4917 50  0000 C CNN
 F 1 "LM2903" H 4400 4826 50  0000 C CNN
 F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4400 4550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 4400 4550 50  0001 C CNN
@@ -927,10 +927,10 @@ Connection ~ 5450 4550
 Wire Wire Line
 	5450 4550 6850 4550
 $Comp
-L Comparator:LM2903 U?
+L Comparator:LM2903 U7
 U 3 1 6120EB61
 P 2900 6850
-F 0 "U?" H 2550 6950 50  0000 L CNN
+F 0 "U7" H 2550 6950 50  0000 L CNN
 F 1 "LM2903" H 2450 6800 50  0000 L CNN
 F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 2900 6850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 2900 6850 50  0001 C CNN
