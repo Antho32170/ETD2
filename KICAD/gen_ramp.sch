@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 16
+Sheet 8 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7850 3650 2    50   Output ~ 0
+Text HLabel 8400 3650 2    50   Output ~ 0
 Ramp
 $Comp
 L Device:R R?
@@ -40,12 +40,12 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 611047CD
-P 6150 3550
-F 0 "R?" V 5943 3550 50  0000 C CNN
-F 1 "680" V 6034 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 3550 50  0001 C CNN
-F 3 "~" H 6150 3550 50  0001 C CNN
-	1    6150 3550
+P 6400 3550
+F 0 "R?" V 6193 3550 50  0000 C CNN
+F 1 "680" V 6284 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 3550 50  0001 C CNN
+F 3 "~" H 6400 3550 50  0001 C CNN
+	1    6400 3550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -60,7 +60,7 @@ F 3 "~" H 5200 5050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5900 3750 6550 3750
+	6150 3750 6800 3750
 $Comp
 L power:GND #PWR0103
 U 1 1 611134C1
@@ -75,26 +75,26 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 611171B1
-P 6850 3050
-F 0 "C?" V 6598 3050 50  0000 C CNN
-F 1 "2.2n" V 6689 3050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6888 2900 50  0001 C CNN
-F 3 "~" H 6850 3050 50  0001 C CNN
-	1    6850 3050
+P 7100 3050
+F 0 "C?" V 6848 3050 50  0000 C CNN
+F 1 "2.2n" V 6939 3050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7138 2900 50  0001 C CNN
+F 3 "~" H 7100 3050 50  0001 C CNN
+	1    7100 3050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6700 3050 6450 3050
+	6950 3050 6700 3050
 Wire Wire Line
-	7000 3050 7250 3050
+	7250 3050 7500 3050
 Wire Wire Line
-	7150 3650 7250 3650
+	7400 3650 7500 3650
 Wire Wire Line
 	4150 3450 3750 3450
 Wire Wire Line
 	3750 3450 3750 2500
 Wire Wire Line
-	3750 2500 7650 2500
+	3750 2500 7900 2500
 Wire Wire Line
 	4450 3450 4650 3450
 Wire Wire Line
@@ -105,7 +105,7 @@ Wire Wire Line
 	5450 3050 5450 3550
 Connection ~ 5450 3550
 Wire Wire Line
-	5450 3550 6000 3550
+	5450 3550 5850 3550
 Wire Wire Line
 	4900 3050 4650 3050
 Wire Wire Line
@@ -114,19 +114,19 @@ Connection ~ 4650 3450
 Wire Wire Line
 	4650 3450 4750 3450
 Wire Wire Line
-	6450 3550 6450 3050
-Connection ~ 6450 3550
+	6700 3550 6700 3050
+Connection ~ 6700 3550
 Wire Wire Line
-	6450 3550 6550 3550
+	6700 3550 6800 3550
 Wire Wire Line
-	6300 3550 6450 3550
+	6550 3550 6700 3550
 Wire Wire Line
-	7250 3650 7250 3050
-Connection ~ 7250 3650
+	7500 3650 7500 3050
+Connection ~ 7500 3650
 Wire Wire Line
-	7250 3650 7650 3650
+	7500 3650 7900 3650
 Wire Wire Line
-	5900 3750 5900 4850
+	6150 3750 6150 4850
 $Comp
 L Device:R R?
 U 1 1 6111A906
@@ -141,7 +141,7 @@ $EndComp
 Wire Notes Line
 	5650 2700 5650 4150
 Wire Notes Line
-	7450 2700 7450 4150
+	7700 2700 7700 4150
 Wire Notes Line
 	3950 4150 3950 2700
 Wire Notes Line
@@ -149,17 +149,17 @@ Wire Notes Line
 Wire Notes Line
 	3950 2700 5650 2700
 Wire Notes Line
-	5800 4150 5800 2700
+	6050 4150 6050 2700
 Wire Notes Line
-	5800 4150 7450 4150
+	6050 4150 7700 4150
 Wire Notes Line
-	5800 2700 7450 2700
+	6050 2700 7700 2700
 Wire Wire Line
-	7650 2500 7650 3650
-Connection ~ 7650 3650
+	7900 2500 7900 3650
+Connection ~ 7900 3650
 Wire Wire Line
-	7650 3650 7850 3650
-Text Notes 7000 4100 0    50   ~ 0
+	7900 3650 8150 3650
+Text Notes 7250 4100 0    50   ~ 0
 Integrateur
 Text Notes 5050 4100 0    50   ~ 0
 Schmitt trigger
@@ -172,7 +172,7 @@ Triangle offset\n(3.5V)
 Wire Wire Line
 	5200 4800 5200 4850
 Wire Wire Line
-	5900 4850 5200 4850
+	6150 4850 5200 4850
 Connection ~ 5200 4850
 Wire Wire Line
 	5200 4850 5200 4900
@@ -278,12 +278,12 @@ $EndComp
 $Comp
 L Sesame:AD8030 U2
 U 2 1 6132B377
-P 6850 3650
-F 0 "U2" H 6850 3283 50  0000 C CNN
-F 1 "AD8030" H 6850 3374 50  0000 C CNN
-F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6850 3650 50  0001 C CNN
-F 3 "~" H 6850 3650 50  0001 C CNN
-	2    6850 3650
+P 7100 3650
+F 0 "U2" H 7100 3283 50  0000 C CNN
+F 1 "AD8030" H 7100 3374 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7100 3650 50  0001 C CNN
+F 3 "~" H 7100 3650 50  0001 C CNN
+	2    7100 3650
 	1    0    0    1   
 $EndComp
 $Comp
@@ -356,7 +356,7 @@ Wire Notes Line
 	2800 3050 3550 3050
 Wire Wire Line
 	3100 3650 4750 3650
-Text Label 5950 3750 0    50   ~ 0
+Text Label 6200 3750 0    50   ~ 0
 Triangle_offset
 Wire Notes Line
 	3550 3050 3550 4500
@@ -366,4 +366,38 @@ Wire Notes Line
 	3550 4500 2800 4500
 Text Notes 2900 4450 0    50   ~ 0
 Schmitt tigger \nOffset (3.14V)
+Text Notes 1600 2850 0    100  ~ 20
+ponts diviseurs sur +7V ?\n
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61322346
+P 8150 3650
+AR Path="/60F1AF26/61322346" Ref="TP?"  Part="1" 
+AR Path="/60F16FAE/61322346" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8100 3900 50  0000 L CNN
+F 1 "TP_POP" H 8150 3550 50  0000 C CNN
+F 2 "" H 8350 3650 50  0001 C CNN
+F 3 "~" H 8350 3650 50  0001 C CNN
+	1    8150 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 3650
+Wire Wire Line
+	8150 3650 8400 3650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61327DF9
+P 5850 3550
+AR Path="/60F1AF26/61327DF9" Ref="TP?"  Part="1" 
+AR Path="/60F16FAE/61327DF9" Ref="TP?"  Part="1" 
+F 0 "TP?" H 5800 3800 50  0000 L CNN
+F 1 "TP_NOP" H 5850 3450 50  0000 C CNN
+F 2 "" H 6050 3550 50  0001 C CNN
+F 3 "~" H 6050 3550 50  0001 C CNN
+	1    5850 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 3550
+Wire Wire Line
+	5850 3550 6250 3550
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 16
+Sheet 4 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -13,32 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 450  -300 0    50   ~ 0
-————————————————————————————————————————————————\nENTREE(S):\nTrigger quand la meusure selectionné depasse le seuil maximal\nVoltage_Sens_R | Entree Analogique | Tension mesurée du coté Droit (Provenant du block Voltage Current Sens Right)\nCurrent_Sens_R | Entree Analogique | Courant mesuré du coté Droit (Provenant du block Voltage Current Sens Right)\nVoltage_Sens_L | Entree Analogique | Tension mesurée du coté Gauche (Provenant du block Voltage Current Sens Left)\nCurrent_Sens_L | Entree Analogique | Courant mesuré du coté Gauche (Provenant du block Voltage Current Sens Left)\nDir | Entrée Numérique | Sens du courant et par extension choix de la meusure Droite / Gauche\nCurrent_Thres | Entrée ext. Analogique | Seuil externe qui definir le courant maximal\nVoltage_Thres | Entrée ext. Analogique | Seuil externe qui definir la tension maximale\nRearm | Entrée ext. Numerique | Rearmer le disjoncteur\nTrigger_Breaker | Entrée ext. Numerique | Singnal externe de declenchement du disjoncteur\n————————————————————————————————————————————————\nSORTIE(S):\nShutdown | Sortie Numerique | Signal de coupure des MOS\n
-$Comp
-L Sesame:SESAME_SHIELD SLD1
-U 2 1 618C4894
-P 5800 -1400
-F 0 "SLD1" H 5450 -1150 50  0000 L CNN
-F 1 "SESAME_SHIELD" H 5300 -1250 50  0000 L CNN
-F 2 "" H 5950 -2650 50  0001 C CNN
-F 3 "" H 5950 -2650 50  0001 C CNN
-	2    5800 -1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sesame:SESAME_SHIELD SLD2
-U 1 1 618C53DC
-P 6250 -1400
-F 0 "SLD2" H 7308 -1135 50  0000 C CNN
-F 1 "SESAME_SHIELD" H 7308 -1226 50  0000 C CNN
-F 2 "" H 6400 -2650 50  0001 C CNN
-F 3 "" H 6400 -2650 50  0001 C CNN
-	1    6250 -1400
-	1    0    0    -1  
-$EndComp
-Text HLabel 5800 3200 0    50   Input ~ 0
-Rearm
 Text HLabel 2100 2400 0    50   Input ~ 0
 Voltage_Sens
 Text HLabel 10400 1900 2    50   Output ~ 0
@@ -248,10 +222,6 @@ Wire Wire Line
 Connection ~ 3000 7200
 Wire Wire Line
 	3000 7200 3200 7200
-Wire Wire Line
-	5800 3200 6600 3200
-Wire Wire Line
-	6600 2550 6600 3200
 Text Notes 4900 3000 2    49   ~ 0
 comparateur tension\n(Sur-tension)
 Text Notes 8550 3350 2    49   ~ 0
@@ -289,7 +259,6 @@ Wire Wire Line
 	9600 1250 9600 1350
 Wire Wire Line
 	7400 2200 7300 2200
-Connection ~ 6600 2550
 Wire Wire Line
 	6600 2550 6850 2550
 Wire Wire Line
@@ -300,7 +269,6 @@ Wire Wire Line
 	7300 2550 6850 2200
 Wire Wire Line
 	7300 2550 7550 2550
-Connection ~ 7550 2550
 Wire Notes Line
 	8600 950  5900 950 
 Wire Notes Line
@@ -425,7 +393,7 @@ L Device:R R?
 U 1 1 611DFB44
 P 950 2350
 F 0 "R?" H 1020 2396 50  0000 L CNN
-F 1 "R" H 1020 2305 50  0000 L CNN
+F 1 "9.1k" H 1020 2305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 2350 50  0001 C CNN
 F 3 "~" H 950 2350 50  0001 C CNN
 	1    950  2350
@@ -436,7 +404,7 @@ L Device:R R?
 U 1 1 611DFB4A
 P 950 2750
 F 0 "R?" H 1020 2796 50  0000 L CNN
-F 1 "R" H 1020 2705 50  0000 L CNN
+F 1 "1k" H 1020 2705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 2750 50  0001 C CNN
 F 3 "~" H 950 2750 50  0001 C CNN
 	1    950  2750
@@ -774,7 +742,7 @@ L Device:R R?
 U 1 1 61517937
 P 950 5150
 F 0 "R?" H 1020 5196 50  0000 L CNN
-F 1 "R" H 1020 5105 50  0000 L CNN
+F 1 "4.7k" H 1020 5105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 5150 50  0001 C CNN
 F 3 "~" H 950 5150 50  0001 C CNN
 	1    950  5150
@@ -785,7 +753,7 @@ L Device:R R?
 U 1 1 6151793D
 P 950 5550
 F 0 "R?" H 1020 5596 50  0000 L CNN
-F 1 "R" H 1020 5505 50  0000 L CNN
+F 1 "4.7k" H 1020 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 5550 50  0001 C CNN
 F 3 "~" H 950 5550 50  0001 C CNN
 	1    950  5550
@@ -952,14 +920,12 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 4400 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7550 2550 7550 4550
-Wire Wire Line
 	4700 4550 5450 4550
 Wire Wire Line
 	5450 1750 5450 4550
 Connection ~ 5450 4550
 Wire Wire Line
-	5450 4550 7550 4550
+	5450 4550 6850 4550
 $Comp
 L Comparator:LM2903 U?
 U 3 1 6120EB61
@@ -971,4 +937,14 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 2900 6850 50  0001 C CNN
 	3    2900 6850
 	1    0    0    -1  
 $EndComp
+Text HLabel 6650 4750 0    50   Input ~ 0
+Rearm
+Wire Wire Line
+	6850 2550 6850 4550
+Connection ~ 6850 2550
+Connection ~ 7300 2550
+Wire Wire Line
+	6650 4750 7300 4750
+Wire Wire Line
+	7300 2550 7300 4750
 $EndSCHEMATC

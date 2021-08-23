@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 16
+Sheet 5 16
 Title "SESAME"
 Date "2021-08-03"
 Rev ""
@@ -21,15 +21,15 @@ Text HLabel 5250 3350 0    50   Input ~ 0
 Voltage_Sens_L
 Text HLabel 5250 3650 0    50   Input ~ 0
 Current_Sens_L
-Text HLabel 7050 3350 2    50   Output ~ 0
+Text HLabel 7150 3350 2    50   Output ~ 0
 Voltage_Sens_Selected
-Text HLabel 7050 3650 2    50   Output ~ 0
+Text HLabel 7150 3650 2    50   Output ~ 0
 Current_Sens_Selected
-Text HLabel 7050 3250 2    50   Input ~ 0
+Text HLabel 7150 3250 2    50   Input ~ 0
 CC_CV_Mode
-Text HLabel 7050 3100 2    50   Input ~ 0
+Text HLabel 7150 3100 2    50   Input ~ 0
 Dir
-Text HLabel 7050 3950 2    50   Output ~ 0
+Text HLabel 7150 3950 2    50   Output ~ 0
 Measure_Selected
 $Comp
 L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U?
@@ -53,14 +53,6 @@ Wire Wire Line
 Connection ~ 6800 3100
 Wire Wire Line
 	6800 3100 6800 3150
-Text Label 6650 3350 0    50   ~ 0
-Volt_Sel
-Text Label 6650 3650 0    50   ~ 0
-Curr_Sel
-Text Label 5200 3950 0    50   ~ 0
-Volt_Sel
-Text Label 5200 4050 0    50   ~ 0
-Curr_Sel
 $Comp
 L power:GND #PWR0161
 U 1 1 610E2D38
@@ -88,21 +80,21 @@ Connection ~ 6150 4300
 Wire Wire Line
 	6150 4300 6100 4300
 Wire Wire Line
-	6600 3950 7050 3950
+	6600 3950 7150 3950
 Wire Wire Line
-	6600 3650 7050 3650
+	6600 3650 6850 3650
 Wire Wire Line
-	6600 3350 7050 3350
+	6600 3350 7000 3350
 Wire Wire Line
-	6600 3250 7050 3250
+	6600 3250 7150 3250
 Wire Wire Line
-	6800 3100 7050 3100
+	6800 3100 7150 3100
 Wire Wire Line
 	6000 2700 6000 2850
 Wire Wire Line
-	5600 3950 5200 3950
+	5600 3950 5400 3950
 Wire Wire Line
-	5600 4050 5200 4050
+	5600 4050 5500 4050
 Wire Wire Line
 	5600 3350 5250 3350
 Wire Wire Line
@@ -166,4 +158,22 @@ F 3 "" H 6000 2700 50  0001 C CNN
 	1    6000 2700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6850 3650 6850 4700
+Wire Wire Line
+	6850 4700 5500 4700
+Wire Wire Line
+	5500 4700 5500 4050
+Connection ~ 6850 3650
+Wire Wire Line
+	6850 3650 7150 3650
+Wire Wire Line
+	5400 3950 5400 4800
+Wire Wire Line
+	5400 4800 7000 4800
+Wire Wire Line
+	7000 3350 7000 4800
+Connection ~ 7000 3350
+Wire Wire Line
+	7000 3350 7150 3350
 $EndSCHEMATC

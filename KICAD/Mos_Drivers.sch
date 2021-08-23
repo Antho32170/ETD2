@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 16
+Sheet 15 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -398,4 +398,6 @@ F 3 "" H 1450 6950 50  0001 C CNN
 	1    1450 6950
 	1    0    0    -1  
 $EndComp
+Text Notes 4150 1400 0    50   ~ 0
+ucc27284-q1\n
 $EndSCHEMATC

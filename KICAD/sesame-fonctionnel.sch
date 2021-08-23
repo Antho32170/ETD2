@@ -13,20 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 4800 5100 1500 1000
-U 60F1AF26
-F0 "PWM GEN" 50
-F1 "PWM_Gen.sch" 50
-F2 "Ramp" I L 4800 5300 50 
-F3 "PWM" O R 6300 5300 50 
-F4 "~PWM" O R 6300 5450 50 
-F5 "Feedback" I L 4800 5900 50 
-$EndSheet
-Wire Wire Line
-	6400 4850 6400 5300
-Wire Wire Line
-	6500 4750 6500 5450
 Wire Wire Line
 	7250 5450 7150 5450
 Wire Wire Line
@@ -64,8 +50,6 @@ F 3 "" H 1300 3350 50  0001 C CNN
 	1    1300 3350
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 4750 6500 4750
 $Sheet
 S 550  4750 1000 1900
 U 618748E2
@@ -84,10 +68,6 @@ F11 "PWM_SEL" O R 1550 5000 50
 F12 "~PWM_SEL" O R 1550 4900 50 
 F13 "CC_CV_Mode" O R 1550 6200 50 
 $EndSheet
-Text Label 7050 3350 1    50   ~ 0
-Current_Sens_R
-Text Label 6950 3350 1    50   ~ 0
-Current_Sens_L
 Text Label 7550 4650 0    50   ~ 0
 Over_UI_Protection
 $Sheet
@@ -111,8 +91,6 @@ F5 "Rearm" I L 9300 5450 50
 F6 "Current_Thres" I L 9300 5700 50 
 F7 "Voltage_Thres" I L 9300 5600 50 
 $EndSheet
-Wire Wire Line
-	7050 2400 7050 5550
 Wire Wire Line
 	8600 6250 8700 6250
 Wire Wire Line
@@ -197,8 +175,6 @@ F9 "Current_Sens_Selected" O R 8600 6150 50
 F10 "Voltage_Sens_Selected" O R 8600 6050 50 
 $EndSheet
 Wire Wire Line
-	4700 4650 10850 4650
-Wire Wire Line
 	4700 4350 4700 4650
 $Sheet
 S 2950 3450 1500 1000
@@ -214,8 +190,6 @@ F7 "~PWM" I L 2950 4250 50
 F8 "Dir" I L 2950 3550 50 
 F9 "Mode" I L 2950 3700 50 
 $EndSheet
-Wire Wire Line
-	2700 4850 6400 4850
 Text Label 3400 4850 0    50   ~ 0
 PWM_INT
 Text Label 3400 4750 0    50   ~ 0
@@ -424,8 +398,6 @@ Wire Wire Line
 	8850 2200 8700 2200
 Wire Wire Line
 	7150 2500 7150 5450
-Text Label 7150 3350 1    50   ~ 0
-Voltage_Sens_R
 Text Label 7150 1550 0    50   ~ 0
 VProt_Right
 $Sheet
@@ -449,17 +421,11 @@ $EndSheet
 Wire Wire Line
 	6850 5850 7250 5850
 Wire Wire Line
-	6950 1750 6950 5750
-Wire Wire Line
 	4600 1750 4600 2400
 Wire Wire Line
 	4700 1850 4700 2500
 Wire Wire Line
-	6850 1850 6850 5850
-Wire Wire Line
 	4600 1750 6950 1750
-Wire Wire Line
-	6550 2200 7250 2200
 Wire Wire Line
 	6550 1550 8700 1550
 Wire Wire Line
@@ -467,23 +433,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 1550 3050 1550
 Wire Wire Line
-	4700 1850 6850 1850
-Text Notes 5350 4400 0    100  ~ 20
-Trouver Driver
-Wire Wire Line
-	6650 3650 6650 2700
-Wire Wire Line
-	6550 3650 6650 3650
-Wire Wire Line
-	6550 3750 6700 3750
-Wire Wire Line
-	6700 2600 6700 3750
-Wire Wire Line
 	6550 2600 6700 2600
-Wire Wire Line
-	6550 3550 6600 3550
-Wire Wire Line
-	6600 2800 6600 3550
 Wire Wire Line
 	5050 3650 4950 3650
 Wire Wire Line
@@ -499,23 +449,6 @@ Wire Wire Line
 Text Notes 5250 900  0    100  ~ 20
 Calculs SEPIC
 $Sheet
-S 5050 3450 1500 1000
-U 60F19D6C
-F0 "MOS DRIVERS" 50
-F1 "Mos_Drivers.sch" 50
-F2 "Driver_LS" I L 5050 3900 50 
-F3 "VG_LP" O L 5050 3550 50 
-F4 "Driver_LP" I L 5050 4000 50 
-F5 "VG_LS" O L 5050 3750 50 
-F6 "VG_RS" O R 6550 3750 50 
-F7 "VG_RP" O R 6550 3550 50 
-F8 "Driver_RP" I L 5050 4200 50 
-F9 "Driver_RS" I L 5050 4100 50 
-F10 "Enable" I L 5050 4350 50 
-F11 "VS_L" U L 5050 3650 50 
-F12 "VS_R" U R 6550 3650 50 
-$EndSheet
-$Sheet
 S 5050 650  1500 1000
 U 60F1AA92
 F0 "INTERNAL SUPPLIES" 50
@@ -527,8 +460,6 @@ Wire Wire Line
 	4450 3900 5050 3900
 Wire Wire Line
 	5050 4350 4700 4350
-Text Label 6850 3350 1    50   ~ 0
-Voltage_Sens_L
 Wire Wire Line
 	6650 2700 6550 2700
 Wire Wire Line
@@ -603,4 +534,73 @@ F 3 "~" H 10950 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10700 3200 10700 3350
+Text Label 6850 3350 1    50   ~ 0
+Voltage_Sens_L
+$Sheet
+S 5050 3450 1500 1000
+U 60F19D6C
+F0 "MOS DRIVERS" 50
+F1 "Mos_Drivers.sch" 50
+F2 "Driver_LS" I L 5050 3900 50 
+F3 "VG_LP" O L 5050 3550 50 
+F4 "Driver_LP" I L 5050 4000 50 
+F5 "VG_LS" O L 5050 3750 50 
+F6 "VG_RS" O R 6550 3750 50 
+F7 "VG_RP" O R 6550 3550 50 
+F8 "Driver_RP" I L 5050 4200 50 
+F9 "Driver_RS" I L 5050 4100 50 
+F10 "Enable" I L 5050 4350 50 
+F11 "VS_L" U L 5050 3650 50 
+F12 "VS_R" U R 6550 3650 50 
+$EndSheet
+Wire Wire Line
+	6600 2800 6600 3550
+Wire Wire Line
+	6550 3550 6600 3550
+Wire Wire Line
+	6700 2600 6700 3750
+Wire Wire Line
+	6550 3750 6700 3750
+Wire Wire Line
+	6550 3650 6650 3650
+Wire Wire Line
+	6650 3650 6650 2700
+Text Notes 5350 4400 0    100  ~ 20
+Trouver Driver
+Wire Wire Line
+	6850 1850 6850 5850
+Text Label 7150 3350 1    50   ~ 0
+Voltage_Sens_R
+Wire Wire Line
+	2700 4850 6400 4850
+Wire Wire Line
+	4700 4650 10850 4650
+Wire Wire Line
+	7050 2400 7050 5550
+Text Label 6950 3350 1    50   ~ 0
+Current_Sens_L
+Text Label 7050 3350 1    50   ~ 0
+Current_Sens_R
+Wire Wire Line
+	2600 4750 6500 4750
+Wire Wire Line
+	6500 4750 6500 5450
+Wire Wire Line
+	6400 4850 6400 5300
+$Sheet
+S 4800 5100 1500 1000
+U 60F1AF26
+F0 "PWM GEN" 50
+F1 "PWM_Gen.sch" 50
+F2 "Ramp" I L 4800 5300 50 
+F3 "PWM" O R 6300 5300 50 
+F4 "~PWM" O R 6300 5450 50 
+F5 "Feedback" I L 4800 5900 50 
+$EndSheet
+Wire Wire Line
+	6950 1750 6950 5750
+Wire Wire Line
+	6550 2200 7250 2200
+Wire Wire Line
+	4700 1850 6850 1850
 $EndSCHEMATC

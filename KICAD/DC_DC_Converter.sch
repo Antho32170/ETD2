@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 16
+Sheet 14 16
 Title "SESAME"
 Date ""
 Rev ""
@@ -15,14 +15,10 @@ Comment4 ""
 $EndDescr
 Text HLabel 1750 2350 0    100  BiDi ~ 0
 VD_LS
-Text HLabel 9750 2350 2    100  BiDi ~ 0
-VD_RS
 Text HLabel 4500 2700 0    50   Input ~ 0
 VG_LS
 Text HLabel 4500 3450 0    50   Input ~ 0
 VG_LP
-Text HLabel 7000 2700 2    50   Input ~ 0
-VG_RS
 Text HLabel 7000 3450 2    50   Input ~ 0
 VG_RP
 $Comp
@@ -31,8 +27,8 @@ U 1 1 610E334F
 P 4750 2700
 F 0 "QLS" H 4955 2746 50  0000 L CNN
 F 1 "TK65G10N1" H 4955 2655 50  0000 L CNN
-F 2 "" H 4950 2800 50  0001 C CNN
-F 3 "~" H 4750 2700 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 4950 2800 50  0001 C CNN
+F 3 "https://docs.rs-online.com/a1f4/0900766b816230a5.pdf" H 4750 2700 50  0001 C CNN
 	1    4750 2700
 	1    0    0    -1  
 $EndComp
@@ -42,21 +38,10 @@ U 1 1 610EEE2E
 P 4750 3450
 F 0 "QLP" H 4955 3496 50  0000 L CNN
 F 1 "TK65G10N1" H 4955 3405 50  0000 L CNN
-F 2 "" H 4950 3550 50  0001 C CNN
-F 3 "~" H 4750 3450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 4950 3550 50  0001 C CNN
+F 3 "https://docs.rs-online.com/a1f4/0900766b816230a5.pdf" H 4750 3450 50  0001 C CNN
 	1    4750 3450
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NMOS_GDS QRS
-U 1 1 610F207F
-P 6750 2700
-F 0 "QRS" H 6955 2746 50  0000 L CNN
-F 1 "TK65G10N1" H 6955 2655 50  0000 L CNN
-F 2 "" H 6950 2800 50  0001 C CNN
-F 3 "~" H 6750 2700 50  0001 C CNN
-	1    6750 2700
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NMOS_GDS QRP
@@ -64,8 +49,8 @@ U 1 1 610F2085
 P 6750 3450
 F 0 "QRP" H 6955 3496 50  0000 L CNN
 F 1 "TK65G10N1" H 6955 3405 50  0000 L CNN
-F 2 "" H 6950 3550 50  0001 C CNN
-F 3 "~" H 6750 3450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 6950 3550 50  0001 C CNN
+F 3 "https://docs.rs-online.com/a1f4/0900766b816230a5.pdf" H 6750 3450 50  0001 C CNN
 	1    6750 3450
 	-1   0    0    -1  
 $EndComp
@@ -103,12 +88,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 2500 4850 2350
 Wire Wire Line
-	6650 2500 6650 2350
-Wire Wire Line
-	9750 2350 9400 2350
-Text Notes 5300 3300 0    100  ~ 20
-Bobine TBD !
-Wire Wire Line
 	5750 3850 5750 3750
 Connection ~ 5750 3750
 Wire Wire Line
@@ -125,8 +104,6 @@ F 3 "" H 5750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 2700 6950 2700
-Wire Wire Line
 	7000 3450 6950 3450
 Wire Wire Line
 	4500 2700 4550 2700
@@ -140,63 +117,6 @@ Text HLabel 7000 3100 2    50   UnSpc ~ 0
 VS_R
 Wire Wire Line
 	7000 3100 6650 3100
-Text Notes 6750 2550 0    50   ~ 0
-D2PAK
-$Comp
-L Device:C C?
-U 1 1 6149AEB6
-P 8000 2750
-F 0 "C?" H 8115 2796 50  0000 L CNN
-F 1 "C" H 8115 2705 50  0000 L CNN
-F 2 "" H 8038 2600 50  0001 C CNN
-F 3 "~" H 8000 2750 50  0001 C CNN
-	1    8000 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C?
-U 1 1 6149B9CD
-P 8400 2750
-F 0 "C?" H 8518 2796 50  0000 L CNN
-F 1 "470uF" H 8518 2705 50  0000 L CNN
-F 2 "" H 8438 2600 50  0001 C CNN
-F 3 "~" H 8400 2750 50  0001 C CNN
-	1    8400 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C?
-U 1 1 615C9A23
-P 8900 2750
-F 0 "C?" H 9018 2796 50  0000 L CNN
-F 1 "470uF" H 9018 2705 50  0000 L CNN
-F 2 "" H 8938 2600 50  0001 C CNN
-F 3 "~" H 8900 2750 50  0001 C CNN
-	1    8900 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C?
-U 1 1 615CA3E5
-P 9400 2750
-F 0 "C?" H 9518 2796 50  0000 L CNN
-F 1 "470uF" H 9518 2705 50  0000 L CNN
-F 2 "" H 9438 2600 50  0001 C CNN
-F 3 "~" H 9400 2750 50  0001 C CNN
-	1    9400 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 615CB20D
-P 7600 2750
-F 0 "C?" H 7715 2796 50  0000 L CNN
-F 1 "C" H 7715 2705 50  0000 L CNN
-F 2 "" H 7638 2600 50  0001 C CNN
-F 3 "~" H 7600 2750 50  0001 C CNN
-	1    7600 2750
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 615CC3B9
@@ -262,31 +182,6 @@ F 3 "" H 9400 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9400 3150 9400 2900
-Wire Wire Line
-	7600 2600 7600 2350
-Wire Wire Line
-	8000 2600 8000 2350
-Wire Wire Line
-	8400 2600 8400 2350
-Wire Wire Line
-	8900 2600 8900 2350
-Wire Wire Line
-	9400 2600 9400 2350
-Connection ~ 7600 2350
-Wire Wire Line
-	7600 2350 6650 2350
-Connection ~ 8000 2350
-Wire Wire Line
-	8000 2350 7600 2350
-Connection ~ 8400 2350
-Wire Wire Line
-	8400 2350 8000 2350
-Connection ~ 8900 2350
-Wire Wire Line
-	8900 2350 8400 2350
-Connection ~ 9400 2350
-Wire Wire Line
-	9400 2350 8900 2350
 Wire Wire Line
 	1750 2350 2100 2350
 $Comp
@@ -434,4 +329,107 @@ Wire Wire Line
 Connection ~ 2100 2350
 Wire Wire Line
 	2100 2350 2600 2350
+Text Notes 4500 2200 0    50   ~ 0
+Inductor between 90uH -> 125uH\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1816037\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1542466\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1048448
+Wire Wire Line
+	9400 2350 8900 2350
+Connection ~ 9400 2350
+Wire Wire Line
+	8900 2350 8400 2350
+Connection ~ 8900 2350
+Wire Wire Line
+	8400 2350 8000 2350
+Connection ~ 8400 2350
+Wire Wire Line
+	8000 2350 7600 2350
+Connection ~ 8000 2350
+Wire Wire Line
+	7600 2350 6650 2350
+Connection ~ 7600 2350
+Wire Wire Line
+	9400 2600 9400 2350
+Wire Wire Line
+	8900 2600 8900 2350
+Wire Wire Line
+	8400 2600 8400 2350
+Wire Wire Line
+	8000 2600 8000 2350
+Wire Wire Line
+	7600 2600 7600 2350
+$Comp
+L Device:C C?
+U 1 1 615CB20D
+P 7600 2750
+F 0 "C?" H 7715 2796 50  0000 L CNN
+F 1 "C" H 7715 2705 50  0000 L CNN
+F 2 "" H 7638 2600 50  0001 C CNN
+F 3 "~" H 7600 2750 50  0001 C CNN
+	1    7600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 615CA3E5
+P 9400 2750
+F 0 "C?" H 9518 2796 50  0000 L CNN
+F 1 "470uF" H 9518 2705 50  0000 L CNN
+F 2 "" H 9438 2600 50  0001 C CNN
+F 3 "~" H 9400 2750 50  0001 C CNN
+	1    9400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 615C9A23
+P 8900 2750
+F 0 "C?" H 9018 2796 50  0000 L CNN
+F 1 "470uF" H 9018 2705 50  0000 L CNN
+F 2 "" H 8938 2600 50  0001 C CNN
+F 3 "~" H 8900 2750 50  0001 C CNN
+	1    8900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 6149B9CD
+P 8400 2750
+F 0 "C?" H 8518 2796 50  0000 L CNN
+F 1 "470uF" H 8518 2705 50  0000 L CNN
+F 2 "" H 8438 2600 50  0001 C CNN
+F 3 "~" H 8400 2750 50  0001 C CNN
+	1    8400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6149AEB6
+P 8000 2750
+F 0 "C?" H 8115 2796 50  0000 L CNN
+F 1 "C" H 8115 2705 50  0000 L CNN
+F 2 "" H 8038 2600 50  0001 C CNN
+F 3 "~" H 8000 2750 50  0001 C CNN
+	1    8000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2700 6950 2700
+Wire Wire Line
+	9750 2350 9400 2350
+Wire Wire Line
+	6650 2500 6650 2350
+$Comp
+L Device:Q_NMOS_GDS QRS
+U 1 1 610F207F
+P 6750 2700
+F 0 "QRS" H 6955 2746 50  0000 L CNN
+F 1 "TK65G10N1" H 6955 2655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-263-2" H 6950 2800 50  0001 C CNN
+F 3 "https://docs.rs-online.com/a1f4/0900766b816230a5.pdf" H 6750 2700 50  0001 C CNN
+	1    6750 2700
+	-1   0    0    -1  
+$EndComp
+Text HLabel 7000 2700 2    50   Input ~ 0
+VG_RS
+Text HLabel 9750 2350 2    100  BiDi ~ 0
+VD_RS
 $EndSCHEMATC
