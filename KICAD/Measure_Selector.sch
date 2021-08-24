@@ -39,7 +39,7 @@ AR Path="/610A09BD" Ref="U?"  Part="1"
 AR Path="/60F421D1/610A09BD" Ref="U3"  Part="1" 
 F 0 "U3" H 5800 4400 50  0000 C CNN
 F 1 "CD4053BM96" H 5800 4300 50  0000 C CNN
-F 2 "" H 6250 2800 50  0001 L CNN
+F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 6250 2800 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 6080 3750 50  0001 C CNN
 	1    6100 3550
 	-1   0    0    -1  
@@ -131,7 +131,7 @@ U 1 1 6112299E
 P 750 7300
 F 0 "C12" H 865 7346 50  0000 L CNN
 F 1 "100n" H 865 7255 50  0000 L CNN
-F 2 "" H 788 7150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 788 7150 50  0001 C CNN
 F 3 "~" H 750 7300 50  0001 C CNN
 	1    750  7300
 	1    0    0    -1  

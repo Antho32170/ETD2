@@ -151,10 +151,10 @@ F8 "Dir" I L 2400 3550 50
 F9 "Mode" I L 2400 3700 50 
 F10 "~Enable" I L 2400 4350 50 
 $EndSheet
-Text Label 2200 4900 2    50   ~ 0
-INT_PWM
-Text Label 2200 4800 2    50   ~ 0
-~INT_PWM
+Text Label 2400 4900 2    50   ~ 0
+INT_PWM_Power
+Text Label 2400 4800 2    50   ~ 0
+~INT_PWM_Freewheel
 Wire Wire Line
 	6850 6150 7450 6150
 Wire Wire Line
@@ -392,16 +392,6 @@ Text Label 7150 3350 1    50   ~ 0
 Current_Sens_L
 Text Label 7250 3350 1    50   ~ 0
 Current_Sens_R
-$Sheet
-S 4800 5100 1500 1000
-U 60F1AF26
-F0 "PWM GEN" 50
-F1 "PWM_Gen.sch" 50
-F2 "Ramp" I L 4800 5300 50 
-F3 "PWM" O R 6300 5300 50 
-F4 "~PWM" O R 6300 5450 50 
-F5 "Feedback" I L 4800 5900 50 
-$EndSheet
 Wire Wire Line
 	7150 1600 7150 5750
 Wire Wire Line
@@ -453,15 +443,15 @@ F4 "Current_Sens_R" I R 1600 6250 50
 F5 "Current_Sens_L" I R 1600 6000 50 
 F6 "Dir" O R 1600 5300 50 
 F7 "Mode" O R 1600 5400 50 
-F8 "INT_PWM" I R 1600 4900 50 
-F9 "~INT_PWM" I R 1600 4800 50 
-F10 "PWM" O R 1600 4100 50 
-F11 "~PWM" O R 1600 4000 50 
-F12 "CC_CV_Mode" O R 1600 5500 50 
-F13 "Ext_Setpoint" O R 1600 6550 50 
-F14 "Ext_Current_Tresh" O R 1600 7100 50 
-F15 "Ext_Voltage_Tresh" O R 1600 7000 50 
-F16 "Ext_Rearm" O R 1600 6850 50 
+F8 "PWM" O R 1600 4100 50 
+F9 "~PWM" O R 1600 4000 50 
+F10 "CC_CV_Mode" O R 1600 5500 50 
+F11 "Ext_Setpoint" O R 1600 6550 50 
+F12 "Ext_Current_Tresh" O R 1600 7100 50 
+F13 "Ext_Voltage_Tresh" O R 1600 7000 50 
+F14 "Ext_Rearm" O R 1600 6850 50 
+F15 "INT_PWM_Power" I R 1600 4900 50 
+F16 "~INT_PWM_Freewheel" I R 1600 4800 50 
 $EndSheet
 Wire Wire Line
 	6400 4900 1600 4900
@@ -471,7 +461,7 @@ Text Label 1950 4000 2    50   ~ 0
 ~PWM
 Text Label 1950 4100 2    50   ~ 0
 PWM
-Text Notes 5200 250  0    100  ~ 20
+Text Notes 5200 300  0    100  ~ 20
 Calculs SEPIC
 $Sheet
 S 5050 700  1500 700 
@@ -506,7 +496,7 @@ AR Path="/61456C6A/614ECCE3" Ref="TP?"  Part="1"
 AR Path="/614ECCE3" Ref="TP1"  Part="1" 
 F 0 "TP1" H 950 3400 50  0000 L CNN
 F 1 "TP_POP" H 1000 3300 50  0000 C CNN
-F 2 "" H 1200 3050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 1200 3050 50  0001 C CNN
 F 3 "~" H 1200 3050 50  0001 C CNN
 	1    1000 3050
 	1    0    0    -1  
@@ -614,4 +604,14 @@ F 3 "" H 10700 3350 50  0001 C CNN
 $EndComp
 Text Notes 4800 3550 0    100  ~ 20
 <- VOIR PROBLEME DC
+$Sheet
+S 4800 5100 1500 1000
+U 60F1AF26
+F0 "PWM GEN" 50
+F1 "PWM_Gen.sch" 50
+F2 "Ramp" I L 4800 5300 50 
+F3 "Feedback" I L 4800 5900 50 
+F4 "~PWM_Freewheel" O R 6300 5450 50 
+F5 "PWM_Power" O R 6300 5300 50 
+$EndSheet
 $EndSCHEMATC
