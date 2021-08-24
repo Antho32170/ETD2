@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 16
+Sheet 3 17
 Title "SESAME"
 Date ""
 Rev ""
@@ -148,23 +148,23 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 610FF241
-P 5650 2600
-F 0 "C?" H 5765 2646 50  0000 L CNN
-F 1 "10n" H 5765 2555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5688 2450 50  0001 C CNN
-F 3 "~" H 5650 2600 50  0001 C CNN
-	1    5650 2600
+P 5800 2600
+F 0 "C?" H 5550 2650 50  0000 L CNN
+F 1 "10n" H 5550 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5838 2450 50  0001 C CNN
+F 3 "~" H 5800 2600 50  0001 C CNN
+	1    5800 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
 U 1 1 6110DB40
-P 5650 2900
-F 0 "#PWR012" H 5650 2650 50  0001 C CNN
-F 1 "GND" H 5655 2727 50  0000 C CNN
-F 2 "" H 5650 2900 50  0001 C CNN
-F 3 "" H 5650 2900 50  0001 C CNN
-	1    5650 2900
+P 5800 2900
+F 0 "#PWR012" H 5800 2650 50  0001 C CNN
+F 1 "GND" H 5805 2727 50  0000 C CNN
+F 2 "" H 5800 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0001 C CNN
+	1    5800 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -237,7 +237,7 @@ $EndComp
 Wire Wire Line
 	9050 2200 9100 2200
 Wire Wire Line
-	5650 2900 5650 2750
+	5800 2900 5800 2750
 Wire Notes Line
 	5500 3400 8200 3400
 Wire Wire Line
@@ -406,7 +406,7 @@ Connection ~ 950  2550
 Wire Wire Line
 	950  2550 950  2500
 Wire Wire Line
-	5650 2450 5650 2200
+	5800 2450 5800 2200
 Wire Notes Line
 	8600 3400 8600 950 
 Wire Notes Line
@@ -994,7 +994,7 @@ Internal current\nthreshold\n(Potentiometer)
 Wire Wire Line
 	7800 2200 8400 2200
 Wire Wire Line
-	5650 2200 6250 2200
+	5800 2200 6250 2200
 Wire Wire Line
 	5150 3250 6800 3250
 Wire Wire Line
