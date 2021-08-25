@@ -77,7 +77,7 @@ U 1 1 6123C49A
 P 4850 3400
 F 0 "U15" H 3650 3700 100 0000 L CNN
 F 1 "LT8365" H 3500 3550 100 0000 L CNN
-F 2 "Package_SO:MSOP-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm_ThermalVias" H 4850 4100 100 0001 C CNN
+F 2 "Sesame_footprint:MSE-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm_ThermalVias" H 4850 4100 100 0001 C CNN
 F 3 "" H 4850 4100 100 0001 C CNN
 	1    4850 3400
 	1    0    0    -1  
@@ -807,7 +807,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 8800 3300 50  0001 C CIN
 $EndComp
 Text Notes 4500 1950 0    100  ~ 20
 BOBINE !!!\nCondo serie
-Text Notes 8500 3350 0    100  ~ 20
+Text Notes 8600 2300 0    100  ~ 20
 REF TENSION AUTRE SOLUTION\n
 $Comp
 L Device:CP C32
