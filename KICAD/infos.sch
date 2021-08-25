@@ -15,8 +15,8 @@ Comment4 ""
 $EndDescr
 Text Notes 850  7250 0    100  ~ 0
 RAF:\n> Driver de MOS\n> Recalculer la bobine et la sourcer
-Text Notes 3150 950  0    100  ~ 20
-Ordre soft starts: Enable Driver < PID < Entree de disjoncteur
+Text Notes 2750 1250 0    100  ~ 20
+Ordre soft starts:\nEnable Driver < PID < Entree de disjoncteur\n4.7ms < 23ms < 47ms
 Wire Notes Line
 	650  5400 650  7450
 Wire Notes Line
@@ -27,8 +27,6 @@ Wire Notes Line
 	5600 5400 650  5400
 Text Notes 9650 6250 0    50   ~ 0
 SHIELD BLOCKS\n——————————————————\nMeasure UI L + R\nDriver MOS\nRamp Generator + PID + PWM GEN\n
-Text Notes 3100 1500 0    100  ~ 0
-voir differentes masse avec manu\n
 Text Notes 750  3500 0    100  ~ 0
 L = Left\nR = Right\nS = Serial\nP = Parallel \nG = Gate\nD = Drain
 Text Notes 3050 2200 0    50   ~ 0

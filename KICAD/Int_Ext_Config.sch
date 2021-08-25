@@ -54,7 +54,7 @@ U 1 1 61332892
 P 2350 4650
 F 0 "J9" H 2400 5567 50  0000 C CNN
 F 1 "Conn_02x16_Odd_Even" H 2400 5476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 2350 4650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 2350 4650 50  0001 C CNN
 F 3 "~" H 2350 4650 50  0001 C CNN
 	1    2350 4650
 	1    0    0    -1  

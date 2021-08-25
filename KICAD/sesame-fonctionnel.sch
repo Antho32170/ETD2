@@ -443,15 +443,15 @@ F4 "Current_Sens_R" I R 1600 6250 50
 F5 "Current_Sens_L" I R 1600 6000 50 
 F6 "Dir" O R 1600 5300 50 
 F7 "Mode" O R 1600 5400 50 
-F8 "PWM" O R 1600 4100 50 
-F9 "~PWM" O R 1600 4000 50 
-F10 "CC_CV_Mode" O R 1600 5500 50 
-F11 "Ext_Setpoint" O R 1600 6550 50 
-F12 "Ext_Current_Tresh" O R 1600 7100 50 
-F13 "Ext_Voltage_Tresh" O R 1600 7000 50 
-F14 "Ext_Rearm" O R 1600 6850 50 
-F15 "INT_PWM_Power" I R 1600 4900 50 
-F16 "~INT_PWM_Freewheel" I R 1600 4800 50 
+F8 "CC_CV_Mode" O R 1600 5500 50 
+F9 "Ext_Setpoint" O R 1600 6550 50 
+F10 "Ext_Current_Tresh" O R 1600 7100 50 
+F11 "Ext_Voltage_Tresh" O R 1600 7000 50 
+F12 "Ext_Rearm" O R 1600 6850 50 
+F13 "INT_PWM_Power" I R 1600 4900 50 
+F14 "~INT_PWM_Freewheel" I R 1600 4800 50 
+F15 "PWM_Power" O R 1600 4100 50 
+F16 "~PWM_Freewheel" O R 1600 4000 50 
 $EndSheet
 Wire Wire Line
 	6400 4900 1600 4900
@@ -614,4 +614,52 @@ F3 "Feedback" I L 4800 5900 50
 F4 "~PWM_Freewheel" O R 6300 5450 50 
 F5 "PWM_Power" O R 6300 5300 50 
 $EndSheet
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61346C8D
+P 10450 650
+F 0 "H1" H 10550 696 50  0000 L CNN
+F 1 "MountingHole" H 10550 605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 650 50  0001 C CNN
+F 3 "~" H 10450 650 50  0001 C CNN
+	1    10450 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 613479B3
+P 10450 850
+F 0 "H2" H 10550 896 50  0000 L CNN
+F 1 "MountingHole" H 10550 805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 850 50  0001 C CNN
+F 3 "~" H 10450 850 50  0001 C CNN
+	1    10450 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6134C741
+P 10450 1050
+F 0 "H3" H 10550 1096 50  0000 L CNN
+F 1 "MountingHole" H 10550 1005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 1050 50  0001 C CNN
+F 3 "~" H 10450 1050 50  0001 C CNN
+	1    10450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 613513EA
+P 10450 1250
+F 0 "H4" H 10550 1296 50  0000 L CNN
+F 1 "MountingHole" H 10550 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10450 1250 50  0001 C CNN
+F 3 "~" H 10450 1250 50  0001 C CNN
+	1    10450 1250
+	1    0    0    -1  
+$EndComp
+Text Label 1050 2200 0    50   ~ 0
+L
+Text Label 10600 2200 0    50   ~ 0
+R
 $EndSCHEMATC

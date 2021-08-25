@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 13 17
+Sheet 17 17
 Title "SESAME"
 Date ""
 Rev ""
@@ -184,9 +184,9 @@ Wire Wire Line
 Wire Wire Line
 	8500 3050 9150 3050
 Text HLabel 9450 3050 2    50   Output ~ 0
-~PWM_FREEWHEEL
+~PWM_Freewheel
 Text HLabel 9450 3950 2    50   Output ~ 0
-PWM_POWER
+PWM_Power
 Text HLabel 6850 3500 0    50   Input ~ 0
 Ramp
 Wire Notes Line
@@ -300,9 +300,6 @@ F 3 "~" H 9350 3950 50  0001 C CNN
 	1    9150 3950
 	1    0    0    -1  
 $EndComp
-Connection ~ 9150 3050
-Wire Wire Line
-	9150 3050 9450 3050
 Connection ~ 9150 3950
 Wire Wire Line
 	9150 3950 8500 3950
@@ -421,4 +418,7 @@ F 3 "~" H 5700 2600 50  0001 C CNN
 	1    5700 2600
 	0    -1   -1   0   
 $EndComp
+Connection ~ 9150 3050
+Wire Wire Line
+	9150 3050 9450 3050
 $EndSCHEMATC

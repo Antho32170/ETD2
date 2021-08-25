@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 17 17
+Sheet 16 17
 Title "SESAME"
 Date ""
 Rev ""
@@ -34,7 +34,7 @@ U 1 1 610F3EF5
 P 5750 3550
 F 0 "L2" H 5750 3765 50  0000 C CNN
 F 1 "INDUCTOR" H 5750 3674 50  0000 C CNN
-F 2 "" H 5750 3550 50  0001 C CNN
+F 2 "Sesame_footprint:Multi-coil" H 5750 3550 50  0001 C CNN
 F 3 "~" H 5750 3550 50  0001 C CNN
 	1    5750 3550
 	1    0    0    -1  
@@ -646,4 +646,12 @@ F 3 "" H 5750 4850 50  0001 C CNN
 	1    5750 4850
 	-1   0    0    -1  
 $EndComp
+Text Label 4600 2350 0    50   ~ 0
+VD_LS
+Text Label 7050 2350 2    50   ~ 0
+VD_RS
+Text Label 7050 3550 2    50   ~ 0
+VS_R
+Text Label 4600 3550 0    50   ~ 0
+VS_L
 $EndSCHEMATC
