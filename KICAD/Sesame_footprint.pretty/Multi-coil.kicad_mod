@@ -1,4 +1,4 @@
-(module Multi-coil (layer F.Cu) (tedit 6125F00C)
+(module Multi-coil (layer F.Cu) (tedit 612620F8)
   (fp_text reference REF** (at 0 -19) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -15,4 +15,9 @@
   (pad "" thru_hole oval (at 0 0) (size 4.3 3.3) (drill oval 2.3 1.3) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at 10 0) (size 6 6) (drill 2) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at -10 0) (size 6 6) (drill 2) (layers *.Cu *.Mask))
+  (model STEP/SN14P-300J.step
+    (offset (xyz 0 0 20))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 90))
+  )
 )

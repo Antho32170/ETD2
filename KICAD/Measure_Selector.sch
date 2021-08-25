@@ -131,7 +131,7 @@ U 1 1 6112299E
 P 750 7300
 F 0 "C12" H 865 7346 50  0000 L CNN
 F 1 "100n" H 865 7255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 788 7150 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 788 7150 50  0001 C CNN
 F 3 "~" H 750 7300 50  0001 C CNN
 	1    750  7300
 	1    0    0    -1  

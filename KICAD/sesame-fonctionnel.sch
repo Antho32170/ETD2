@@ -178,10 +178,10 @@ Connection ~ 1000 3250
 Wire Wire Line
 	1000 3250 950  3250
 $Comp
-L Mechanical:MountingHole_Pad J4
+L Mechanical:MountingHole_Pad #J4
 U 1 1 6142C008
 P 800 3100
-F 0 "J4" V 1050 3150 50  0000 C CNN
+F 0 "#J4" V 1050 3150 50  0000 C CNN
 F 1 "6095" V 950 3150 50  0000 C CNN
 F 2 "" H 800 3100 50  0001 C CNN
 F 3 "~" H 800 3100 50  0001 C CNN
@@ -200,10 +200,10 @@ F 3 "~" H 750 3250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad J3
+L Mechanical:MountingHole_Pad #J3
 U 1 1 6142711F
 P 800 2350
-F 0 "J3" V 550 2400 50  0000 C CNN
+F 0 "#J3" V 550 2400 50  0000 C CNN
 F 1 "6095" V 650 2400 50  0000 C CNN
 F 2 "" H 800 2350 50  0001 C CNN
 F 3 "~" H 800 2350 50  0001 C CNN
@@ -249,10 +249,10 @@ F2 "IO_PWR" B L 1200 2200 100
 F3 "VProt" B R 2500 2200 100
 $EndSheet
 $Comp
-L Mechanical:MountingHole_Pad J5
+L Mechanical:MountingHole_Pad #J5
 U 1 1 61485222
 P 10900 2350
-F 0 "J5" V 10650 2400 50  0000 C CNN
+F 0 "#J5" V 10650 2400 50  0000 C CNN
 F 1 "6095" V 10750 2400 50  0000 C CNN
 F 2 "" H 10900 2350 50  0001 C CNN
 F 3 "~" H 10900 2350 50  0001 C CNN
@@ -340,10 +340,10 @@ Wire Wire Line
 Wire Wire Line
 	10800 3050 10700 3050
 $Comp
-L Mechanical:MountingHole_Pad J6
+L Mechanical:MountingHole_Pad #J6
 U 1 1 6156FADE
 P 10900 3050
-F 0 "J6" V 11150 3100 50  0000 C CNN
+F 0 "#J6" V 11150 3100 50  0000 C CNN
 F 1 "6095" V 11050 3100 50  0000 C CNN
 F 2 "" H 10900 3050 50  0001 C CNN
 F 3 "~" H 10900 3050 50  0001 C CNN

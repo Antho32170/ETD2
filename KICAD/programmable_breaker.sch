@@ -23,7 +23,7 @@ U 1 1 610C1787
 P 5750 2250
 F 0 "R23" V 5957 2250 50  0000 C CNN
 F 1 "47k" V 5866 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 2250 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5680 2250 50  0001 C CNN
 F 3 "~" H 5750 2250 50  0001 C CNN
 	1    5750 2250
 	0    -1   -1   0   
@@ -34,7 +34,7 @@ U 1 1 610C1C9F
 P 6600 2250
 F 0 "R24" V 6807 2250 50  0000 C CNN
 F 1 "47k" V 6716 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6530 2250 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6530 2250 50  0001 C CNN
 F 3 "~" H 6600 2250 50  0001 C CNN
 	1    6600 2250
 	0    -1   -1   0   
@@ -45,7 +45,7 @@ U 1 1 610C1F6B
 P 6900 1550
 F 0 "R25" H 6970 1596 50  0000 L CNN
 F 1 "47k" H 6970 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6830 1550 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6830 1550 50  0001 C CNN
 F 3 "~" H 6900 1550 50  0001 C CNN
 	1    6900 1550
 	1    0    0    -1  
@@ -56,7 +56,7 @@ U 1 1 610C2293
 P 5450 1550
 F 0 "R22" H 5520 1596 50  0000 L CNN
 F 1 "47k" H 5520 1505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 1550 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5380 1550 50  0001 C CNN
 F 3 "~" H 5450 1550 50  0001 C CNN
 	1    5450 1550
 	1    0    0    -1  
@@ -136,7 +136,7 @@ U 1 1 611101E3
 P 2650 6950
 F 0 "C6" H 2765 6996 50  0000 L CNN
 F 1 "100n" H 2765 6905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 6800 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2688 6800 50  0001 C CNN
 F 3 "~" H 2650 6950 50  0001 C CNN
 	1    2650 6950
 	1    0    0    -1  
@@ -189,7 +189,7 @@ U 1 1 6131658A
 P 8350 2250
 F 0 "R26" V 8143 2250 50  0000 C CNN
 F 1 "10k" V 8234 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8280 2250 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8280 2250 50  0001 C CNN
 F 3 "~" H 8350 2250 50  0001 C CNN
 	1    8350 2250
 	0    1    1    0   
@@ -224,7 +224,7 @@ U 1 1 611CE01D
 P 2950 1850
 F 0 "R20" V 3150 1850 50  0000 C CNN
 F 1 "100k" V 3050 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 1850 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2880 1850 50  0001 C CNN
 F 3 "~" H 2950 1850 50  0001 C CNN
 	1    2950 1850
 	0    1    1    0   
@@ -237,7 +237,7 @@ U 1 1 611CE03F
 P 3400 2100
 F 0 "C8" H 3515 2146 50  0000 L CNN
 F 1 "10n" H 3515 2055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 1950 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3438 1950 50  0001 C CNN
 F 3 "~" H 3400 2100 50  0001 C CNN
 	1    3400 2100
 	1    0    0    -1  
@@ -336,7 +336,7 @@ U 1 1 611DFB44
 P 950 2350
 F 0 "R10" H 1020 2396 50  0000 L CNN
 F 1 "R" H 1020 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 880 2350 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 2350 50  0001 C CNN
 F 3 "~" H 950 2350 50  0001 C CNN
 	1    950  2350
 	1    0    0    -1  
@@ -347,7 +347,7 @@ U 1 1 611DFB4A
 P 950 2750
 F 0 "R11" H 1020 2796 50  0000 L CNN
 F 1 "R" H 1020 2705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 880 2750 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 2750 50  0001 C CNN
 F 3 "~" H 950 2750 50  0001 C CNN
 	1    950  2750
 	1    0    0    -1  
@@ -376,7 +376,7 @@ U 1 1 611E6403
 P 2400 1650
 F 0 "R16" V 2300 1800 50  0000 C CNN
 F 1 "100k" V 2300 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 1650 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 1650 50  0001 C CNN
 F 3 "~" H 2400 1650 50  0001 C CNN
 	1    2400 1650
 	0    1    1    0   
@@ -406,7 +406,7 @@ U 1 1 6139E3D0
 P 3400 900
 F 0 "C7" H 3515 946 50  0000 L CNN
 F 1 "470n" H 3515 855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 750 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3438 750 50  0001 C CNN
 F 3 "~" H 3400 900 50  0001 C CNN
 	1    3400 900 
 	1    0    0    -1  
@@ -420,7 +420,7 @@ U 1 1 613A87CC
 P 2400 1150
 F 0 "R14" V 2300 1300 50  0000 C CNN
 F 1 "100k" V 2300 1100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 1150 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 1150 50  0001 C CNN
 F 3 "~" H 2400 1150 50  0001 C CNN
 	1    2400 1150
 	0    1    1    0   
@@ -437,7 +437,7 @@ U 1 1 613C276D
 P 2400 1400
 F 0 "R15" V 2300 1550 50  0000 C CNN
 F 1 "100k" V 2300 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 1400 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 1400 50  0001 C CNN
 F 3 "~" H 2400 1400 50  0001 C CNN
 	1    2400 1400
 	0    1    1    0   
@@ -546,7 +546,7 @@ U 1 1 615178DC
 P 2950 4650
 F 0 "R21" V 3150 4650 50  0000 C CNN
 F 1 "100k" V 3050 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 4650 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2880 4650 50  0001 C CNN
 F 3 "~" H 2950 4650 50  0001 C CNN
 	1    2950 4650
 	0    1    1    0   
@@ -557,7 +557,7 @@ U 1 1 615178FE
 P 3400 4900
 F 0 "C10" H 3515 4946 50  0000 L CNN
 F 1 "10n" H 3515 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 4750 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3438 4750 50  0001 C CNN
 F 3 "~" H 3400 4900 50  0001 C CNN
 	1    3400 4900
 	1    0    0    -1  
@@ -654,7 +654,7 @@ U 1 1 61517937
 P 950 5150
 F 0 "R12" H 1020 5196 50  0000 L CNN
 F 1 "R" H 1020 5105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 880 5150 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 5150 50  0001 C CNN
 F 3 "~" H 950 5150 50  0001 C CNN
 	1    950  5150
 	1    0    0    -1  
@@ -665,7 +665,7 @@ U 1 1 6151793D
 P 950 5550
 F 0 "R13" H 1020 5596 50  0000 L CNN
 F 1 "R" H 1020 5505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 880 5550 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 5550 50  0001 C CNN
 F 3 "~" H 950 5550 50  0001 C CNN
 	1    950  5550
 	1    0    0    -1  
@@ -685,7 +685,7 @@ U 1 1 61517948
 P 2400 4450
 F 0 "R19" V 2300 4600 50  0000 C CNN
 F 1 "100k" V 2300 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 4450 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 4450 50  0001 C CNN
 F 3 "~" H 2400 4450 50  0001 C CNN
 	1    2400 4450
 	0    1    1    0   
@@ -710,7 +710,7 @@ U 1 1 61517958
 P 3400 3700
 F 0 "C9" H 3515 3746 50  0000 L CNN
 F 1 "470n" H 3515 3655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 3550 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3438 3550 50  0001 C CNN
 F 3 "~" H 3400 3700 50  0001 C CNN
 	1    3400 3700
 	1    0    0    -1  
@@ -724,7 +724,7 @@ U 1 1 61517960
 P 2400 3950
 F 0 "R17" V 2300 4100 50  0000 C CNN
 F 1 "100k" V 2300 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 3950 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 3950 50  0001 C CNN
 F 3 "~" H 2400 3950 50  0001 C CNN
 	1    2400 3950
 	0    1    1    0   
@@ -741,7 +741,7 @@ U 1 1 6151796A
 P 2400 4200
 F 0 "R18" V 2300 4350 50  0000 C CNN
 F 1 "100k" V 2300 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2330 4200 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2330 4200 50  0001 C CNN
 F 3 "~" H 2400 4200 50  0001 C CNN
 	1    2400 4200
 	0    1    1    0   
@@ -951,7 +951,7 @@ AR Path="/60F19D6C/61BFDBA3" Ref="C?"  Part="1"
 AR Path="/60F4EAD9/61BFDBA3" Ref="C?"  Part="1" 
 F 0 "C14" H 9550 2350 50  0000 L CNN
 F 1 "470n" H 9500 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9838 2050 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9838 2050 50  0001 C CNN
 F 3 "~" H 9800 2200 50  0001 C CNN
 	1    9800 2200
 	1    0    0    -1  
@@ -965,17 +965,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 1750 4850 1750
 Connection ~ 4850 1750
-$Comp
-L Device:R R27
-U 1 1 61298257
-P 8850 2700
-F 0 "R27" H 8920 2746 50  0000 L CNN
-F 1 "10k" H 8920 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8780 2700 50  0001 C CNN
-F 3 "~" H 8850 2700 50  0001 C CNN
-	1    8850 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8850 2550 8850 2500
 Wire Wire Line
@@ -991,7 +980,7 @@ U 1 1 610FF241
 P 7350 2600
 F 0 "C11" H 7100 2650 50  0000 L CNN
 F 1 "10n" H 7100 2550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7388 2450 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7388 2450 50  0001 C CNN
 F 3 "~" H 7350 2600 50  0001 C CNN
 	1    7350 2600
 	-1   0    0    -1  
@@ -1059,4 +1048,15 @@ Wire Notes Line
 	8100 3400 8100 1550
 Text Notes 9100 1700 0    100  ~ 20
 A VOIR
+$Comp
+L Device:R R27
+U 1 1 6127338C
+P 8850 2700
+F 0 "R27" H 8920 2746 50  0000 L CNN
+F 1 "47k" H 8920 2655 50  0000 L CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8780 2700 50  0001 C CNN
+F 3 "~" H 8850 2700 50  0001 C CNN
+	1    8850 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -26,7 +26,7 @@ AR Path="/60F171CE/613D641B" Ref="R?"  Part="1"
 AR Path="/60F1AF26/613D641B" Ref="R73"  Part="1" 
 F 0 "R73" V 5207 3050 50  0000 C CNN
 F 1 "100k" V 5116 3050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4930 3050 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4930 3050 50  0001 C CNN
 F 3 "~" H 5000 3050 50  0001 C CNN
 	1    5000 3050
 	0    1    1    0   
@@ -40,7 +40,7 @@ AR Path="/60F171CE/613D6415" Ref="R?"  Part="1"
 AR Path="/60F1AF26/613D6415" Ref="R72"  Part="1" 
 F 0 "R72" V 5207 2850 50  0000 C CNN
 F 1 "100k" V 5116 2850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4930 2850 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4930 2850 50  0001 C CNN
 F 3 "~" H 5000 2850 50  0001 C CNN
 	1    5000 2850
 	0    -1   -1   0   
@@ -81,7 +81,7 @@ AR Path="/60F171CE/613D6429" Ref="R?"  Part="1"
 AR Path="/60F1AF26/613D6429" Ref="R74"  Part="1" 
 F 0 "R74" H 5420 3446 50  0000 L CNN
 F 1 "100k" H 5420 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5280 3400 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5280 3400 50  0001 C CNN
 F 3 "~" H 5350 3400 50  0001 C CNN
 	1    5350 3400
 	1    0    0    -1  
@@ -106,7 +106,7 @@ AR Path="/60F171CE/613D9855" Ref="R?"  Part="1"
 AR Path="/60F1AF26/613D9855" Ref="R71"  Part="1" 
 F 0 "R71" H 3070 3096 50  0000 L CNN
 F 1 "4.7k" H 3070 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2930 3050 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2930 3050 50  0001 C CNN
 F 3 "~" H 3000 3050 50  0001 C CNN
 	1    3000 3050
 	1    0    0    -1  
@@ -252,7 +252,7 @@ AR Path="/60F171CE/613D8CB8" Ref="R?"  Part="1"
 AR Path="/60F1AF26/613D8CB8" Ref="R70"  Part="1" 
 F 0 "R70" H 3070 2696 50  0000 L CNN
 F 1 "100k" H 3070 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2930 2650 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2930 2650 50  0001 C CNN
 F 3 "~" H 3000 2650 50  0001 C CNN
 	1    3000 2650
 	1    0    0    -1  
@@ -332,7 +332,7 @@ AR Path="/60F1AF26/612CB355" Ref="C26"  Part="1"
 AR Path="/60F1B237/612CB355" Ref="C?"  Part="1" 
 F 0 "C26" H 1465 6946 50  0000 L CNN
 F 1 "100n" H 1465 6855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1388 6750 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1388 6750 50  0001 C CNN
 F 3 "~" H 1350 6900 50  0001 C CNN
 	1    1350 6900
 	1    0    0    -1  
@@ -413,7 +413,7 @@ AR Path="/60F171CE/613D640F" Ref="R?"  Part="1"
 AR Path="/60F1AF26/613D640F" Ref="R75"  Part="1" 
 F 0 "R75" V 5907 2600 50  0000 C CNN
 F 1 "100k" V 5816 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5630 2600 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5630 2600 50  0001 C CNN
 F 3 "~" H 5700 2600 50  0001 C CNN
 	1    5700 2600
 	0    -1   -1   0   

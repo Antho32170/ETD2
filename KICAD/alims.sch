@@ -53,7 +53,7 @@ U 1 1 61087C02
 P 8800 2800
 F 0 "R83" H 8870 2846 50  0000 L CNN
 F 1 "R" H 8870 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8730 2800 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8730 2800 50  0001 C CNN
 F 3 "~" H 8800 2800 50  0001 C CNN
 	1    8800 2800
 	1    0    0    -1  
@@ -69,17 +69,6 @@ F 1 "VCC" H 8815 2723 50  0000 C CNN
 F 2 "" H 8800 2550 50  0001 C CNN
 F 3 "" H 8800 2550 50  0001 C CNN
 	1    8800 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sesame:L_Core_Ferrite_Coupled_2_Parts L1
-U 1 1 6123AB5D
-P 4850 2650
-F 0 "L1" H 4850 2895 50  0000 C CNN
-F 1 "L_Core_Ferrite_Coupled_2_Parts" H 4600 2800 50  0000 C CNN
-F 2 "" H 4850 2750 50  0001 C CNN
-F 3 "~" H 4850 2750 50  0001 C CNN
-	1    4850 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -130,13 +119,13 @@ U 1 1 61246D21
 P 5250 4350
 F 0 "R80" H 5320 4396 50  0000 L CNN
 F 1 "R" H 5320 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5180 4350 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5180 4350 50  0001 C CNN
 F 3 "~" H 5250 4350 50  0001 C CNN
 	1    5250 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 2650 5300 2650
+	5550 2650 5400 2650
 Connection ~ 5300 2650
 Connection ~ 6550 2650
 Wire Wire Line
@@ -185,17 +174,6 @@ F 3 "~" H 6300 2650 50  0001 C CNN
 	1    6300 2650
 	-1   0    0    1   
 $EndComp
-$Comp
-L Sesame:L_Core_Ferrite_Coupled_2_Parts L1
-U 2 1 6123D71D
-P 6050 2900
-F 0 "L1" H 6050 3050 50  0000 C CNN
-F 1 "L_Core_Ferrite_Coupled_2_Parts" V 6750 3000 50  0001 C CNN
-F 2 "" H 6050 3000 50  0001 C CNN
-F 3 "~" H 6050 3000 50  0001 C CNN
-	2    6050 2900
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	7200 3200 7200 3450
 $Comp
@@ -204,7 +182,7 @@ U 1 1 612476CB
 P 7200 3050
 F 0 "R81" H 7270 3096 50  0000 L CNN
 F 1 "1M" H 7270 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7130 3050 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7130 3050 50  0001 C CNN
 F 3 "~" H 7200 3050 50  0001 C CNN
 	1    7200 3050
 	1    0    0    -1  
@@ -237,7 +215,7 @@ U 1 1 61247B73
 P 7200 3850
 F 0 "R82" H 7270 3896 50  0000 L CNN
 F 1 "296k" H 7270 3805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7130 3850 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7130 3850 50  0001 C CNN
 F 3 "~" H 7200 3850 50  0001 C CNN
 	1    7200 3850
 	1    0    0    -1  
@@ -272,7 +250,7 @@ U 1 1 6127EBD7
 P 5250 4650
 F 0 "C29" H 5365 4696 50  0000 L CNN
 F 1 "C" H 5365 4605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5288 4500 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5288 4500 50  0001 C CNN
 F 3 "~" H 5250 4650 50  0001 C CNN
 	1    5250 4650
 	1    0    0    -1  
@@ -309,7 +287,7 @@ U 1 1 61283A99
 P 4050 4500
 F 0 "R79" H 4120 4546 50  0000 L CNN
 F 1 "84.5" H 4120 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3980 4500 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3980 4500 50  0001 C CNN
 F 3 "~" H 4050 4500 50  0001 C CNN
 	1    4050 4500
 	1    0    0    -1  
@@ -324,7 +302,7 @@ U 1 1 61286334
 P 4450 4500
 F 0 "C28" H 4565 4546 50  0000 L CNN
 F 1 "C" H 4565 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4488 4350 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4488 4350 50  0001 C CNN
 F 3 "~" H 4450 4500 50  0001 C CNN
 	1    4450 4500
 	1    0    0    -1  
@@ -369,7 +347,7 @@ U 1 1 6129A654
 P 5750 4500
 F 0 "C31" H 5865 4546 50  0000 L CNN
 F 1 "C" H 5865 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5788 4350 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5788 4350 50  0001 C CNN
 F 3 "~" H 5750 4500 50  0001 C CNN
 	1    5750 4500
 	1    0    0    -1  
@@ -477,7 +455,7 @@ AR Path="/60F19D5B/6161C7DE" Ref="C?"  Part="1"
 AR Path="/60F1AA92/6161C7DE" Ref="C27"  Part="1" 
 F 0 "C27" H 1465 6996 50  0000 L CNN
 F 1 "100n" H 1465 6905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1388 6800 50  0001 C CNN
+F 2 "Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1388 6800 50  0001 C CNN
 F 3 "~" H 1350 6950 50  0001 C CNN
 	1    1350 6950
 	1    0    0    -1  
@@ -620,16 +598,16 @@ Connection ~ 7400 2650
 $Comp
 L Connector:TestPoint TP?
 U 1 1 61530DA6
-P 5300 2650
+P 5400 2600
 AR Path="/614794AE/61530DA6" Ref="TP?"  Part="1" 
 AR Path="/61456C6A/61530DA6" Ref="TP?"  Part="1" 
 AR Path="/61530DA6" Ref="TP?"  Part="1" 
 AR Path="/60F1AA92/61530DA6" Ref="TP40"  Part="1" 
-F 0 "TP40" H 5250 3000 50  0000 L CNN
-F 1 "TP_POP" H 5300 2900 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5500 2650 50  0001 C CNN
-F 3 "~" H 5500 2650 50  0001 C CNN
-	1    5300 2650
+F 0 "TP40" H 5400 2950 50  0000 C CNN
+F 1 "TP_POP" H 5400 2850 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 5600 2600 50  0001 C CNN
+F 3 "~" H 5600 2600 50  0001 C CNN
+	1    5400 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -689,7 +667,7 @@ U 1 1 61A3047E
 P 10150 3500
 F 0 "R84" V 9943 3500 50  0000 C CNN
 F 1 "10k" V 10034 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10080 3500 50  0001 C CNN
+F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10080 3500 50  0001 C CNN
 F 3 "~" H 10150 3500 50  0001 C CNN
 	1    10150 3500
 	0    1    1    0   
@@ -837,9 +815,36 @@ U 1 1 6126F44E
 P 6550 2900
 F 0 "C32" H 6668 2946 50  0000 L CNN
 F 1 "CP" H 6668 2855 50  0000 L CNN
-F 2 "" H 6588 2750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_Elec_4x5.8" H 6588 2750 50  0001 C CNN
 F 3 "~" H 6550 2900 50  0001 C CNN
 	1    6550 2900
 	1    0    0    -1  
 $EndComp
+$Comp
+L Sesame:L_Core_Ferrite_Coupled_2_Parts L1
+U 1 1 61275E01
+P 4850 2650
+F 0 "L1" H 4850 2895 50  0000 C CNN
+F 1 "L_Core_Ferrite_Coupled_2_Parts" H 4450 2800 50  0000 C CNN
+F 2 "Sesame_footprint:WE-DD_1260_128012" H 4850 2750 50  0001 C CNN
+F 3 "~" H 4850 2750 50  0001 C CNN
+	1    4850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sesame:L_Core_Ferrite_Coupled_2_Parts L1
+U 2 1 61277F5C
+P 6050 2900
+F 0 "L1" V 6050 3100 50  0000 C CNN
+F 1 "L_Core_Ferrite_Coupled_2_Parts" H 5650 3050 50  0001 C CNN
+F 2 "Sesame_footprint:WE-DD_1260_128012" H 6050 3000 50  0001 C CNN
+F 3 "~" H 6050 3000 50  0001 C CNN
+	2    6050 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 2600 5400 2650
+Connection ~ 5400 2650
+Wire Wire Line
+	5400 2650 5300 2650
 $EndSCHEMATC

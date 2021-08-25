@@ -96,4 +96,39 @@ X S3 9 -500 300 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# L_Core_Ferrite_Coupled_2_Parts-Sesame
+#
+DEF L_Core_Ferrite_Coupled_2_Parts-Sesame L 0 10 Y N 2 F N
+F0 "L" 0 -75 50 H V C CNN
+F1 "L_Core_Ferrite_Coupled_2_Parts-Sesame" 0 -200 50 H V C CNN
+F2 "" 0 100 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A -80 20 20 1 1799 0 1 0 N -60 20 -100 20
+A -40 20 20 1 1799 0 1 0 N -20 20 -60 20
+A 0 20 20 1 1799 0 1 0 N 20 20 -20 20
+A 40 20 20 1 1799 0 1 0 N 60 20 20 20
+A 80 20 20 1 1799 0 1 0 N 100 20 60 20
+C -120 40 10 0 1 0 F
+P 2 0 1 0 -110 80 -90 80 N
+P 2 0 1 0 -100 20 -100 0 N
+P 2 0 1 0 -70 80 -50 80 N
+P 2 0 1 0 -30 80 -10 80 N
+P 2 0 1 0 10 80 30 80 N
+P 2 0 1 0 50 80 70 80 N
+P 2 0 1 0 90 80 110 80 N
+P 2 0 1 0 100 0 100 20 N
+X 1 1 -200 0 100 R 50 50 1 1 P
+X 2 2 200 0 100 L 50 50 1 1 P
+X 3 3 -200 0 100 R 50 50 2 1 P
+X 4 4 200 0 100 L 50 50 2 1 P
+ENDDRAW
+ENDDEF
+#
 #End Library
