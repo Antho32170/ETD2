@@ -24,41 +24,14 @@ F 3 "" H 7700 3750 50  0001 C CNN
 	1    7700 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2950 5150 2650 5150
-Wire Wire Line
-	2950 5050 2650 5050
-Wire Wire Line
-	2950 4950 2650 4950
-Text HLabel 2950 4250 2    50   Input ~ 0
-Current_Sens_L
 Text HLabel 2950 4350 2    50   Input ~ 0
-Voltage_Sens_L
-Text HLabel 2950 4450 2    50   Input ~ 0
-Current_Sens_R
+Current_Sens_L
 Text HLabel 2950 4550 2    50   Input ~ 0
+Voltage_Sens_L
+Text HLabel 2950 4250 2    50   Input ~ 0
+Current_Sens_R
+Text HLabel 2950 4450 2    50   Input ~ 0
 Voltage_Sens_R
-Wire Wire Line
-	2650 4650 2950 4650
-Wire Wire Line
-	2950 4550 2650 4550
-Wire Wire Line
-	2650 4450 2950 4450
-Wire Wire Line
-	2950 4350 2650 4350
-Wire Wire Line
-	2650 4250 2950 4250
-$Comp
-L Connector_Generic:Conn_02x16_Odd_Even J9
-U 1 1 61332892
-P 2350 4650
-F 0 "J9" H 2400 5567 50  0000 C CNN
-F 1 "Conn_02x16_Odd_Even" H 2400 5476 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 2350 4650 50  0001 C CNN
-F 3 "~" H 2350 4650 50  0001 C CNN
-	1    2350 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:VCC #PWR092
 U 1 1 6133D413
@@ -71,13 +44,9 @@ F 3 "" H 2950 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 3950 2950 3950
-Wire Wire Line
 	2950 3950 2950 3800
 Wire Wire Line
 	2950 3950 2950 4050
-Wire Wire Line
-	2950 4050 2650 4050
 Connection ~ 2950 3950
 $Comp
 L Sesame:VREF #PWR093
@@ -92,13 +61,11 @@ F 3 "" H 3200 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 3800 3200 4150
-Wire Wire Line
-	3200 4150 2650 4150
-Text HLabel 2950 4650 2    50   Output ~ 0
+Text HLabel 2950 5450 2    50   Output ~ 0
 Ext_Setpoint
-Text HLabel 2950 4950 2    50   Output ~ 0
+Text HLabel 2950 5150 2    50   Output ~ 0
 Ext_Current_Tresh
-Text HLabel 2950 5050 2    50   Output ~ 0
+Text HLabel 2950 5250 2    50   Output ~ 0
 Ext_Voltage_Tresh
 Text HLabel 9400 4250 2    50   Output ~ 0
 Dir
@@ -118,79 +85,47 @@ $EndComp
 Wire Wire Line
 	2050 5550 2050 5450
 Wire Wire Line
-	2050 5450 2150 5450
-Wire Wire Line
 	2050 5450 2050 5350
-Wire Wire Line
-	2050 3950 2150 3950
 Connection ~ 2050 5450
-Wire Wire Line
-	2050 4050 2150 4050
 Connection ~ 2050 4050
 Wire Wire Line
 	2050 4050 2050 3950
-Wire Wire Line
-	2150 4150 2050 4150
 Connection ~ 2050 4150
 Wire Wire Line
 	2050 4150 2050 4050
-Wire Wire Line
-	2150 4250 2050 4250
 Connection ~ 2050 4250
 Wire Wire Line
 	2050 4250 2050 4150
-Wire Wire Line
-	2050 4350 2150 4350
 Connection ~ 2050 4350
 Wire Wire Line
 	2050 4350 2050 4250
-Wire Wire Line
-	2150 4450 2050 4450
 Connection ~ 2050 4450
 Wire Wire Line
 	2050 4450 2050 4350
-Wire Wire Line
-	2150 4550 2050 4550
 Connection ~ 2050 4550
 Wire Wire Line
 	2050 4550 2050 4450
-Wire Wire Line
-	2150 4650 2050 4650
 Connection ~ 2050 4650
 Wire Wire Line
 	2050 4650 2050 4550
-Wire Wire Line
-	2150 4750 2050 4750
 Connection ~ 2050 4750
 Wire Wire Line
 	2050 4750 2050 4650
-Wire Wire Line
-	2150 4850 2050 4850
 Connection ~ 2050 4850
 Wire Wire Line
 	2050 4850 2050 4750
-Wire Wire Line
-	2150 4950 2050 4950
 Connection ~ 2050 4950
 Wire Wire Line
 	2050 4950 2050 4850
-Wire Wire Line
-	2150 5050 2050 5050
 Connection ~ 2050 5050
 Wire Wire Line
 	2050 5050 2050 4950
-Wire Wire Line
-	2150 5150 2050 5150
 Connection ~ 2050 5150
 Wire Wire Line
 	2050 5150 2050 5050
-Wire Wire Line
-	2150 5250 2050 5250
 Connection ~ 2050 5250
 Wire Wire Line
 	2050 5250 2050 5150
-Wire Wire Line
-	2150 5350 2050 5350
 Connection ~ 2050 5350
 Wire Wire Line
 	2050 5350 2050 5250
@@ -226,17 +161,11 @@ Wire Wire Line
 	7700 3650 7900 3650
 Text HLabel 8250 4250 2    50   Output ~ 0
 Mode
-Text HLabel 2950 5150 2    50   Output ~ 0
+Text HLabel 2950 5350 2    50   Output ~ 0
 Ext_Rearm
-Text Label 2750 5250 0    50   ~ 0
-Ext_Mode
-Text Label 2750 5350 0    50   ~ 0
-Ext_Dir
-Text Label 2750 5450 0    50   ~ 0
-Ext_CC_CV_Mode
-Text Label 2750 4750 0    50   ~ 0
+Text Label 2750 4950 0    50   ~ 0
 Ext_PWM
-Text Label 2750 4850 0    50   ~ 0
+Text Label 2750 5050 0    50   ~ 0
 ~Ext_PWM
 $Comp
 L Device:R R76
@@ -371,20 +300,8 @@ Wire Wire Line
 	10550 4250 10450 4250
 Wire Wire Line
 	10450 4250 10450 4150
-Wire Wire Line
-	8150 5250 8150 4250
-Wire Wire Line
-	2650 5250 8150 5250
 Connection ~ 8150 4250
-Wire Wire Line
-	9300 5350 9300 4250
-Wire Wire Line
-	2650 5350 9300 5350
 Connection ~ 9300 4250
-Wire Wire Line
-	10450 5450 10450 4250
-Wire Wire Line
-	2650 5450 10450 5450
 Connection ~ 10450 4250
 $Comp
 L Device:Jumper_NC_Dual JP11
@@ -427,17 +344,112 @@ Wire Wire Line
 Wire Wire Line
 	4900 3650 5250 3650
 Wire Wire Line
-	5250 3650 5250 4750
-Wire Wire Line
-	2650 4750 5250 4750
-Wire Wire Line
-	7300 4850 7300 3650
-Wire Wire Line
 	7300 3650 6750 3650
-Wire Wire Line
-	2650 4850 7300 4850
 Text HLabel 4750 3850 2    50   Output ~ 0
 PWM_Power
 Text HLabel 6600 3850 2    50   Output ~ 0
 ~PWM_Freewheel
+Wire Wire Line
+	2050 4350 2150 4350
+Wire Wire Line
+	2650 4250 2950 4250
+Wire Wire Line
+	2150 4250 2050 4250
+Wire Wire Line
+	3200 4150 2650 4150
+Wire Wire Line
+	2150 4150 2050 4150
+Wire Wire Line
+	2950 4050 2650 4050
+Wire Wire Line
+	2050 5450 2150 5450
+Wire Wire Line
+	2050 4050 2150 4050
+Wire Wire Line
+	2150 5350 2050 5350
+Wire Wire Line
+	2150 5250 2050 5250
+Wire Wire Line
+	2950 5350 2650 5350
+Wire Wire Line
+	2150 5150 2050 5150
+Wire Wire Line
+	2950 5250 2650 5250
+Wire Wire Line
+	2150 5050 2050 5050
+Wire Wire Line
+	2950 5150 2650 5150
+Wire Wire Line
+	2150 4950 2050 4950
+Wire Wire Line
+	2650 5050 7300 5050
+Wire Wire Line
+	2650 3950 2950 3950
+Wire Wire Line
+	2150 4850 2050 4850
+Wire Wire Line
+	2650 4950 5250 4950
+Wire Wire Line
+	2150 4750 2050 4750
+Wire Wire Line
+	2650 4650 2950 4650
+Wire Wire Line
+	2150 4650 2050 4650
+Wire Wire Line
+	2950 4550 2650 4550
+Wire Wire Line
+	2150 4550 2050 4550
+Wire Wire Line
+	2650 4450 2950 4450
+Wire Wire Line
+	2150 4450 2050 4450
+Wire Wire Line
+	2950 4350 2650 4350
+Wire Wire Line
+	2050 3950 2150 3950
+Wire Wire Line
+	10450 5450 10450 4250
+Wire Wire Line
+	9300 5350 9300 4250
+Wire Wire Line
+	8150 5250 8150 4250
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J9
+U 1 1 61332892
+P 2350 4650
+F 0 "J9" H 2400 5567 50  0000 C CNN
+F 1 "Conn_02x16_Odd_Even" H 2400 5476 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 2350 4650 50  0001 C CNN
+F 3 "~" H 2350 4650 50  0001 C CNN
+	1    2350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 5450 10450 5450
+Wire Wire Line
+	3850 5350 9300 5350
+Wire Wire Line
+	3850 5250 8150 5250
+Text Label 3850 5450 0    50   ~ 0
+Ext_CC_CV_Mode
+Text Label 3850 5350 0    50   ~ 0
+Ext_Dir
+Text Label 3850 5250 0    50   ~ 0
+Ext_Mode
+Wire Wire Line
+	2950 5450 2650 5450
+Wire Wire Line
+	5250 3650 5250 4950
+Wire Wire Line
+	7300 3650 7300 5050
+Text Label 2950 4850 0    50   ~ 0
+Ext_Mode
+Text Label 2950 4650 0    50   ~ 0
+Ext_Dir
+Text Label 2950 4750 0    50   ~ 0
+Ext_CC_CV_Mode
+Wire Wire Line
+	2950 4750 2650 4750
+Wire Wire Line
+	2650 4850 2950 4850
 $EndSCHEMATC
