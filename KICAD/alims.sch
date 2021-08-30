@@ -45,7 +45,7 @@ L Device:R R83
 U 1 1 61087C02
 P 9500 2750
 F 0 "R83" H 9570 2796 50  0000 L CNN
-F 1 "R" H 9570 2705 50  0000 L CNN
+F 1 "200" H 9570 2705 50  0000 L CNN
 F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9430 2750 50  0001 C CNN
 F 3 "~" H 9500 2750 50  0001 C CNN
 	1    9500 2750
@@ -404,7 +404,7 @@ F 3 "" H 7750 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7200 2650
-Text Notes 2550 1350 0    100  ~ 0
+Text Notes 650  900  0    100  ~ 0
 VCC = 7V\nVREF = 6V
 $Comp
 L Connector:TestPoint TP?
@@ -508,8 +508,6 @@ Wire Wire Line
 Connection ~ 3350 2650
 Wire Wire Line
 	3350 2650 2950 2650
-Text Notes 4500 1950 0    100  ~ 20
-BOBINE !!!\nCondo serie
 $Comp
 L Device:CP C32
 U 1 1 6126F44E
@@ -568,7 +566,7 @@ L Device:R R84
 U 1 1 61378003
 P 9000 3750
 F 0 "R84" H 9070 3796 50  0000 L CNN
-F 1 "R" H 9070 3705 50  0000 L CNN
+F 1 "10k" H 9070 3705 50  0000 L CNN
 F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8930 3750 50  0001 C CNN
 F 3 "~" H 9000 3750 50  0001 C CNN
 	1    9000 3750
@@ -579,7 +577,7 @@ L Device:R R28
 U 1 1 61379D1A
 P 9000 3250
 F 0 "R28" H 9070 3296 50  0000 L CNN
-F 1 "R" H 9070 3205 50  0000 L CNN
+F 1 "14k" H 9070 3205 50  0000 L CNN
 F 2 "Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8930 3250 50  0001 C CNN
 F 3 "~" H 9000 3250 50  0001 C CNN
 	1    9000 3250

@@ -461,8 +461,6 @@ Text Label 1950 4000 2    50   ~ 0
 ~PWM
 Text Label 1950 4100 2    50   ~ 0
 PWM
-Text Notes 5200 300  0    100  ~ 20
-Calculs SEPIC
 $Sheet
 S 5050 700  1500 700 
 U 60F1AA92
