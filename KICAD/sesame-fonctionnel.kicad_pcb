@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 109)
+    (drawings 110)
     (tracks 2010)
     (zones 0)
     (modules 279)
@@ -56,8 +56,8 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0)
-    (aux_axis_origin 0 0)
-    (grid_origin 107.92 141.75)
+    (aux_axis_origin 80 60)
+    (grid_origin 240 110)
     (visible_elements FFFFFF7F)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -12461,6 +12461,8 @@
     )
   )
 
+  (target plus (at 240 110) (size 5) (width 0.05) (layer Edge.Cuts))
+  (target plus (at 85.06 71.265) (size 5) (width 0.05) (layer Edge.Cuts))
   (gr_line (start 145.385 101.11) (end 145.385 130.955) (layer Eco1.User) (width 0.15))
   (gr_line (start 112.365 56.025) (end 112.365 74.44) (layer Eco2.User) (width 0.15) (tstamp 612CD3EB))
   (gr_line (start 118.08 76.98) (end 138.4 76.98) (layer Eco2.User) (width 0.15) (tstamp 612CD3EA))
@@ -12598,7 +12600,6 @@
     (arrow2a (pts (xy 102.385 163.175) (xy 102.971421 162.048496)))
     (arrow2b (pts (xy 102.385 163.175) (xy 101.798579 162.048496)))
   )
-  (gr_line (start 186.66 179.85) (end 185.39 177.31) (layer Dwgs.User) (width 0.15))
   (gr_line (start 140.94 165.88) (end 140.94 47.77) (layer Dwgs.User) (width 0.15))
   (dimension 45 (width 0.15) (layer Dwgs.User)
     (gr_text "45.000 mm" (at 256.3 87.5 270) (layer Dwgs.User)
