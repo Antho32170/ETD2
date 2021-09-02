@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 17
 Title "SESAME"
-Date "2021-08-17"
-Rev "0.8"
+Date "2021-08-31"
+Rev "0.9"
 Comp "ALEEA"
 Comment1 "Dessin : Guillaume Arthaud"
 Comment2 ""
@@ -366,20 +366,17 @@ Wire Wire Line
 Text Label 7050 3350 1    50   ~ 0
 Voltage_Sens_L
 $Sheet
-S 3800 3200 850  550 
+S 3600 3200 1050 550 
 U 60F19D6C
 F0 "MOS DRIVER L" 50
 F1 "Mos_Drivers.sch" 50
 F2 "VG_P" O R 4650 3500 50 
-F3 "Driver_S" I L 3800 3550 50 
-F4 "Driver_P" I L 3800 3650 50 
+F3 "Driver_S" I L 3600 3550 50 
+F4 "Driver_P" I L 3600 3650 50 
 F5 "VG_S" O R 4650 3300 50 
 F6 "VS" U R 4650 3400 50 
+F7 "VS_Opposite" U R 4650 3650 50 
 $EndSheet
-Wire Wire Line
-	6850 2600 6850 4250
-Wire Wire Line
-	6750 4150 6750 2700
 Wire Wire Line
 	7050 1700 7050 5850
 Text Label 7350 3350 1    50   ~ 0
@@ -525,37 +522,26 @@ Wire Wire Line
 	4750 2600 5050 2600
 Wire Wire Line
 	2500 2200 2650 2200
-Wire Wire Line
-	4750 3300 4650 3300
-Wire Wire Line
-	4650 3400 4850 3400
-Wire Wire Line
-	4950 3500 4650 3500
-Wire Wire Line
-	6650 2800 6650 4050
 $Sheet
-S 3800 3950 850  550 
+S 3600 3950 1050 550 
 U 619A00BB
 F0 "MOS DRIVER R" 50
 F1 "Mos_Drivers.sch" 50
-F2 "VG_P" O R 4650 4250 50 
-F3 "Driver_S" I L 3800 4050 50 
-F4 "Driver_P" I L 3800 4150 50 
-F5 "VG_S" O R 4650 4050 50 
-F6 "VS" U R 4650 4150 50 
+F2 "VG_P" O R 4650 4400 50 
+F3 "Driver_S" I L 3600 4050 50 
+F4 "Driver_P" I L 3600 4150 50 
+F5 "VG_S" O R 4650 4200 50 
+F6 "VS" U R 4650 4300 50 
+F7 "VS_Opposite" U R 4650 4050 50 
 $EndSheet
 Wire Wire Line
-	3450 3650 3800 3650
+	3450 3650 3600 3650
 Wire Wire Line
-	3800 3550 3450 3550
+	3600 3550 3450 3550
 Wire Wire Line
-	3450 4050 3800 4050
+	3450 4050 3600 4050
 Wire Wire Line
-	3800 4150 3450 4150
-Wire Wire Line
-	4650 4050 6650 4050
-Wire Wire Line
-	4650 4150 6750 4150
+	3600 4150 3450 4150
 $Sheet
 S 5050 1950 1500 950 
 U 60F18239
@@ -570,8 +556,6 @@ F7 "VG_RP" I R 6550 2800 50
 F8 "VS_L" U L 5050 2700 50 
 F9 "VS_R" U R 6550 2700 50 
 $EndSheet
-Wire Wire Line
-	4650 4250 6850 4250
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 61B60E72
@@ -600,8 +584,6 @@ F 3 "" H 10700 3350 50  0001 C CNN
 	1    10700 3350
 	1    0    0    -1  
 $EndComp
-Text Notes 4800 3550 0    100  ~ 20
-<- VOIR PROBLEME DC
 $Sheet
 S 4800 5100 1500 1000
 U 60F1AF26
@@ -660,4 +642,32 @@ Text Label 1050 2200 0    50   ~ 0
 L
 Text Label 10600 2200 0    50   ~ 0
 R
+Wire Wire Line
+	4750 3300 4650 3300
+Wire Wire Line
+	4650 3400 4850 3400
+Wire Wire Line
+	4950 3500 4650 3500
+Wire Wire Line
+	4650 4400 6850 4400
+Wire Wire Line
+	6850 2600 6850 4400
+Wire Wire Line
+	6750 4300 4650 4300
+Wire Wire Line
+	6750 2700 6750 3650
+Wire Wire Line
+	4650 4200 6650 4200
+Wire Wire Line
+	6650 2800 6650 4200
+Wire Wire Line
+	4650 3650 6750 3650
+Connection ~ 6750 3650
+Wire Wire Line
+	6750 3650 6750 4300
+Connection ~ 4850 3400
+Wire Wire Line
+	4650 4050 4850 4050
+Wire Wire Line
+	4850 4050 4850 3400
 $EndSCHEMATC
