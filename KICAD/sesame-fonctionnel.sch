@@ -106,12 +106,12 @@ S 2400 3300 1050 1300
 U 60F4EAD9
 F0 "DRIVER COMMAND" 50
 F1 "Drivers_Command.sch" 50
-F2 "Driver_LS" O R 3450 3650 50 
-F3 "Driver_LP" O R 3450 3750 50 
-F4 "Driver_RS" O R 3450 4150 50 
-F5 "Driver_RP" O R 3450 4250 50 
-F6 "PWM" I L 2400 4200 50 
-F7 "~PWM" I L 2400 4100 50 
+F2 "Driver_LS" O R 3450 3550 50 
+F3 "Driver_LP" O R 3450 3650 50 
+F4 "Driver_RS" O R 3450 4250 50 
+F5 "Driver_RP" O R 3450 4350 50 
+F6 "PWM_Power" I L 2400 4200 50 
+F7 "~PWM_Freewheel" I L 2400 4100 50 
 F8 "Dir" I L 2400 3650 50 
 F9 "Mode" I L 2400 3800 50 
 F10 "~Enable" I L 2400 4450 50 
@@ -353,10 +353,10 @@ Text Label 2200 7100 2    50   ~ 0
 Current_Thres
 Text Label 2200 5400 2    50   ~ 0
 Dir
-Text Label 1950 4100 2    50   ~ 0
-~PWM
-Text Label 1950 4200 2    50   ~ 0
-PWM
+Text Label 2250 4100 2    50   ~ 0
+~PWM_Freewheel
+Text Label 2250 4200 2    50   ~ 0
+PWM_Power
 $Sheet
 S 5050 600  1500 700 
 U 60F1AA92
@@ -422,7 +422,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 4250 3600 4250
 Wire Wire Line
-	3600 4150 3450 4150
+	3600 4350 3450 4350
 $Sheet
 S 5050 1850 1500 950 
 U 60F18239
@@ -583,8 +583,8 @@ U 619A00BB
 F0 "MOS DRIVER R" 50
 F1 "Mos_Drivers.sch" 50
 F2 "VG_P" O R 4650 4750 50 
-F3 "Driver_S" I L 3600 4150 50 
-F4 "Driver_P" I L 3600 4250 50 
+F3 "Driver_S" I L 3600 4250 50 
+F4 "Driver_P" I L 3600 4350 50 
 F5 "VG_S" O R 4650 4550 50 
 F6 "VS" U R 4650 4650 50 
 F7 "VS_Opposite" U R 4650 4400 50 

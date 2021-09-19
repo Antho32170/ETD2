@@ -935,9 +935,9 @@ Connection ~ 4200 4150
 Wire Wire Line
 	4200 4150 4250 4150
 Text HLabel 2950 3500 0    50   Input ~ 0
-PWM
+PWM_Power
 Text HLabel 2950 3800 0    50   Input ~ 0
-~PWM
+~PWM_Freewheel
 $Comp
 L sesame-fonctionnel-rescue:CD4053B-Analog_Switch U5
 U 1 1 613BCF53
@@ -1267,7 +1267,7 @@ Text Label 3100 2900 0    50   ~ 0
 ~Enable_Softstart
 Connection ~ 8250 5850
 Wire Wire Line
-	8250 5850 2600 5850
+	8250 5850 2200 5850
 Text Label 6200 3900 0    50   ~ 0
 ~Enable_Softstart
 Wire Wire Line
@@ -1275,7 +1275,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 3900 6100 5650
 Wire Wire Line
-	6100 5650 2350 5650
+	6100 5650 2050 5650
 Connection ~ 5900 3800
 Wire Wire Line
 	5900 3800 4900 3800
@@ -1285,23 +1285,23 @@ Connection ~ 5900 3600
 Wire Wire Line
 	5900 3600 6750 3600
 Wire Wire Line
-	2600 3200 2600 5850
+	2200 3200 2200 5850
 Wire Wire Line
-	2600 3200 3750 3200
+	2200 3200 3750 3200
 Wire Wire Line
-	2350 5650 2350 2900
+	2050 5650 2050 2900
 Wire Wire Line
-	2350 2900 3750 2900
+	2050 2900 3750 2900
 Text Notes 7450 4700 0    50   ~ 0
 Dir Mode Switch
 Wire Notes Line
 	8100 2300 8100 4750
 Wire Notes Line
 	8100 4750 6300 4750
-Text HLabel 1900 2900 0    50   Input ~ 0
+Text HLabel 1600 2900 0    50   Input ~ 0
 ~Enable
 Connection ~ 1300 6500
 Wire Wire Line
-	1900 2900 2350 2900
-Connection ~ 2350 2900
+	1600 2900 2050 2900
+Connection ~ 2050 2900
 $EndSCHEMATC
