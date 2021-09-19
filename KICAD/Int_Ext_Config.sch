@@ -22,7 +22,7 @@ Current_Sens_R
 Text HLabel 2050 4500 2    50   Input ~ 0
 Voltage_Sens_R
 $Comp
-L power:VCC #PWR092
+L sesame-fonctionnel-rescue:VCC-power #PWR092
 U 1 1 6133D413
 P 2050 3850
 F 0 "#PWR092" H 2050 3700 50  0001 C CNN
@@ -61,7 +61,7 @@ Dir
 Text HLabel 4650 3700 2    50   Output ~ 0
 CC_CV_Mode
 $Comp
-L power:GND #PWR091
+L sesame-fonctionnel-rescue:GND-power #PWR091
 U 1 1 6134A761
 P 1150 5600
 F 0 "#PWR091" H 1150 5350 50  0001 C CNN
@@ -121,7 +121,7 @@ Wire Wire Line
 Text HLabel 2050 5000 2    50   Output ~ 0
 Ext_Rearm
 $Comp
-L power:GND #PWR096
+L sesame-fonctionnel-rescue:GND-power #PWR096
 U 1 1 61386A80
 P 2900 3200
 F 0 "#PWR096" H 2900 2950 50  0001 C CNN
@@ -132,7 +132,7 @@ F 3 "" H 2900 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP13
+L sesame-fonctionnel-rescue:Jumper_NC_Dual-Device JP13
 U 1 1 61386A86
 P 3350 3100
 F 0 "JP13" H 3350 3339 50  0000 C CNN
@@ -143,7 +143,7 @@ F 3 "~" H 3350 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR097
+L sesame-fonctionnel-rescue:VCC-power #PWR097
 U 1 1 61386A8C
 P 3800 3050
 F 0 "#PWR097" H 3800 2900 50  0001 C CNN
@@ -162,7 +162,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 3100 3100 3100
 $Comp
-L Device:R R77
+L sesame-fonctionnel-rescue:R-Device R77
 U 1 1 61386A97
 P 3350 3450
 F 0 "R77" H 3420 3496 50  0000 L CNN
@@ -179,7 +179,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 3700 3350 3600
 $Comp
-L power:GND #PWR098
+L sesame-fonctionnel-rescue:GND-power #PWR098
 U 1 1 6138E72F
 P 4100 3200
 F 0 "#PWR098" H 4100 2950 50  0001 C CNN
@@ -190,7 +190,7 @@ F 3 "" H 4100 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP14
+L sesame-fonctionnel-rescue:Jumper_NC_Dual-Device JP14
 U 1 1 6138E735
 P 4550 3100
 F 0 "JP14" H 4550 3339 50  0000 C CNN
@@ -201,7 +201,7 @@ F 3 "~" H 4550 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR099
+L sesame-fonctionnel-rescue:VCC-power #PWR099
 U 1 1 6138E73B
 P 5000 3050
 F 0 "#PWR099" H 5000 2900 50  0001 C CNN
@@ -220,7 +220,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3100 4300 3100
 $Comp
-L Device:R R78
+L sesame-fonctionnel-rescue:R-Device R78
 U 1 1 6138E745
 P 4550 3450
 F 0 "R78" H 4620 3496 50  0000 L CNN
@@ -239,7 +239,7 @@ Wire Wire Line
 Connection ~ 3350 3700
 Connection ~ 4550 3700
 $Comp
-L Device:Jumper_NC_Dual JP11
+L sesame-fonctionnel-rescue:Jumper_NC_Dual-Device JP11
 U 1 1 6139D414
 P 9200 3100
 F 0 "JP11" H 9200 3339 50  0000 C CNN
@@ -254,7 +254,7 @@ INT_PWM_Power
 Text HLabel 8900 3100 0    50   Input ~ 0
 ~INT_PWM_Freewheel
 $Comp
-L Device:Jumper_NC_Dual JP10
+L sesame-fonctionnel-rescue:Jumper_NC_Dual-Device JP10
 U 1 1 613A5DB8
 P 7300 3100
 F 0 "JP10" H 7300 3339 50  0000 C CNN
@@ -357,7 +357,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 3100 10000 5500
 $Comp
-L Connector_Generic:Conn_02x16_Odd_Even J9
+L sesame-fonctionnel-rescue:Conn_02x16_Odd_Even-Connector_Generic J9
 U 1 1 61332892
 P 1450 4700
 F 0 "J9" H 1500 5617 50  0000 C CNN
@@ -372,7 +372,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 3200 5250 3100
 $Comp
-L power:GND #PWR0116
+L sesame-fonctionnel-rescue:GND-power #PWR0116
 U 1 1 6143326D
 P 5250 3200
 F 0 "#PWR0116" H 5250 2950 50  0001 C CNN
@@ -390,7 +390,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 3300 5700 3200
 $Comp
-L Device:R R76
+L sesame-fonctionnel-rescue:R-Device R76
 U 1 1 6137F2F0
 P 5700 3450
 F 0 "R76" H 5770 3496 50  0000 L CNN
@@ -407,7 +407,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 3050 6150 3100
 $Comp
-L power:VCC #PWR095
+L sesame-fonctionnel-rescue:VCC-power #PWR095
 U 1 1 6136D0ED
 P 6150 3050
 F 0 "#PWR095" H 6150 2900 50  0001 C CNN
@@ -418,7 +418,7 @@ F 3 "" H 6150 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NC_Dual JP12
+L sesame-fonctionnel-rescue:Jumper_NC_Dual-Device JP12
 U 1 1 61366A29
 P 5700 3100
 F 0 "JP12" H 5700 3339 50  0000 C CNN

@@ -18,7 +18,7 @@ IO_PWR
 Text HLabel 8600 2850 2    100  BiDi ~ 0
 VProt
 $Comp
-L Device:Q_PMOS_GDS Q9
+L sesame-fonctionnel-rescue:Q_PMOS_GDS-Device Q9
 U 1 1 610FCCAA
 P 4250 2950
 AR Path="/614794AE/610FCCAA" Ref="Q9"  Part="1" 
@@ -32,7 +32,7 @@ F 3 "https://www.mouser.fr/datasheet/2/427/sqm120p10-10m1l-1766828.pdf" H 4250 2
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:Q_PMOS_GDS Q11
+L sesame-fonctionnel-rescue:Q_PMOS_GDS-Device Q11
 U 1 1 610FED91
 P 7800 2950
 AR Path="/614794AE/610FED91" Ref="Q11"  Part="1" 
@@ -46,7 +46,7 @@ F 3 "https://www.mouser.fr/datasheet/2/427/sqm120p10-10m1l-1766828.pdf" H 7800 2
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:D_Zener D5
+L sesame-fonctionnel-rescue:D_Zener-Device D5
 U 1 1 61100A0F
 P 4550 3100
 AR Path="/614794AE/61100A0F" Ref="D5"  Part="1" 
@@ -60,7 +60,7 @@ F 3 "https://docs.rs-online.com/0640/0900766b814f560f.pdf" H 4550 3100 50  0001 
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R55
+L sesame-fonctionnel-rescue:R-Device R55
 U 1 1 61102FC8
 P 4250 3700
 AR Path="/614794AE/61102FC8" Ref="R55"  Part="1" 
@@ -87,7 +87,7 @@ Wire Wire Line
 Wire Notes Line
 	3900 2500 5100 2500
 $Comp
-L Transistor_BJT:BC857 Q10
+L sesame-fonctionnel-rescue:BC857-Transistor_BJT Q10
 U 1 1 6110710F
 P 6600 3300
 AR Path="/614794AE/6110710F" Ref="Q10"  Part="1" 
@@ -101,7 +101,7 @@ F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 6600 3300 50  0001 L C
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:D_Zener D7
+L sesame-fonctionnel-rescue:D_Zener-Device D7
 U 1 1 61107DEE
 P 7250 3200
 AR Path="/614794AE/61107DEE" Ref="D7"  Part="1" 
@@ -115,7 +115,7 @@ F 3 "https://docs.rs-online.com/0640/0900766b814f560f.pdf" H 7250 3200 50  0001 
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R56
+L sesame-fonctionnel-rescue:R-Device R56
 U 1 1 611083FB
 P 5900 3100
 AR Path="/614794AE/611083FB" Ref="R56"  Part="1" 
@@ -133,7 +133,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 2950 5900 2850
 $Comp
-L Device:R R57
+L sesame-fonctionnel-rescue:R-Device R57
 U 1 1 6110B925
 P 6250 3300
 AR Path="/614794AE/6110B925" Ref="R57"  Part="1" 
@@ -162,7 +162,7 @@ Wire Wire Line
 	7600 2850 7250 2850
 Connection ~ 7250 2850
 $Comp
-L Device:R R58
+L sesame-fonctionnel-rescue:R-Device R58
 U 1 1 61115761
 P 7800 3850
 AR Path="/614794AE/61115761" Ref="R58"  Part="1" 
@@ -224,7 +224,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 3300 5900 3550
 $Comp
-L Device:D_Zener D6
+L sesame-fonctionnel-rescue:D_Zener-Device D6
 U 1 1 61107C25
 P 5900 3700
 AR Path="/614794AE/61107C25" Ref="D6"  Part="1" 
@@ -238,7 +238,7 @@ F 3 "https://docs.rs-online.com/0640/0900766b814f560f.pdf" H 5900 3700 50  0001 
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP27
+L sesame-fonctionnel-rescue:TestPoint-Connector TP27
 U 1 1 612D3587
 P 5350 2850
 AR Path="/614794AE/612D3587" Ref="TP27"  Part="1" 
@@ -255,7 +255,7 @@ Connection ~ 5350 2850
 Wire Wire Line
 	5350 2850 5900 2850
 $Comp
-L Connector:TestPoint TP28
+L sesame-fonctionnel-rescue:TestPoint-Connector TP28
 U 1 1 612DA888
 P 8400 2850
 AR Path="/614794AE/612DA888" Ref="TP28"  Part="1" 
@@ -272,7 +272,7 @@ Connection ~ 8400 2850
 Wire Wire Line
 	8000 2850 8400 2850
 $Comp
-L Connector:TestPoint TP26
+L sesame-fonctionnel-rescue:TestPoint-Connector TP26
 U 1 1 614EA2DB
 P 3650 2850
 AR Path="/614794AE/614EA2DB" Ref="TP26"  Part="1" 
@@ -291,7 +291,7 @@ Connection ~ 3650 2850
 Wire Wire Line
 	3650 2850 4050 2850
 $Comp
-L power:GND #PWR069
+L sesame-fonctionnel-rescue:GND-power #PWR069
 U 1 1 61BA1370
 P 4250 4050
 AR Path="/61456C6A/61BA1370" Ref="#PWR069"  Part="1" 
@@ -304,7 +304,7 @@ F 3 "" H 4250 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR070
+L sesame-fonctionnel-rescue:GND-power #PWR070
 U 1 1 61BA1902
 P 5900 4050
 AR Path="/61456C6A/61BA1902" Ref="#PWR070"  Part="1" 
@@ -317,7 +317,7 @@ F 3 "" H 5900 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR071
+L sesame-fonctionnel-rescue:GND-power #PWR071
 U 1 1 61BA1F25
 P 7800 4050
 AR Path="/61456C6A/61BA1F25" Ref="#PWR071"  Part="1" 

@@ -21,7 +21,7 @@ Connection ~ 2150 2600
 Wire Wire Line
 	2150 2600 1700 2600
 $Comp
-L Device:R RShunt2
+L sesame-fonctionnel-rescue:R-Device RShunt2
 U 1 1 6109114F
 P 2350 2600
 AR Path="/60F19D5B/6109114F" Ref="RShunt2"  Part="1" 
@@ -34,7 +34,7 @@ F 3 "~" H 2350 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R60
+L sesame-fonctionnel-rescue:R-Device R60
 U 1 1 61091B7C
 P 2900 3650
 AR Path="/60F19D5B/61091B7C" Ref="R60"  Part="1" 
@@ -47,7 +47,7 @@ F 3 "~" H 2900 3650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R59
+L sesame-fonctionnel-rescue:R-Device R59
 U 1 1 610923D6
 P 2900 3450
 AR Path="/60F19D5B/610923D6" Ref="R59"  Part="1" 
@@ -62,7 +62,7 @@ $EndComp
 Wire Wire Line
 	7650 3900 7650 3850
 $Comp
-L power:GND #PWR068
+L sesame-fonctionnel-rescue:GND-power #PWR068
 U 1 1 610DEA27
 P 7650 3900
 AR Path="/60F171CE/610DEA27" Ref="#PWR068"  Part="1" 
@@ -79,7 +79,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 2850 7650 2600
 $Comp
-L Device:R R50
+L sesame-fonctionnel-rescue:R-Device R50
 U 1 1 610DC636
 P 7650 3700
 AR Path="/60F171CE/610DC636" Ref="R50"  Part="1" 
@@ -92,7 +92,7 @@ F 3 "~" H 7650 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R49
+L sesame-fonctionnel-rescue:R-Device R49
 U 1 1 610DBB97
 P 7650 3000
 AR Path="/60F171CE/610DBB97" Ref="R49"  Part="1" 
@@ -167,7 +167,7 @@ Connection ~ 2550 3650
 Wire Wire Line
 	2550 3650 2550 4550
 $Comp
-L Transistor_BJT:BC847 Q4
+L sesame-fonctionnel-rescue:BC847-Transistor_BJT Q4
 U 1 1 61382079
 P 3950 3550
 AR Path="/60F171CE/61382079" Ref="Q4"  Part="1" 
@@ -180,7 +180,7 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC847 Q5
+L sesame-fonctionnel-rescue:BC847-Transistor_BJT Q5
 U 1 1 613844DA
 P 3950 4650
 AR Path="/60F171CE/613844DA" Ref="Q5"  Part="1" 
@@ -199,7 +199,7 @@ Connection ~ 3100 4550
 Wire Wire Line
 	3100 4550 3150 4550
 $Comp
-L Device:R R48
+L sesame-fonctionnel-rescue:R-Device R48
 U 1 1 6138CEF9
 P 4050 5100
 AR Path="/60F171CE/6138CEF9" Ref="R48"  Part="1" 
@@ -225,7 +225,7 @@ Connection ~ 4050 4900
 Wire Wire Line
 	4050 4900 4050 4950
 $Comp
-L power:GND #PWR067
+L sesame-fonctionnel-rescue:GND-power #PWR067
 U 1 1 61391300
 P 4050 5350
 AR Path="/60F171CE/61391300" Ref="#PWR067"  Part="1" 
@@ -240,7 +240,7 @@ $EndComp
 Wire Wire Line
 	4050 5350 4050 5250
 $Comp
-L Device:R R61
+L sesame-fonctionnel-rescue:R-Device R61
 U 1 1 61397C3C
 P 2900 4550
 AR Path="/60F19D5B/61397C3C" Ref="R61"  Part="1" 
@@ -253,7 +253,7 @@ F 3 "~" H 2900 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R62
+L sesame-fonctionnel-rescue:R-Device R62
 U 1 1 61398F33
 P 2900 4750
 AR Path="/60F19D5B/61398F33" Ref="R62"  Part="1" 
@@ -310,7 +310,7 @@ Connection ~ 4600 3950
 Text HLabel 6100 3850 2    50   Output ~ 0
 Current_Sens
 $Comp
-L Device:C C?
+L sesame-fonctionnel-rescue:C-Device C?
 U 1 1 613B4715
 P 1250 6950
 AR Path="/60F1AF26/613B4715" Ref="C?"  Part="1" 
@@ -335,7 +335,7 @@ Connection ~ 1100 6600
 Wire Wire Line
 	950  7300 950  7250
 $Comp
-L power:GND #PWR?
+L sesame-fonctionnel-rescue:GND-power #PWR?
 U 1 1 613B4720
 P 1100 7350
 AR Path="/60F1AF26/613B4720" Ref="#PWR?"  Part="1" 
@@ -364,7 +364,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 7300 1250 7300
 $Comp
-L power:VCC #PWR?
+L sesame-fonctionnel-rescue:VCC-power #PWR?
 U 1 1 613B472D
 P 1100 6550
 AR Path="/60F1AF26/613B472D" Ref="#PWR?"  Part="1" 
@@ -382,7 +382,7 @@ $EndComp
 Text Notes 2800 7650 2    49   ~ 0
 OP Amp supply
 $Comp
-L Device:C C?
+L sesame-fonctionnel-rescue:C-Device C?
 U 1 1 613B7585
 P 2450 6900
 AR Path="/60F1AF26/613B7585" Ref="C?"  Part="1" 
@@ -407,7 +407,7 @@ Connection ~ 2300 6550
 Wire Wire Line
 	2150 7250 2150 7200
 $Comp
-L power:GND #PWR?
+L sesame-fonctionnel-rescue:GND-power #PWR?
 U 1 1 613B7590
 P 2300 7300
 AR Path="/60F1AF26/613B7590" Ref="#PWR?"  Part="1" 
@@ -436,7 +436,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 7250 2450 7250
 $Comp
-L power:VCC #PWR?
+L sesame-fonctionnel-rescue:VCC-power #PWR?
 U 1 1 613B759D
 P 2300 6500
 AR Path="/60F1AF26/613B759D" Ref="#PWR?"  Part="1" 
@@ -527,7 +527,7 @@ Wire Notes Line
 Wire Notes Line
 	550  7700 2850 7700
 $Comp
-L Connector:TestPoint TP?
+L sesame-fonctionnel-rescue:TestPoint-Connector TP?
 U 1 1 6153C862
 P 4600 3950
 AR Path="/614794AE/6153C862" Ref="TP?"  Part="1" 
@@ -544,7 +544,7 @@ F 3 "~" H 4800 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L sesame-fonctionnel-rescue:TestPoint-Connector TP?
 U 1 1 61544B27
 P 9100 3250
 AR Path="/614794AE/61544B27" Ref="TP?"  Part="1" 
@@ -564,7 +564,7 @@ Connection ~ 9100 3250
 Wire Wire Line
 	9100 3250 8700 3250
 $Comp
-L Connector:TestPoint TP?
+L sesame-fonctionnel-rescue:TestPoint-Connector TP?
 U 1 1 6154A16C
 P 5900 3850
 AR Path="/614794AE/6154A16C" Ref="TP?"  Part="1" 

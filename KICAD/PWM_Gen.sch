@@ -18,7 +18,7 @@ Wire Wire Line
 Text Label 2300 3050 0    50   ~ 0
 Feedback
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 613D641B
 P 2850 3050
 AR Path="/60F19D5B/613D641B" Ref="R?"  Part="1" 
@@ -32,7 +32,7 @@ F 3 "~" H 2850 3050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 613D6415
 P 2850 2850
 AR Path="/60F19D5B/613D6415" Ref="R?"  Part="1" 
@@ -54,7 +54,7 @@ Deadtime on Feedback
 Wire Wire Line
 	3950 2950 3850 2950
 $Comp
-L power:GND #PWR?
+L sesame-fonctionnel-rescue:GND-power #PWR?
 U 1 1 613D6432
 P 3200 3550
 AR Path="/60F19D5B/613D6432" Ref="#PWR?"  Part="1" 
@@ -73,7 +73,7 @@ Connection ~ 3200 3050
 Wire Wire Line
 	3200 3250 3200 3050
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 613D6429
 P 3200 3400
 AR Path="/60F19D5B/613D6429" Ref="R?"  Part="1" 
@@ -98,7 +98,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 2850 3200 2850
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 613D9855
 P 850 3050
 AR Path="/60F19D5B/613D9855" Ref="R?"  Part="1" 
@@ -112,7 +112,7 @@ F 3 "~" H 850 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L sesame-fonctionnel-rescue:GND-power #PWR?
 U 1 1 613D9F4F
 P 850 3200
 AR Path="/60F19D5B/613D9F4F" Ref="#PWR?"  Part="1" 
@@ -198,7 +198,7 @@ F 3 "" H 850 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 613D8CB8
 P 850 2650
 AR Path="/60F19D5B/613D8CB8" Ref="R?"  Part="1" 
@@ -212,7 +212,7 @@ F 3 "~" H 850 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP35
+L sesame-fonctionnel-rescue:TestPoint-Connector TP35
 U 1 1 612937F6
 P 1750 2850
 F 0 "TP35" H 1700 3100 50  0000 L CNN
@@ -228,7 +228,7 @@ Wire Wire Line
 Wire Wire Line
 	850  2850 1750 2850
 $Comp
-L Connector:TestPoint TP36
+L sesame-fonctionnel-rescue:TestPoint-Connector TP36
 U 1 1 61299A59
 P 4300 2900
 F 0 "TP36" H 4250 3150 50  0000 L CNN
@@ -239,7 +239,7 @@ F 3 "~" H 4500 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP38
+L sesame-fonctionnel-rescue:TestPoint-Connector TP38
 U 1 1 612A9FCA
 P 9700 3950
 F 0 "TP38" H 9650 4200 50  0000 L CNN
@@ -260,7 +260,7 @@ Wire Notes Line
 Text Notes 1800 7650 2    49   ~ 0
 OP Amp supply
 $Comp
-L Device:C C26
+L sesame-fonctionnel-rescue:C-Device C26
 U 1 1 612CB355
 P 1350 6900
 AR Path="/60F1AF26/612CB355" Ref="C26"  Part="1" 
@@ -282,7 +282,7 @@ Connection ~ 1200 6550
 Wire Wire Line
 	1050 7250 1050 7200
 $Comp
-L power:GND #PWR087
+L sesame-fonctionnel-rescue:GND-power #PWR087
 U 1 1 612CB360
 P 1200 7300
 AR Path="/60F1AF26/612CB360" Ref="#PWR087"  Part="1" 
@@ -308,7 +308,7 @@ Wire Wire Line
 Wire Wire Line
 	1200 7250 1350 7250
 $Comp
-L power:VCC #PWR086
+L sesame-fonctionnel-rescue:VCC-power #PWR086
 U 1 1 612CB36D
 P 1200 6500
 AR Path="/60F1AF26/612CB36D" Ref="#PWR086"  Part="1" 
@@ -340,7 +340,7 @@ PWM_Power_Jumper
 Text Notes 2150 2450 0    50   ~ 0
 Deadtime ≃ 130 ns
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 613D640F
 P 3550 2600
 AR Path="/60F19D5B/613D640F" Ref="R?"  Part="1" 
@@ -354,7 +354,7 @@ F 3 "~" H 3550 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Jumper:Jumper_3_Bridged12 JP17
+L sesame-fonctionnel-rescue:Jumper_3_Bridged12-Jumper JP17
 U 1 1 614ED0FD
 P 10350 3050
 F 0 "JP17" H 10350 3161 50  0000 C CNN
@@ -367,7 +367,7 @@ $EndComp
 Wire Wire Line
 	10450 2750 10350 2750
 $Comp
-L Jumper:Jumper_3_Bridged12 JP18
+L sesame-fonctionnel-rescue:Jumper_3_Bridged12-Jumper JP18
 U 1 1 614F10A9
 P 10350 3950
 F 0 "JP18" H 10350 4154 50  0000 C CNN
@@ -406,7 +406,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 4050 5400 4050
 $Comp
-L Jumper:Jumper_3_Bridged12 JP15
+L sesame-fonctionnel-rescue:Jumper_3_Bridged12-Jumper JP15
 U 1 1 61517849
 P 5900 2950
 F 0 "JP15" H 5900 3061 50  0000 C CNN
@@ -437,7 +437,7 @@ Connection ~ 5400 2950
 Wire Wire Line
 	5400 2950 5650 2950
 $Comp
-L Jumper:Jumper_3_Bridged12 JP16
+L sesame-fonctionnel-rescue:Jumper_3_Bridged12-Jumper JP16
 U 1 1 61517850
 P 5900 4050
 F 0 "JP16" H 5900 4254 50  0000 C CNN
@@ -513,7 +513,7 @@ Wire Wire Line
 Wire Notes Line
 	6950 4600 9550 4600
 $Comp
-L Connector:TestPoint TP37
+L sesame-fonctionnel-rescue:TestPoint-Connector TP37
 U 1 1 612A923F
 P 9700 3050
 F 0 "TP37" H 9650 3300 50  0000 L CNN

@@ -54,7 +54,7 @@ Connection ~ 6800 3100
 Wire Wire Line
 	6800 3100 6800 3150
 $Comp
-L power:GND #PWR036
+L sesame-fonctionnel-rescue:GND-power #PWR036
 U 1 1 610E2D38
 P 6650 4100
 F 0 "#PWR036" H 6650 3850 50  0001 C CNN
@@ -104,7 +104,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 3750 5600 3750
 $Comp
-L power:GND #PWR035
+L sesame-fonctionnel-rescue:GND-power #PWR035
 U 1 1 610C24DF
 P 6150 4400
 F 0 "#PWR035" H 6150 4150 50  0001 C CNN
@@ -115,7 +115,7 @@ F 3 "" H 6150 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR033
+L sesame-fonctionnel-rescue:GND-power #PWR033
 U 1 1 61122566
 P 750 7450
 F 0 "#PWR033" H 750 7200 50  0001 C CNN
@@ -126,7 +126,7 @@ F 3 "" H 750 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C12
+L sesame-fonctionnel-rescue:C-Device C12
 U 1 1 6112299E
 P 750 7300
 F 0 "C12" H 865 7346 50  0000 L CNN
@@ -137,7 +137,7 @@ F 3 "~" H 750 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR032
+L sesame-fonctionnel-rescue:VCC-power #PWR032
 U 1 1 61547D97
 P 750 7150
 F 0 "#PWR032" H 750 7000 50  0001 C CNN
@@ -148,7 +148,7 @@ F 3 "" H 750 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR034
+L sesame-fonctionnel-rescue:VCC-power #PWR034
 U 1 1 61549B3F
 P 6000 2700
 F 0 "#PWR034" H 6000 2550 50  0001 C CNN

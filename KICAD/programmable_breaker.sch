@@ -18,7 +18,7 @@ Rearm
 Text HLabel 2050 1850 0    50   Input ~ 0
 Voltage_Sens
 $Comp
-L Device:R R23
+L sesame-fonctionnel-rescue:R-Device R23
 U 1 1 610C1787
 P 5750 2250
 F 0 "R23" V 5957 2250 50  0000 C CNN
@@ -29,7 +29,7 @@ F 3 "~" H 5750 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R24
+L sesame-fonctionnel-rescue:R-Device R24
 U 1 1 610C1C9F
 P 6600 2250
 F 0 "R24" V 6807 2250 50  0000 C CNN
@@ -40,7 +40,7 @@ F 3 "~" H 6600 2250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R25
+L sesame-fonctionnel-rescue:R-Device R25
 U 1 1 610C1F6B
 P 6900 1550
 F 0 "R25" H 6970 1596 50  0000 L CNN
@@ -51,7 +51,7 @@ F 3 "~" H 6900 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R22
+L sesame-fonctionnel-rescue:R-Device R22
 U 1 1 610C2293
 P 5450 1550
 F 0 "R22" H 5520 1596 50  0000 L CNN
@@ -62,7 +62,7 @@ F 3 "~" H 5450 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC847 Q2
+L sesame-fonctionnel-rescue:BC847-Transistor_BJT Q2
 U 1 1 610C3843
 P 6800 2600
 F 0 "Q2" H 6991 2646 50  0000 L CNN
@@ -73,7 +73,7 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC847 Q1
+L sesame-fonctionnel-rescue:BC847-Transistor_BJT Q1
 U 1 1 610C6206
 P 5550 2600
 F 0 "Q1" H 5741 2646 50  0000 L CNN
@@ -94,7 +94,7 @@ Wire Wire Line
 	6900 2250 6900 2400
 Connection ~ 6900 2250
 $Comp
-L Transistor_BJT:BC847 Q3
+L sesame-fonctionnel-rescue:BC847-Transistor_BJT Q3
 U 1 1 610CECBF
 P 8750 2250
 F 0 "Q3" H 8941 2296 50  0000 L CNN
@@ -105,7 +105,7 @@ F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_B
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR029
+L sesame-fonctionnel-rescue:GND-power #PWR029
 U 1 1 610D4337
 P 6900 2950
 F 0 "#PWR029" H 6900 2700 50  0001 C CNN
@@ -116,7 +116,7 @@ F 3 "" H 6900 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR027
+L sesame-fonctionnel-rescue:GND-power #PWR027
 U 1 1 610D4AD2
 P 5450 2950
 F 0 "#PWR027" H 5450 2700 50  0001 C CNN
@@ -131,7 +131,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 2800 6900 2950
 $Comp
-L Device:C C6
+L sesame-fonctionnel-rescue:C-Device C6
 U 1 1 611101E3
 P 2650 6950
 F 0 "C6" H 2765 6996 50  0000 L CNN
@@ -154,7 +154,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 7300 2650 7100
 $Comp
-L power:GND #PWR020
+L sesame-fonctionnel-rescue:GND-power #PWR020
 U 1 1 61146881
 P 2450 7400
 F 0 "#PWR020" H 2450 7150 50  0001 C CNN
@@ -184,7 +184,7 @@ Wire Notes Line
 Text Notes 3100 7650 2    49   ~ 0
 Alim. AOP
 $Comp
-L Device:R R26
+L sesame-fonctionnel-rescue:R-Device R26
 U 1 1 6131658A
 P 8350 2250
 F 0 "R26" V 8143 2250 50  0000 C CNN
@@ -219,7 +219,7 @@ Wire Notes Line
 Wire Notes Line
 	5050 950  5050 3400
 $Comp
-L Device:R R20
+L sesame-fonctionnel-rescue:R-Device R20
 U 1 1 611CE01D
 P 2950 1850
 F 0 "R20" V 3150 1850 50  0000 C CNN
@@ -232,7 +232,7 @@ $EndComp
 Wire Wire Line
 	3950 1850 3400 1850
 $Comp
-L Device:C C8
+L sesame-fonctionnel-rescue:C-Device C8
 U 1 1 611CE03F
 P 3400 2100
 F 0 "C8" H 3515 2146 50  0000 L CNN
@@ -243,7 +243,7 @@ F 3 "~" H 3400 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR022
+L sesame-fonctionnel-rescue:GND-power #PWR022
 U 1 1 611CE048
 P 3400 2250
 F 0 "#PWR022" H 3400 2000 50  0001 C CNN
@@ -254,7 +254,7 @@ F 3 "" H 3400 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP4
+L sesame-fonctionnel-rescue:Jumper-Device JP4
 U 1 1 611CE04F
 P 3100 1150
 F 0 "JP4" H 3100 1323 50  0000 C CNN
@@ -265,7 +265,7 @@ F 3 "~" H 3100 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP5
+L sesame-fonctionnel-rescue:Jumper-Device JP5
 U 1 1 611CE055
 P 3100 1400
 F 0 "JP5" H 3100 1573 50  0000 C CNN
@@ -276,7 +276,7 @@ F 3 "~" H 3100 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP6
+L sesame-fonctionnel-rescue:Jumper-Device JP6
 U 1 1 611CE05B
 P 3100 1650
 F 0 "JP6" H 3100 1823 50  0000 C CNN
@@ -297,7 +297,7 @@ Wire Wire Line
 Text HLabel 2050 1650 0    50   Input ~ 0
 Voltage_Thres
 $Comp
-L power:GND #PWR014
+L sesame-fonctionnel-rescue:GND-power #PWR014
 U 1 1 611DFB26
 P 950 2900
 F 0 "#PWR014" H 950 2650 50  0001 C CNN
@@ -308,7 +308,7 @@ F 3 "" H 950 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV2
+L sesame-fonctionnel-rescue:R_POT-Device RV2
 U 1 1 611DFB2C
 P 950 1150
 F 0 "RV2" H 881 1196 50  0000 R CNN
@@ -320,7 +320,7 @@ F 4 "3214W" H 950 1150 50  0001 C CNN "Manifacturer_Ref"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L sesame-fonctionnel-rescue:GND-power #PWR012
 U 1 1 611DFB32
 P 950 1300
 F 0 "#PWR012" H 950 1050 50  0001 C CNN
@@ -331,7 +331,7 @@ F 3 "" H 950 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L sesame-fonctionnel-rescue:R-Device R10
 U 1 1 611DFB44
 P 950 2350
 F 0 "R10" H 1020 2396 50  0000 L CNN
@@ -342,7 +342,7 @@ F 3 "~" H 950 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
+L sesame-fonctionnel-rescue:R-Device R11
 U 1 1 611DFB4A
 P 950 2750
 F 0 "R11" H 1020 2796 50  0000 L CNN
@@ -371,7 +371,7 @@ Connection ~ 2450 6600
 Wire Wire Line
 	2450 6600 2650 6600
 $Comp
-L Device:R R16
+L sesame-fonctionnel-rescue:R-Device R16
 U 1 1 611E6403
 P 2400 1650
 F 0 "R16" V 2300 1800 50  0000 C CNN
@@ -401,7 +401,7 @@ Wire Notes Line
 Text Label 6450 2600 0    50   ~ 0
 S
 $Comp
-L Device:C C7
+L sesame-fonctionnel-rescue:C-Device C7
 U 1 1 6139E3D0
 P 3400 900
 F 0 "C7" H 3515 946 50  0000 L CNN
@@ -415,7 +415,7 @@ Wire Wire Line
 	3400 1150 3400 1050
 Connection ~ 3400 1150
 $Comp
-L Device:R R14
+L sesame-fonctionnel-rescue:R-Device R14
 U 1 1 613A87CC
 P 2400 1150
 F 0 "R14" V 2300 1300 50  0000 C CNN
@@ -432,7 +432,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 1650 2800 1650
 $Comp
-L Device:R R15
+L sesame-fonctionnel-rescue:R-Device R15
 U 1 1 613C276D
 P 2400 1400
 F 0 "R15" V 2300 1550 50  0000 C CNN
@@ -484,7 +484,7 @@ F 3 "" H 3400 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR026
+L sesame-fonctionnel-rescue:VCC-power #PWR026
 U 1 1 614D7D88
 P 5450 1300
 F 0 "#PWR026" H 5450 1150 50  0001 C CNN
@@ -495,7 +495,7 @@ F 3 "" H 5450 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR028
+L sesame-fonctionnel-rescue:VCC-power #PWR028
 U 1 1 614D95EF
 P 6900 1300
 F 0 "#PWR028" H 6900 1150 50  0001 C CNN
@@ -508,7 +508,7 @@ $EndComp
 Wire Wire Line
 	6900 1300 6900 1400
 $Comp
-L power:VCC #PWR019
+L sesame-fonctionnel-rescue:VCC-power #PWR019
 U 1 1 614E8D13
 P 2450 6550
 F 0 "#PWR019" H 2450 6400 50  0001 C CNN
@@ -541,7 +541,7 @@ Wire Notes Line
 Text Notes 4600 5200 2    49   ~ 0
 Current comparator\n(Over current)
 $Comp
-L Device:R R21
+L sesame-fonctionnel-rescue:R-Device R21
 U 1 1 615178DC
 P 2950 4650
 F 0 "R21" V 3150 4650 50  0000 C CNN
@@ -552,7 +552,7 @@ F 3 "~" H 2950 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C10
+L sesame-fonctionnel-rescue:C-Device C10
 U 1 1 615178FE
 P 3400 4900
 F 0 "C10" H 3515 4946 50  0000 L CNN
@@ -563,7 +563,7 @@ F 3 "~" H 3400 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR024
+L sesame-fonctionnel-rescue:GND-power #PWR024
 U 1 1 61517905
 P 3400 5050
 F 0 "#PWR024" H 3400 4800 50  0001 C CNN
@@ -574,7 +574,7 @@ F 3 "" H 3400 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP7
+L sesame-fonctionnel-rescue:Jumper-Device JP7
 U 1 1 6151790B
 P 3100 3950
 F 0 "JP7" H 3100 4123 50  0000 C CNN
@@ -585,7 +585,7 @@ F 3 "~" H 3100 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP8
+L sesame-fonctionnel-rescue:Jumper-Device JP8
 U 1 1 61517911
 P 3100 4200
 F 0 "JP8" H 3100 4373 50  0000 C CNN
@@ -596,7 +596,7 @@ F 3 "~" H 3100 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP9
+L sesame-fonctionnel-rescue:Jumper-Device JP9
 U 1 1 61517917
 P 3100 4450
 F 0 "JP9" H 3100 4623 50  0000 C CNN
@@ -615,7 +615,7 @@ Connection ~ 3400 4200
 Wire Wire Line
 	3400 4200 3400 4450
 $Comp
-L power:GND #PWR018
+L sesame-fonctionnel-rescue:GND-power #PWR018
 U 1 1 61517925
 P 950 5700
 F 0 "#PWR018" H 950 5450 50  0001 C CNN
@@ -626,7 +626,7 @@ F 3 "" H 950 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_POT RV3
+L sesame-fonctionnel-rescue:R_POT-Device RV3
 U 1 1 6151792B
 P 950 3950
 F 0 "RV3" H 881 3996 50  0000 R CNN
@@ -638,7 +638,7 @@ F 4 "3214W" H 950 3950 50  0001 C CNN "Manifacturer_Ref"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L sesame-fonctionnel-rescue:GND-power #PWR016
 U 1 1 61517931
 P 950 4100
 F 0 "#PWR016" H 950 3850 50  0001 C CNN
@@ -649,7 +649,7 @@ F 3 "" H 950 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R12
+L sesame-fonctionnel-rescue:R-Device R12
 U 1 1 61517937
 P 950 5150
 F 0 "R12" H 1020 5196 50  0000 L CNN
@@ -660,7 +660,7 @@ F 3 "~" H 950 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R13
+L sesame-fonctionnel-rescue:R-Device R13
 U 1 1 6151793D
 P 950 5550
 F 0 "R13" H 1020 5596 50  0000 L CNN
@@ -680,7 +680,7 @@ Connection ~ 950  5350
 Wire Wire Line
 	950  5350 950  5300
 $Comp
-L Device:R R19
+L sesame-fonctionnel-rescue:R-Device R19
 U 1 1 61517948
 P 2400 4450
 F 0 "R19" V 2300 4600 50  0000 C CNN
@@ -705,7 +705,7 @@ Wire Notes Line
 Wire Notes Line
 	2150 3300 2150 5300
 $Comp
-L Device:C C9
+L sesame-fonctionnel-rescue:C-Device C9
 U 1 1 61517958
 P 3400 3700
 F 0 "C9" H 3515 3746 50  0000 L CNN
@@ -719,7 +719,7 @@ Wire Wire Line
 	3400 3950 3400 3850
 Connection ~ 3400 3950
 $Comp
-L Device:R R17
+L sesame-fonctionnel-rescue:R-Device R17
 U 1 1 61517960
 P 2400 3950
 F 0 "R17" V 2300 4100 50  0000 C CNN
@@ -736,7 +736,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 4450 2800 4450
 $Comp
-L Device:R R18
+L sesame-fonctionnel-rescue:R-Device R18
 U 1 1 6151796A
 P 2400 4200
 F 0 "R18" V 2300 4350 50  0000 C CNN
@@ -800,7 +800,7 @@ Wire Notes Line
 Wire Notes Line
 	1350 4700 1350 6200
 $Comp
-L Comparator:LM2903 U2
+L sesame-fonctionnel-rescue:LM2903-Comparator U2
 U 1 1 611D87A4
 P 4250 1750
 F 0 "U2" H 4250 2117 50  0000 C CNN
@@ -811,7 +811,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 4250 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM2903 U2
+L sesame-fonctionnel-rescue:LM2903-Comparator U2
 U 2 1 611EA33A
 P 4250 4550
 F 0 "U2" H 4250 4917 50  0000 C CNN
@@ -822,7 +822,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 4250 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM2903 U2
+L sesame-fonctionnel-rescue:LM2903-Comparator U2
 U 3 1 6120EB61
 P 2350 6950
 F 0 "U2" H 2000 7050 50  0000 L CNN
@@ -833,7 +833,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 2350 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TP5
+L sesame-fonctionnel-rescue:TestPoint-Connector TP5
 U 1 1 6130058F
 P 3750 1600
 F 0 "TP5" H 3700 1850 50  0000 L CNN
@@ -847,7 +847,7 @@ Connection ~ 3750 1650
 Wire Wire Line
 	3750 1650 3950 1650
 $Comp
-L Connector:TestPoint TP6
+L sesame-fonctionnel-rescue:TestPoint-Connector TP6
 U 1 1 613059B5
 P 3750 4400
 F 0 "TP6" H 3700 4650 50  0000 L CNN
@@ -861,7 +861,7 @@ Connection ~ 3750 4450
 Wire Wire Line
 	3750 4450 3950 4450
 $Comp
-L Connector:TestPoint TP9
+L sesame-fonctionnel-rescue:TestPoint-Connector TP9
 U 1 1 6130815B
 P 9350 2450
 F 0 "TP9" H 9300 2700 50  0000 L CNN
@@ -878,7 +878,7 @@ Wire Notes Line
 Wire Wire Line
 	3950 4650 3400 4650
 $Comp
-L Connector:TestPoint TP8
+L sesame-fonctionnel-rescue:TestPoint-Connector TP8
 U 1 1 6157044B
 P 7850 2200
 F 0 "TP8" H 7800 2450 50  0000 L CNN
@@ -891,7 +891,7 @@ $EndComp
 Wire Wire Line
 	7850 2250 8200 2250
 $Comp
-L Connector:TestPoint TP7
+L sesame-fonctionnel-rescue:TestPoint-Connector TP7
 U 1 1 61584A92
 P 4850 1700
 F 0 "TP7" H 4850 2000 50  0000 C CNN
@@ -908,7 +908,7 @@ Internal current\nthreshold\n(Potentiometer)
 Wire Wire Line
 	5650 3600 6000 3600
 $Comp
-L power:GND #PWR031
+L sesame-fonctionnel-rescue:GND-power #PWR031
 U 1 1 610D4EC6
 P 8850 3000
 F 0 "#PWR031" H 8850 2750 50  0001 C CNN
@@ -929,7 +929,7 @@ Wire Wire Line
 Wire Wire Line
 	9800 2500 10300 2500
 $Comp
-L power:VCC #PWR039
+L sesame-fonctionnel-rescue:VCC-power #PWR039
 U 1 1 61BFDB95
 P 9800 2050
 F 0 "#PWR039" H 9800 1900 50  0001 C CNN
@@ -943,7 +943,7 @@ Wire Wire Line
 	9800 2350 9800 2500
 Connection ~ 9800 2500
 $Comp
-L Device:C C14
+L sesame-fonctionnel-rescue:C-Device C14
 U 1 1 61BFDBA3
 P 9800 2200
 AR Path="/60F2F8DD/61BFDBA3" Ref="C14"  Part="1" 
@@ -975,7 +975,7 @@ Connection ~ 7850 2250
 Text Notes 9450 2800 0    100  ~ 0
 4.7ms
 $Comp
-L Device:C C11
+L sesame-fonctionnel-rescue:C-Device C11
 U 1 1 610FF241
 P 7350 2600
 F 0 "C11" H 7100 2650 50  0000 L CNN
@@ -986,7 +986,7 @@ F 3 "~" H 7350 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR025
+L sesame-fonctionnel-rescue:GND-power #PWR025
 U 1 1 6110DB40
 P 7350 2900
 F 0 "#PWR025" H 7350 2650 50  0001 C CNN
@@ -1028,7 +1028,7 @@ Connection ~ 8850 2500
 Wire Wire Line
 	8850 2500 8850 2450
 $Comp
-L power:VCC #PWR0133
+L sesame-fonctionnel-rescue:VCC-power #PWR0133
 U 1 1 6132B6E2
 P 8850 1900
 F 0 "#PWR0133" H 8850 1750 50  0001 C CNN
@@ -1049,7 +1049,7 @@ Wire Notes Line
 Text Notes 9100 1700 0    100  ~ 20
 A VOIR
 $Comp
-L Device:R R27
+L sesame-fonctionnel-rescue:R-Device R27
 U 1 1 6127338C
 P 8850 2700
 F 0 "R27" H 8920 2746 50  0000 L CNN

@@ -22,7 +22,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 2650 6900 3100
 $Comp
-L Device:C C4
+L sesame-fonctionnel-rescue:C-Device C4
 U 1 1 6143D584
 P 7250 2300
 F 0 "C4" V 6998 2300 50  0000 C CNN
@@ -51,7 +51,7 @@ Connection ~ 7650 2650
 Wire Wire Line
 	7650 2650 7650 3200
 $Comp
-L Device:D_Zener D1
+L sesame-fonctionnel-rescue:D_Zener-Device D1
 U 1 1 61442454
 P 9600 3450
 F 0 "D1" V 9554 3530 50  0000 L CNN
@@ -62,7 +62,7 @@ F 3 "~" H 9600 3450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R9
+L sesame-fonctionnel-rescue:R-Device R9
 U 1 1 61442D7B
 P 9350 3200
 F 0 "R9" V 9143 3200 50  0000 C CNN
@@ -81,7 +81,7 @@ Wire Wire Line
 	9500 3200 9600 3200
 Connection ~ 9600 3200
 $Comp
-L power:GND #PWR010
+L sesame-fonctionnel-rescue:GND-power #PWR010
 U 1 1 614457E8
 P 9600 3600
 F 0 "#PWR010" H 9600 3350 50  0001 C CNN
@@ -108,7 +108,7 @@ Wire Notes Line
 Wire Notes Line
 	9050 4000 10250 4000
 $Comp
-L Device:C C5
+L sesame-fonctionnel-rescue:C-Device C5
 U 1 1 6143E2B5
 P 7400 2650
 F 0 "C5" V 7148 2650 50  0000 C CNN
@@ -119,7 +119,7 @@ F 3 "~" H 7400 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R8
+L sesame-fonctionnel-rescue:R-Device R8
 U 1 1 614317CF
 P 7100 2650
 F 0 "R8" V 6893 2650 50  0000 C CNN
@@ -130,7 +130,7 @@ F 3 "~" H 7100 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C2
+L sesame-fonctionnel-rescue:C-Device C2
 U 1 1 611CBEF7
 P 6400 2800
 F 0 "C2" V 6148 2800 50  0000 C CNN
@@ -141,7 +141,7 @@ F 3 "~" H 6400 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R6
+L sesame-fonctionnel-rescue:R-Device R6
 U 1 1 611CBEFD
 P 6100 2800
 F 0 "R6" V 5893 2800 50  0000 C CNN
@@ -169,7 +169,7 @@ Wire Wire Line
 Connection ~ 6600 3100
 Connection ~ 6900 3100
 $Comp
-L Device:C C3
+L sesame-fonctionnel-rescue:C-Device C3
 U 1 1 611D6D98
 P 6600 3550
 F 0 "C3" H 6715 3596 50  0000 L CNN
@@ -180,7 +180,7 @@ F 3 "~" H 6600 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L sesame-fonctionnel-rescue:GND-power #PWR09
 U 1 1 611DA84B
 P 6600 3700
 F 0 "#PWR09" H 6600 3450 50  0001 C CNN
@@ -213,7 +213,7 @@ Wire Notes Line
 Wire Notes Line
 	5750 1950 8350 1950
 $Comp
-L power:GND #PWR?
+L sesame-fonctionnel-rescue:GND-power #PWR?
 U 1 1 615595F8
 P 1600 5050
 AR Path="/60F2F8DD/615595F8" Ref="#PWR?"  Part="1" 
@@ -226,7 +226,7 @@ F 3 "" H 1600 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L sesame-fonctionnel-rescue:GND-power #PWR?
 U 1 1 61559604
 P 1650 3450
 AR Path="/60F2F8DD/61559604" Ref="#PWR?"  Part="1" 
@@ -239,7 +239,7 @@ F 3 "" H 1650 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 6155960A
 P 1600 4500
 AR Path="/60F2F8DD/6155960A" Ref="R?"  Part="1" 
@@ -252,7 +252,7 @@ F 3 "~" H 1600 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L sesame-fonctionnel-rescue:R-Device R?
 U 1 1 61559610
 P 1600 4900
 AR Path="/60F2F8DD/61559610" Ref="R?"  Part="1" 
@@ -320,7 +320,7 @@ Wire Notes Line
 Wire Notes Line
 	2200 4050 2200 5550
 $Comp
-L Device:Jumper JP3
+L sesame-fonctionnel-rescue:Jumper-Device JP3
 U 1 1 6141B2EB
 P 3800 4100
 F 0 "JP3" H 3800 4273 50  0000 C CNN
@@ -331,7 +331,7 @@ F 3 "~" H 3800 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper JP2
+L sesame-fonctionnel-rescue:Jumper-Device JP2
 U 1 1 6141B2F1
 P 3800 3700
 F 0 "JP2" H 3800 3873 50  0000 C CNN
@@ -344,7 +344,7 @@ $EndComp
 Text HLabel 3100 4100 0    50   Input ~ 0
 Ext_SetPoint
 $Comp
-L Device:R R7
+L sesame-fonctionnel-rescue:R-Device R7
 U 1 1 61401A0F
 P 6250 3100
 F 0 "R7" V 6043 3100 50  0000 C CNN
@@ -363,7 +363,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 3700 3500 3700
 $Comp
-L Device:R R4
+L sesame-fonctionnel-rescue:R-Device R4
 U 1 1 61416962
 P 3300 3700
 F 0 "R4" V 3093 3700 50  0000 C CNN
@@ -374,7 +374,7 @@ F 3 "~" H 3300 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R5
+L sesame-fonctionnel-rescue:R-Device R5
 U 1 1 611D5F7E
 P 3300 4100
 F 0 "R5" V 3093 4100 50  0000 C CNN
@@ -385,7 +385,7 @@ F 3 "~" H 3300 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R3
+L sesame-fonctionnel-rescue:R-Device R3
 U 1 1 612A4BF5
 P 3300 3300
 F 0 "R3" V 3093 3300 50  0000 C CNN
@@ -408,7 +408,7 @@ Wire Wire Line
 	6600 3300 4600 3300
 Connection ~ 6600 3300
 $Comp
-L Device:C C?
+L sesame-fonctionnel-rescue:C-Device C?
 U 1 1 6124BDDF
 P 1450 6850
 AR Path="/60F1AF26/6124BDDF" Ref="C?"  Part="1" 
@@ -430,7 +430,7 @@ Connection ~ 1300 6500
 Wire Wire Line
 	1150 7200 1150 7150
 $Comp
-L power:GND #PWR?
+L sesame-fonctionnel-rescue:GND-power #PWR?
 U 1 1 6124BDEA
 P 1300 7250
 AR Path="/60F1AF26/6124BDEA" Ref="#PWR?"  Part="1" 
@@ -456,7 +456,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 7200 1450 7200
 $Comp
-L power:VCC #PWR?
+L sesame-fonctionnel-rescue:VCC-power #PWR?
 U 1 1 6124BDF7
 P 1300 6450
 AR Path="/60F1AF26/6124BDF7" Ref="#PWR?"  Part="1" 
@@ -495,7 +495,7 @@ $EndComp
 Wire Wire Line
 	1800 3300 3150 3300
 $Comp
-L Device:Jumper JP1
+L sesame-fonctionnel-rescue:Jumper-Device JP1
 U 1 1 612A8A2A
 P 3800 3300
 F 0 "JP1" H 3800 3473 50  0000 C CNN
@@ -511,7 +511,7 @@ Connection ~ 4200 3300
 Wire Wire Line
 	3500 3300 3450 3300
 $Comp
-L Connector:TestPoint TP?
+L sesame-fonctionnel-rescue:TestPoint-Connector TP?
 U 1 1 612E229E
 P 8700 3200
 AR Path="/60F1AF26/612E229E" Ref="TP?"  Part="1" 
@@ -527,7 +527,7 @@ Connection ~ 8700 3200
 Wire Wire Line
 	8700 3200 7650 3200
 $Comp
-L Connector:TestPoint TP?
+L sesame-fonctionnel-rescue:TestPoint-Connector TP?
 U 1 1 612E6FF3
 P 10500 3200
 AR Path="/60F1AF26/612E6FF3" Ref="TP?"  Part="1" 
@@ -543,7 +543,7 @@ Connection ~ 10500 3200
 Wire Wire Line
 	10500 3200 10700 3200
 $Comp
-L Connector:TestPoint TP?
+L sesame-fonctionnel-rescue:TestPoint-Connector TP?
 U 1 1 612EF9C2
 P 4600 3300
 AR Path="/60F1AF26/612EF9C2" Ref="TP?"  Part="1" 
@@ -565,7 +565,7 @@ Feedback_raw
 Text Label 9800 3200 0    50   ~ 0
 Feedback
 $Comp
-L Device:R_POT RV?
+L sesame-fonctionnel-rescue:R_POT-Device RV?
 U 1 1 615B0664
 P 1650 3300
 AR Path="/60F2F8DD/615B0664" Ref="RV?"  Part="1" 
