@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 17
 Title "SESAME"
-Date ""
-Rev ""
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 ""
 Comment2 ""
@@ -227,7 +227,7 @@ AR Path="/61996C9F/615F8500" Ref="U?"  Part="1"
 AR Path="/619A00BB/615F8500" Ref="U17"  Part="1" 
 F 0 "U12" H 3000 5700 50  0000 C CNN
 F 1 "UCC27284-Q1" H 3000 5600 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3400 4900 50  0001 C CNN
+F 2 "Sesame_footprint:SOIC-8_3.9x4.9mm_P1.27mm" H 3400 4900 50  0001 C CNN
 F 3 "" H 3400 4900 50  0001 C CNN
 	1    3400 4900
 	1    0    0    -1  

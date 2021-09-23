@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 17
 Title "SESAME"
-Date ""
-Rev ""
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 "Dessin : Kevin & Sarah & Guillaume Arthaud"
 Comment2 ""
@@ -270,7 +270,7 @@ AR Path="/60F1B237/61324C80" Ref="U?"  Part="3"
 AR Path="/60F16FAE/61324C80" Ref="U7"  Part="3" 
 F 0 "U7" H 1013 6854 50  0000 R CNN
 F 1 "AD8030" H 1013 6945 50  0000 R CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1200 6900 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 1200 6900 50  0001 C CNN
 F 3 "~" H 1200 6900 50  0001 C CNN
 	3    1200 6900
 	1    0    0    -1  
@@ -281,7 +281,7 @@ U 2 1 6132B377
 P 7100 3650
 F 0 "U7" H 7100 3283 50  0000 C CNN
 F 1 "AD8030" H 7100 3374 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 7100 3650 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 7100 3650 50  0001 C CNN
 F 3 "~" H 7100 3650 50  0001 C CNN
 	2    7100 3650
 	1    0    0    1   
@@ -292,7 +292,7 @@ U 1 1 6132F06A
 P 5050 3550
 F 0 "U7" H 5050 3917 50  0000 C CNN
 F 1 "AD8030" H 5050 3826 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 5050 3550 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 5050 3550 50  0001 C CNN
 F 3 "~" H 5050 3550 50  0001 C CNN
 	1    5050 3550
 	1    0    0    -1  

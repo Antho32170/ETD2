@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 17
+Sheet 3 17
 Title "SESAME"
-Date "2021-08-03"
-Rev ""
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 "Dessin : Clément GRIMARD & Guillaume Arthaud"
 Comment2 ""
@@ -39,7 +39,7 @@ AR Path="/610A09BD" Ref="U?"  Part="1"
 AR Path="/60F421D1/610A09BD" Ref="U3"  Part="1" 
 F 0 "U3" H 5800 4400 50  0000 C CNN
 F 1 "CD4053BM96" H 5800 4300 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6250 2800 50  0001 L CNN
+F 2 "Sesame_footprint:SOIC-16_3.9x9.9mm_P1.27mm" H 6250 2800 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/cd4052b.pdf" H 6080 3750 50  0001 C CNN
 	1    6100 3550
 	-1   0    0    -1  

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 15 17
 Title "SESAME"
-Date ""
-Rev ""
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 "Dessin : Kevin & Sarah & Guillaume Arthaud"
 Comment2 ""
@@ -476,7 +476,7 @@ AR Path="/60F1AF26/6124BDFD" Ref="U?"  Part="3"
 AR Path="/60F1B237/6124BDFD" Ref="U1"  Part="3" 
 F 0 "U1" H 1063 6804 50  0000 R CNN
 F 1 "AD8030" H 1063 6895 50  0000 R CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1250 6850 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 1250 6850 50  0001 C CNN
 F 3 "~" H 1250 6850 50  0001 C CNN
 	3    1250 6850
 	1    0    0    -1  
@@ -487,7 +487,7 @@ U 1 1 6125EDE1
 P 7250 3200
 F 0 "U1" H 7250 2833 50  0000 C CNN
 F 1 "AD8030" H 7250 2924 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 7250 3200 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 7250 3200 50  0001 C CNN
 F 3 "~" H 7250 3200 50  0001 C CNN
 	1    7250 3200
 	1    0    0    1   

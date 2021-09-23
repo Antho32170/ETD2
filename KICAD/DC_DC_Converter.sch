@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 17
+Sheet 12 17
 Title "SESAME"
-Date ""
-Rev ""
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 "Dessin : Guillaume Arthaud"
 Comment2 ""
@@ -215,7 +215,7 @@ Connection ~ 10150 2350
 Wire Wire Line
 	10150 2350 9650 2350
 Text Notes 4600 1300 0    50   ~ 0
-Inductor between 90uH -> 125uH\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1816037\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1542466\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1048448
+Inductor between 90uH -> 125uH\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1816037\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1542466\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1048448\nhttps://fr.rs-online.com/web/p/inductances-traversantes/1229231
 Wire Wire Line
 	10150 3150 10150 2900
 Wire Wire Line

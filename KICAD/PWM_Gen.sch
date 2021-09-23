@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 13 17
 Title "SESAME"
-Date ""
-Rev ""
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 "Dessin : Kevin & Sarah & Guillaume Arthaud"
 Comment2 ""
@@ -154,15 +154,15 @@ Wire Notes Line
 	1400 3700 1400 2200
 Wire Notes Line
 	550  2200 1400 2200
-Text Notes 450  3800 0    50   ~ 0
+Text Notes 500  3800 0    50   ~ 0
 (V higher = More deadtime)
 Wire Wire Line
 	7800 3150 7800 3500
 Wire Wire Line
 	7800 3500 7800 3850
 Connection ~ 7800 3500
-Text Notes 8150 4550 0    50   ~ 0
-Gen. PWM & ~PWM
+Text Notes 8100 4550 0    50   ~ 0
+Gen. PWM_Power & ~PWM_Freewheel
 Wire Wire Line
 	10150 3950 9900 3950
 Wire Notes Line
@@ -174,14 +174,14 @@ PWM_Power
 Wire Wire Line
 	1950 4050 2250 4050
 Text Notes 2300 2250 0    50   ~ 0
-Same IC package than the Feedback block
+Same IC package as the Feedback block
 $Comp
 L Sesame:AD8030 U1
 U 2 1 6128D784
 P 3550 2950
 F 0 "U1" H 3550 3350 50  0000 C CNN
 F 1 "AD8030" H 3550 3250 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3550 2950 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 3550 2950 50  0001 C CNN
 F 3 "~" H 3550 2950 50  0001 C CNN
 	2    3550 2950
 	1    0    0    1   
@@ -328,7 +328,7 @@ AR Path="/60F1AF26/612CB373" Ref="U13"  Part="3"
 AR Path="/60F1B237/612CB373" Ref="U?"  Part="3" 
 F 0 "U13" H 963 6854 50  0000 R CNN
 F 1 "AD8030" H 963 6945 50  0000 R CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1150 6900 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 1150 6900 50  0001 C CNN
 F 3 "~" H 1150 6900 50  0001 C CNN
 	3    1150 6900
 	1    0    0    -1  
@@ -476,7 +476,7 @@ U 2 1 61284FE7
 P 8200 3950
 F 0 "U13" H 8200 3583 50  0000 C CNN
 F 1 "AD8030" H 8200 3674 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 8200 3950 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 8200 3950 50  0001 C CNN
 F 3 "~" H 8200 3950 50  0001 C CNN
 	2    8200 3950
 	1    0    0    -1  
@@ -491,7 +491,7 @@ U 1 1 6128401D
 P 8200 3050
 F 0 "U13" H 8200 2683 50  0000 C CNN
 F 1 "AD8030" H 8200 2774 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 8200 3050 50  0001 C CNN
+F 2 "Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm" H 8200 3050 50  0001 C CNN
 F 3 "~" H 8200 3050 50  0001 C CNN
 	1    8200 3050
 	1    0    0    -1  

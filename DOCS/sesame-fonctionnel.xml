@@ -1,0 +1,4089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/guigur/Documents/github/SESAME/KICAD/sesame-fonctionnel.sch</source>
+    <date>2021 September 23, Thursday 08:36:33</date>
+    <tool>Eeschema (5.1.10-1-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev>0.9</rev>
+        <date>2021-08-31</date>
+        <source>sesame-fonctionnel.sch</source>
+        <comment number="1" value="Dessin : Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>programmable_breaker.sch</source>
+        <comment number="1" value="Dessin : Nicolas d'Aux &amp; Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/MEASURE SELECTOR/" tstamps="/60F421D1/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date>2021-08-03</date>
+        <source>Measure_Selector.sch</source>
+        <comment number="1" value="Dessin : Clément GRIMARD &amp; Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/DRIVER COMMAND/" tstamps="/60F4EAD9/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev>A</rev>
+        <date>2021-08-04</date>
+        <source>Drivers_Command.sch</source>
+        <comment number="1" value="Dessin : Clément &amp; Josué &amp; Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/INFOS/" tstamps="/6142ECA0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>infos.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/U/I SENSOR LEFT/" tstamps="/60F171CE/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>voltage_current_sens.sch</source>
+        <comment number="1" value="Dessin : Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/LEFT PROTECTION/" tstamps="/61456C6A/">
+      <title_block>
+        <title/>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>PROTECT.sch</source>
+        <comment number="1" value="Dessin : Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/RIGHT PROTECTION/" tstamps="/614794AE/">
+      <title_block>
+        <title/>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>PROTECT.sch</source>
+        <comment number="1" value="Dessin : Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="9" name="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>voltage_current_sens.sch</source>
+        <comment number="1" value="Dessin : Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/MOS DRIVER L/" tstamps="/60F19D6C/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>Mos_Drivers.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="11" name="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>alims.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="12" name="/DC/DC CONVERTER/" tstamps="/60F18239/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>DC_DC_Converter.sch</source>
+        <comment number="1" value="Dessin : Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="13" name="/PWM GEN/" tstamps="/60F1AF26/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>PWM_Gen.sch</source>
+        <comment number="1" value="Dessin : Kevin &amp; Sarah &amp; Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="14" name="/RAMP GENERATOR/" tstamps="/60F16FAE/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>gen_ramp.sch</source>
+        <comment number="1" value="Dessin : Kevin &amp; Sarah &amp; Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="15" name="/PID/" tstamps="/60F1B237/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>PID.sch</source>
+        <comment number="1" value="Dessin : Kevin &amp; Sarah &amp; Guillaume Arthaud"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="16" name="/MOS DRIVER R/" tstamps="/619A00BB/">
+      <title_block>
+        <title>SESAME</title>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>Mos_Drivers.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="17" name="/INT EXT CONFIG/" tstamps="/618748E2/">
+      <title_block>
+        <title/>
+        <company>ALEEA</company>
+        <rev/>
+        <date/>
+        <source>Int_Ext_Config.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>CXS70-14-C</value>
+      <footprint>Sesame_footprint:CXS70-14-C</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Screw_Terminal_01x01-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6142C002</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>CXS70-14-C</value>
+      <footprint>Sesame_footprint:CXS70-14-C</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Screw_Terminal_01x01-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6148521C</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>CXS70-14-C</value>
+      <footprint>Sesame_footprint:CXS70-14-C</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Screw_Terminal_01x01-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6156FAE4</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>CXS70-14-C</value>
+      <footprint>Sesame_footprint:CXS70-14-C</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Screw_Terminal_01x01-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61427119</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614ECCE3</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>Sesame_footprint:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="MountingHole-Mechanical" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61346C8D</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>Sesame_footprint:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="MountingHole-Mechanical" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613479B3</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>Sesame_footprint:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="MountingHole-Mechanical" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6134C741</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>Sesame_footprint:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="MountingHole-Mechanical" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613513EA</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610C1787</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610C1C9F</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610C1F6B</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610C2293</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BC847</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610C3843</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BC847</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610C6206</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BC847</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610CECBF</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611101E3</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6131658A</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611CE01D</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611CE03F</tstamp>
+    </comp>
+    <comp ref="JP4">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611CE04F</tstamp>
+    </comp>
+    <comp ref="JP5">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611CE055</tstamp>
+    </comp>
+    <comp ref="JP6">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611CE05B</tstamp>
+    </comp>
+    <comp ref="RV2">
+      <value>10K</value>
+      <footprint>Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical</footprint>
+      <datasheet>https://docs.rs-online.com/0467/0900766b80025f51.pdf</datasheet>
+      <fields>
+        <field name="Manifacturer_Ref">3214W</field>
+      </fields>
+      <libsource lib="sesame-fonctionnel-rescue" part="R_POT-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611DFB2C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611DFB44</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611DFB4A</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611E6403</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>470n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6139E3D0</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>613A87CC</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>613C276D</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>615178DC</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>615178FE</tstamp>
+    </comp>
+    <comp ref="JP7">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6151790B</tstamp>
+    </comp>
+    <comp ref="JP8">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61517911</tstamp>
+    </comp>
+    <comp ref="JP9">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61517917</tstamp>
+    </comp>
+    <comp ref="RV3">
+      <value>10K</value>
+      <footprint>Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical</footprint>
+      <datasheet>https://docs.rs-online.com/0467/0900766b80025f51.pdf</datasheet>
+      <fields>
+        <field name="Manifacturer_Ref">3214W</field>
+      </fields>
+      <libsource lib="sesame-fonctionnel-rescue" part="R_POT-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6151792B</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61517937</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6151793D</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61517948</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>470n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61517958</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61517960</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6151796A</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LM2903</value>
+      <footprint>Package_SO:SO-8_5.3x6.2mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm393.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="LM2903-Comparator" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>611D87A4</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6130058F</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>613059B5</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6130815B</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6157044B</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61584A92</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>470n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>61BFDBA3</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>10n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>610FF241</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PROGRAMMABLE BREAKER/" tstamps="/60F2F8DD/"/>
+      <tstamp>6127338C</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>CD4053BM96</value>
+      <footprint>Sesame_footprint:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cd4052b.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CD4053B-Analog_Switch" description=""/>
+      <sheetpath names="/MEASURE SELECTOR/" tstamps="/60F421D1/"/>
+      <tstamp>610A09BD</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/MEASURE SELECTOR/" tstamps="/60F421D1/"/>
+      <tstamp>6112299E</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>4011</value>
+      <footprint>Sesame_footprint:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <datasheet>http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="4011-4xxx" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>610DDCAD</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>610C6593</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61587C69</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>CD4053BM96</value>
+      <footprint>Sesame_footprint:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <libsource lib="sesame-fonctionnel-rescue" part="CD4053B-Analog_Switch" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>610F7E61</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61439562</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61492A34</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>6149304C</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>NC</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>6128A052</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61526169</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>CD4053BM96</value>
+      <footprint>Sesame_footprint:SOIC-16_3.9x9.9mm_P1.27mm</footprint>
+      <libsource lib="sesame-fonctionnel-rescue" part="CD4053B-Analog_Switch" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>613BCF53</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61353D13</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>6149251A</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>6114A712</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>NC</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>613D46B7</tstamp>
+    </comp>
+    <comp ref="TP14">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>613F5D58</tstamp>
+    </comp>
+    <comp ref="TP15">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61400B10</tstamp>
+    </comp>
+    <comp ref="TP17">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61407FD3</tstamp>
+    </comp>
+    <comp ref="TP16">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>6140B9F0</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61415864</tstamp>
+    </comp>
+    <comp ref="TP13">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>61446F7B</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>6146B21F</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/DRIVER COMMAND/" tstamps="/60F4EAD9/"/>
+      <tstamp>6146AAD7</tstamp>
+    </comp>
+    <comp ref="RShunt1">
+      <value>PA2512FKF070R005E</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>6109114F</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>61091B7C</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>610923D6</tstamp>
+    </comp>
+    <comp ref="R50">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>610DC636</tstamp>
+    </comp>
+    <comp ref="R49">
+      <value>90k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>610DBB97</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>BC847</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>61382079</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>BC847</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>613844DA</tstamp>
+    </comp>
+    <comp ref="R48">
+      <value>20k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>6138CEF9</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>61397C3C</tstamp>
+    </comp>
+    <comp ref="R47">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>61398F33</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>AD8030</value>
+      <footprint>Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm</footprint>
+      <libsource lib="Sesame" part="AD8030" description="Low Power, High Speed Rail-to-Rail Input/Output Amplifier"/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>6139E98B</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>613B4715</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>613B7585</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>LT6016</value>
+      <footprint>Sesame_footprint:MSOP-8_3x3mm_P0.65mm</footprint>
+      <libsource lib="Sesame" part="LT6016" description="10 MHz, 850 µA Op Amps"/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>615B8C9F</tstamp>
+    </comp>
+    <comp ref="TP20">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>6153C862</tstamp>
+    </comp>
+    <comp ref="TP22">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>61544B27</tstamp>
+    </comp>
+    <comp ref="TP21">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/U/I SENSOR LEFT/" tstamps="/60F171CE/"/>
+      <tstamp>6154A16C</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>SQM120</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/sqm120p10-10m1l-1766828.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_PMOS_GDS-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>610FCCAA</tstamp>
+    </comp>
+    <comp ref="Q8">
+      <value>SQM120</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/sqm120p10-10m1l-1766828.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_PMOS_GDS-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>610FED91</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>MMSZ5245</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>61100A0F</tstamp>
+    </comp>
+    <comp ref="R51">
+      <value>330k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>61102FC8</tstamp>
+    </comp>
+    <comp ref="Q7">
+      <value>BC857</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC860-D.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC857-Transistor_BJT" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>6110710F</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>MMSZ5245</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>61107DEE</tstamp>
+    </comp>
+    <comp ref="R52">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>611083FB</tstamp>
+    </comp>
+    <comp ref="R53">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>6110B925</tstamp>
+    </comp>
+    <comp ref="R54">
+      <value>1M</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>61115761</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>MMSZ5262</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>61107C25</tstamp>
+    </comp>
+    <comp ref="TP24">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>612D3587</tstamp>
+    </comp>
+    <comp ref="TP25">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>612DA888</tstamp>
+    </comp>
+    <comp ref="TP23">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/LEFT PROTECTION/" tstamps="/61456C6A/"/>
+      <tstamp>614EA2DB</tstamp>
+    </comp>
+    <comp ref="Q9">
+      <value>SQM120</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/sqm120p10-10m1l-1766828.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_PMOS_GDS-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>610FCCAA</tstamp>
+    </comp>
+    <comp ref="Q11">
+      <value>SQM120</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/427/sqm120p10-10m1l-1766828.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_PMOS_GDS-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>610FED91</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>MMSZ5245</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>61100A0F</tstamp>
+    </comp>
+    <comp ref="R55">
+      <value>330k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>61102FC8</tstamp>
+    </comp>
+    <comp ref="Q10">
+      <value>BC857</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BC860-D.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC857-Transistor_BJT" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>6110710F</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>MMSZ5245</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>61107DEE</tstamp>
+    </comp>
+    <comp ref="R56">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>611083FB</tstamp>
+    </comp>
+    <comp ref="R57">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>6110B925</tstamp>
+    </comp>
+    <comp ref="R58">
+      <value>1M</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>61115761</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>MMSZ5262</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>61107C25</tstamp>
+    </comp>
+    <comp ref="TP27">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>612D3587</tstamp>
+    </comp>
+    <comp ref="TP28">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>612DA888</tstamp>
+    </comp>
+    <comp ref="TP26">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/RIGHT PROTECTION/" tstamps="/614794AE/"/>
+      <tstamp>614EA2DB</tstamp>
+    </comp>
+    <comp ref="RShunt2">
+      <value>PA2512FKF070R005E</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>6109114F</tstamp>
+    </comp>
+    <comp ref="R60">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>61091B7C</tstamp>
+    </comp>
+    <comp ref="R59">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>610923D6</tstamp>
+    </comp>
+    <comp ref="R65">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>610DC636</tstamp>
+    </comp>
+    <comp ref="R64">
+      <value>90k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>610DBB97</tstamp>
+    </comp>
+    <comp ref="Q12">
+      <value>BC847</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>61382079</tstamp>
+    </comp>
+    <comp ref="Q13">
+      <value>BC847</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>613844DA</tstamp>
+    </comp>
+    <comp ref="R63">
+      <value>20k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>6138CEF9</tstamp>
+    </comp>
+    <comp ref="R61">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>61397C3C</tstamp>
+    </comp>
+    <comp ref="R62">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>61398F33</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>AD8030</value>
+      <footprint>Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm</footprint>
+      <libsource lib="Sesame" part="AD8030" description="Low Power, High Speed Rail-to-Rail Input/Output Amplifier"/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>6139E98B</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>613B4715</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>613B7585</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>LT6016</value>
+      <footprint>Sesame_footprint:MSOP-8_3x3mm_P0.65mm</footprint>
+      <libsource lib="Sesame" part="LT6016" description="10 MHz, 850 µA Op Amps"/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>615B8C9F</tstamp>
+    </comp>
+    <comp ref="TP29">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>6153C862</tstamp>
+    </comp>
+    <comp ref="TP31">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>61544B27</tstamp>
+    </comp>
+    <comp ref="TP30">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/U/I SENSOR RIGHT/" tstamps="/60F19D5B/"/>
+      <tstamp>6154A16C</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>612BC387</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>612C31FB</tstamp>
+    </comp>
+    <comp ref="TP33">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>6154F3B3</tstamp>
+    </comp>
+    <comp ref="TP34">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>61556ADA</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>UCC27284-Q1</value>
+      <footprint>Sesame_footprint:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="Sesame" part="UCC27284-Q1" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>615F8500</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>617A570A</tstamp>
+    </comp>
+    <comp ref="R66">
+      <value>1</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>617C4D4F</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>1u</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>619F44C6</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>61A058A4</tstamp>
+    </comp>
+    <comp ref="R67">
+      <value>1</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>61A058AA</tstamp>
+    </comp>
+    <comp ref="R69">
+      <value>5</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>61A058B0</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>61A06D05</tstamp>
+    </comp>
+    <comp ref="C50">
+      <value>1uF</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>6128010B</tstamp>
+    </comp>
+    <comp ref="R68">
+      <value>5</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>617CA6D6</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>617B4129</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>6131353D</tstamp>
+    </comp>
+    <comp ref="D20">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>6131B437</tstamp>
+    </comp>
+    <comp ref="R97">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>6131E68D</tstamp>
+    </comp>
+    <comp ref="D19">
+      <value>MMSZ5245</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>6132C328</tstamp>
+    </comp>
+    <comp ref="C52">
+      <value>1u</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>61341879</tstamp>
+    </comp>
+    <comp ref="TP43">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>613ADBCD</tstamp>
+    </comp>
+    <comp ref="TP32">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>61556D55</tstamp>
+    </comp>
+    <comp ref="TP48">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>613E88B5</tstamp>
+    </comp>
+    <comp ref="JP19">
+      <value>Jumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_2_Open-Jumper" description=""/>
+      <sheetpath names="/MOS DRIVER L/" tstamps="/60F19D6C/"/>
+      <tstamp>615D1D25</tstamp>
+    </comp>
+    <comp ref="R83">
+      <value>200</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61087C02</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>LT8365</value>
+      <footprint>Sesame_footprint:MSE-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm_ThermalVias</footprint>
+      <libsource lib="Sesame" part="LT8365" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>6123C49A</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61244F9E</tstamp>
+    </comp>
+    <comp ref="R80">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61246D21</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>6124B9FF</tstamp>
+    </comp>
+    <comp ref="R81">
+      <value>1M</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>612476CB</tstamp>
+    </comp>
+    <comp ref="R82">
+      <value>296k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61247B73</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>6127EBD7</tstamp>
+    </comp>
+    <comp ref="R79">
+      <value>84.5</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61283A99</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61286334</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>6129A654</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>612B6943</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>612B7084</tstamp>
+    </comp>
+    <comp ref="TP39">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61513B8D</tstamp>
+    </comp>
+    <comp ref="TP42">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61522F2C</tstamp>
+    </comp>
+    <comp ref="TP40">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61530DA6</tstamp>
+    </comp>
+    <comp ref="TP41">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61533C44</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>CP</value>
+      <footprint>Capacitor_SMD:C_Elec_4x5.8</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>6126F44E</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>L_Core_Ferrite_Coupled_2_Parts</value>
+      <footprint>Sesame_footprint:WE-DD_1260_128012</footprint>
+      <libsource lib="Sesame" part="L_Core_Ferrite_Coupled_2_Parts" description="Coupled inductor with ferrite core"/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61275E01</tstamp>
+    </comp>
+    <comp ref="U16">
+      <value>TL431DBZ</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl431.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TL431DBZ-Reference_Voltage" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>6135BA5E</tstamp>
+    </comp>
+    <comp ref="R84">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61378003</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>14k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>61379D1A</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/INTERNAL SUPPLIES/" tstamps="/60F1AA92/"/>
+      <tstamp>6161C7DE</tstamp>
+    </comp>
+    <comp ref="QLS1">
+      <value>TK65G10N1</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://docs.rs-online.com/a1f4/0900766b816230a5.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_NMOS_GDS-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>610E334F</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>INDUCTOR</value>
+      <footprint>Sesame_footprint:Multi-coil</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="INDUCTOR-pspice" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>610F3EF5</tstamp>
+    </comp>
+    <comp ref="R91">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61ABF7A3</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61AC857C</tstamp>
+    </comp>
+    <comp ref="QLP1">
+      <value>TK65G10N1</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://docs.rs-online.com/a1f4/0900766b816230a5.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_NMOS_GDS-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>610EEE2E</tstamp>
+    </comp>
+    <comp ref="QRP1">
+      <value>TK65G10N1</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://docs.rs-online.com/a1f4/0900766b816230a5.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_NMOS_GDS-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>610F2085</tstamp>
+    </comp>
+    <comp ref="QRS1">
+      <value>TK65G10N1</value>
+      <footprint>Package_TO_SOT_SMD:TO-263-2</footprint>
+      <datasheet>https://docs.rs-online.com/a1f4/0900766b816230a5.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Q_NMOS_GDS-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>610F207F</tstamp>
+    </comp>
+    <comp ref="C46">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>6149AEB6</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>6149B9CD</tstamp>
+    </comp>
+    <comp ref="C48">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>615C9A23</tstamp>
+    </comp>
+    <comp ref="C49">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>615CA3E5</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>615CB20D</tstamp>
+    </comp>
+    <comp ref="R93">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61AF6D76</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61AF6D7C</tstamp>
+    </comp>
+    <comp ref="R92">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61AFCB5F</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61AFCB65</tstamp>
+    </comp>
+    <comp ref="R94">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61AFE399</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61AFE39F</tstamp>
+    </comp>
+    <comp ref="R90">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61B03C5B</tstamp>
+    </comp>
+    <comp ref="R96">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61B0B5A6</tstamp>
+    </comp>
+    <comp ref="R89">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61B1964C</tstamp>
+    </comp>
+    <comp ref="R95">
+      <value>R</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>61B29627</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>616023EF</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>616023E9</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>616023E3</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>470uF</value>
+      <footprint>Capacitor_THT:CP_Radial_D12.5mm_P5.00mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>616023DD</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>C</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/DC/DC CONVERTER/" tstamps="/60F18239/"/>
+      <tstamp>616023D7</tstamp>
+    </comp>
+    <comp ref="R73">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>613D641B</tstamp>
+    </comp>
+    <comp ref="R72">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>613D6415</tstamp>
+    </comp>
+    <comp ref="R74">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>613D6429</tstamp>
+    </comp>
+    <comp ref="R71">
+      <value>4.7k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>613D9855</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AD8030</value>
+      <footprint>Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm</footprint>
+      <libsource lib="Sesame" part="AD8030" description="Low Power, High Speed Rail-to-Rail Input/Output Amplifier"/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>6128D784</tstamp>
+    </comp>
+    <comp ref="R70">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>613D8CB8</tstamp>
+    </comp>
+    <comp ref="TP35">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>612937F6</tstamp>
+    </comp>
+    <comp ref="TP36">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>61299A59</tstamp>
+    </comp>
+    <comp ref="TP38">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>612A9FCA</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>612CB355</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>AD8030</value>
+      <footprint>Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm</footprint>
+      <libsource lib="Sesame" part="AD8030" description="Low Power, High Speed Rail-to-Rail Input/Output Amplifier"/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>612CB373</tstamp>
+    </comp>
+    <comp ref="R75">
+      <value>100k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>613D640F</tstamp>
+    </comp>
+    <comp ref="JP17">
+      <value>Jumper_3_Bridged12</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_3_Bridged12-Jumper" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>614ED0FD</tstamp>
+    </comp>
+    <comp ref="JP18">
+      <value>Jumper_3_Bridged12</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_3_Bridged12-Jumper" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>614F10A9</tstamp>
+    </comp>
+    <comp ref="JP15">
+      <value>Jumper_3_Bridged12</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_3_Bridged12-Jumper" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>61517849</tstamp>
+    </comp>
+    <comp ref="JP16">
+      <value>Jumper_3_Bridged12</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_3_Bridged12-Jumper" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>61517850</tstamp>
+    </comp>
+    <comp ref="TP37">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PWM GEN/" tstamps="/60F1AF26/"/>
+      <tstamp>612A923F</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>6.8k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>610F0F44</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>610FA18D</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>680</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>611047CD</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>18k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>6110CE49</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>2.2n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>611171B1</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>13k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>6111A906</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>61324C62</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>AD8030</value>
+      <footprint>Sesame_footprint:SO-8_5.3x6.2mm_P1.27mm</footprint>
+      <libsource lib="Sesame" part="AD8030" description="Low Power, High Speed Rail-to-Rail Input/Output Amplifier"/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>61324C80</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>11k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>61346C9A</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>61346CA6</tstamp>
+    </comp>
+    <comp ref="TP19">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>61322346</tstamp>
+    </comp>
+    <comp ref="TP18">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/RAMP GENERATOR/" tstamps="/60F16FAE/"/>
+      <tstamp>61327DF9</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>22n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>6143D584</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>BZX384B5V1</value>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>61442454</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>390</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>61442D7B</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>220n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>6143E2B5</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>20k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>614317CF</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>NC</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>611CBEF7</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>NC</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>611CBEFD</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>470n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>611D6D98</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>6155960A</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>61559610</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>6141B2EB</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>6141B2F1</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>61401A0F</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>61416962</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>611D5F7E</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>47k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>612A4BF5</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>6124BDDF</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>612A8A2A</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TP_NOP</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>612E229E</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>612E6FF3</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>612EF9C2</tstamp>
+    </comp>
+    <comp ref="RV1">
+      <value>10K</value>
+      <footprint>Potentiometer_SMD:Potentiometer_Bourns_3214W_Vertical</footprint>
+      <datasheet>https://docs.rs-online.com/0467/0900766b80025f51.pdf</datasheet>
+      <fields>
+        <field name="Manifacturer_Ref">3214W</field>
+      </fields>
+      <libsource lib="sesame-fonctionnel-rescue" part="R_POT-Device" description=""/>
+      <sheetpath names="/PID/" tstamps="/60F1B237/"/>
+      <tstamp>615B0664</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>612BC387</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>612C31FB</tstamp>
+    </comp>
+    <comp ref="TP46">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>6154F3B3</tstamp>
+    </comp>
+    <comp ref="TP47">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>61556ADA</tstamp>
+    </comp>
+    <comp ref="U17">
+      <value>UCC27284-Q1</value>
+      <footprint>Sesame_footprint:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="Sesame" part="UCC27284-Q1" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>615F8500</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>617A570A</tstamp>
+    </comp>
+    <comp ref="R85">
+      <value>1</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>617C4D4F</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>1u</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>619F44C6</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>61A058A4</tstamp>
+    </comp>
+    <comp ref="R86">
+      <value>1</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>61A058AA</tstamp>
+    </comp>
+    <comp ref="R88">
+      <value>5</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>61A058B0</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>100n</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>61A06D05</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>1uF</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="CP-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>6128010B</tstamp>
+    </comp>
+    <comp ref="R87">
+      <value>5</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>617CA6D6</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>617B4129</tstamp>
+    </comp>
+    <comp ref="D24">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>6131353D</tstamp>
+    </comp>
+    <comp ref="D23">
+      <value>SS36</value>
+      <footprint>Diode_SMD:D_SMA_Handsoldering</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Schottky-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>6131B437</tstamp>
+    </comp>
+    <comp ref="R98">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>6131E68D</tstamp>
+    </comp>
+    <comp ref="D22">
+      <value>MMSZ5245</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>https://docs.rs-online.com/0640/0900766b814f560f.pdf</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="D_Zener-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>6132C328</tstamp>
+    </comp>
+    <comp ref="C53">
+      <value>1u</value>
+      <footprint>Sesame_footprint:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="C-Device" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>61341879</tstamp>
+    </comp>
+    <comp ref="TP44">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>613ADBCD</tstamp>
+    </comp>
+    <comp ref="TP45">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>61556D55</tstamp>
+    </comp>
+    <comp ref="TP49">
+      <value>TP_POP</value>
+      <footprint>TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="TestPoint-Connector" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>613E88B5</tstamp>
+    </comp>
+    <comp ref="JP20">
+      <value>Jumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_2_Open-Jumper" description=""/>
+      <sheetpath names="/MOS DRIVER R/" tstamps="/619A00BB/"/>
+      <tstamp>615D1D25</tstamp>
+    </comp>
+    <comp ref="JP13">
+      <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_NC_Dual-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>61386A86</tstamp>
+    </comp>
+    <comp ref="R77">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>61386A97</tstamp>
+    </comp>
+    <comp ref="JP14">
+      <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_NC_Dual-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>6138E735</tstamp>
+    </comp>
+    <comp ref="R78">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>6138E745</tstamp>
+    </comp>
+    <comp ref="JP11">
+      <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_NC_Dual-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>6139D414</tstamp>
+    </comp>
+    <comp ref="JP10">
+      <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_NC_Dual-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>613A5DB8</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>Conn_02x16_Odd_Even</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Conn_02x16_Odd_Even-Connector_Generic" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>61332892</tstamp>
+    </comp>
+    <comp ref="R76">
+      <value>10k</value>
+      <footprint>Sesame_footprint:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="R-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>6137F2F0</tstamp>
+    </comp>
+    <comp ref="JP12">
+      <value>Jumper_NC_Dual</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="sesame-fonctionnel-rescue" part="Jumper_NC_Dual-Device" description=""/>
+      <sheetpath names="/INT EXT CONFIG/" tstamps="/618748E2/"/>
+      <tstamp>61366A29</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Sesame" part="AD8030">
+      <description>Low Power, High Speed Rail-to-Rail Input/Output Amplifier</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*2.95x2.8mm*P0.65mm*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>VSSOP*P0.5mm*</fp>
+        <fp>TO?99*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AD8030</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sesame" part="LT6016">
+      <description>10 MHz, 850 µA Op Amps</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*2.95x2.8mm*P0.65mm*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>VSSOP*P0.5mm*</fp>
+        <fp>TO?99*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT6016</field>
+        <field name="Footprint">Package_SO:MSOP-8_3x3mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sesame" part="LT8365">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LT8365</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EN/UVLO" type="input"/>
+        <pin num="3" name="VIN" type="power_in"/>
+        <pin num="5" name="INTVCC" type="power_out"/>
+        <pin num="7" name="BIAS" type="input"/>
+        <pin num="8" name="VC" type="output"/>
+        <pin num="9" name="FBX" type="input"/>
+        <pin num="10" name="RT" type="input"/>
+        <pin num="11" name="SS" type="input"/>
+        <pin num="12" name="SYNC/MODE" type="input"/>
+        <pin num="14" name="SW2" type="openCol"/>
+        <pin num="16" name="SW1" type="openCol"/>
+        <pin num="17" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sesame" part="L_Core_Ferrite_Coupled_2_Parts">
+      <description>Coupled inductor with ferrite core</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Core_Ferrite_Coupled_2_Parts</field>
+      </fields>
+      <pins>
+        <pin num="1" name="2" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sesame" part="UCC27284-Q1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">UCC27284-Q1</field>
+        <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="HB" type="power_out"/>
+        <pin num="3" name="HO" type="output"/>
+        <pin num="4" name="HS" type="power_out"/>
+        <pin num="5" name="HI" type="input"/>
+        <pin num="6" name="LI" type="input"/>
+        <pin num="7" name="VSS" type="power_in"/>
+        <pin num="8" name="LO" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="4011-4xxx">
+      <footprints>
+        <fp>DIP?14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4011-4xxx</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="output"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="input"/>
+        <pin num="7" name="VSS" type="power_in"/>
+        <pin num="8" name="~" type="input"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="output"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="BC847-Transistor_BJT">
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC847-Transistor_BJT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="BC857-Transistor_BJT">
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC857-Transistor_BJT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="C-Device">
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="CD4053B-Analog_Switch">
+      <footprints>
+        <fp>TSSOP*4.4x5mm*P0.65mm*</fp>
+        <fp>DIP*W7.62*</fp>
+        <fp>SOIC*3.9x9.9mm*P1.27mm*</fp>
+        <fp>SO*5.3x10.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CD4053B-Analog_Switch</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B1" type="BiDi"/>
+        <pin num="2" name="B0" type="BiDi"/>
+        <pin num="3" name="C1" type="BiDi"/>
+        <pin num="4" name="C" type="BiDi"/>
+        <pin num="5" name="C0" type="BiDi"/>
+        <pin num="6" name="INH" type="input"/>
+        <pin num="7" name="VEE" type="power_in"/>
+        <pin num="8" name="VSS" type="power_in"/>
+        <pin num="9" name="S3" type="input"/>
+        <pin num="10" name="S2" type="input"/>
+        <pin num="11" name="S1" type="input"/>
+        <pin num="12" name="A0" type="BiDi"/>
+        <pin num="13" name="A1" type="BiDi"/>
+        <pin num="14" name="A" type="BiDi"/>
+        <pin num="15" name="B" type="BiDi"/>
+        <pin num="16" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="CP-Device">
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Conn_02x16_Odd_Even-Connector_Generic">
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x16_Odd_Even-Connector_Generic</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+        <pin num="31" name="Pin_31" type="passive"/>
+        <pin num="32" name="Pin_32" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="D_Schottky-Device">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="D_Zener-Device">
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="INDUCTOR-pspice">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">INDUCTOR-pspice</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Jumper-Device">
+      <footprints>
+        <fp>SolderJumper*</fp>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Jumper_2_Open-Jumper">
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2_Open-Jumper</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Jumper_3_Bridged12-Jumper">
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*3Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_3_Bridged12-Jumper</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="C" type="input"/>
+        <pin num="3" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Jumper_NC_Dual-Device">
+      <footprints>
+        <fp>SolderJumper*Bridged*</fp>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NC_Dual-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="LM2903-Comparator">
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SOP*5.28x5.23mm*P1.27mm*</fp>
+        <fp>VSSOP*3.0x3.0mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2903-Comparator</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="openCol"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="_" type="input"/>
+        <pin num="7" name="~" type="openCol"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="MountingHole-Mechanical">
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole-Mechanical</field>
+      </fields>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Q_NMOS_GDS-Device">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Q_PMOS_GDS-Device">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GDS-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="R-Device">
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="R_POT-Device">
+      <footprints>
+        <fp>Potentiometer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">RV</field>
+        <field name="Value">R_POT-Device</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="Screw_Terminal_01x01-Connector">
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x01-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="TL431DBZ-Reference_Voltage">
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TL431DBZ-Reference_Voltage</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="REF" type="passive"/>
+        <pin num="3" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sesame-fonctionnel-rescue" part="TestPoint-Connector">
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint-Connector</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Sesame">
+      <uri>/Users/guigur/Documents/github/SESAME/KICAD/Sesame.lib</uri>
+    </library>
+    <library logical="sesame-fonctionnel-rescue">
+      <uri>/Users/guigur/Documents/github/SESAME/KICAD/sesame-fonctionnel-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/~Over_UI_Protection">
+      <node ref="R27" pin="1"/>
+      <node ref="U5" pin="11"/>
+      <node ref="U6" pin="6"/>
+      <node ref="C14" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="TP9" pin="1"/>
+    </net>
+    <net code="2" name="/PROGRAMMABLE BREAKER/Current_Sens">
+      <node ref="R21" pin="2"/>
+      <node ref="U3" pin="15"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="3" name="/PROGRAMMABLE BREAKER/Voltage_Sens">
+      <node ref="U3" pin="5"/>
+      <node ref="R20" pin="2"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="4" name="/MEASURE SELECTOR/Measure_Selected">
+      <node ref="U3" pin="4"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="5" name="/Voltage_Sens_R">
+      <node ref="U11" pin="7"/>
+      <node ref="U3" pin="13"/>
+      <node ref="U11" pin="6"/>
+      <node ref="TP31" pin="1"/>
+      <node ref="J9" pin="12"/>
+    </net>
+    <net code="6" name="/Current_Sens_R">
+      <node ref="U3" pin="1"/>
+      <node ref="TP30" pin="1"/>
+      <node ref="J9" pin="8"/>
+      <node ref="U11" pin="1"/>
+      <node ref="U11" pin="2"/>
+    </net>
+    <net code="7" name="/Voltage_Sens_L">
+      <node ref="TP22" pin="1"/>
+      <node ref="U9" pin="7"/>
+      <node ref="U9" pin="6"/>
+      <node ref="J9" pin="14"/>
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="8" name="/Current_Sens_L">
+      <node ref="TP21" pin="1"/>
+      <node ref="U9" pin="2"/>
+      <node ref="J9" pin="10"/>
+      <node ref="U9" pin="1"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="9" name="/Rearm">
+      <node ref="Q1" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="J9" pin="22"/>
+    </net>
+    <net code="10" name="/Voltage_Thres">
+      <node ref="J9" pin="28"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="11" name="/Current_Thres">
+      <node ref="J9" pin="26"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="12" name="/Dir">
+      <node ref="R77" pin="2"/>
+      <node ref="U4" pin="9"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U3" pin="11"/>
+      <node ref="U3" pin="10"/>
+      <node ref="J9" pin="16"/>
+    </net>
+    <net code="13" name="/CC_CV_Mode">
+      <node ref="R78" pin="2"/>
+      <node ref="U3" pin="9"/>
+      <node ref="J9" pin="18"/>
+    </net>
+    <net code="14" name="/DRIVER COMMAND/Driver_RS">
+      <node ref="TP17" pin="1"/>
+      <node ref="U17" pin="5"/>
+      <node ref="U6" pin="3"/>
+      <node ref="R36" pin="2"/>
+    </net>
+    <net code="15" name="/MOS DRIVER R/Driver_P">
+      <node ref="TP15" pin="1"/>
+      <node ref="U6" pin="1"/>
+      <node ref="R31" pin="1"/>
+      <node ref="U17" pin="6"/>
+    </net>
+    <net code="16" name="/Mode">
+      <node ref="J9" pin="20"/>
+      <node ref="R76" pin="2"/>
+      <node ref="U4" pin="6"/>
+      <node ref="U4" pin="8"/>
+      <node ref="U5" pin="9"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="17" name="/DC/DC CONVERTER/VD_LS">
+      <node ref="RShunt1" pin="2"/>
+      <node ref="C41" pin="1"/>
+      <node ref="R44" pin="2"/>
+      <node ref="QLS1" pin="2"/>
+      <node ref="C39" pin="1"/>
+      <node ref="C38" pin="1"/>
+      <node ref="C37" pin="1"/>
+      <node ref="C36" pin="1"/>
+      <node ref="C40" pin="1"/>
+      <node ref="R47" pin="2"/>
+    </net>
+    <net code="18" name="/VProt_Left">
+      <node ref="R45" pin="2"/>
+      <node ref="RShunt1" pin="1"/>
+      <node ref="Q8" pin="2"/>
+      <node ref="D12" pin="2"/>
+      <node ref="R46" pin="2"/>
+      <node ref="R49" pin="1"/>
+      <node ref="TP25" pin="1"/>
+    </net>
+    <net code="19" name="/VProt_Right">
+      <node ref="D13" pin="2"/>
+      <node ref="RShunt2" pin="1"/>
+      <node ref="R60" pin="2"/>
+      <node ref="R64" pin="1"/>
+      <node ref="TP28" pin="1"/>
+      <node ref="Q11" pin="2"/>
+      <node ref="R61" pin="2"/>
+    </net>
+    <net code="20" name="/U/I SENSOR RIGHT/VD_Mos">
+      <node ref="C43" pin="1"/>
+      <node ref="R59" pin="2"/>
+      <node ref="RShunt2" pin="2"/>
+      <node ref="R62" pin="2"/>
+      <node ref="C45" pin="1"/>
+      <node ref="QRS1" pin="2"/>
+      <node ref="C49" pin="1"/>
+      <node ref="C48" pin="1"/>
+      <node ref="C47" pin="1"/>
+      <node ref="C46" pin="1"/>
+    </net>
+    <net code="21" name="/DRIVER COMMAND/Driver_LS">
+      <node ref="U6" pin="5"/>
+      <node ref="R32" pin="2"/>
+      <node ref="TP16" pin="1"/>
+      <node ref="U12" pin="5"/>
+    </net>
+    <net code="22" name="/DRIVER COMMAND/Driver_LP">
+      <node ref="R35" pin="1"/>
+      <node ref="U6" pin="2"/>
+      <node ref="TP14" pin="1"/>
+      <node ref="U12" pin="6"/>
+    </net>
+    <net code="23" name="/~PWM_Freewheel">
+      <node ref="U5" pin="4"/>
+      <node ref="JP11" pin="2"/>
+    </net>
+    <net code="24" name="/PWM_Power">
+      <node ref="U5" pin="15"/>
+      <node ref="JP10" pin="2"/>
+    </net>
+    <net code="25" name="GND">
+      <node ref="C46" pin="2"/>
+      <node ref="C47" pin="2"/>
+      <node ref="C48" pin="2"/>
+      <node ref="C49" pin="2"/>
+      <node ref="C45" pin="2"/>
+      <node ref="U8" pin="4"/>
+      <node ref="U6" pin="7"/>
+      <node ref="C15" pin="2"/>
+      <node ref="U6" pin="8"/>
+      <node ref="J2" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R50" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C40" pin="2"/>
+      <node ref="R96" pin="2"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="R90" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="R94" pin="2"/>
+      <node ref="R74" pin="2"/>
+      <node ref="R92" pin="2"/>
+      <node ref="C37" pin="2"/>
+      <node ref="R71" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="U9" pin="4"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="U10" pin="4"/>
+      <node ref="R34" pin="2"/>
+      <node ref="R31" pin="2"/>
+      <node ref="QRP1" pin="3"/>
+      <node ref="R35" pin="2"/>
+      <node ref="R33" pin="2"/>
+      <node ref="U11" pin="4"/>
+      <node ref="C22" pin="2"/>
+      <node ref="R29" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="JP13" pin="1"/>
+      <node ref="U13" pin="4"/>
+      <node ref="R63" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="U4" pin="7"/>
+      <node ref="R48" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="R65" pin="2"/>
+      <node ref="R38" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U7" pin="4"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="6"/>
+      <node ref="C17" pin="2"/>
+      <node ref="D1" pin="2"/>
+      <node ref="U12" pin="7"/>
+      <node ref="D9" pin="2"/>
+      <node ref="C51" pin="2"/>
+      <node ref="RV1" pin="3"/>
+      <node ref="U5" pin="13"/>
+      <node ref="RV2" pin="3"/>
+      <node ref="QLP1" pin="3"/>
+      <node ref="U5" pin="6"/>
+      <node ref="U5" pin="7"/>
+      <node ref="C50" pin="2"/>
+      <node ref="U5" pin="8"/>
+      <node ref="C27" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="R30" pin="1"/>
+      <node ref="R27" pin="2"/>
+      <node ref="J8" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="R79" pin="2"/>
+      <node ref="J9" pin="25"/>
+      <node ref="J9" pin="27"/>
+      <node ref="D3" pin="2"/>
+      <node ref="J9" pin="1"/>
+      <node ref="R54" pin="2"/>
+      <node ref="R51" pin="2"/>
+      <node ref="D16" pin="2"/>
+      <node ref="J9" pin="11"/>
+      <node ref="R84" pin="2"/>
+      <node ref="J9" pin="13"/>
+      <node ref="C23" pin="2"/>
+      <node ref="JP14" pin="1"/>
+      <node ref="U16" pin="3"/>
+      <node ref="R55" pin="2"/>
+      <node ref="U17" pin="7"/>
+      <node ref="C29" pin="2"/>
+      <node ref="R58" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="RV3" pin="3"/>
+      <node ref="R82" pin="2"/>
+      <node ref="J9" pin="29"/>
+      <node ref="C33" pin="2"/>
+      <node ref="D6" pin="2"/>
+      <node ref="J9" pin="3"/>
+      <node ref="J9" pin="31"/>
+      <node ref="U15" pin="17"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="U15" pin="12"/>
+      <node ref="J9" pin="15"/>
+      <node ref="L1" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="J9" pin="17"/>
+      <node ref="J9" pin="19"/>
+      <node ref="R42" pin="1"/>
+      <node ref="J9" pin="21"/>
+      <node ref="J9" pin="23"/>
+      <node ref="J9" pin="5"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="JP12" pin="1"/>
+      <node ref="TP1" pin="1"/>
+      <node ref="J9" pin="9"/>
+      <node ref="J9" pin="7"/>
+    </net>
+    <net code="26" name="/DC/DC CONVERTER/VG_LP">
+      <node ref="R90" pin="1"/>
+      <node ref="QLP1" pin="1"/>
+      <node ref="TP34" pin="1"/>
+      <node ref="D11" pin="2"/>
+      <node ref="R69" pin="2"/>
+    </net>
+    <net code="27" name="/DC/DC CONVERTER/VG_LS">
+      <node ref="D10" pin="2"/>
+      <node ref="R68" pin="2"/>
+      <node ref="TP32" pin="1"/>
+      <node ref="QLS1" pin="1"/>
+      <node ref="R89" pin="1"/>
+    </net>
+    <net code="28" name="/L">
+      <node ref="Q6" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="TP23" pin="1"/>
+    </net>
+    <net code="29" name="/R">
+      <node ref="J7" pin="1"/>
+      <node ref="Q9" pin="2"/>
+      <node ref="TP26" pin="1"/>
+    </net>
+    <net code="30" name="/~INT_PWM_Freewheel">
+      <node ref="JP11" pin="1"/>
+      <node ref="JP18" pin="2"/>
+    </net>
+    <net code="31" name="/INT_PWM_Power">
+      <node ref="JP10" pin="1"/>
+      <node ref="JP17" pin="2"/>
+    </net>
+    <net code="32" name="/PWM GEN/Ramp">
+      <node ref="TP19" pin="1"/>
+      <node ref="R39" pin="2"/>
+      <node ref="U7" pin="7"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U13" pin="5"/>
+      <node ref="U13" pin="2"/>
+    </net>
+    <net code="33" name="/PID/Feedback">
+      <node ref="D1" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R73" pin="2"/>
+      <node ref="JP15" pin="3"/>
+      <node ref="JP16" pin="1"/>
+      <node ref="TP4" pin="1"/>
+    </net>
+    <net code="34" name="/Ext_Setpoint">
+      <node ref="J9" pin="24"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="35" name="/MOS DRIVER R/VG_P">
+      <node ref="TP47" pin="1"/>
+      <node ref="QRS1" pin="1"/>
+      <node ref="D18" pin="2"/>
+      <node ref="R95" pin="1"/>
+      <node ref="R88" pin="2"/>
+    </net>
+    <net code="36" name="/DC/DC CONVERTER/VG_RP">
+      <node ref="QRP1" pin="1"/>
+      <node ref="D17" pin="2"/>
+      <node ref="R96" pin="1"/>
+      <node ref="R87" pin="2"/>
+      <node ref="TP45" pin="1"/>
+    </net>
+    <net code="37" name="/MOS DRIVER R/VS">
+      <node ref="U17" pin="4"/>
+      <node ref="C35" pin="2"/>
+      <node ref="TP46" pin="1"/>
+      <node ref="L2" pin="2"/>
+      <node ref="C52" pin="1"/>
+      <node ref="QRP1" pin="2"/>
+      <node ref="R93" pin="2"/>
+      <node ref="C34" pin="2"/>
+      <node ref="D22" pin="2"/>
+      <node ref="QRS1" pin="3"/>
+      <node ref="C44" pin="1"/>
+      <node ref="D15" pin="2"/>
+      <node ref="R95" pin="2"/>
+    </net>
+    <net code="38" name="/MOS DRIVER L/VS">
+      <node ref="C24" pin="2"/>
+      <node ref="R89" pin="2"/>
+      <node ref="U12" pin="4"/>
+      <node ref="D19" pin="2"/>
+      <node ref="C42" pin="1"/>
+      <node ref="C25" pin="2"/>
+      <node ref="QLS1" pin="3"/>
+      <node ref="L2" pin="1"/>
+      <node ref="C53" pin="1"/>
+      <node ref="TP33" pin="1"/>
+      <node ref="D8" pin="2"/>
+      <node ref="R91" pin="2"/>
+      <node ref="QLP1" pin="2"/>
+    </net>
+    <net code="39" name="/MOS DRIVER L/HB">
+      <node ref="D19" pin="1"/>
+      <node ref="TP48" pin="1"/>
+      <node ref="R97" pin="2"/>
+      <node ref="JP20" pin="2"/>
+      <node ref="C24" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="U12" pin="2"/>
+    </net>
+    <net code="40" name="/MOS DRIVER R/HB">
+      <node ref="C34" pin="1"/>
+      <node ref="JP19" pin="2"/>
+      <node ref="R98" pin="2"/>
+      <node ref="U17" pin="2"/>
+      <node ref="C35" pin="1"/>
+      <node ref="D22" pin="1"/>
+      <node ref="TP49" pin="1"/>
+    </net>
+    <net code="41" name="Net-(R40-Pad1)">
+      <node ref="TP18" pin="1"/>
+      <node ref="R40" pin="1"/>
+      <node ref="R43" pin="2"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="42" name="VREF">
+      <node ref="RV1" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="RV2" pin="1"/>
+      <node ref="J9" pin="6"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="C27" pin="1"/>
+      <node ref="R37" pin="2"/>
+      <node ref="R28" pin="1"/>
+      <node ref="U16" pin="1"/>
+      <node ref="R41" pin="2"/>
+      <node ref="R70" pin="1"/>
+      <node ref="R83" pin="2"/>
+      <node ref="RV3" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="43" name="/RAMP GENERATOR/Schmitt_offset">
+      <node ref="R38" pin="2"/>
+      <node ref="R37" pin="1"/>
+      <node ref="U7" pin="2"/>
+    </net>
+    <net code="44" name="Net-(R39-Pad1)">
+      <node ref="R39" pin="1"/>
+      <node ref="U7" pin="3"/>
+      <node ref="R40" pin="2"/>
+    </net>
+    <net code="45" name="VCC">
+      <node ref="U6" pin="16"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="U8" pin="8"/>
+      <node ref="J9" pin="4"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R25" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="R81" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="D14" pin="1"/>
+      <node ref="JP12" pin="3"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R83" pin="1"/>
+      <node ref="U15" pin="7"/>
+      <node ref="JP13" pin="3"/>
+      <node ref="C33" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U9" pin="8"/>
+      <node ref="U4" pin="14"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="TP42" pin="1"/>
+      <node ref="J9" pin="2"/>
+      <node ref="U17" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="JP14" pin="3"/>
+      <node ref="C20" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="C51" pin="1"/>
+      <node ref="D24" pin="2"/>
+      <node ref="U10" pin="8"/>
+      <node ref="C26" pin="1"/>
+      <node ref="D21" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C50" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U5" pin="16"/>
+      <node ref="C14" pin="1"/>
+      <node ref="U7" pin="8"/>
+      <node ref="U11" pin="8"/>
+      <node ref="U5" pin="12"/>
+      <node ref="C22" pin="1"/>
+      <node ref="U13" pin="8"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U3" pin="16"/>
+      <node ref="U12" pin="1"/>
+    </net>
+    <net code="46" name="/RAMP GENERATOR/Triangle_offset">
+      <node ref="R42" pin="2"/>
+      <node ref="R41" pin="1"/>
+      <node ref="U7" pin="5"/>
+    </net>
+    <net code="47" name="Net-(C18-Pad2)">
+      <node ref="R43" pin="1"/>
+      <node ref="C18" pin="2"/>
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="48" name="Net-(R45-Pad1)">
+      <node ref="U8" pin="2"/>
+      <node ref="R45" pin="1"/>
+    </net>
+    <net code="49" name="Net-(R49-Pad2)">
+      <node ref="U9" pin="5"/>
+      <node ref="R49" pin="2"/>
+      <node ref="R50" pin="1"/>
+    </net>
+    <net code="50" name="Net-(R47-Pad1)">
+      <node ref="R47" pin="1"/>
+      <node ref="U8" pin="6"/>
+    </net>
+    <net code="51" name="Net-(Q4-Pad1)">
+      <node ref="U8" pin="1"/>
+      <node ref="Q4" pin="1"/>
+    </net>
+    <net code="52" name="Net-(Q5-Pad1)">
+      <node ref="Q5" pin="1"/>
+      <node ref="U8" pin="7"/>
+    </net>
+    <net code="53" name="Net-(Q4-Pad2)">
+      <node ref="TP20" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="U9" pin="3"/>
+      <node ref="R48" pin="1"/>
+      <node ref="Q5" pin="2"/>
+    </net>
+    <net code="54" name="Net-(Q4-Pad3)">
+      <node ref="R44" pin="1"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="U8" pin="3"/>
+    </net>
+    <net code="55" name="Net-(Q5-Pad3)">
+      <node ref="Q5" pin="3"/>
+      <node ref="U8" pin="5"/>
+      <node ref="R46" pin="1"/>
+    </net>
+    <net code="56" name="Net-(C41-Pad2)">
+      <node ref="C41" pin="2"/>
+      <node ref="R91" pin="1"/>
+    </net>
+    <net code="57" name="Net-(C44-Pad2)">
+      <node ref="C44" pin="2"/>
+      <node ref="R94" pin="1"/>
+    </net>
+    <net code="58" name="Net-(C42-Pad2)">
+      <node ref="R92" pin="1"/>
+      <node ref="C42" pin="2"/>
+    </net>
+    <net code="59" name="Net-(C43-Pad2)">
+      <node ref="C43" pin="2"/>
+      <node ref="R93" pin="1"/>
+    </net>
+    <net code="60" name="Net-(Q13-Pad1)">
+      <node ref="Q13" pin="1"/>
+      <node ref="U10" pin="7"/>
+    </net>
+    <net code="61" name="Net-(Q12-Pad3)">
+      <node ref="Q12" pin="3"/>
+      <node ref="R59" pin="1"/>
+      <node ref="U10" pin="3"/>
+    </net>
+    <net code="62" name="Net-(R60-Pad1)">
+      <node ref="R60" pin="1"/>
+      <node ref="U10" pin="2"/>
+    </net>
+    <net code="63" name="Net-(Q12-Pad1)">
+      <node ref="U10" pin="1"/>
+      <node ref="Q12" pin="1"/>
+    </net>
+    <net code="64" name="Net-(R64-Pad2)">
+      <node ref="R64" pin="2"/>
+      <node ref="R65" pin="1"/>
+      <node ref="U11" pin="5"/>
+    </net>
+    <net code="65" name="Net-(R62-Pad1)">
+      <node ref="R62" pin="1"/>
+      <node ref="U10" pin="6"/>
+    </net>
+    <net code="66" name="Net-(Q13-Pad3)">
+      <node ref="R61" pin="1"/>
+      <node ref="Q13" pin="3"/>
+      <node ref="U10" pin="5"/>
+    </net>
+    <net code="67" name="Net-(Q12-Pad2)">
+      <node ref="TP29" pin="1"/>
+      <node ref="U11" pin="3"/>
+      <node ref="Q12" pin="2"/>
+      <node ref="Q13" pin="2"/>
+      <node ref="R63" pin="1"/>
+    </net>
+    <net code="68" name="Net-(D10-Pad1)">
+      <node ref="R66" pin="1"/>
+      <node ref="D10" pin="1"/>
+    </net>
+    <net code="69" name="Net-(D8-Pad1)">
+      <node ref="U12" pin="3"/>
+      <node ref="R66" pin="2"/>
+      <node ref="D8" pin="1"/>
+      <node ref="R68" pin="1"/>
+    </net>
+    <net code="70" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="R67" pin="1"/>
+    </net>
+    <net code="71" name="Net-(D9-Pad1)">
+      <node ref="R69" pin="1"/>
+      <node ref="R67" pin="2"/>
+      <node ref="U12" pin="8"/>
+      <node ref="D9" pin="1"/>
+    </net>
+    <net code="72" name="Net-(D20-Pad1)">
+      <node ref="R97" pin="1"/>
+      <node ref="D20" pin="1"/>
+    </net>
+    <net code="73" name="Net-(C52-Pad2)">
+      <node ref="C52" pin="2"/>
+      <node ref="TP43" pin="1"/>
+      <node ref="D21" pin="1"/>
+      <node ref="JP19" pin="1"/>
+      <node ref="D20" pin="2"/>
+    </net>
+    <net code="74" name="Net-(C28-Pad1)">
+      <node ref="U15" pin="11"/>
+      <node ref="C28" pin="1"/>
+    </net>
+    <net code="75" name="Net-(R80-Pad1)">
+      <node ref="U15" pin="8"/>
+      <node ref="R80" pin="1"/>
+    </net>
+    <net code="76" name="Net-(C29-Pad1)">
+      <node ref="R80" pin="2"/>
+      <node ref="C29" pin="1"/>
+    </net>
+    <net code="77" name="Net-(C30-Pad1)">
+      <node ref="TP41" pin="1"/>
+      <node ref="L1" pin="3"/>
+      <node ref="C30" pin="1"/>
+      <node ref="D14" pin="2"/>
+    </net>
+    <net code="78" name="Net-(R81-Pad2)">
+      <node ref="U15" pin="9"/>
+      <node ref="R81" pin="2"/>
+      <node ref="R82" pin="1"/>
+    </net>
+    <net code="79" name="Net-(R79-Pad1)">
+      <node ref="U15" pin="10"/>
+      <node ref="R79" pin="1"/>
+    </net>
+    <net code="80" name="Net-(C31-Pad1)">
+      <node ref="U15" pin="5"/>
+      <node ref="C31" pin="1"/>
+    </net>
+    <net code="81" name="Net-(C30-Pad2)">
+      <node ref="TP40" pin="1"/>
+      <node ref="C30" pin="2"/>
+      <node ref="L1" pin="4"/>
+      <node ref="U15" pin="14"/>
+      <node ref="U15" pin="16"/>
+    </net>
+    <net code="82" name="/INTERNAL SUPPLIES/VIN">
+      <node ref="U15" pin="3"/>
+      <node ref="L1" pin="1"/>
+      <node ref="D12" pin="1"/>
+      <node ref="U15" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="TP39" pin="1"/>
+    </net>
+    <net code="83" name="Net-(R28-Pad2)">
+      <node ref="R28" pin="2"/>
+      <node ref="R84" pin="1"/>
+      <node ref="U16" pin="2"/>
+    </net>
+    <net code="84" name="/PWM GEN/Feedback_Deadtime_Jump">
+      <node ref="U13" pin="3"/>
+      <node ref="JP15" pin="2"/>
+    </net>
+    <net code="85" name="/PWM GEN/Feedback_Jump">
+      <node ref="U13" pin="6"/>
+      <node ref="JP16" pin="2"/>
+    </net>
+    <net code="86" name="/PWM GEN/Feedback_Deadtime">
+      <node ref="JP15" pin="1"/>
+      <node ref="U1" pin="7"/>
+      <node ref="R75" pin="2"/>
+      <node ref="JP16" pin="3"/>
+      <node ref="TP36" pin="1"/>
+    </net>
+    <net code="87" name="Net-(R72-Pad2)">
+      <node ref="R75" pin="1"/>
+      <node ref="R72" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="88" name="/PWM GEN/PWM_Power_Jumper">
+      <node ref="JP18" pin="3"/>
+      <node ref="JP17" pin="1"/>
+      <node ref="U13" pin="1"/>
+      <node ref="TP37" pin="1"/>
+    </net>
+    <net code="89" name="/PWM GEN/~PWM_Freewheel_Jumper">
+      <node ref="U13" pin="7"/>
+      <node ref="TP38" pin="1"/>
+      <node ref="JP18" pin="1"/>
+      <node ref="JP17" pin="3"/>
+    </net>
+    <net code="90" name="/PWM GEN/VDeadTime">
+      <node ref="R71" pin="1"/>
+      <node ref="R72" pin="1"/>
+      <node ref="R70" pin="2"/>
+      <node ref="TP35" pin="1"/>
+    </net>
+    <net code="91" name="Net-(R73-Pad1)">
+      <node ref="R73" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="R74" pin="1"/>
+    </net>
+    <net code="92" name="Net-(R1-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="93" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="94" name="Net-(C5-Pad2)">
+      <node ref="R8" pin="1"/>
+      <node ref="C5" pin="2"/>
+    </net>
+    <net code="95" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="C4" pin="2"/>
+    </net>
+    <net code="96" name="Net-(JP3-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="JP3" pin="1"/>
+    </net>
+    <net code="97" name="Net-(JP2-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="JP2" pin="1"/>
+    </net>
+    <net code="98" name="Net-(R3-Pad2)">
+      <node ref="RV1" pin="2"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="99" name="Net-(JP1-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="JP1" pin="1"/>
+    </net>
+    <net code="100" name="/PID/PID_Setpoint">
+      <node ref="JP1" pin="2"/>
+      <node ref="JP3" pin="2"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C3" pin="1"/>
+    </net>
+    <net code="101" name="/PID/Feedback_raw">
+      <node ref="C4" pin="1"/>
+      <node ref="R9" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="TP3" pin="1"/>
+    </net>
+    <net code="102" name="Net-(JP6-Pad1)">
+      <node ref="R16" pin="1"/>
+      <node ref="JP6" pin="1"/>
+    </net>
+    <net code="103" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="104" name="Net-(Q3-Pad1)">
+      <node ref="R26" pin="1"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="105" name="Net-(Q1-Pad3)">
+      <node ref="Q1" pin="3"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="106" name="Net-(JP4-Pad1)">
+      <node ref="JP4" pin="1"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="107" name="Net-(R14-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="RV2" pin="2"/>
+    </net>
+    <net code="108" name="Net-(JP5-Pad1)">
+      <node ref="JP5" pin="1"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="109" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="110" name="Net-(JP9-Pad1)">
+      <node ref="R19" pin="1"/>
+      <node ref="JP9" pin="1"/>
+    </net>
+    <net code="111" name="Net-(JP7-Pad1)">
+      <node ref="R17" pin="1"/>
+      <node ref="JP7" pin="1"/>
+    </net>
+    <net code="112" name="Net-(R17-Pad2)">
+      <node ref="R17" pin="2"/>
+      <node ref="RV3" pin="2"/>
+    </net>
+    <net code="113" name="Net-(JP8-Pad1)">
+      <node ref="R18" pin="1"/>
+      <node ref="JP8" pin="1"/>
+    </net>
+    <net code="114" name="Net-(R12-Pad2)">
+      <node ref="R13" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="115" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="116" name="Net-(C7-Pad2)">
+      <node ref="JP5" pin="2"/>
+      <node ref="JP4" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="TP5" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="JP6" pin="2"/>
+    </net>
+    <net code="117" name="Net-(C9-Pad2)">
+      <node ref="JP9" pin="2"/>
+      <node ref="JP8" pin="2"/>
+      <node ref="JP7" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="TP6" pin="1"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="118" name="Net-(C11-Pad1)">
+      <node ref="Q2" pin="3"/>
+      <node ref="R24" pin="2"/>
+      <node ref="R26" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="R25" pin="2"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+    <net code="119" name="/PROGRAMMABLE BREAKER/S">
+      <node ref="Q2" pin="1"/>
+      <node ref="R23" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="TP7" pin="1"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="120" name="Net-(R29-Pad2)">
+      <node ref="R29" pin="2"/>
+      <node ref="U6" pin="11"/>
+    </net>
+    <net code="121" name="Net-(U4-Pad10)">
+      <node ref="U4" pin="2"/>
+      <node ref="U4" pin="5"/>
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="122" name="/DRIVER COMMAND/PWM_Parallel">
+      <node ref="TP10" pin="1"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U6" pin="15"/>
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="123" name="Net-(R34-Pad1)">
+      <node ref="R34" pin="1"/>
+      <node ref="U6" pin="12"/>
+    </net>
+    <net code="124" name="Net-(R33-Pad1)">
+      <node ref="U6" pin="13"/>
+      <node ref="R33" pin="1"/>
+    </net>
+    <net code="125" name="Net-(U4-Pad13)">
+      <node ref="U4" pin="3"/>
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="126" name="Net-(U4-Pad12)">
+      <node ref="U4" pin="12"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="127" name="Net-(R30-Pad2)">
+      <node ref="U6" pin="14"/>
+      <node ref="R30" pin="2"/>
+    </net>
+    <net code="128" name="/DRIVER COMMAND/Dir_Xor_Mode">
+      <node ref="U6" pin="10"/>
+      <node ref="U6" pin="9"/>
+      <node ref="U4" pin="11"/>
+      <node ref="TP12" pin="1"/>
+    </net>
+    <net code="129" name="/DRIVER COMMAND/PWM_Series">
+      <node ref="U6" pin="4"/>
+      <node ref="TP11" pin="1"/>
+      <node ref="U5" pin="3"/>
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="130" name="/DRIVER COMMAND/Resistor_pull">
+      <node ref="TP13" pin="1"/>
+      <node ref="U5" pin="14"/>
+      <node ref="R32" pin="1"/>
+      <node ref="R36" pin="1"/>
+    </net>
+    <net code="131" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="R53" pin="2"/>
+      <node ref="R52" pin="2"/>
+    </net>
+    <net code="132" name="Net-(D4-Pad2)">
+      <node ref="R54" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="Q7" pin="3"/>
+      <node ref="Q8" pin="1"/>
+    </net>
+    <net code="133" name="Net-(D2-Pad1)">
+      <node ref="R52" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="Q7" pin="2"/>
+      <node ref="Q6" pin="3"/>
+      <node ref="Q8" pin="3"/>
+      <node ref="D2" pin="1"/>
+      <node ref="TP24" pin="1"/>
+    </net>
+    <net code="134" name="Net-(Q7-Pad1)">
+      <node ref="R53" pin="1"/>
+      <node ref="Q7" pin="1"/>
+    </net>
+    <net code="135" name="Net-(D2-Pad2)">
+      <node ref="Q6" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="R51" pin="1"/>
+    </net>
+    <net code="136" name="Net-(D5-Pad1)">
+      <node ref="Q10" pin="2"/>
+      <node ref="Q9" pin="3"/>
+      <node ref="Q11" pin="3"/>
+      <node ref="D5" pin="1"/>
+      <node ref="TP27" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="R56" pin="1"/>
+    </net>
+    <net code="137" name="Net-(D5-Pad2)">
+      <node ref="Q9" pin="1"/>
+      <node ref="D5" pin="2"/>
+      <node ref="R55" pin="1"/>
+    </net>
+    <net code="138" name="Net-(Q10-Pad1)">
+      <node ref="R57" pin="1"/>
+      <node ref="Q10" pin="1"/>
+    </net>
+    <net code="139" name="Net-(D7-Pad2)">
+      <node ref="D7" pin="2"/>
+      <node ref="Q10" pin="3"/>
+      <node ref="R58" pin="1"/>
+      <node ref="Q11" pin="1"/>
+    </net>
+    <net code="140" name="Net-(D6-Pad1)">
+      <node ref="R56" pin="2"/>
+      <node ref="R57" pin="2"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="141" name="Net-(JP12-Pad2)">
+      <node ref="JP12" pin="2"/>
+      <node ref="R76" pin="1"/>
+    </net>
+    <net code="142" name="/INT EXT CONFIG/Ext_PWM">
+      <node ref="JP10" pin="3"/>
+      <node ref="J9" pin="30"/>
+    </net>
+    <net code="143" name="/INT EXT CONFIG/~Ext_PWM">
+      <node ref="JP11" pin="3"/>
+      <node ref="J9" pin="32"/>
+    </net>
+    <net code="144" name="Net-(JP14-Pad2)">
+      <node ref="R78" pin="1"/>
+      <node ref="JP14" pin="2"/>
+    </net>
+    <net code="145" name="Net-(JP13-Pad2)">
+      <node ref="R77" pin="1"/>
+      <node ref="JP13" pin="2"/>
+    </net>
+    <net code="146" name="Net-(C53-Pad2)">
+      <node ref="C53" pin="2"/>
+      <node ref="TP44" pin="1"/>
+      <node ref="JP20" pin="1"/>
+      <node ref="D23" pin="2"/>
+      <node ref="D24" pin="1"/>
+    </net>
+    <net code="147" name="Net-(D23-Pad1)">
+      <node ref="D23" pin="1"/>
+      <node ref="R98" pin="1"/>
+    </net>
+    <net code="148" name="Net-(D17-Pad1)">
+      <node ref="D17" pin="1"/>
+      <node ref="R85" pin="1"/>
+    </net>
+    <net code="149" name="Net-(D15-Pad1)">
+      <node ref="R87" pin="1"/>
+      <node ref="U17" pin="3"/>
+      <node ref="R85" pin="2"/>
+      <node ref="D15" pin="1"/>
+    </net>
+    <net code="150" name="Net-(D18-Pad1)">
+      <node ref="R86" pin="1"/>
+      <node ref="D18" pin="1"/>
+    </net>
+    <net code="151" name="Net-(D16-Pad1)">
+      <node ref="R88" pin="1"/>
+      <node ref="R86" pin="2"/>
+      <node ref="D16" pin="1"/>
+      <node ref="U17" pin="8"/>
+    </net>
+  </nets>
+</export>

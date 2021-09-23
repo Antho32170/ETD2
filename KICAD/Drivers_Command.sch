@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 17
 Title "SESAME"
-Date "2021-08-04"
-Rev "A"
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 "Dessin : Clément & Josué & Guillaume Arthaud"
 Comment2 ""
@@ -29,7 +29,7 @@ U 5 1 610DDCAD
 P 1300 7000
 F 0 "U4" H 1530 7046 50  0000 L CNN
 F 1 "4011" H 1530 6955 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1300 7000 50  0001 C CNN
+F 2 "Sesame_footprint:SOIC-14_3.9x8.7mm_P1.27mm" H 1300 7000 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 1300 7000 50  0001 C CNN
 	5    1300 7000
 	1    0    0    -1  
@@ -665,7 +665,7 @@ U 1 1 610F7E61
 P 7350 3400
 F 0 "U6" H 7800 4250 50  0000 C CNN
 F 1 "CD4053BM96" H 7800 4150 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 7500 2650 50  0001 L CNN
+F 2 "Sesame_footprint:SOIC-16_3.9x9.9mm_P1.27mm" H 7500 2650 50  0001 L CNN
 F 3 "" H 7330 3600 50  0001 C CNN
 	1    7350 3400
 	1    0    0    -1  
@@ -676,7 +676,7 @@ U 2 1 6119334A
 P 4000 1650
 F 0 "U4" H 4000 1400 50  0000 C CNN
 F 1 "4011" H 4000 1300 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4000 1650 50  0001 C CNN
+F 2 "Sesame_footprint:SOIC-14_3.9x8.7mm_P1.27mm" H 4000 1650 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 4000 1650 50  0001 C CNN
 	2    4000 1650
 	1    0    0    -1  
@@ -687,7 +687,7 @@ U 4 1 6119F84F
 P 4800 1400
 F 0 "U4" H 4800 1200 50  0000 C CNN
 F 1 "4011" H 4800 1100 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4800 1400 50  0001 C CNN
+F 2 "Sesame_footprint:SOIC-14_3.9x8.7mm_P1.27mm" H 4800 1400 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 4800 1400 50  0001 C CNN
 	4    4800 1400
 	1    0    0    1   
@@ -698,7 +698,7 @@ U 3 1 61192492
 P 3200 1400
 F 0 "U4" H 3200 1175 50  0000 C CNN
 F 1 "4011" H 3200 1100 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 1400 50  0001 C CNN
+F 2 "Sesame_footprint:SOIC-14_3.9x8.7mm_P1.27mm" H 3200 1400 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3200 1400 50  0001 C CNN
 	3    3200 1400
 	1    0    0    1   
@@ -709,7 +709,7 @@ U 1 1 61194533
 P 4000 1150
 F 0 "U4" H 4000 1475 50  0000 C CNN
 F 1 "4011" H 4000 1384 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4000 1150 50  0001 C CNN
+F 2 "Sesame_footprint:SOIC-14_3.9x8.7mm_P1.27mm" H 4000 1150 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 4000 1150 50  0001 C CNN
 	1    4000 1150
 	1    0    0    -1  
@@ -944,7 +944,7 @@ U 1 1 613BCF53
 P 4250 3400
 F 0 "U5" H 4700 4250 50  0000 C CNN
 F 1 "CD4053BM96" H 4700 4150 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4400 2650 50  0001 L CNN
+F 2 "Sesame_footprint:SOIC-16_3.9x9.9mm_P1.27mm" H 4400 2650 50  0001 L CNN
 F 3 "" H 4230 3600 50  0001 C CNN
 	1    4250 3400
 	1    0    0    -1  

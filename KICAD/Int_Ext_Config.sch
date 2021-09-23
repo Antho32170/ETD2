@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 17 17
-Title ""
-Date ""
-Rev ""
+Title "SESAME"
+Date "2021-09-23"
+Rev "1"
 Comp "ALEEA"
 Comment1 ""
 Comment2 ""
