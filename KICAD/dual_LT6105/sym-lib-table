@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "sesame")(type "Legacy")(uri "/Users/guigur/Documents/github/SESAME/KICAD/Sesame.lib")(options "")(descr ""))
+  (lib (name "dual_LT6105_lib")(type "KiCad")(uri "${KIPRJMOD}/dual_LT6105_lib.kicad_sym")(options "")(descr ""))
+)
