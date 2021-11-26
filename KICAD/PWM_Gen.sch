@@ -561,4 +561,6 @@ $EndComp
 Wire Wire Line
 	5750 4200 5750 4300
 Connection ~ 5750 4200
+Text Notes 7850 2450 0    100  ~ 0
+TS3702\nComp push-pull
 $EndSCHEMATC
