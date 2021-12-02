@@ -23,15 +23,16 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="cm"
      showgrid="false"
-     inkscape:zoom="4.5160191"
-     inkscape:cx="517.7126"
-     inkscape:cy="342.33691"
+     inkscape:zoom="4.8291974"
+     inkscape:cx="492.42137"
+     inkscape:cy="379.46264"
      inkscape:window-width="1323"
-     inkscape:window-height="894"
-     inkscape:window-x="131"
-     inkscape:window-y="30"
+     inkscape:window-height="885"
+     inkscape:window-x="400"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g927" />
+     inkscape:current-layer="layer5"
+     showguides="false" />
   <title
      id="title9">SVG Picture created as dual_LT6105-B_Mask.svg date 2021/11/26 09:42:22 </title>
   <desc
@@ -1580,7 +1581,7 @@
        inkscape:groupmode="layer"
        id="layer4"
        inkscape:label="bak"
-       style="display:none">
+       style="display:inline">
       <rect
          style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3.29999e+06;stroke-opacity:0"
          id="rect9260"
@@ -1699,18 +1700,13 @@
            id="g923" />
         <g
            id="g925" />
-        <path
-           style="fill:none;stroke:#000000;stroke-width:264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           d="m 132959050,90669229 6245530,2318542 264540,12383199 14186800,69230 c 0,0 238470,-23217068 69250,-23758875 -10568710,-33838171 -25285570,-8386298 -26803250,1955457 z"
-           id="path22196"
-           sodipodi:nodetypes="ccccscc" />
       </g>
     </g>
     <g
        inkscape:groupmode="layer"
        id="layer2"
        inkscape:label="mask"
-       style="display:none;opacity:0.5">
+       style="display:inline;opacity:0.5">
       <g
          style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:100000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
          id="g1009">
@@ -1981,7 +1977,7 @@
        inkscape:groupmode="layer"
        id="layer1"
        inkscape:label="silk"
-       style="display:none;opacity:0.5">
+       style="display:inline;opacity:0.5">
       <g
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
          id="g1947">
@@ -2211,17 +2207,402 @@
     </g>
     <g
        inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="fab">
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:100000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720057">
+        <path
+           d="m 123500000,103750000 h 18500000"
+           id="path720049" />
+        <path
+           d="M 142000000,103750000 V 95250000"
+           id="path720051" />
+        <path
+           d="M 142000000,95250000 H 123500000"
+           id="path720053" />
+        <path
+           d="m 123500000,95250000 v 8500000"
+           id="path720055" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:110000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720081">
+        <text
+           x="128905000"
+           y="100070000"
+           textLength="1650000"
+           font-size="1e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720059">U1</text>
+        <g
+           class="stroked-text"
+           id="g720069">
+          <desc
+             id="desc720061">U1</desc>
+          <path
+             d="m 128333570,99284285 v 607143 l 35720,71429 35710,35714 71430,35719 h 142860 l 71420,-35719 35720,-35714 35710,-71429 v -607143"
+             id="path720063" />
+          <path
+             d="m 129512140,100034290 h -428570"
+             id="path720065" />
+          <path
+             d="m 129297860,100034290 v -750005 l -71430,107143 -71430,71429 -71430,35714"
+             id="path720067" />
+        </g>
+        <text
+           x="136524992"
+           y="100070000"
+           textLength="1643000"
+           font-size="1e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720071">U2</text>
+        <g
+           class="stroked-text"
+           id="g720079">
+          <desc
+             id="desc720073">U2</desc>
+          <path
+             d="m 135953570,99284285 v 607143 l 35720,71429 35710,35714 71430,35719 h 142860 l 71420,-35719 35720,-35714 35710,-71429 v -607143"
+             id="path720075" />
+          <path
+             d="m 136703570,99355714 35720,-35714 71420,-35715 h 178580 l 71420,35715 35720,35714 35710,71428 v 71429 l -35710,107143 -428570,428576 h 464280"
+             id="path720077" />
+        </g>
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:150000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720127">
+        <text
+           x="134620000"
+           y="93591000"
+           textLength="1857286"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720083">J4</text>
+        <text
+           x="122463000"
+           y="99560000"
+           textLength="3052143"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720095">OUT</text>
+        <text
+           x="137830000"
+           y="105275000"
+           textLength="3956905"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720109">100n</text>
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:80000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720141">
+        <text
+           x="137830000"
+           y="102866000"
+           textLength="1171190"
+           font-size="666666px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720129">C1</text>
+        <g
+           class="stroked-text"
+           id="g720139">
+          <desc
+             id="desc720131">C1</desc>
+          <path
+             d="m 137746670,102794570 -23810,23810 -71430,23810 h -47620 l -71430,-23810 -47620,-47620 -23810,-47620 -23810,-95240 v -71420 l 23810,-95240 23810,-47620 47620,-47620 71430,-23810 h 47620 l 71430,23810 23810,23810"
+             id="path720133" />
+          <path
+             d="m 138222860,102842190 h -285720"
+             id="path720135" />
+          <path
+             d="m 138080000,102842190 v -500000 l -47620,71430 -47620,47620 -47620,23810"
+             id="path720137" />
+        </g>
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:150000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720221">
+        <text
+           x="130845000"
+           y="93591000"
+           textLength="1818286"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720143">J6</text>
+        <text
+           x="134250000"
+           y="105275000"
+           textLength="1433095"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720167">+</text>
+        <g
+           class="stroked-text"
+           id="g720175">
+          <desc
+             id="desc720169">+</desc>
+          <path
+             d="m 133869050,104846430 h 761900"
+             id="path720171" />
+          <path
+             d="m 134250000,105227380 v -761900"
+             id="path720173" />
+        </g>
+        <text
+           x="127035000"
+           y="93591000"
+           textLength="1909286"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720177">J3</text>
+        <text
+           x="138430000"
+           y="93591000"
+           textLength="1909286"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720187">J5</text>
+        <g
+           class="stroked-text"
+           id="g720195">
+          <desc
+             id="desc720189">J5</desc>
+        </g>
+        <text
+           x="131250000"
+           y="105275000"
+           textLength="1433095"
+           font-size="1.33333e+06px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720197">-</text>
+        <g
+           class="stroked-text"
+           id="g720203">
+          <desc
+             id="desc720199">-</desc>
+          <path
+             d="m 130869050,104846430 h 761900"
+             id="path720201" />
+        </g>
+        <g
+           class="stroked-text"
+           id="g720219">
+          <desc
+             id="desc720207">20k</desc>
+        </g>
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:80000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720237">
+        <text
+           x="127543000"
+           y="102866000"
+           textLength="1171190"
+           font-size="666666px"
+           lengthAdjust="spacingAndGlyphs"
+           text-anchor="middle"
+           opacity="0"
+           id="text720223">R1</text>
+        <g
+           class="stroked-text"
+           id="g720235">
+          <desc
+             id="desc720225">R1</desc>
+          <path
+             d="m 127459670,102842190 -166670,-238090"
+             id="path720227" />
+          <path
+             d="m 127173950,102842190 v -500000 h 190480 l 47620,23810 23810,23810 23810,47620 v 71430 l -23810,47620 -23810,23810 -47620,23810 h -190480"
+             id="path720229" />
+          <path
+             d="m 127935860,102842190 h -285720"
+             id="path720231" />
+          <path
+             d="m 127793000,102842190 v -500000 l -47620,71430 -47620,47620 -47620,23810"
+             id="path720233" />
+        </g>
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:100000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720259">
+        <path
+           d="m 128155000,98195000 h 2250000"
+           id="path720239" />
+        <path
+           d="M 127405000,101195000 V 98945000"
+           id="path720241" />
+        <path
+           d="m 130405000,101195000 h -3000000"
+           id="path720243" />
+        <path
+           d="m 130405000,98195000 v 3000000"
+           id="path720245" />
+        <path
+           d="m 127405000,98945000 750000,-750000"
+           id="path720247" />
+        <path
+           d="M 135025000,101195000 V 98945000"
+           id="path720249" />
+        <path
+           d="m 138025000,98195000 v 3000000"
+           id="path720251" />
+        <path
+           d="m 138025000,101195000 h -3000000"
+           id="path720253" />
+        <path
+           d="m 135775000,98195000 h 2250000"
+           id="path720255" />
+        <path
+           d="m 135025000,98945000 750000,-750000"
+           id="path720257" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:120000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720265">
+        <circle
+           cx="134620000"
+           cy="95250000"
+           r="500000"
+           id="circle720261" />
+        <circle
+           cx="134620000"
+           cy="95250000"
+           r="1000000"
+           id="circle720263" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:100000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720275">
+        <path
+           d="m 138830000,101991000 v 1250000"
+           id="path720267" />
+        <path
+           d="m 136830000,101991000 h 2000000"
+           id="path720269" />
+        <path
+           d="m 136830000,103241000 v -1250000"
+           id="path720271" />
+        <path
+           d="m 138830000,103241000 h -2000000"
+           id="path720273" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:120000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720289">
+        <circle
+           cx="130810000"
+           cy="95250000"
+           r="500000"
+           id="circle720277" />
+        <circle
+           cx="130810000"
+           cy="95250000"
+           r="1000000"
+           id="circle720279" />
+        <circle
+           cx="127000000"
+           cy="95250000"
+           r="500000"
+           id="circle720281" />
+        <circle
+           cx="127000000"
+           cy="95250000"
+           r="1000000"
+           id="circle720283" />
+        <circle
+           cx="138430000"
+           cy="95250000"
+           r="1000000"
+           id="circle720285" />
+        <circle
+           cx="138430000"
+           cy="95250000"
+           r="500000"
+           id="circle720287" />
+      </g>
+      <g
+         style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:100000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="g720329">
+        <path
+           d="m 128543000,101991000 v 1250000"
+           id="path720291" />
+        <path
+           d="m 128543000,103241000 h -2000000"
+           id="path720293" />
+        <path
+           d="m 126543000,101991000 h 2000000"
+           id="path720295" />
+        <path
+           d="m 126543000,103241000 v -1250000"
+           id="path720297" />
+        <g
+           id="g720299" />
+        <g
+           id="g720301" />
+        <g
+           id="g720303" />
+        <g
+           id="g720305" />
+        <g
+           id="g720307" />
+        <g
+           id="g720309" />
+        <g
+           id="g720311" />
+        <g
+           id="g720313" />
+        <g
+           id="g720315" />
+        <g
+           id="g720317" />
+        <g
+           id="g720319" />
+        <g
+           id="g720321" />
+        <g
+           id="g720323" />
+        <g
+           id="g720325" />
+        <g
+           id="g720327" />
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
        id="layer3"
        inkscape:label="blanc"
-       style="display:none"
-       sodipodi:insensitive="true">
+       style="display:inline">
       <rect
-         style="fill:#b3b3b3;fill-opacity:0;stroke:#ffffff;stroke-width:860244"
+         style="fill:#b3b3b3;fill-opacity:0;stroke:#ffffff;stroke-width:1.03913e+06"
          id="rect1139"
          width="13384961"
-         height="82402.578"
-         x="125954064"
-         y="94662312" />
+         height="120235.78"
+         x="125925824"
+         y="94539768" />
     </g>
   </g>
 </svg>
