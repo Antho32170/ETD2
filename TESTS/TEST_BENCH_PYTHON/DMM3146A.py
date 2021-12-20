@@ -1,5 +1,4 @@
 import time
-from sesame_tester import abortProcedure
 
 #def sendQuery(mult, cmd):
 
@@ -11,7 +10,8 @@ def readScreen(mult, screen = 1):
         return val
     else:
         print("Invalid screen choosen in for the 3146A DMM")
-        abortProcedure()
+        exit()
+        #abortProcedure()
 
 def measureVoltage(mult):
     """Special function for the 3146A"""

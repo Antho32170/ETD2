@@ -1,4 +1,3 @@
-from sesame_tester import abortProcedure
 
 def measureVoltage(mult):
     """Measuring the voltage on the DMM"""

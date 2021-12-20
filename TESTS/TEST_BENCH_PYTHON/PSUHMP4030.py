@@ -1,4 +1,3 @@
-from sesame_tester import abortProcedure
 import time
 
 def alertBeep(alim):
@@ -10,16 +9,18 @@ def alertBeep(alim):
     alim.write("SYST:BEEP")
     time.sleep(0.7)
 
-def genDriverChannel(channel):
+def genDriverChannel(alim, channel):
     if (channel >= 1 and channel <= 3):
         return "INST OUT" + str(channel)
     else:
         print("Channel " + str(channel) + " is invalid")
-        abortProcedure()
+        exit()
+        disableOut(alim)
+        #abortProcedure()
 
 def measureVoltageAlim(alim, channel):
     """Here we measure the voltage of the power supply for a given channel"""
-    alim.write(genDriverChannel(channel))
+    alim.write(genDriverChannel(alim, channel))
     alim.write("MEAS:VOLT?")
     voltage = alim.read()
     voltage = voltage.strip()
