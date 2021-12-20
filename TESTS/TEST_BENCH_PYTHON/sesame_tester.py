@@ -1,80 +1,24 @@
 import pyvisa
+import signal
 import time
-import matplotlib.pyplot as plt
+import json
 
-def alertBeep():
-    """Nice tree beeps to alert my human"""
-    alim.write("SYST:BEEP")
-    time.sleep(0.7)
-    alim.write("SYST:BEEP")
-    time.sleep(0.7)
-    alim.write("SYST:BEEP")
-    time.sleep(0.7)
+import PSUHMP4030
+import DMM34401A
+import DMM3146A
+import genGraph
+
+def quitHandler(signum, frame):
+    print("Quitting...")
+    abortProcedure()
 
 def abortProcedure():
     """Something went wrong abort and power off the power supply"""
-    alim.write("OUTP:GEN OFF")
+    PSUHMP4030.disableOut(alim)
     exit()
 
-def genDriverChannel(channel):
-    if (channel >= 1 and channel <= 3):
-        return "INST OUT" + str(channel)
-    else:
-        print("Channel " + str(channel) + " is invalid")
-        abortProcedure()
-
-def measureVoltageAlim(channel):
-    """Here we measure the voltage of the power supply for a given channel"""
-    alim.write(genDriverChannel(channel))
-    alim.write("MEAS:VOLT?")
-    voltage = alim.read()
-    voltage = voltage.strip()
-    return (float(voltage))
-
-def measureCurrentAlim(channel):
-    """Here we measure the current of the power supply for a given channel"""
-    alim.write(genDriverChannel(channel))
-    alim.write("MEAS:CURR?")
-    current = alim.read()
-    current = current.strip()
-    return (float(current))
-
-def measureVoltageDMM():
-    """Measuring the voltage on the DMM"""
-    multVoltage.write("MEAS:VOLT:DC?")
-    voltage = multVoltage.read()
-    voltage = voltage.strip()
-    return float(voltage)
-
-def measureCurrentDMM():
-    """Measuring the current on the DMM"""
-    multCurrent.write("MEAS:CURR:DC?")
-    current = multCurrent.read()
-    current = current.strip()
-    return float(current)
-
-def genGraphEffIout():
-    plt.plot(voltageOutSteps, efficiencySteps, color='g')
-    #plt.plot(currentOutSteps, efficiencySteps, color='orange')
-    #plt.plot(setPointSteps,   efficiencySteps, color='blue')
-    #plt.legend(['Tension sortie', 'Courant sortie', 'Consigne pid'])
-
-    plt.xlabel("Tension de sortie")
-    plt.ylabel("Rendement")
-    plt.title("Courant de sortie / Rendement du systeme")
-    plt.savefig("Cout-Eff.png")
-    plt.show()
-    
-def genGraphPidIin():
-    #pop_india = [449.48, 553.57, 696.783, 870.133, 1000.4, 1309.1]
-    plt.plot(setPointSteps, currentInSteps, color='g')
-    #plt.plot(year, pop_india, color='orange')
-    plt.xlabel("Consigne PID")
-    plt.ylabel("Courant entrée")
-    plt.title("Rapport tension de consigne et courant d'entrée")
-    plt.show()
-
 def checkSystems():
+    """Is everything connected ??"""
     print("Checking for equipment")
     repA = alim.query("*IDN?")
     repA = repA.strip()
@@ -86,7 +30,7 @@ def checkSystems():
         abortProcedure()
     time.sleep(0.5)
     
-    repMV = multVoltage.query("*IDN?")
+    repMV = multVoltageIn.query("*IDN?")
     repMV = repMV.strip()
     print("Voltage multimeter : \"" + repMV + "\"")
     if (repMV == "HEWLETT-PACKARD,34401A,0,11-5-3"):
@@ -96,7 +40,7 @@ def checkSystems():
         abortProcedure()
     time.sleep(0.5)
 
-    repMC = multCurrent.query("*IDN?")
+    repMC = multCurrentOut.query("*IDN?")
     repMC = repMC.strip()
     print("Current multimeter : \"" + repMC + "\"")
     if (repMC == "HEWLETT-PACKARD,34401A,0,10-5-2"):
@@ -105,41 +49,50 @@ def checkSystems():
         print("The current multimeter is not on the port USB2")
         abortProcedure()
     time.sleep(0.5)
-    
+
+    ###TODO: check for the escort crappy DMM, maybe with the RV command ??
+
+
+signal.signal(signal.SIGINT, quitHandler)
 rm = pyvisa.ResourceManager()
 rm.list_resources()
+
 alim = rm.open_resource('ASRL/dev/ttyUSB0::INSTR')
-multVoltage = rm.open_resource('ASRL/dev/ttyUSB1::INSTR')
-multCurrent = rm.open_resource('ASRL/dev/ttyUSB2::INSTR')
+multVoltageIn = rm.open_resource('ASRL/dev/ttyUSB1::INSTR')
+multVoltageOut = rm.open_resource('ASRL/dev/ttyUSB2::INSTR')
+multCurrentOut = rm.open_resource('ASRL/dev/ttyUSB3::INSTR')
 
 alim.write("SYSTEM:REMOTE")
 time.sleep(0.5)
-multVoltage.write("SYSTEM:REMOTE")
+multVoltageOut.write("SYSTEM:REMOTE")
 time.sleep(0.5)
-multCurrent.write("SYSTEM:REMOTE")
+multVoltageOut.write("SYSTEM:REMOTE")
 time.sleep(0.5)
+#cant do system remote for the multCurrentOut bc its a crappy dmm
+
 checkSystems()
 
+#ch1 = electronic load
 alim.write("OUTP:GEN OFF")
 alim.write("INST OUT1")
-alim.write("VOLT 7")
+alim.write("VOLT 1")
 alim.write("CURR 0.250")
 
+#ch2 = Vin
 alim.write("INST OUT2")
 alim.write("VOLT 5")
 alim.write("CURR 10")
 
+#ch3 = PID setpoint
 alim.write("INST OUT3")
 alim.write("VOLT 0.1")
 alim.write("CURR 0.1")
-time.sleep(1.0)
 
-alertBeep()
+PSUHMP4030.alertBeep(alim)
+
 alim.write("OUTP:GEN ON")
 
-alim.write("INST OUT3")
-
-step = 50 #in mV
+setPointStep = 10 #in mV
 baseSetPoint = 500 #in mV
 finalSetPoint = 1500 #in mV
 currentSetPoint = baseSetPoint
@@ -158,10 +111,12 @@ while currentSetPoint < finalSetPoint:
     alim.write("VOLT %f" % (currentSetPoint/1000))
     setPointSteps.append(currentSetPoint/1000)
 
-    voltageIn = measureVoltageAlim(2)
-    currentIn = measureCurrentAlim(2)
-    voltageOut = measureVoltageDMM()
-    currentOut = measureCurrentDMM()
+    voltageIn = DMM34401A.measureVoltage(multVoltageIn)
+    currentIn = PSUHMP4030.measureCurrentAlim(alim, 2)
+
+    voltageOut = DMM34401A.measureVoltage(multVoltageOut)
+    currentOut = DMM3146A.measureCurrent(multCurrentOut)
+    
     powerIn = voltageIn * currentIn
     powerOut = voltageOut * currentOut
     efficiency = powerOut / powerIn
@@ -180,8 +135,8 @@ while currentSetPoint < finalSetPoint:
     powerOutSteps.append(powerOut)
     efficiencySteps.append(efficiency)
     
-    currentSetPoint += step
+    currentSetPoint += setPointStep
     time.sleep(2.0)
-    
-alim.write("OUTP:GEN OFF")
-genGraphEffIout()
+
+PSUHMP4030.disableOut(alim)
+genGraph.effIout(voltageOutSteps, efficiencySteps)
