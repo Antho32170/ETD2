@@ -1,3 +1,5 @@
 *-backup
 *-backups/*
 ~$*
+.DS_Store
+._.DS_Store

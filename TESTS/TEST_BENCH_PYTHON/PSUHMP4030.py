@@ -1,38 +1,46 @@
 import time
+import pyvisa
 
-def alertBeep(alim):
-    """Nice tree beeps to alert my human"""
-    alim.write("SYST:BEEP")
-    time.sleep(0.7)
-    alim.write("SYST:BEEP")
-    time.sleep(0.7)
-    alim.write("SYST:BEEP")
-    time.sleep(0.7)
+class PSUHMP4030:
+    def __init__(self, ress):
+        self.ress = ress
+        ress.write("*IDN?")
+        ress.write("SYSTEM:REMOTE")
+        ress.write("*CLS")
+ 
+    def disableOut(self):
+        self.ress.write("OUTP:GEN OFF")
 
-def genDriverChannel(alim, channel):
-    if (channel >= 1 and channel <= 3):
-        return "INST OUT" + str(channel)
-    else:
-        print("Channel " + str(channel) + " is invalid")
-        exit()
-        disableOut(alim)
-        #abortProcedure()
+    def alertBeep(self):
+        """Nice tree beeps to alert my human"""
+        self.ress.write("SYST:BEEP")
+        time.sleep(0.7)
+        self.ress.write("SYST:BEEP")
+        time.sleep(0.7)
+        self.ress.write("SYST:BEEP")
+        time.sleep(0.7)
 
-def measureVoltageAlim(alim, channel):
-    """Here we measure the voltage of the power supply for a given channel"""
-    alim.write(genDriverChannel(alim, channel))
-    alim.write("MEAS:VOLT?")
-    voltage = alim.read()
-    voltage = voltage.strip()
-    return (float(voltage))
+    def genDriverChannel(self, channel):
+        if (channel >= 1 and channel <= 3):
+            return "INST OUT" + str(channel)
+        else:
+            print("Channel " + str(channel) + " is invalid")
+            self.disableOut()
+            exit() #abortProcedure()
 
-def measureCurrentAlim(alim, channel):
-    """Here we measure the current of the power supply for a given channel"""
-    alim.write(genDriverChannel(channel))
-    alim.write("MEAS:CURR?")
-    current = alim.read()
-    current = current.strip()
-    return (float(current))
+    def measureVoltageAlim(self, channel):
+        """Here we measure the voltage of the power supply for a given channel"""
+        self.ress.write(self.genDriverChannel(channel))
+        self.ress.write("MEAS:VOLT?")
+        voltage = self.ress.read()
+        voltage = voltage.strip()
+        return (float(voltage))
 
-def disableOut(alim):
-    alim.write("OUTP:GEN OFF")
+    def measureCurrentAlim(self, channel):
+        """Here we measure the current of the power supply for a given channel"""
+        self.ress.write(self.genDriverChannel(channel))
+        self.ress.write("MEAS:CURR?")
+        current = self.ress.read()
+        current = current.strip()
+        return (float(current))
+

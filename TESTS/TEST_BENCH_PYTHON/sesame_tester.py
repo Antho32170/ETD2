@@ -3,9 +3,7 @@ import signal
 import time
 import json
 
-import PSUHMP4030
-import DMM34401A
-import DMM3146A
+import PSUHMP4030, DMM34401A, DMM3146A
 import genGraph
 
 def quitHandler(signum, frame):
@@ -61,6 +59,14 @@ alim = rm.open_resource('ASRL/dev/ttyUSB0::INSTR')
 multVoltageIn = rm.open_resource('ASRL/dev/ttyUSB1::INSTR')
 multVoltageOut = rm.open_resource('ASRL/dev/ttyUSB2::INSTR')
 multCurrentOut = rm.open_resource('ASRL/dev/ttyUSB3::INSTR')
+
+rm = pyvisa.ResourceManager()
+rm.list_resources()
+
+alim = PSUHMP4030.PSUHMP4030(rm.open_resource('ASRL/dev/ttyUSB0::INSTR'))
+vinDMM = DMM34401A.DMM34401A(rm.open_resource('ASRL/dev/ttyUSB1::INSTR'))
+voutDMM = DMM34401A.DMM34401A(rm.open_resource('ASRL/dev/ttyUSB2::INSTR'))
+IoutDMM = DMM3146A.DMM3146A(rm.open_resource('ASRL/dev/ttyUSB3::INSTR'))
 
 alim.write("SYSTEM:REMOTE")
 time.sleep(0.5)
