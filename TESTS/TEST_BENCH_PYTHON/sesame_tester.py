@@ -99,7 +99,7 @@ PSUHMP4030.alertBeep(alim)
 alim.write("OUTP:GEN ON")
 
 setPointStep = 10 #in mV
-baseSetPoint = 500 #in mV
+baseSetPoint = 1000 #in mV
 finalSetPoint = 1500 #in mV
 currentSetPoint = baseSetPoint
 
@@ -111,8 +111,14 @@ voltageOutSteps = []
 powerInSteps = []
 powerOutSteps = []
 efficiencySteps = []
-    
-while currentSetPoint < finalSetPoint:
+
+
+setPointIStep = 10 #in mV
+baseSetPointI = 1000 #in mV
+finalSetPointI = 1500 #in mV
+currentSetPointI = baseSetPointI
+
+while currentSetPointI < finalSetPointI:
     alim.write("INST OUT3")
     alim.write("VOLT %f" % (currentSetPoint/1000))
     setPointSteps.append(currentSetPoint/1000)
@@ -141,8 +147,8 @@ while currentSetPoint < finalSetPoint:
     powerOutSteps.append(powerOut)
     efficiencySteps.append(efficiency)
     
-    currentSetPoint += setPointStep
-    time.sleep(2.0)
+    currentSetPointI += setPointIStep
+    time.sleep(1.0)
 
 PSUHMP4030.disableOut(alim)
-genGraph.effIout(voltageOutSteps, efficiencySteps)
+genGraph.effIout(currentOutSteps, efficiencySteps)

@@ -1,15 +1,21 @@
+import matplotlib
 import matplotlib.pyplot as plt
 
-def effIout(voltageOutSteps, efficiencySteps):
-    plt.plot(voltageOutSteps, efficiencySteps, color='g')
+from time import strftime,gmtime
+
+def effIout(currentOutSteps, efficiencySteps):
+    dt_gmt = strftime("%Y-%m-%d_%H-%M", gmtime())
+
+    #matplotlib.use('Agg')
+    plt.plot(currentOutSteps, efficiencySteps, color='g')
     #plt.plot(currentOutSteps, efficiencySteps, color='orange')
     #plt.plot(setPointSteps,   efficiencySteps, color='blue')
     #plt.legend(['Tension sortie', 'Courant sortie', 'Consigne pid'])
 
-    plt.xlabel("Tension de sortie")
+    plt.xlabel("Courant de sortie")
     plt.ylabel("Rendement")
     plt.title("Courant de sortie / Rendement du systeme")
-    plt.savefig("Cout-Eff.png")
+    plt.savefig("Cout-Eff-" + dt_gmt + ".png")
     plt.show()
     
 def pidIin(setPointSteps, currentInSteps):

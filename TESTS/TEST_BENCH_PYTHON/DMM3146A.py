@@ -19,6 +19,7 @@ class DMM3146A:
         if (screen == 1 or screen == 2):
             self.ress.query("R" + str(screen))
             val = self.ress.read()
+            self.ress.read() #empty the return of the command
             val = val.strip()
             return val
         else:
@@ -35,7 +36,8 @@ class DMM3146A:
 
     def measureCurrent(self):
         """Special function for the 3146A"""
+        self.mode = 1
         self.ress.query("S147") #DCA max range
-        self.ress.read()
+        val = self.ress.read()
         time.sleep(2)
         return float(self.readScreen(1))

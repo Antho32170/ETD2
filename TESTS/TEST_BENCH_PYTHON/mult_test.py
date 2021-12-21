@@ -4,6 +4,7 @@ import time
 import git
 import signal
 import DMM34401A, DMM3146A, PSUHMP4030
+import genGraph
 
 def quitHandler(signum, frame):
     print("Quitting...")
@@ -34,39 +35,122 @@ def checkSystems():
 
     alim.check("power supply", "HAMEG,HMP4030,019480198,HW50020001/SW2.30", "USB0")
     time.sleep(0.5)
-    vinDMM.check("voltage IN DMM", "HEWLETT-PACKARD,34401A,0,11-5-3", "USB1")
+    VinDMM.check("voltage IN DMM", "HEWLETT-PACKARD,34401A,0,11-5-3", "USB1")
     time.sleep(0.5)
-    voutDMM.check("voltage OUT DMM", "HEWLETT-PACKARD,34401A,0,10-5-2", "USB2")
+    VoutDMM.check("voltage OUT DMM", "HEWLETT-PACKARD,34401A,0,10-5-2", "USB2")
     time.sleep(0.5)
     IoutDMM.check("current OUT DMM", "TODO", "USB3")
     time.sleep(0.5)
     print()
 
-signal.signal(signal.SIGINT, quitHandler)
-header()
-rm = pyvisa.ResourceManager()
-alim = PSUHMP4030.PSUHMP4030(rm.open_resource('ASRL/dev/ttyUSB0::INSTR'))
-vinDMM = DMM34401A.DMM34401A(rm.open_resource('ASRL/dev/ttyUSB1::INSTR'))
-voutDMM = DMM34401A.DMM34401A(rm.open_resource('ASRL/dev/ttyUSB2::INSTR'))
-IoutDMM = DMM3146A.DMM3146A(rm.open_resource('ASRL/dev/ttyUSB3::INSTR'))
+def senario():
+    setPointStep = 10 #in mV
+    baseSetPoint = 1000 #in mV
+    finalSetPoint = 1000 #1500 #in mV
+    currentSetPoint = baseSetPoint
 
-checkSystems()
-alim.alertBeep()
-time.sleep(1.0)
-print("vin = " + str(vinDMM.measureVoltage()))
-time.sleep(1.0)
-print("vout = " +str(voutDMM.measureVoltage()))
-time.sleep(1.0)
-print("Iout = " + str(IoutDMM.measureCurrent()))
+    setPointIStep = 25 #in mV
+    baseSetPointI = 500 #in mV
+    finalSetPointI = 5000 #1500 #in mV
+    currentSetPointI = baseSetPointI
 
-time.sleep(1.0)
-print("Vin alim = " + str(alim.measureVoltage(2)))
-time.sleep(1.0)
-print("Iin alim = " + str(alim.measureCurrent(2)))
-time.sleep(1.0)
+    setPointISteps = []
+    setPointSteps = []
+    currentInSteps = []
+    currentOutSteps = []
+    voltageInSteps = []
+    voltageOutSteps = []
+    powerInSteps = []
+    powerOutSteps = []
+    efficiencySteps = []
 
-alim.alertBeep()
+    alim.disableOut()
+
+    #Electronic load
+    alim.enableChannel(1)
+    alim.setVoltage(1, 1.0)
+    alim.setCurrent(1, 0.250)
+
+    #IN
+    alim.enableChannel(2)
+    alim.setVoltage(2, 5.0)
+    alim.setCurrent(2, 10.0)
+
+    #PID setpoint
+    alim.enableChannel(3)
+    alim.setVoltage(3, (baseSetPoint/1000))
+    alim.setCurrent(3, 0.1)
+
+    alim.alertBeep()
+    alim.enableOut()
+
+    while currentSetPointI < finalSetPointI:
+        alim.setVoltage(1, float(currentSetPointI/1000))
+        setPointISteps.append(currentSetPointI/1000)
+
+        voltageIn = VinDMM.measureVoltage()
+        currentIn = alim.measureCurrent(2)
+
+        voltageOut = VoutDMM.measureVoltage()
+        currentOut = IoutDMM.measureCurrent()
+        
+        powerIn = voltageIn * currentIn
+        powerOut = voltageOut * currentOut
+        efficiency = powerOut / (powerIn + 0.000000001)
+
+        print("=====================================")
+        print("SetPoint electronic load = " + str(currentSetPointI) + "mV")
+        print("Voltage IN  " + str(voltageIn) + " V | Current IN  " + str(currentIn) + " A | Power IN  " + str(powerIn) + " W")
+        print("Voltage OUT " + str(voltageOut) + " V | Current OUT " + str(currentOut) + " A | Power OUT " + str(powerOut) + " W")
+        print("Efficiency " + str(efficiency) + " %")
+
+        currentInSteps.append(currentIn)
+        currentOutSteps.append(currentOut)
+        voltageInSteps.append(voltageIn)
+        voltageOutSteps.append(voltageOut)
+        powerInSteps.append(powerIn)
+        powerOutSteps.append(powerOut)
+        efficiencySteps.append(efficiency)
+        
+        currentSetPointI += setPointIStep
+        time.sleep(1.0)
+
+    alim.disableOut()
+    genGraph.effIout(currentOutSteps, efficiencySteps)
+
+
+def test():
+    alim.alertBeep()
+    time.sleep(1.0)
+    print("vin = " + str(VinDMM.measureVoltage()))
+    time.sleep(1.0)
+    print("vout = " +str(VoutDMM.measureVoltage()))
+    time.sleep(1.0)
+    print("Iout = " + str(IoutDMM.measureCurrent()))
+    time.sleep(1.0)
+    print("Iout = " + str(IoutDMM.measureCurrent()))
+    time.sleep(1.0)
+    print("Iout = " + str(IoutDMM.measureCurrent()))
+    time.sleep(1.0)
+
+    print("Vin alim = " + str(alim.measureVoltage(2)))
+    time.sleep(1.0)
+    print("Iin alim = " + str(alim.measureCurrent(2)))
+    time.sleep(1.0)
+
+    alim.alertBeep()
 
 
 #voltageIn = DMM34401A.measureVoltage(my_instrument)
 #print(str(voltageIn))
+
+signal.signal(signal.SIGINT, quitHandler)
+header()
+rm = pyvisa.ResourceManager()
+alim = PSUHMP4030.PSUHMP4030(rm.open_resource('ASRL/dev/ttyUSB0::INSTR'))
+VinDMM = DMM34401A.DMM34401A(rm.open_resource('ASRL/dev/ttyUSB1::INSTR'))
+VoutDMM = DMM34401A.DMM34401A(rm.open_resource('ASRL/dev/ttyUSB2::INSTR'))
+IoutDMM = DMM3146A.DMM3146A(rm.open_resource('ASRL/dev/ttyUSB3::INSTR'))
+
+checkSystems()
+senario()

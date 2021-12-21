@@ -20,6 +20,19 @@ class PSUHMP4030:
     def disableOut(self):
         self.ress.write("OUTP:GEN OFF")
 
+    def enableOut(self):
+        self.ress.write("OUTP:GEN ON")
+
+    def enableChannel(self, channel):
+        c = self.genDriverChannel(channel)
+        self.ress.write(c)
+        self.ress.write("OUTP:SEL 1")
+
+    def disableChannel(self, channel):
+        c = self.genDriverChannel(channel)
+        self.ress.write(c)
+        self.ress.write("OUTP:SEL 0")
+
     def alertBeep(self):
         """Nice tree beeps to alert my human"""
         self.ress.write("SYST:BEEP")
@@ -55,3 +68,12 @@ class PSUHMP4030:
         current = current.strip()
         return (float(current))
 
+    def setVoltage(self, channel, voltage):
+        c = self.genDriverChannel(channel)
+        self.ress.write(c)
+        self.ress.write("VOLT " + str(voltage))
+
+    def setCurrent(self, channel, voltage):
+        c = self.genDriverChannel(channel)
+        self.ress.write(c)
+        self.ress.write("CURR " + str(voltage))
