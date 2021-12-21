@@ -6,16 +6,16 @@ import json
 import PSUHMP4030, DMM34401A, DMM3146A
 import genGraph
 
-def quitHandler(signum, frame):
+def quitHandler(signum, frame): #done
     print("Quitting...")
     abortProcedure()
 
-def abortProcedure():
+def abortProcedure(): #done
     """Something went wrong abort and power off the power supply"""
     PSUHMP4030.disableOut(alim)
     exit()
 
-def checkSystems():
+def checkSystems():  #done
     """Is everything connected ??"""
     print("Checking for equipment")
     repA = alim.query("*IDN?")

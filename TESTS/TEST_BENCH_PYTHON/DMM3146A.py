@@ -4,10 +4,17 @@ import pyvisa
 class DMM3146A:
     def __init__(self, ress):
         self.ress = ress
-        #ress.write("*IDN?")
-        #ess.write("SYSTEM:REMOTE")
-        #ress.write("*CLS")
- 
+
+    def check(self, role, name, port):
+        #rep = self.ress.query("RV?")
+        #rep = rep.strip()
+        #TODO: finish this
+        if ("TODO" == name):
+            print("The " + role + " is connected on the port " + port)
+        else:
+            print("The " + role + " is not connected on the port " + port)
+            exit() #abortProcedure()
+    
     def readScreen(self, screen = 1):
         if (screen == 1 or screen == 2):
             self.ress.query("R" + str(screen))
@@ -21,14 +28,14 @@ class DMM3146A:
 
     def measureVoltage(self):
         """Special function for the 3146A"""
-        self.ress.query("S100") #DCV
+        self.ress.query("S100") #DCV auto range
         self.ress.read()
         time.sleep(2)
         return float(self.readScreen(1))
 
     def measureCurrent(self):
         """Special function for the 3146A"""
-        self.ress.query("S140") #DCA
+        self.ress.query("S147") #DCA max range
         self.ress.read()
         time.sleep(2)
         return float(self.readScreen(1))
