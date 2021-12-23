@@ -39,5 +39,25 @@ class DMM3146A:
         self.mode = 1
         self.ress.query("S147") #DCA max range
         val = self.ress.read()
-        time.sleep(2)
+        time.sleep(2.0)
         return float(self.readScreen(1))
+    
+    def removeHighestLowest(self, list):
+        list.remove(max(list))
+        list.remove(min(list))
+        return list
+    
+    def measureCurrentAvrg(self, nbrReadings):
+        samples = []
+        for x in range(nbrReadings):
+            print("aq " + str(x))
+            samples.append(self.measureCurrent())
+
+        print(*samples)
+
+        if (nbrReadings > 3):
+            samples = self.removeHighestLowest()
+        
+        avg = sum(samples)/len(samples)
+        print("Average " + str(avg))
+        return avg

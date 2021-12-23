@@ -6,8 +6,20 @@ import signal
 import DMM34401A, DMM3146A, PSUHMP4030
 import genGraph
 
+setPointISteps = []
+setPointSteps = []
+currentInSteps = []
+currentOutSteps = []
+voltageInSteps = []
+voltageOutSteps = []
+powerInSteps = []
+powerOutSteps = []
+efficiencySteps = []
+testContinue = True
+
 def quitHandler(signum, frame):
     print("Quitting...")
+    genGraph.effIout(currentOutSteps, efficiencySteps)
     abortProcedure()
 
 def abortProcedure():
@@ -43,48 +55,10 @@ def checkSystems():
     time.sleep(0.5)
     print()
 
-def senario():
-    setPointStep = 10 #in mV
-    baseSetPoint = 1000 #in mV
-    finalSetPoint = 1000 #1500 #in mV
-    currentSetPoint = baseSetPoint
-
-    setPointIStep = 25 #in mV
-    baseSetPointI = 500 #in mV
-    finalSetPointI = 5000 #1500 #in mV
-    currentSetPointI = baseSetPointI
-
-    setPointISteps = []
-    setPointSteps = []
-    currentInSteps = []
-    currentOutSteps = []
-    voltageInSteps = []
-    voltageOutSteps = []
-    powerInSteps = []
-    powerOutSteps = []
-    efficiencySteps = []
-
-    alim.disableOut()
-
-    #Electronic load
-    alim.enableChannel(1)
-    alim.setVoltage(1, 1.0)
-    alim.setCurrent(1, 0.250)
-
-    #IN
-    alim.enableChannel(2)
-    alim.setVoltage(2, 5.0)
-    alim.setCurrent(2, 10.0)
-
-    #PID setpoint
-    alim.enableChannel(3)
-    alim.setVoltage(3, (baseSetPoint/1000))
-    alim.setCurrent(3, 0.1)
-
-    alim.alertBeep()
+def currentSetpointIncrease(startingSetPointI, finalSetPointI, setPointIStep):
+    currentSetPointI = startingSetPointI
     alim.enableOut()
-
-    while currentSetPointI < finalSetPointI:
+    while (currentSetPointI < finalSetPointI and testContinue == True):
         alim.setVoltage(1, float(currentSetPointI/1000))
         setPointISteps.append(currentSetPointI/1000)
 
@@ -93,30 +67,34 @@ def senario():
 
         voltageOut = VoutDMM.measureVoltage()
         currentOut = IoutDMM.measureCurrent()
+        #currentOut = IoutDMM.measureCurrentAvrg(3) worse
         
-        powerIn = voltageIn * currentIn
-        powerOut = voltageOut * currentOut
-        efficiency = powerOut / (powerIn + 0.000000001)
+        if (currentIn > 9.9):
+            testContinue = False
+            print("Power supply cant keep up")
+        else:
+            powerIn = voltageIn * currentIn
+            powerOut = voltageOut * currentOut
+            efficiency = powerOut / (powerIn + 0.000000001)
 
-        print("=====================================")
-        print("SetPoint electronic load = " + str(currentSetPointI) + "mV")
-        print("Voltage IN  " + str(voltageIn) + " V | Current IN  " + str(currentIn) + " A | Power IN  " + str(powerIn) + " W")
-        print("Voltage OUT " + str(voltageOut) + " V | Current OUT " + str(currentOut) + " A | Power OUT " + str(powerOut) + " W")
-        print("Efficiency " + str(efficiency) + " %")
+            print("=====================================")
+            print("SetPoint electronic load = " + str(currentSetPointI) + "mV")
+            print("Voltage IN  " + str(voltageIn) + " V | Current IN  " + str(currentIn) + " A | Power IN  " + str(powerIn) + " W")
+            print("Voltage OUT " + str(voltageOut) + " V | Current OUT " + str(currentOut) + " A | Power OUT " + str(powerOut) + " W")
+            print("Efficiency " + str(efficiency) + " %")
 
-        currentInSteps.append(currentIn)
-        currentOutSteps.append(currentOut)
-        voltageInSteps.append(voltageIn)
-        voltageOutSteps.append(voltageOut)
-        powerInSteps.append(powerIn)
-        powerOutSteps.append(powerOut)
-        efficiencySteps.append(efficiency)
-        
-        currentSetPointI += setPointIStep
-        time.sleep(1.0)
-
+            currentInSteps.append(currentIn)
+            currentOutSteps.append(currentOut)
+            voltageInSteps.append(voltageIn)
+            voltageOutSteps.append(voltageOut)
+            powerInSteps.append(powerIn)
+            powerOutSteps.append(powerOut)
+            efficiencySteps.append(efficiency)
+            
+            currentSetPointI += setPointIStep
+            #time.sleep(1.0)
+    
     alim.disableOut()
-    genGraph.effIout(currentOutSteps, efficiencySteps)
 
 
 def test():
@@ -140,6 +118,42 @@ def test():
 
     alim.alertBeep()
 
+def senario():
+    setPointStep = 500 #in mV
+    baseSetPoint = 1000 #in mV
+    finalSetPoint = 2000 #1500 #in mV
+    currentSetPoint = baseSetPoint
+
+    setPointIStep = 25 #in mV
+    baseSetPointI = 500 #in mV
+    finalSetPointI = 10000 #1500 #in mV
+    currentSetPointI = baseSetPointI
+
+    alim.disableOut()
+
+    #Electronic load
+    alim.enableChannel(1)
+    alim.setVoltage(1, 1.0)
+    alim.setCurrent(1, 0.250)
+
+    #IN
+    alim.enableChannel(2)
+    alim.setVoltage(2, 5.0)
+    alim.setCurrent(2, 10.0)
+
+    #PID setpoint
+    alim.enableChannel(3)
+    alim.setVoltage(3, (baseSetPoint/1000))
+    alim.setCurrent(3, 0.1)
+
+    alim.alertBeep()
+    while (currentSetPoint < finalSetPoint and testContinue == True):
+        alim.setVoltage(3, float(currentSetPoint/1000))
+        currentSetpointIncrease(baseSetPointI, finalSetPointI, setPointIStep)
+        currentSetPoint += setPointStep
+
+    genGraph.effIout(currentOutSteps, efficiencySteps)
+ 
 
 #voltageIn = DMM34401A.measureVoltage(my_instrument)
 #print(str(voltageIn))
