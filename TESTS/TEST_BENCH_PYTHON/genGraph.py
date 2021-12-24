@@ -1,25 +1,33 @@
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
+import csv
 
 from time import strftime,gmtime
 serverX = 0
+def exportCSV(datasets):
+    with open('result.csv','w') as f:
+        writer = csv.writer(f)
+        writer.writerow("setPointISteps", "setPointSteps","currentInSteps", "currentOutSteps", 
+        "voltageInSteps", "voltageOutSteps", "powerInSteps", "powerOutSteps", "efficiencySteps")
+        writer.writerows(datasets)
 
-def effIout(currentOutSteps, efficiencySteps):
+def effIout(datasets):
     dt_gmt = strftime("%Y-%m-%d_%H-%M", gmtime())
 
     #IF NO SERVER X UNCOMMENT THE FOLLOWING LINE
     if (serverX == 0):
         matplotlib.use('Agg')
+    legend = []    
+    for d in datasets:
+        plt.plot(d["currentOutSteps"], d["efficiencySteps"])
+        legend.append(str(d["VOUT"]) + "V")
 
-    plt.plot(currentOutSteps, efficiencySteps, color='g')
-    #plt.plot(currentOutSteps, efficiencySteps, color='orange')
-    #plt.plot(setPointSteps,   efficiencySteps, color='blue')
-    #plt.legend(['Tension sortie', 'Courant sortie', 'Consigne pid'])
+    plt.legend(legend, loc='upper right', title="VOUT")
 
     plt.xlabel("Courant de sortie")
     plt.ylabel("Rendement")
-    plt.title("Courant de sortie / Rendement du systeme")
+    plt.title("IOUT/Rendement | Mode:" +  str(d["mode"]) + " | VIN " + str(d["VIN"]))
     fileName = "Cout-Eff-" + dt_gmt + ".png"
     plt.savefig(fileName)
     print("File saved: " + fileName)
