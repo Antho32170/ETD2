@@ -1,6 +1,7 @@
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.interpolate import make_interp_spline
 import csv
 
 from time import strftime,gmtime
@@ -12,23 +13,38 @@ def exportCSV(datasets):
         "voltageInSteps", "voltageOutSteps", "powerInSteps", "powerOutSteps", "efficiencySteps")
         writer.writerows(datasets)
 
-def effIout(datasets):
+def effIout(datasets, interpol):
     dt_gmt = strftime("%Y-%m-%d_%H-%M", gmtime())
-
+    
+    is_interpol = ""
+    if (interpol == True):
+        is_interpol = "-interpolled"
+    
     #IF NO SERVER X UNCOMMENT THE FOLLOWING LINE
     if (serverX == 0):
         matplotlib.use('Agg')
-    legend = []    
+    legend = []
+    plt.clf()
     for d in datasets:
-        plt.plot(d["currentOutSteps"], d["efficiencySteps"])
+        x = np.array(d["currentOutSteps"])
+        y = np.array(d["efficiencySteps"])
+        if (interpol == True):
+            X_Y_Spline = make_interp_spline(x, y)
+
+            X_ = np.linspace(x.min(), x.max(), 500)
+            Y_ = X_Y_Spline(X_)
+            plt.plot(X_, Y_)
+        else :
+            plt.plot(x, y)
+
         legend.append(str(d["VOUT"]) + "V")
 
     plt.legend(legend, loc='upper right', title="VOUT")
 
-    plt.xlabel("Courant de sortie")
-    plt.ylabel("Rendement")
+    plt.xlabel("Courant de sortie (A)")
+    plt.ylabel("Rendement (%)")
     plt.title("IOUT/Rendement | Mode:" +  str(d["mode"]) + " | VIN " + str(d["VIN"]))
-    fileName = "Cout-Eff-" + dt_gmt + ".png"
+    fileName = "Cout-Eff-" + dt_gmt + is_interpol + ".png"
     plt.savefig(fileName)
     print("File saved: " + fileName)
 

@@ -83,7 +83,7 @@ def currentSetpointIncrease(dataset, baseSetPointI, finalSetPointI, setPointISte
 
             print("=====================================")
             print("SetPoint electronic load = " + str(currentSetPointI) + "mV")
-            print("Voltage IN  " + str(voltageIn) + " V | Current IN  " + str(currentIn) + " A | Power IN  " + str(powerIn) + " W")
+            print("Voltage IN  " + str(voltageIn) + " V  | Current IN  " + str(currentIn) + " A  | Power IN  " + str(powerIn) + " W")
             print("Voltage OUT " + str(voltageOut) + " V | Current OUT " + str(currentOut) + " A | Power OUT " + str(powerOut) + " W")
             print("Efficiency " + str(efficiency) + " %")
 
@@ -115,8 +115,8 @@ def senario():
     finalSetPoint = 2000 #1500 #in mV
     currentSetPoint = baseSetPoint
 
-    setPointIStep = 100#25 #in mV
-    baseSetPointI = 500 #in mV
+    setPointIStep = 25#25 #in mV
+    baseSetPointI = 100 #in mV
     finalSetPointI = 10000 #10000 #in mV
     currentSetPointI = baseSetPointI
     
@@ -142,7 +142,7 @@ def senario():
     runNbr = 1
     while (currentSetPoint <= finalSetPoint and testContinue == True):
         alim.setVoltage(3, float(currentSetPoint/1000))
-        runDataSet = {"runName" : "default name", "mode" : "Boost G->D", "VIN" : Vin, "VOUT" : round(measureVout(baseSetPointI), 1), "setPointISteps" : [], "setPointSteps" : [], "currentInSteps" : [], "currentOutSteps" : [], 
+        runDataSet = {"runName" : "default name", "mode" : "Boost D->G", "VIN" : Vin, "VOUT" : round(measureVout(baseSetPointI), 1), "setPointISteps" : [], "setPointSteps" : [], "currentInSteps" : [], "currentOutSteps" : [], 
     "voltageInSteps" : [], "voltageOutSteps" : [], "powerInSteps" : [], "powerOutSteps": [], "efficiencySteps" : []}
         print("#####################################################################")
         runName = "RUN #" + str(runNbr) + " PID SetPoint : " + str(currentSetPoint/1000) + " : Vin " + str(Vin) + " Vout : " + str(runDataSet["VOUT"])
@@ -155,8 +155,12 @@ def senario():
         currentSetPoint += setPointStep
         runNbr = runNbr + 1
         time.sleep(3.0)
-    genGraph.effIout(dataSetsTotal)
- 
+    print(dataSetsTotal)
+    genGraph.effIout(dataSetsTotal, False)
+    time.sleep(3.0)
+    print(dataSetsTotal)
+    genGraph.effIout(dataSetsTotal, True)
+
 
 #voltageIn = DMM34401A.measureVoltage(my_instrument)
 #print(str(voltageIn))
